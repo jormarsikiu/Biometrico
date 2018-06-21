@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="TemplateAFIS_8h" kind="file" language="C++">
+    <compoundname>TemplateAFIS.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">xmlrpc.h</includes>
+    <includes local="no">xmlrpc_cgi.h</includes>
+    <includes local="no">XmlRpcCpp.h</includes>
+    <includes local="no">jpeglib.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">openssl/pem.h</includes>
+    <includes local="no">openssl/ssl.h</includes>
+    <includes local="no">openssl/rsa.h</includes>
+    <includes local="no">openssl/evp.h</includes>
+    <includes local="no">openssl/bio.h</includes>
+    <includes local="no">openssl/err.h</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="UFMatcher_8h" local="yes">UFMatcher.h</includes>
+    <includes refid="UFScanner_8h" local="yes">UFScanner.h</includes>
+    <includes refid="FirmaDigital_8h" local="yes">../firma_digital/FirmaDigital.h</includes>
+    <includes local="yes">Utilidades.h</includes>
+    <includes refid="Variables__Webservice__OpenERP_8cpp" local="yes">../Conexion_webservice/Variables_Webservice_OpenERP.cpp</includes>
+    <includes refid="ws_8h" local="yes">ws.h</includes>
+    <includedby refid="TemplateAFIS_8cpp" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</includedby>
+    <incdepgraph>
+      <node id="157">
+        <label>XmlRpcCpp.h</label>
+      </node>
+      <node id="179">
+        <label>openssl/md5.h</label>
+      </node>
+      <node id="177">
+        <label>openssl/hmac.h</label>
+      </node>
+      <node id="160">
+        <label>openssl/pem.h</label>
+      </node>
+      <node id="171">
+        <label>../Conexion_webservice/Variables_Webservice_OpenERP.cpp</label>
+        <link refid="Variables__Webservice__OpenERP_8cpp"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>stdlib.h</label>
+      </node>
+      <node id="176">
+        <label>openssl/sha.h</label>
+      </node>
+      <node id="156">
+        <label>xmlrpc_cgi.h</label>
+      </node>
+      <node id="162">
+        <label>openssl/rsa.h</label>
+      </node>
+      <node id="158">
+        <label>jpeglib.h</label>
+      </node>
+      <node id="174">
+        <label>fstream</label>
+      </node>
+      <node id="168">
+        <label>UFScanner.h</label>
+        <link refid="UFScanner_8h"/>
+      </node>
+      <node id="167">
+        <label>UFMatcher.h</label>
+        <link refid="UFMatcher_8h"/>
+      </node>
+      <node id="164">
+        <label>openssl/bio.h</label>
+      </node>
+      <node id="165">
+        <label>openssl/err.h</label>
+      </node>
+      <node id="180">
+        <label>GuiWsOpenErp.cpp</label>
+        <link refid="GuiWsOpenErp_8cpp"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>../firma_digital/FirmaDigital.h</label>
+        <link refid="FirmaDigital_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>string.h</label>
+      </node>
+      <node id="178">
+        <label>openssl/buffer.h</label>
+      </node>
+      <node id="173">
+        <label>ctime</label>
+      </node>
+      <node id="154">
+        <label>vector</label>
+      </node>
+      <node id="172">
+        <label>Fingerprint.cpp</label>
+        <link refid="Fingerprint_8cpp"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>sstream</label>
+      </node>
+      <node id="163">
+        <label>openssl/evp.h</label>
+      </node>
+      <node id="148">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>cstdlib</label>
+      </node>
+      <node id="175">
+        <label>cctype</label>
+      </node>
+      <node id="152">
+        <label>iostream</label>
+      </node>
+      <node id="155">
+        <label>xmlrpc.h</label>
+      </node>
+      <node id="170">
+        <label>Utilidades.h</label>
+      </node>
+      <node id="153">
+        <label>algorithm</label>
+      </node>
+      <node id="149">
+        <label>stdio.h</label>
+      </node>
+      <node id="181">
+        <label>ws.h</label>
+        <link refid="ws_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>openssl/ssl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="183">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="182">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImagen" prot="public">Imagen</innerclass>
+    <innerclass refid="classTemplateAFIS__webservice" prot="public">TemplateAFIS_webservice</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="TemplateAFIS_8h_1ae134eaccb22e4bdbdbafacfab8cfb7db" prot="public" static="no">
+        <name>MAX_TEMPLATE_SIZE</name>
+        <initializer>384</initializer>
+        <briefdescription>
+<para>MAX_TEMPLATE_SIZE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="53" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1ad36343025eff7ee440fcd571772b4146" prot="public" static="no">
+        <name>BD_SIN_DATOS</name>
+        <initializer>-661</initializer>
+        <briefdescription>
+<para>BD_SIN_DATOS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="57" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1ae68001722877f3b60b7006e17dcdf9b0" prot="public" static="no">
+        <name>BD_COUNT_CERO</name>
+        <initializer>-662</initializer>
+        <briefdescription>
+<para>BD_COUNT_CERO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="61" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a77d9a75c3355bbcdcbedb6ce436f9cda" prot="public" static="no">
+        <name>BD_COUNT_MAYOR_CERO</name>
+        <initializer>-663</initializer>
+        <briefdescription>
+<para>BD_COUNT_MAYOR_CERO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="65" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a022e8c92dea810146cd6e30eb8442261" prot="public" static="no">
+        <name>BD_TRANSACTION_ERROR</name>
+        <initializer>-664</initializer>
+        <briefdescription>
+<para>BD_TRANSACTION_ERROR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="69" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a82f2e618c81fa0903996f94311dc4f48" prot="public" static="no">
+        <name>UFS_POCA_CALIDAD_IMAGEN</name>
+        <initializer>-761</initializer>
+        <briefdescription>
+<para>UFS_POCA_CALIDAD_IMAGEN. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="73" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a2a8b1ef25ec40c37c53c3e867fc55e3d" prot="public" static="no">
+        <name>UFM_IDENTIFICATION_ERROR</name>
+        <initializer>-861</initializer>
+        <briefdescription>
+<para>UFM_IDENTIFICATION_ERROR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="77" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a0b1cc26b5ecbd1f2cbb2489bff63566b" prot="public" static="no">
+        <name>UFM_VERIFICATION_ERROR</name>
+        <initializer>-961</initializer>
+        <briefdescription>
+<para>UFM_VERIFICATION_ERROR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="81" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a47f2e62c0dbebc787052c165afcada0e" prot="public" static="no">
+        <name>NAME</name>
+        <initializer>&quot;XML-RPC CFG C++ Client&quot;</initializer>
+        <briefdescription>
+<para>NAME. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="86" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TemplateAFIS_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>&quot;0.1&quot;</initializer>
+        <briefdescription>
+<para>VERSION. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="90" column="9" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Es el archivo de cabecera (header) para <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>. Conecta llos archivos de las carpetas de firma_digital, Conexion_webservice, y otras cabeceras .h del include. </para>    </briefdescription>
+    <detaileddescription>
+<para>OPTIMIZAR: Revisar las bibliotecas, porque es posible que alguna ya no esté en uso.</para><para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. <ulink url="mailto:contacto@simonrodriguez.org.ve">contacto@simonrodriguez.org.ve</ulink> </para></simplesect>
+<simplesect kind="authors"><para>Lcdo. César Cordero, Ing. Servio Zambrano y Ángel Ramírez Isea. </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>2014 This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>_TemplateAFIS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TemplateAFIS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*Las<sp/>bibliotecas<sp/><sp/>de<sp/>XML-RPC<sp/>y<sp/>JPEG<sp/>que<sp/>son<sp/>para<sp/>conectarse<sp/>a<sp/>un<sp/>webservice<sp/>y<sp/>para<sp/>las<sp/>imágenes:*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;xmlrpc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;xmlrpc_cgi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;XmlRpcCpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;jpeglib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*Bibliotecas<sp/>son<sp/>para<sp/>la<sp/>conexión<sp/>encriptada<sp/>(por<sp/>SSL):*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/pem.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/ssl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/rsa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/evp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/bio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openssl/err.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*Cabeceras<sp/>específicas<sp/>del<sp/>captahuellas<sp/>y<sp/>archivos<sp/>generados<sp/>para<sp/>el<sp/>uso<sp/>del<sp/>captahuellas:*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="UFMatcher_8h" kindref="compound">UFMatcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="UFScanner_8h" kindref="compound">UFScanner.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../firma_digital/FirmaDigital.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Utilidades.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;../Conexion_c++/Variables.cpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Conexion_webservice/Variables_Webservice_OpenERP.cpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ws_8h" kindref="compound">ws.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="TemplateAFIS_8h_1ae134eaccb22e4bdbdbafacfab8cfb7db" refkind="member"><highlight class="preprocessor">#define<sp/>MAX_TEMPLATE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>384</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="TemplateAFIS_8h_1ad36343025eff7ee440fcd571772b4146" refkind="member"><highlight class="preprocessor">#define<sp/>BD_SIN_DATOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-661</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="TemplateAFIS_8h_1ae68001722877f3b60b7006e17dcdf9b0" refkind="member"><highlight class="preprocessor">#define<sp/>BD_COUNT_CERO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-662</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="TemplateAFIS_8h_1a77d9a75c3355bbcdcbedb6ce436f9cda" refkind="member"><highlight class="preprocessor">#define<sp/>BD_COUNT_MAYOR_CERO<sp/><sp/><sp/><sp/>-663</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="TemplateAFIS_8h_1a022e8c92dea810146cd6e30eb8442261" refkind="member"><highlight class="preprocessor">#define<sp/>BD_TRANSACTION_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-664</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="TemplateAFIS_8h_1a82f2e618c81fa0903996f94311dc4f48" refkind="member"><highlight class="preprocessor">#define<sp/>UFS_POCA_CALIDAD_IMAGEN<sp/>-761</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="TemplateAFIS_8h_1a2a8b1ef25ec40c37c53c3e867fc55e3d" refkind="member"><highlight class="preprocessor">#define<sp/>UFM_IDENTIFICATION_ERROR<sp/>-861</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="TemplateAFIS_8h_1a0b1cc26b5ecbd1f2cbb2489bff63566b" refkind="member"><highlight class="preprocessor">#define<sp/>UFM_VERIFICATION_ERROR<sp/><sp/><sp/>-961</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="TemplateAFIS_8h_1a47f2e62c0dbebc787052c165afcada0e" refkind="member"><highlight class="preprocessor">#define<sp/>NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;XML-RPC<sp/>CFG<sp/>C++<sp/>Client&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="TemplateAFIS_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" refkind="member"><highlight class="preprocessor">#define<sp/>VERSION<sp/><sp/><sp/><sp/>&quot;0.1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classImagen" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImagen" kindref="compound">Imagen</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102" refid="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" kindref="member">imagen</ref>;</highlight></codeline>
+<codeline lineno="106" refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" kindref="member">nWidth</ref>;</highlight></codeline>
+<codeline lineno="110" refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" kindref="member">nHeight</ref>;</highlight></codeline>
+<codeline lineno="114" refid="classImagen_1adb26157b4817c521f092f024d28b9435" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1adb26157b4817c521f092f024d28b9435" kindref="member">nSize</ref>;</highlight></codeline>
+<codeline lineno="118" refid="classImagen_1a92940ae8127167d1a7041a365555a931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a92940ae8127167d1a7041a365555a931" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="122" refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" kindref="member">id_persona</ref>;</highlight></codeline>
+<codeline lineno="126" refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>;</highlight></codeline>
+<codeline lineno="130" refid="classImagen_1a6ac88dc4f15daed005f1055235020821" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" kindref="member">Imagen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>imagen,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nHeight,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSize,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id_persona,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id_dedo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mano);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" kindref="member">~Imagen</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="classImagen_1a676804752c281116609460f738b74924" kindref="member">getImagen</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;imagen);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a4f973d4f8e63503c3e0b4649a95e0188" kindref="member">getWidth</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a1f243282c3f962c9694b53bc9106215b" kindref="member">getHeight</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1afa3177842fed7750c8c51eeeaf108adb" kindref="member">getSize</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a4cac81ed0243f264dcbaae552b936038" kindref="member">getId</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6fe8c566e03b1c6e2d6818b1886ad522" kindref="member">getIdPersona</ref>();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1af8f9c814f372583821f412e2475e9fda" kindref="member">getIdDedo</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a687160f46f2e80fee30dac0955268c39" kindref="member">getMano</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" kindref="member">sizeofObject</ref>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classTemplateAFIS__webservice" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="209" refid="classTemplateAFIS__webservice_1a9e97e8c2a5aa5de8ee51fbdfe4644c39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref><sp/><ref refid="classTemplateAFIS__webservice_1a9e97e8c2a5aa5de8ee51fbdfe4644c39" kindref="member">m_hMatcher</ref>;</highlight></codeline>
+<codeline lineno="213" refid="classTemplateAFIS__webservice_1a955d31aac4c820b4399ccbafe1b59b63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1a955d31aac4c820b4399ccbafe1b59b63" kindref="member">tipo_template</ref>;</highlight></codeline>
+<codeline lineno="217" refid="classTemplateAFIS__webservice_1a8809dc8920da337f97252597ef492671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1a8809dc8920da337f97252597ef492671" kindref="member">m_nSecurityLevel</ref>;</highlight></codeline>
+<codeline lineno="221" refid="classTemplateAFIS__webservice_1a2c8421c26cc3dd7d6a3295ace4fd82ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1a2c8421c26cc3dd7d6a3295ace4fd82ce" kindref="member">m_bFastMode</ref>;</highlight></codeline>
+<codeline lineno="225" refid="classTemplateAFIS__webservice_1a83ff03441c588729601736d18eb65afd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m_strError[128];</highlight></codeline>
+<codeline lineno="229" refid="classTemplateAFIS__webservice_1ad979fde0c45dd460249d041a669a9914" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1ad979fde0c45dd460249d041a669a9914" kindref="member">m_nEnrollQuality</ref>;</highlight></codeline>
+<codeline lineno="233" refid="classTemplateAFIS__webservice_1a0d609b06768f2c253f43654966bd41e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1a0d609b06768f2c253f43654966bd41e1" kindref="member">m_nCurScannerIndex</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classTemplateAFIS__webservice_1a09c632296df4dd488ab09fee6e26f4eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/>std::string<sp/><ref refid="classTemplateAFIS__webservice_1a09c632296df4dd488ab09fee6e26f4eb" kindref="member">base64_chars</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="classTemplateAFIS__webservice_1a5be66b367a1276c21ffc3450c1f69643" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTemplateAFIS__webservice_1a5be66b367a1276c21ffc3450c1f69643" kindref="member">padding</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="librawjpeg_8cpp_1a89717143fcd881e495a3afdb70763ab0" kindref="member">convert_raw_jpeg</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*raw,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" kindref="member">nWidth</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" kindref="member">nHeight</ref>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="classTemplateAFIS__webservice_1a829e57a86d8c1c0b17631eebf8a8e0cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref><sp/>*<sp/><ref refid="classTemplateAFIS__webservice_1a829e57a86d8c1c0b17631eebf8a8e0cf" kindref="member">firma_digital</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param2,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param3,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param4,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param5);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pElMismo();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetTipoTemplate(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tipo);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SaveTemplate2ISO();<sp/></highlight><highlight class="comment">//string<sp/>FileName</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SaveImagenWSQ();</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetSecurityLevel();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetFastMode();</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetMatcherSettings();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initMatcher();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>unInitMatcher();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnGetParameters();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnSetTemplateType(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnEnroll(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" kindref="member">id_persona</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hash,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;m_template,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_template_size,<sp/></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>&amp;pImageData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" kindref="member">nWidth</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" kindref="member">nHeight</ref>,<sp/></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;id_persona_out,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;id_dedo_out,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;mano_out);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnVerify(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id_proyecto,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" kindref="member">id_persona</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;Template,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TemplateSize,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;dedo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;hand,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;situr);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*int<sp/>iteracionIdentify(bool<sp/>&amp;estado,<sp/>long<sp/>int<sp/>&amp;i,<sp/>string<sp/>&amp;id_persona_result,<sp/>string<sp/>&amp;id_dedo_result,<sp/>string<sp/>&amp;mano_result,<sp/>long<sp/>int<sp/>&amp;id_partner,<sp/>string<sp/>&amp;id_dedo,<sp/>string<sp/>&amp;mano,<sp/>unsigned<sp/>char<sp/>*<sp/>&amp;Template,<sp/>int<sp/>&amp;TemplateSize,<sp/>int<sp/>&amp;ufm_res,<sp/>int<sp/>&amp;bVerifySucceed);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*int<sp/>OnIdentifyVerify(string<sp/>usuario,<sp/>string<sp/>password,<sp/>unsigned<sp/>char<sp/>*<sp/>&amp;Template,<sp/>int<sp/>TemplateSize,<sp/>string<sp/>cedula,<sp/>string<sp/>id_dedo,<sp/>string<sp/>mano,<sp/>string<sp/>&amp;cedula_out,<sp/>string<sp/>&amp;dedo_out,<sp/>string<sp/>&amp;hand_out);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnIdentify(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>Template,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TemplateSize,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula_in,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;dedo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;hand);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnIdentifyOnVerify(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;Template,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TemplateSize,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula_in,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;dedo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;hand,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;situr);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>salvarJPEG(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" kindref="member">id_persona</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;imagen_buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<ref refid="librawjpeg_8cpp_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<ref refid="librawjpeg_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;size,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;id_imagen);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comprobar(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getUsuario(xmlrpc_env<sp/>*<sp/>env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDatosHuella(xmlrpc_env<sp/>*env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDatosPersonaOBPP(xmlrpc_env<sp/>*env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>codigo_obpp,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDatosPersona(xmlrpc_env<sp/>*env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDatosPersonaVerificacion(xmlrpc_env<sp/>*env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDatosIdImagen(xmlrpc_env<sp/>*env,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>,<sp/>xmlrpc_value<sp/>*<sp/>&amp;myArrayP);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>borrarHuella(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>archivo_webservice_config(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>directorio,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>config_url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>default_url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>*<sp/>&amp;params);</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getWebServiceOpenERP(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pass,<sp/><ref refid="classFingerprint" kindref="compound">Fingerprint</ref><sp/>*<sp/>&amp;fing);</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getWebServiceGUIOpenERP(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pass,<sp/><ref refid="classGuiWsOpenErp" kindref="compound">GuiWsOpenErp</ref><sp/>*<sp/>&amp;fing);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>base64_decodestring(std::string<sp/>text,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>&amp;out,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>&amp;tlen);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_base64(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/>std::string<sp/>base64_decode_crypt(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>encoded_string);</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>base64_encode_crypt(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>bytes_to_encode,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in_len);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/>RSA<sp/>*<sp/>createRSA(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>key,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>publica);</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>public_encrypt(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_len,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*encrypted);</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>private_decrypt(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>enc_data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_len,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*decrypted);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>private_encrypt(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_len,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*encrypted);</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>public_decrypt(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>enc_data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_len,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*decrypted);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>leerTodoUnArchivo(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombre_archivo);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>desencriptarPrivada(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>encriptado_base64);</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>guardarIncidencia(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>usuario,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" kindref="member">id_persona</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" kindref="member">id_dedo</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6ac88dc4f15daed005f1055235020821" kindref="member">mano</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id_proyecto);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h"/>
+  </compounddef>
+</doxygen>

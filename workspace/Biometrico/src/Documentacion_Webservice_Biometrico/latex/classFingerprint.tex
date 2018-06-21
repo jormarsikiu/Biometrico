@@ -1,0 +1,711 @@
+\hypertarget{classFingerprint}{}\section{Referencia de la Clase Fingerprint}
+\label{classFingerprint}\index{Fingerprint@{Fingerprint}}
+
+
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFingerprint_a49a71ef02669dc397c509304fa465714}{Fingerprint} (string \hyperlink{classFingerprint_a673ea9e701f981e8d47873da6c018959}{dbname}, string \hyperlink{classFingerprint_a23d9e08e3e34d64fcf0771a1c2590a4e}{user}, string \hyperlink{classFingerprint_a1e4d2c44581328219f378933b30c9828}{pwd}, string \hyperlink{classFingerprint_a3e3626c36b44fa9d7d522196e2d121ff}{U\+RL})
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \hyperlink{classFingerprint}{Fingerprint}. \end{DoxyCompactList}\item 
+long int \hyperlink{classFingerprint_ac96e54eb5987d3cd64bcdef3ea5107d8}{get\+U\+ID} ()
+\begin{DoxyCompactList}\small\item\em Get U\+ID\+: Realiza login. Se crea la matriz (array) con cada parámetro que Odoo necesita para loguear al usuario (chequea la base de datos, usuario y clave para el logueo). Todos los valores son procesados por Xml\+Rpc\+Value. \end{DoxyCompactList}\item 
+bool \hyperlink{classFingerprint_a162821c388965772022ac5aeaf52be63}{is\+U\+RE} (Xml\+Rpc\+Client server\+\_\+search)
+\begin{DoxyCompactList}\small\item\em Is U\+RE\+: Pregunta si un usuario es U\+RE. Se buscan la huella y la plantilla a partir de una cédula u otro identificador del vocero. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_ae1db425a60d85686567fc95ec23fb497}{search\+Persona} (Xml\+Rpc\+Client server\+\_\+search, string cedula=\char`\"{}\char`\"{}, long int partner\+\_\+id=0)
+\begin{DoxyCompactList}\small\item\em Search Persona\+: Busca una persona por cédula o partner\+\_\+id. O\+P\+T\+I\+M\+I\+Z\+AR\+: Cambiar todos los search posibles por browse. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_a83bbd80ab7157b66a568c8a354f86f02}{read\+Vat\+Persona} (Xml\+Rpc\+Client server\+\_\+search, Xml\+Rpc\+Value partner\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Read Vat Persona\+: Ubica las huellas de la persona en base a su por partner\+\_\+id. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_a35437b95c59d90bb3719f3d90f5f300b}{search\+Fingerprint} (Xml\+Rpc\+Client server\+\_\+search, int finger=0, string hand=\char`\"{}\char`\"{}, long int partner\+\_\+id=0)
+\begin{DoxyCompactList}\small\item\em Search \hyperlink{classFingerprint}{Fingerprint}\+: Busca una huella específica por dedo, mano e Id partner. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_a0aec9bd56a3983b0f5662c82258c32e2}{read\+Fingerprint\+Image\+Id} (Xml\+Rpc\+Client server\+\_\+search, Xml\+Rpc\+Value fingerprint\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Método read\+Fingerprint\+Image\+Id\+: Obtiene el campo image\+\_\+id de la tabla. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_af2bb2ab8e1a31d1b7e41d39b728d1bb5}{read\+Fingerprint} (Xml\+Rpc\+Client server\+\_\+search, int finger=0, string hand=\char`\"{}\char`\"{}, long int partner\+\_\+id=0)
+\begin{DoxyCompactList}\small\item\em Método read\+Fingerprint\+: Es una función polimorfa. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_a62325335130ebc1a65263ce5cf18ddf8}{read\+Fingerprint} (Xml\+Rpc\+Client server\+\_\+search, Xml\+Rpc\+Value fingerprint\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Método read\+Fingerprint\+: Es una función polimorfa. Recibe los parámetros Xml\+Rpc\+Client server\+\_\+search, Xml\+Rpc\+Value fingerprint\+\_\+id. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_a1060a55c0807ddea7c8ce3235f3bab49}{read\+Fingerprint\+Image} (Xml\+Rpc\+Client server\+\_\+search, int finger=0, string hand=\char`\"{}\char`\"{}, long int partner\+\_\+id=0)
+\begin{DoxyCompactList}\small\item\em Método read\+Fingerprint\+Image\+: Obtiene todos los campos de la tabla res.\+partner.\+fingerprint.\+image. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classFingerprint_adbf6af7ab3485df438e8525b4089e28a}{search\+Fingerprint\+Image} (Xml\+Rpc\+Client server\+\_\+search, long int fingerprint\+\_\+id=0)
+\begin{DoxyCompactList}\small\item\em Método search\+Fingerprint\+Image\+: Obtiene el ID de la tabla\+: res.\+partner.\+fingerprint.\+image. \end{DoxyCompactList}\item 
+int \hyperlink{classFingerprint_ad21765e70cee5626ca35007dc115e1e3}{insertar\+Fingerprint\+Img} (unsigned char $\ast$buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$image, long int image\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Método insertar\+Fingerprint\+Img\+: Inserta los campos en las tablas\+: res.\+partner.\+fingerprint.\+image y res.\+partner.\+fingerprint. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classFingerprint_a2d4e78e328f46d57aff25a40f69a6064}{base64} (unsigned char $\ast$\&input, long int length)
+\begin{DoxyCompactList}\small\item\em Método base64\+: Convierte de unsigned char $\ast$ a Base64. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{classFingerprint_a4f4c8a3a0e248d18f69c6057562b8031}{base64\+\_\+decodestring} (std\+::string text)
+\begin{DoxyCompactList}\small\item\em Método base64\+\_\+decodestring\+: Decodifica un string Base64 a un unsigned char $\ast$. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classFingerprint_aefb69bba57960202c3763d61416be5d7}{str2md5} (const char $\ast$str, int length)
+\begin{DoxyCompactList}\small\item\em Método str2md5\+: Codifica un string a \hyperlink{classMD5}{M\+D5}. \end{DoxyCompactList}\item 
+int \hyperlink{classFingerprint_a049f81227a4f59f459c2f52627f12d76}{insertar\+Fingerprint\+Web\+Service} (unsigned char $\ast$\&buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$\&image, long int image\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Método insertar\+Fingerprint\+Web\+Service\+: Inserta los campos en las tablas\+: res.\+partner.\+fingerprint.\+image y res.\+partner.\+fingerprint. \end{DoxyCompactList}\item 
+bool \hyperlink{classFingerprint_a5194ba2b4266c2d030ac2a7d41778aad}{actualizar\+Fingerprint\+Img} (unsigned char $\ast$buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$image, long int image\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Método actualizar\+Fingerprint\+Img\+: Actualiza un registro en la tabla res.\+partner.\+fingerprint.\+image. Es la función para actualizar huellas. Para actualizar primero se ubica (search\+Fingerprint) y con ese ID se sobreescribe. \end{DoxyCompactList}\item 
+bool \hyperlink{classFingerprint_abbe118d1fdaaba8d64c6e17320c7c835}{actualizar\+Fingerprint\+Web\+Service} (unsigned char $\ast$\&buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$\&image, long int image\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Método actualizar\+Fingerprint\+Web\+Service\+: Actualiza un registro en la tabla\+: res.\+partner.\+fingerprint. \end{DoxyCompactList}\item 
+int \hyperlink{classFingerprint_a991f8682bd5fb908804eb35e2c584d17}{borrar\+Fingerprint\+Img} (int finger, string hand, long int partner\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Método borrar\+Fingerprint\+Img\+: Borrar un registro de la tabla\+: res.\+partner.\+fingerprint.\+image. Función para eliminar huellas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classFingerprint_a673ea9e701f981e8d47873da6c018959}{dbname}
+\begin{DoxyCompactList}\small\item\em dbname \end{DoxyCompactList}\item 
+string \hyperlink{classFingerprint_a23d9e08e3e34d64fcf0771a1c2590a4e}{user}
+\begin{DoxyCompactList}\small\item\em user \end{DoxyCompactList}\item 
+string \hyperlink{classFingerprint_a1e4d2c44581328219f378933b30c9828}{pwd}
+\begin{DoxyCompactList}\small\item\em pwd \end{DoxyCompactList}\item 
+string \hyperlink{classFingerprint_a3e3626c36b44fa9d7d522196e2d121ff}{U\+RL}
+\begin{DoxyCompactList}\small\item\em U\+RL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP. 
+
+Definición en la línea 43 del archivo Fingerprint.\+cpp.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classFingerprint_a49a71ef02669dc397c509304fa465714}{}\label{classFingerprint_a49a71ef02669dc397c509304fa465714} 
+\index{Fingerprint@{Fingerprint}!Fingerprint@{Fingerprint}}
+\index{Fingerprint@{Fingerprint}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{Fingerprint()}{Fingerprint()}}
+{\footnotesize\ttfamily Fingerprint\+::\+Fingerprint (\begin{DoxyParamCaption}\item[{string}]{dbname,  }\item[{string}]{user,  }\item[{string}]{pwd,  }\item[{string}]{U\+RL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \hyperlink{classFingerprint}{Fingerprint}. 
+
+
+
+Definición en la línea 67 del archivo Fingerprint.\+cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classFingerprint_a5194ba2b4266c2d030ac2a7d41778aad}{}\label{classFingerprint_a5194ba2b4266c2d030ac2a7d41778aad} 
+\index{Fingerprint@{Fingerprint}!actualizar\+Fingerprint\+Img@{actualizar\+Fingerprint\+Img}}
+\index{actualizar\+Fingerprint\+Img@{actualizar\+Fingerprint\+Img}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{actualizar\+Fingerprint\+Img()}{actualizarFingerprintImg()}}
+{\footnotesize\ttfamily bool Fingerprint\+::actualizar\+Fingerprint\+Img (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer\+\_\+template,  }\item[{string}]{hash,  }\item[{int}]{finger,  }\item[{string}]{hand,  }\item[{long int}]{partner\+\_\+id,  }\item[{int}]{template\+\_\+size,  }\item[{int}]{image\+\_\+height,  }\item[{int}]{image\+\_\+width,  }\item[{unsigned char $\ast$}]{image,  }\item[{long int}]{image\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método actualizar\+Fingerprint\+Img\+: Actualiza un registro en la tabla res.\+partner.\+fingerprint.\+image. Es la función para actualizar huellas. Para actualizar primero se ubica (search\+Fingerprint) y con ese ID se sobreescribe. 
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: $\ast$ No está activa en esta versión Se sustituyó por la bool \hyperlink{classFingerprint_a5194ba2b4266c2d030ac2a7d41778aad}{actualizar\+Fingerprint\+Img(unsigned char $\ast$buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$ image, long int image\+\_\+size)} 
+\begin{DoxyParams}{Parámetros}
+{\em buffer\+\_\+template} & Huella \\
+\hline
+{\em hash} & Hash \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+{\em template\+\_\+size} & Tamaño Huella \\
+\hline
+{\em image\+\_\+height} & Alto imagen \\
+\hline
+{\em image\+\_\+width} & Ancho imagen \\
+\hline
+{\em image} & \hyperlink{classImagen}{Imagen} \\
+\hline
+{\em image\+\_\+size} & Tamaño imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Estado de actualización 
+\end{DoxyReturn}
+
+
+Definición en la línea 775 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_abbe118d1fdaaba8d64c6e17320c7c835}{}\label{classFingerprint_abbe118d1fdaaba8d64c6e17320c7c835} 
+\index{Fingerprint@{Fingerprint}!actualizar\+Fingerprint\+Web\+Service@{actualizar\+Fingerprint\+Web\+Service}}
+\index{actualizar\+Fingerprint\+Web\+Service@{actualizar\+Fingerprint\+Web\+Service}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{actualizar\+Fingerprint\+Web\+Service()}{actualizarFingerprintWebService()}}
+{\footnotesize\ttfamily bool Fingerprint\+::actualizar\+Fingerprint\+Web\+Service (\begin{DoxyParamCaption}\item[{unsigned char $\ast$\&}]{buffer\+\_\+template,  }\item[{string}]{hash,  }\item[{int}]{finger,  }\item[{string}]{hand,  }\item[{long int}]{partner\+\_\+id,  }\item[{int}]{template\+\_\+size,  }\item[{int}]{image\+\_\+height,  }\item[{int}]{image\+\_\+width,  }\item[{unsigned char $\ast$\&}]{image,  }\item[{long int}]{image\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método actualizar\+Fingerprint\+Web\+Service\+: Actualiza un registro en la tabla\+: res.\+partner.\+fingerprint. 
+
+Función actual para actualizar huellas usa el browse / read / search 
+\begin{DoxyParams}{Parámetros}
+{\em buffer\+\_\+template} & Huella \\
+\hline
+{\em hash} & Hash \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+{\em template\+\_\+size} & Tamaño Huella \\
+\hline
+{\em image\+\_\+height} & Alto imagen \\
+\hline
+{\em image\+\_\+width} & Ancho imagen \\
+\hline
+{\em image} & \hyperlink{classImagen}{Imagen} \\
+\hline
+{\em image\+\_\+size} & Tamaño imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Estado de actualización 
+\end{DoxyReturn}
+
+
+Definición en la línea 861 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll().
+
+\hypertarget{classFingerprint_a2d4e78e328f46d57aff25a40f69a6064}{}\label{classFingerprint_a2d4e78e328f46d57aff25a40f69a6064} 
+\index{Fingerprint@{Fingerprint}!base64@{base64}}
+\index{base64@{base64}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{base64()}{base64()}}
+{\footnotesize\ttfamily char$\ast$ Fingerprint\+::base64 (\begin{DoxyParamCaption}\item[{unsigned char $\ast$\&}]{input,  }\item[{long int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método base64\+: Convierte de unsigned char $\ast$ a Base64. 
+
+Sirve para convertir texto en U\+U\+C\+O\+DE de base 64, que se usa para «desbinarizar» la plantilla binaria. Se desbinariza por compatibilidad con los tipos de datos de X\+ML R\+PC. Las imágenes binarias en internet se movían como texto U\+U\+Encoded. X\+ML R\+PC sólo acepta datos en matrices no-\/binarias. Si el argumento de la petición es un template, debemos codificarla a texto. Odoo admite peticiones a su webservice en X\+ML. 
+\begin{DoxyParams}{Parámetros}
+{\em input} & Raw \\
+\hline
+{\em length} & Tamaño Raw \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Texto en base64 
+\end{DoxyReturn}
+
+
+Definición en la línea 605 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a4f4c8a3a0e248d18f69c6057562b8031}{}\label{classFingerprint_a4f4c8a3a0e248d18f69c6057562b8031} 
+\index{Fingerprint@{Fingerprint}!base64\+\_\+decodestring@{base64\+\_\+decodestring}}
+\index{base64\+\_\+decodestring@{base64\+\_\+decodestring}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{base64\+\_\+decodestring()}{base64\_decodestring()}}
+{\footnotesize\ttfamily unsigned char$\ast$ Fingerprint\+::base64\+\_\+decodestring (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método base64\+\_\+decodestring\+: Decodifica un string Base64 a un unsigned char $\ast$. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em text} & Texto Base64 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Raw 
+\end{DoxyReturn}
+
+
+Definición en la línea 632 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a991f8682bd5fb908804eb35e2c584d17}{}\label{classFingerprint_a991f8682bd5fb908804eb35e2c584d17} 
+\index{Fingerprint@{Fingerprint}!borrar\+Fingerprint\+Img@{borrar\+Fingerprint\+Img}}
+\index{borrar\+Fingerprint\+Img@{borrar\+Fingerprint\+Img}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{borrar\+Fingerprint\+Img()}{borrarFingerprintImg()}}
+{\footnotesize\ttfamily int Fingerprint\+::borrar\+Fingerprint\+Img (\begin{DoxyParamCaption}\item[{int}]{finger,  }\item[{string}]{hand,  }\item[{long int}]{partner\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método borrar\+Fingerprint\+Img\+: Borrar un registro de la tabla\+: res.\+partner.\+fingerprint.\+image. Función para eliminar huellas. 
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Puede que no se use porque usa usa res.\+partner.\+fingerprint.\+image en lugar de webservice.\+methods. 
+\begin{DoxyParams}{Parámetros}
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Estado de borrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 928 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella().
+
+\hypertarget{classFingerprint_ac96e54eb5987d3cd64bcdef3ea5107d8}{}\label{classFingerprint_ac96e54eb5987d3cd64bcdef3ea5107d8} 
+\index{Fingerprint@{Fingerprint}!get\+U\+ID@{get\+U\+ID}}
+\index{get\+U\+ID@{get\+U\+ID}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{get\+U\+I\+D()}{getUID()}}
+{\footnotesize\ttfamily long int Fingerprint\+::get\+U\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get U\+ID\+: Realiza login. Se crea la matriz (array) con cada parámetro que Odoo necesita para loguear al usuario (chequea la base de datos, usuario y clave para el logueo). Todos los valores son procesados por Xml\+Rpc\+Value. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna U\+ID de Usuario U\+R\+E.\+Si es 0 devuelve error (credenciales erradas). Sólo los usuarios con permisos de U\+RE (Coordinadores de las Unidades Receptoras Estadales) pueden usar el sistema de huellas. 
+\end{DoxyReturn}
+
+
+Definición en la línea 84 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_ad21765e70cee5626ca35007dc115e1e3}{}\label{classFingerprint_ad21765e70cee5626ca35007dc115e1e3} 
+\index{Fingerprint@{Fingerprint}!insertar\+Fingerprint\+Img@{insertar\+Fingerprint\+Img}}
+\index{insertar\+Fingerprint\+Img@{insertar\+Fingerprint\+Img}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{insertar\+Fingerprint\+Img()}{insertarFingerprintImg()}}
+{\footnotesize\ttfamily int Fingerprint\+::insertar\+Fingerprint\+Img (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer\+\_\+template,  }\item[{string}]{hash,  }\item[{int}]{finger,  }\item[{string}]{hand,  }\item[{long int}]{partner\+\_\+id,  }\item[{int}]{template\+\_\+size,  }\item[{int}]{image\+\_\+height,  }\item[{int}]{image\+\_\+width,  }\item[{unsigned char $\ast$}]{image,  }\item[{long int}]{image\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método insertar\+Fingerprint\+Img\+: Inserta los campos en las tablas\+: res.\+partner.\+fingerprint.\+image y res.\+partner.\+fingerprint. 
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: No se usa en esta versión. Actualmente usa el modelo webservice.\+methods
+
+Se sustituyó por el método\+: int \hyperlink{classFingerprint_a049f81227a4f59f459c2f52627f12d76}{insertar\+Fingerprint\+Web\+Service(unsigned char $\ast$ \&buffer\+\_\+template, string hash, int finger, string hand, long int partner\+\_\+id, int template\+\_\+size, int image\+\_\+height, int image\+\_\+width, unsigned char $\ast$ \&image, long int image\+\_\+size)}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em buffer\+\_\+template} & Huella \\
+\hline
+{\em hash} & Hash \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+{\em template\+\_\+size} & Tamaño Huella \\
+\hline
+{\em image\+\_\+height} & Alto imagen \\
+\hline
+{\em image\+\_\+width} & Ancho imagen \\
+\hline
+{\em image} & \hyperlink{classImagen}{Imagen} \\
+\hline
+{\em image\+\_\+size} & Tamaño imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Estado de inserción 
+\end{DoxyReturn}
+
+
+Definición en la línea 538 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a049f81227a4f59f459c2f52627f12d76}{}\label{classFingerprint_a049f81227a4f59f459c2f52627f12d76} 
+\index{Fingerprint@{Fingerprint}!insertar\+Fingerprint\+Web\+Service@{insertar\+Fingerprint\+Web\+Service}}
+\index{insertar\+Fingerprint\+Web\+Service@{insertar\+Fingerprint\+Web\+Service}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{insertar\+Fingerprint\+Web\+Service()}{insertarFingerprintWebService()}}
+{\footnotesize\ttfamily int Fingerprint\+::insertar\+Fingerprint\+Web\+Service (\begin{DoxyParamCaption}\item[{unsigned char $\ast$\&}]{buffer\+\_\+template,  }\item[{string}]{hash,  }\item[{int}]{finger,  }\item[{string}]{hand,  }\item[{long int}]{partner\+\_\+id,  }\item[{int}]{template\+\_\+size,  }\item[{int}]{image\+\_\+height,  }\item[{int}]{image\+\_\+width,  }\item[{unsigned char $\ast$\&}]{image,  }\item[{long int}]{image\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método insertar\+Fingerprint\+Web\+Service\+: Inserta los campos en las tablas\+: res.\+partner.\+fingerprint.\+image y res.\+partner.\+fingerprint. 
+
+Es una función para insertar las huellas a Odoo. Toma los datos del cliente, los arma en una matriz (array) que X\+ML R\+PC pueda interpretar, e invoca el método correspondiente en el webservice de Odoo. Convierte la imagen de binario a texto y de texto a cadena X\+ML R\+PC. webservice.\+methods es el modelo de Odoo que instancia el webservice de Odoo. Odoo tiene su propio cliente web, y se relaciona con la base de datos mediante ese webservice «interno». 
+\begin{DoxyParams}{Parámetros}
+{\em buffer\+\_\+template} & Huella \\
+\hline
+{\em hash} & Hash \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+{\em template\+\_\+size} & Tamaño Huella \\
+\hline
+{\em image\+\_\+height} & Alto imagen \\
+\hline
+{\em image\+\_\+width} & Ancho imagen \\
+\hline
+{\em image} & \hyperlink{classImagen}{Imagen} \\
+\hline
+{\em image\+\_\+size} & Tamaño imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Estado de inserción 
+\end{DoxyReturn}
+
+
+Definición en la línea 710 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll().
+
+\hypertarget{classFingerprint_a162821c388965772022ac5aeaf52be63}{}\label{classFingerprint_a162821c388965772022ac5aeaf52be63} 
+\index{Fingerprint@{Fingerprint}!is\+U\+RE@{is\+U\+RE}}
+\index{is\+U\+RE@{is\+U\+RE}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{is\+U\+R\+E()}{isURE()}}
+{\footnotesize\ttfamily bool Fingerprint\+::is\+U\+RE (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is U\+RE\+: Pregunta si un usuario es U\+RE. Se buscan la huella y la plantilla a partir de una cédula u otro identificador del vocero. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em model} & es el modelo (tablas de la base de datos) de Odoo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna si es U\+RE o no es U\+RE. Esta función devuelve los I\+Ds de las huellas que tenga la persona. 
+\end{DoxyReturn}
+
+
+Definición en la línea 136 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::comprobar().
+
+\hypertarget{classFingerprint_af2bb2ab8e1a31d1b7e41d39b728d1bb5}{}\label{classFingerprint_af2bb2ab8e1a31d1b7e41d39b728d1bb5} 
+\index{Fingerprint@{Fingerprint}!read\+Fingerprint@{read\+Fingerprint}}
+\index{read\+Fingerprint@{read\+Fingerprint}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{read\+Fingerprint()}{readFingerprint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::read\+Fingerprint (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{int}]{finger = {\ttfamily 0},  }\item[{string}]{hand = {\ttfamily \char`\"{}\char`\"{}},  }\item[{long int}]{partner\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método read\+Fingerprint\+: Es una función polimorfa. 
+
+Es una función de búsqueda general. Dependiendo del input, hace diferentes búsquedas. Recibe los parámetros int finger = 0, string hand = \char`\"{}\char`\"{}, long int partner\+\_\+id = 0. Obtiene todos los campos de la tabla\+: res.\+partner.\+fingerprint.
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: No es seguro que se use actualmente. Es posible que se elimine en la revisión. 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 353 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify() y Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify().
+
+\hypertarget{classFingerprint_a62325335130ebc1a65263ce5cf18ddf8}{}\label{classFingerprint_a62325335130ebc1a65263ce5cf18ddf8} 
+\index{Fingerprint@{Fingerprint}!read\+Fingerprint@{read\+Fingerprint}}
+\index{read\+Fingerprint@{read\+Fingerprint}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{read\+Fingerprint()}{readFingerprint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::read\+Fingerprint (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{Xml\+Rpc\+Value}]{fingerprint\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método read\+Fingerprint\+: Es una función polimorfa. Recibe los parámetros Xml\+Rpc\+Client server\+\_\+search, Xml\+Rpc\+Value fingerprint\+\_\+id. 
+
+Obtiene todos los campos de la tabla\+: res.\+partner.\+fingerprint. 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em fingerprint\+\_\+id} & Id \hyperlink{classFingerprint}{Fingerprint} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 380 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a1060a55c0807ddea7c8ce3235f3bab49}{}\label{classFingerprint_a1060a55c0807ddea7c8ce3235f3bab49} 
+\index{Fingerprint@{Fingerprint}!read\+Fingerprint\+Image@{read\+Fingerprint\+Image}}
+\index{read\+Fingerprint\+Image@{read\+Fingerprint\+Image}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{read\+Fingerprint\+Image()}{readFingerprintImage()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::read\+Fingerprint\+Image (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{int}]{finger = {\ttfamily 0},  }\item[{string}]{hand = {\ttfamily \char`\"{}\char`\"{}},  }\item[{long int}]{partner\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método read\+Fingerprint\+Image\+: Obtiene todos los campos de la tabla res.\+partner.\+fingerprint.\+image. 
+
+Es una función de consulta general, pero en base a dedo, mano y el ID de la persona.
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: No se esta usando 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em finger} & Finger \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 423 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+E\+G().
+
+\hypertarget{classFingerprint_a0aec9bd56a3983b0f5662c82258c32e2}{}\label{classFingerprint_a0aec9bd56a3983b0f5662c82258c32e2} 
+\index{Fingerprint@{Fingerprint}!read\+Fingerprint\+Image\+Id@{read\+Fingerprint\+Image\+Id}}
+\index{read\+Fingerprint\+Image\+Id@{read\+Fingerprint\+Image\+Id}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{read\+Fingerprint\+Image\+Id()}{readFingerprintImageId()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::read\+Fingerprint\+Image\+Id (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{Xml\+Rpc\+Value}]{fingerprint\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método read\+Fingerprint\+Image\+Id\+: Obtiene el campo image\+\_\+id de la tabla. 
+
+Sirve para ubicar la imagen que se muestra para cada huella. De la imagen podemos obtener la plantilla (template que tiene la información geométrica de las minucias.), pero en realidad se guarda para mostrarla. Se hacen las comparaciones en base a las plantillas que genera automáticamente el captahuellas.
+
+El captahuellas escanea la huella y mejora brillo y contraste automáticamente. Almacena un mapa de bits. El mismo captahuellas procesa la imagen y extrae las minucias según los conceptos de la imagen (islas, bifurcaciones, deltas, vacíos, etc.) Esas minucias se guardan en un archivo binario de unos 200 -\/ 300 bytes. Y el mapa de bits también se almacena. Con ese último método, se busca la imagen de la huella. La comparación en base a las planillas es usada para saber si una huella pertenece a una persona (verificación) o a qué persona pertenece una huella (identificación), se comparan plantillas, no imágenes. Es para mostrarla en el cliente.
+
+res.\+partner.\+fingerprint fingerprint\+\_\+id, que es el id de la tabla\+: res.\+partner.\+fingerprint. 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em fingerprint\+\_\+id} & Id tabla res\+\_\+partner\+\_\+fingerprint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 317 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a83bbd80ab7157b66a568c8a354f86f02}{}\label{classFingerprint_a83bbd80ab7157b66a568c8a354f86f02} 
+\index{Fingerprint@{Fingerprint}!read\+Vat\+Persona@{read\+Vat\+Persona}}
+\index{read\+Vat\+Persona@{read\+Vat\+Persona}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{read\+Vat\+Persona()}{readVatPersona()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::read\+Vat\+Persona (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{Xml\+Rpc\+Value}]{partner\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Read Vat Persona\+: Ubica las huellas de la persona en base a su por partner\+\_\+id. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 213 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify() y Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify().
+
+\hypertarget{classFingerprint_a35437b95c59d90bb3719f3d90f5f300b}{}\label{classFingerprint_a35437b95c59d90bb3719f3d90f5f300b} 
+\index{Fingerprint@{Fingerprint}!search\+Fingerprint@{search\+Fingerprint}}
+\index{search\+Fingerprint@{search\+Fingerprint}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{search\+Fingerprint()}{searchFingerprint()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::search\+Fingerprint (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{int}]{finger = {\ttfamily 0},  }\item[{string}]{hand = {\ttfamily \char`\"{}\char`\"{}},  }\item[{long int}]{partner\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search \hyperlink{classFingerprint}{Fingerprint}\+: Busca una huella específica por dedo, mano e Id partner. 
+
+partner\+\_\+id\+: identifica el registro de la persona en la base de datos de Odoo. finger\+: es el dedo (0 a 4, pulgar, índice, medio, anular y meñique). hand\+: es la mano o pie (MD, MI, PD, PI). 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em finger} & Dedo \\
+\hline
+{\em hand} & Mano \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 251 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll().
+
+\hypertarget{classFingerprint_adbf6af7ab3485df438e8525b4089e28a}{}\label{classFingerprint_adbf6af7ab3485df438e8525b4089e28a} 
+\index{Fingerprint@{Fingerprint}!search\+Fingerprint\+Image@{search\+Fingerprint\+Image}}
+\index{search\+Fingerprint\+Image@{search\+Fingerprint\+Image}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{search\+Fingerprint\+Image()}{searchFingerprintImage()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::search\+Fingerprint\+Image (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{long int}]{fingerprint\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método search\+Fingerprint\+Image\+: Obtiene el ID de la tabla\+: res.\+partner.\+fingerprint.\+image. 
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: No se usa porque ya lo resuelve Odoo 
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em fingerprint\+\_\+id} & Id \hyperlink{classFingerprint}{Fingerprint} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 485 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_ae1db425a60d85686567fc95ec23fb497}{}\label{classFingerprint_ae1db425a60d85686567fc95ec23fb497} 
+\index{Fingerprint@{Fingerprint}!search\+Persona@{search\+Persona}}
+\index{search\+Persona@{search\+Persona}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{search\+Persona()}{searchPersona()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Fingerprint\+::search\+Persona (\begin{DoxyParamCaption}\item[{Xml\+Rpc\+Client}]{server\+\_\+search,  }\item[{string}]{cedula = {\ttfamily \char`\"{}\char`\"{}},  }\item[{long int}]{partner\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search Persona\+: Busca una persona por cédula o partner\+\_\+id. O\+P\+T\+I\+M\+I\+Z\+AR\+: Cambiar todos los search posibles por browse. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em server\+\_\+search} & Servidor X\+M\+L\+\_\+\+R\+PC \\
+\hline
+{\em cedula} & Cédula persona \\
+\hline
+{\em partner\+\_\+id} & Id Partner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna Xml\+Rpc\+Value resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 166 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify() y Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+E\+G().
+
+\hypertarget{classFingerprint_aefb69bba57960202c3763d61416be5d7}{}\label{classFingerprint_aefb69bba57960202c3763d61416be5d7} 
+\index{Fingerprint@{Fingerprint}!str2md5@{str2md5}}
+\index{str2md5@{str2md5}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{str2md5()}{str2md5()}}
+{\footnotesize\ttfamily char$\ast$ Fingerprint\+::str2md5 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método str2md5\+: Codifica un string a \hyperlink{classMD5}{M\+D5}. 
+
+Sirve para convertir una cadena en \hyperlink{classMD5}{M\+D5}. Se usa para hashear la fecha, la hora y otras cosas, como una forma de crear una cookie para certificar cada conexión de un cliente con el servidor. Si la fecha y la hora del cliente están muy lejos de la del servidor, la conexión falla.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & Texto \\
+\hline
+{\em length} & Tamaño texto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Texto en \hyperlink{classMD5}{M\+D5} 
+\end{DoxyReturn}
+
+
+Definición en la línea 661 del archivo Fingerprint.\+cpp.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classFingerprint_a673ea9e701f981e8d47873da6c018959}{}\label{classFingerprint_a673ea9e701f981e8d47873da6c018959} 
+\index{Fingerprint@{Fingerprint}!dbname@{dbname}}
+\index{dbname@{dbname}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{dbname}{dbname}}
+{\footnotesize\ttfamily string Fingerprint\+::dbname}
+
+
+
+dbname 
+
+
+
+Definición en la línea 50 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::guardar\+Incidencia().
+
+\hypertarget{classFingerprint_a1e4d2c44581328219f378933b30c9828}{}\label{classFingerprint_a1e4d2c44581328219f378933b30c9828} 
+\index{Fingerprint@{Fingerprint}!pwd@{pwd}}
+\index{pwd@{pwd}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{pwd}{pwd}}
+{\footnotesize\ttfamily string Fingerprint\+::pwd}
+
+
+
+pwd 
+
+
+
+Definición en la línea 58 del archivo Fingerprint.\+cpp.
+
+\hypertarget{classFingerprint_a3e3626c36b44fa9d7d522196e2d121ff}{}\label{classFingerprint_a3e3626c36b44fa9d7d522196e2d121ff} 
+\index{Fingerprint@{Fingerprint}!U\+RL@{U\+RL}}
+\index{U\+RL@{U\+RL}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{U\+RL}{URL}}
+{\footnotesize\ttfamily string Fingerprint\+::\+U\+RL}
+
+
+
+U\+RL. 
+
+
+
+Definición en la línea 62 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::comprobar(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen(), Template\+A\+F\+I\+S\+\_\+webservice\+::guardar\+Incidencia(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify() y Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+E\+G().
+
+\hypertarget{classFingerprint_a23d9e08e3e34d64fcf0771a1c2590a4e}{}\label{classFingerprint_a23d9e08e3e34d64fcf0771a1c2590a4e} 
+\index{Fingerprint@{Fingerprint}!user@{user}}
+\index{user@{user}!Fingerprint@{Fingerprint}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily string Fingerprint\+::user}
+
+
+
+user 
+
+
+
+Definición en la línea 54 del archivo Fingerprint.\+cpp.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\hyperlink{Fingerprint_8cpp}{Fingerprint.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="instalar_8sh" kind="file" language="C++">
+    <compoundname>instalar.sh</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#!/bin/sh</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@file<sp/>instalar.sh<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@author<sp/>Asociación<sp/>Cooperativa<sp/>Simón<sp/>Rodríguez<sp/>para<sp/>el<sp/>Conocimiento<sp/>Libre<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@author<sp/>Lcdo.<sp/>César<sp/>Cordero,<sp/>Ing.<sp/>Servio<sp/>Zambrano<sp/>y<sp/>Ángel<sp/>Ramírez<sp/>Isea.<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@date<sp/>Abril<sp/>-<sp/>Agosto<sp/>de<sp/>2014.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@brief<sp/>Script<sp/>de<sp/>instalación<sp/>del<sp/>webservice.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>Script<sp/>de<sp/>instalación<sp/>del<sp/>webservice.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>El<sp/>primer<sp/>bloque<sp/>de<sp/>if<sp/>decide<sp/>para<sp/>qué<sp/>arquitectura<sp/>de<sp/>Linux<sp/>debe<sp/>instalar<sp/>las<sp/>dependencias<sp/>(32<sp/>o<sp/>64<sp/>bits).</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>OPTIMIZAR:<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Se<sp/>debe<sp/>probar<sp/>a<sp/>mano<sp/>cada<sp/>despliegue<sp/>dado<sp/>que<sp/>probable<sp/>que<sp/>se<sp/>deban<sp/>actualizar<sp/>las<sp/>librerias.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Se<sp/>debe<sp/>mejorar<sp/>la<sp/>captura<sp/>de<sp/>esos<sp/>errores<sp/>en<sp/>la<sp/>instalación.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Las<sp/>pruebas<sp/>con<sp/>HTTP<sp/>+<sp/>HTTPS<sp/><sp/>trajo<sp/>problemas<sp/>serios<sp/>el<sp/>año<sp/>2017,<sp/>porque<sp/>los<sp/>navegadores<sp/>bloquean<sp/>silenciosamente<sp/>el<sp/>contenido<sp/>mixto.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Probablemente<sp/>todos<sp/>los<sp/>sistemas<sp/>que<sp/>tengan<sp/>captahuellas<sp/>tendrán<sp/>que<sp/>funcionar<sp/>con<sp/>HTTPS<sp/>en<sp/>todas<sp/>las<sp/>conexiones.<sp/>SINCOOP,<sp/>por<sp/>ejemplo,<sp/>aún<sp/>es<sp/>mixto.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>Antes<sp/>de<sp/>la<sp/>instalación<sp/>se<sp/>hace<sp/>el<sp/>update,<sp/>porque<sp/>a<sp/>veces<sp/>han<sp/>dejado<sp/>inestable<sp/>el<sp/>sistema<sp/>operativo<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>o<sp/>si<sp/>hay<sp/>una<sp/>falla<sp/>de<sp/>conexión<sp/>o<sp/>si<sp/>falta<sp/>alguna<sp/>firma<sp/>de<sp/>seguridad,<sp/>la<sp/>instalación<sp/>no<sp/>procede<sp/>bien.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>update</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@brief<sp/>Instalación<sp/>de<sp/>dependencias<sp/>según<sp/>la<sp/>arquitectura<sp/></highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>-y<sp/>install<sp/>libxmlrpc-c++4<sp/>libxmlrpc-core-c3<sp/>libcurl3<sp/>libcurl3-gnutls<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">libc6<sp/>openssl<sp/>libpqxx-3.1<sp/>apache2<sp/>apache2-mpm-prefork<sp/>cron<sp/>postgresql<sp/>libxmlrpc-c++4-dev<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">libxmlrpc-c3-dev<sp/>libxmlrpc-core-c3-dev<sp/>g++<sp/>libpqxx3-dev<sp/>libcurl3-gnutls<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>libcurl4-gnutls-dev<sp/>libusb-0.1-4<sp/>libusb-1.0-0<sp/>udev<sp/>fxload<sp/>libc6<sp/>libjpeg8-dev</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>Se<sp/>activa<sp/>el<sp/>módulo<sp/>cgi<sp/>de<sp/>Apache<sp/>(no<sp/>ha<sp/>sido<sp/>probado<sp/>con<sp/>Ngnix)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>y<sp/>se<sp/>instala<sp/>libusb-0.1-4<sp/>que<sp/>es<sp/>requerido<sp/>por<sp/>el<sp/>captahuellas<sp/>USB.</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">a2enmod<sp/>cgi<sp/></highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>compilar.sh</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>Instalacion<sp/>de<sp/>los<sp/>drivers<sp/>y<sp/>las<sp/>reglas<sp/>para<sp/>que<sp/>udev<sp/>reconozca<sp/>el<sp/>captahuellas<sp/>SUPREMA.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Hay<sp/>un<sp/>bloque<sp/>para<sp/>cada<sp/>versión<sp/>con<sp/>BioMini<sp/>Plus.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>El<sp/>servidor<sp/>debe<sp/>llevar<sp/>un<sp/>captahuellas<sp/>para<sp/>que<sp/>se<sp/>pueda<sp/>hacer<sp/>la<sp/>verificación<sp/>y<sp/>la<sp/>identificación.</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>TemplateAFIS_webservice.cgi<sp/>/usr/lib/cgi-bin/</highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>-r<sp/>TemplateAFIS_webservices_lib<sp/>/usr/lib/cgi-bin/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>Se<sp/>activa<sp/>el<sp/>módulo<sp/>ssl<sp/>de<sp/>Apache.<sp/>SINCO<sp/>utiliza<sp/>HTTPS<sp/>para<sp/>servir<sp/>el<sp/>contenido<sp/>y<sp/>también<sp/>para<sp/>el<sp/>sub-sistema<sp/>de<sp/>captahuellas.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">service<sp/>apache2<sp/>restart</highlight></codeline>
+    </programlisting>
+    <location file="instalar.sh"/>
+  </compounddef>
+</doxygen>

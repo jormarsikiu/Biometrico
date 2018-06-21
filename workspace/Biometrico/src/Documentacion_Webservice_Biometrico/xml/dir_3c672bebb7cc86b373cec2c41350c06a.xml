@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_3c672bebb7cc86b373cec2c41350c06a" kind="dir">
+    <compoundname>TemplateAFIS_webservice_lib/include</compoundname>
+    <innerfile refid="librawjpeg_8cpp">librawjpeg.cpp</innerfile>
+    <innerfile refid="TemplateAFIS_8cpp">TemplateAFIS.cpp</innerfile>
+    <innerfile refid="TemplateAFIS_8h">TemplateAFIS.h</innerfile>
+    <innerfile refid="UFMatcher_8h">UFMatcher.h</innerfile>
+    <innerfile refid="UFScanner_8h">UFScanner.h</innerfile>
+    <innerfile refid="ws_8cpp">ws.cpp</innerfile>
+    <innerfile refid="ws_8h">ws.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/include/"/>
+  </compounddef>
+</doxygen>

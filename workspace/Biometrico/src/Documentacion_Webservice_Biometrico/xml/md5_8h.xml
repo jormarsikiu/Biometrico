@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="md5_8h" kind="file" language="C++">
+    <compoundname>md5.h</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="FirmaDigital_8cpp" local="yes">TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp</includedby>
+    <includedby refid="md5_8cpp" local="yes">TemplateAFIS_webservice_lib/firma_digital/md5.cpp</includedby>
+    <incdepgraph>
+      <node id="90">
+        <label>iostream</label>
+      </node>
+      <node id="88">
+        <label>TemplateAFIS_webservice_lib/firma_digital/md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="92">
+        <label>TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp</label>
+        <link refid="FirmaDigital_8cpp"/>
+      </node>
+      <node id="93">
+        <label>TemplateAFIS_webservice_lib/firma_digital/md5.cpp</label>
+        <link refid="md5_8cpp"/>
+      </node>
+      <node id="91">
+        <label>TemplateAFIS_webservice_lib/firma_digital/md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMD5" prot="public">MD5</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8h_1a92c6eed2e9b51298af559aff6792770b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string md5</definition>
+        <argsstring>(const std::string str)</argsstring>
+        <name>md5</name>
+        <param>
+          <type>const std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="111" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="351" bodyend="356"/>
+        <references refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" compoundref="md5_8cpp" startline="329" endline="340">MD5::hexdigest</references>
+        <references refid="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" compoundref="md5_8cpp" startline="107" endline="110">MD5::MD5</references>
+        <references refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" compoundref="md5_8cpp" startline="351" endline="356">md5</references>
+        <referencedby refid="classFirmaDigital_1ac68550394f9f4e0b73e80dc050875325" compoundref="FirmaDigital_8cpp" startline="46" endline="96">FirmaDigital::firma_srcl</referencedby>
+        <referencedby refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" compoundref="md5_8cpp" startline="351" endline="356">md5</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase cabecera que se encarga de generar un hash alfanumérico de un tamaño predeterminado. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Frank Thilo (<ulink url="mailto:thilo@unix-ag.org">thilo@unix-ag.org</ulink>) This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#ifndef<sp/>BZF_MD5_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BZF_MD5_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classMD5" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMD5" kindref="compound">MD5</ref></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73" refid="classMD5_1aa836972700679dbcff6ae8337f6db464" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMD5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref>;<sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>32bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>size_type<sp/>length);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>size_type<sp/>length);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="classMD5" kindref="compound">MD5</ref>&amp;<sp/><ref refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" kindref="member">finalize</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" kindref="member">hexdigest</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classMD5_1a0739666fd0f3a7117546f6c50e0783b2" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/><ref refid="classMD5" kindref="compound">MD5</ref><sp/><ref refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="85" refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref>;<sp/></highlight><highlight class="comment">//<sp/><sp/>8bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>32bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<ref refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" kindref="member">blocksize</ref><sp/>=<sp/>64};<sp/></highlight><highlight class="comment">//<sp/>VC6<sp/>won&apos;t<sp/>eat<sp/>a<sp/>const<sp/>static<sp/>int<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>block[<ref refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" kindref="member">blocksize</ref>]);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a7eef3463c43a2cdfb56a0261b640f873" kindref="member">decode</ref>(uint4<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>input[],<sp/>size_type<sp/>len);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a52603a1b589b2863cad4caae7f259b7e" kindref="member">encode</ref>(uint1<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint4<sp/>input[],<sp/>size_type<sp/>len);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classMD5_1a696e995f7045cf0146a207c720386f9c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a696e995f7045cf0146a207c720386f9c" kindref="member">finalized</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" refkind="member"><highlight class="normal"><sp/><sp/>uint1<sp/><ref refid="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" kindref="member">buffer</ref>[<ref refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" kindref="member">blocksize</ref>];<sp/></highlight><highlight class="comment">//<sp/>bytes<sp/>that<sp/>didn&apos;t<sp/>fit<sp/>in<sp/>last<sp/>64<sp/>byte<sp/>chunk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" refkind="member"><highlight class="normal"><sp/><sp/>uint4<sp/><ref refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" kindref="member">count</ref>[2];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>64bit<sp/>counter<sp/>for<sp/>number<sp/>of<sp/>bits<sp/>(lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classMD5_1aae3f861952f5b129463f550170836db0" refkind="member"><highlight class="normal"><sp/><sp/>uint4<sp/><ref refid="classMD5_1aae3f861952f5b129463f550170836db0" kindref="member">state</ref>[4];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>digest<sp/>so<sp/>far</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" refkind="member"><highlight class="normal"><sp/><sp/>uint1<sp/><ref refid="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" kindref="member">digest</ref>[16];<sp/></highlight><highlight class="comment">//<sp/>the<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>low<sp/>level<sp/>logic<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/><ref refid="classMD5_1a95b7adf4602b92e84ca5f34084859e79" kindref="member">F</ref>(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/><ref refid="classMD5_1afbc3ab3591fca4e780f647dac3952bc8" kindref="member">G</ref>(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/><ref refid="classMD5_1a59392e8552045b37628a48497ede9cf0" kindref="member">H</ref>(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/><ref refid="classMD5_1ad2c1682834e38219894728830e3996c3" kindref="member">I</ref>(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/><ref refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" kindref="member">rotate_left</ref>(uint4<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" kindref="member">FF</ref>(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a8ebdbe52608e522516d1759a31753212" kindref="member">GG</ref>(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1aaad039caf0b33abf1bf3f3589166543c" kindref="member">HH</ref>(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMD5_1a7af0184654644964ecdb57b1203e5ec7" kindref="member">II</ref>(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">std::string<sp/><ref refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>str);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h"/>
+  </compounddef>
+</doxygen>

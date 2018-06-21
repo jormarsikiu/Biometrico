@@ -1,0 +1,113 @@
+\hypertarget{classFirmaDigital}{}\section{Referencia de la Clase Firma\+Digital}
+\label{classFirmaDigital}\index{Firma\+Digital@{Firma\+Digital}}
+
+
+Clase que permite realizar Firma Digital.  
+
+
+
+
+{\ttfamily \#include $<$Firma\+Digital.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFirmaDigital_a327b0fa8329a7e33cc04f8d4793652be}{Firma\+Digital} (string \hyperlink{classFirmaDigital_a912b493f793c1e2ca268b534e65a65a0}{clave\+\_\+privada})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+string \hyperlink{classFirmaDigital_ac68550394f9f4e0b73e80dc050875325}{firma\+\_\+srcl} (string cadena)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classFirmaDigital_a912b493f793c1e2ca268b534e65a65a0}{clave\+\_\+privada}
+\begin{DoxyCompactList}\small\item\em clave\+\_\+privada \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que permite realizar Firma Digital. 
+
+Definición en la línea 24 del archivo Firma\+Digital.\+h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classFirmaDigital_a327b0fa8329a7e33cc04f8d4793652be}{}\label{classFirmaDigital_a327b0fa8329a7e33cc04f8d4793652be} 
+\index{Firma\+Digital@{Firma\+Digital}!Firma\+Digital@{Firma\+Digital}}
+\index{Firma\+Digital@{Firma\+Digital}!Firma\+Digital@{Firma\+Digital}}
+\subsubsection{\texorpdfstring{Firma\+Digital()}{FirmaDigital()}}
+{\footnotesize\ttfamily Firma\+Digital\+::\+Firma\+Digital (\begin{DoxyParamCaption}\item[{string}]{clave\+\_\+privada }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em clave\+\_\+privada} & La clave privada para la firma\\
+\hline
+\end{DoxyParams}
+Constructor de la clase \hyperlink{classFirmaDigital}{Firma\+Digital} 
+
+Definición en la línea 28 del archivo Firma\+Digital.\+cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classFirmaDigital_ac68550394f9f4e0b73e80dc050875325}{}\label{classFirmaDigital_ac68550394f9f4e0b73e80dc050875325} 
+\index{Firma\+Digital@{Firma\+Digital}!firma\+\_\+srcl@{firma\+\_\+srcl}}
+\index{firma\+\_\+srcl@{firma\+\_\+srcl}!Firma\+Digital@{Firma\+Digital}}
+\subsubsection{\texorpdfstring{firma\+\_\+srcl()}{firma\_srcl()}}
+{\footnotesize\ttfamily string Firma\+Digital\+::firma\+\_\+srcl (\begin{DoxyParamCaption}\item[{string}]{cadena }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Método firma\+\_\+srcl\+: Recibe una cadena generadora y devuelve una clave Algoritmo usado\+: \hyperlink{classMD5}{M\+D5} Se crea una firma digital con una lista de palabras secretas. Se le adiciona la fecha y hora. La palabra secreta depende del día de la semana. Con la palabra secreta se hace un token o cookie para cada sesión cliente-\/servidor. Luego se le da formato y se calcula el hash \hyperlink{classMD5}{M\+D5}. La función del cliente es tomar la fecha y hora, seleccionar una de las palabras de la lista y hashear el resultado. Ese hash se pasa al servidor. En el lado del servidor se hace lo mismo en cada petición. Se comparan los haches y si son iguales, se procesa la petición (comparar, almacenar, borrar, etc.)
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cadena} & La cadena a firmar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Obtiene la cadena firmada 
+\end{DoxyReturn}
+
+
+Definición en la línea 46 del archivo Firma\+Digital.\+cpp.
+
+
+
+Hace referencia a md5().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFirmaDigital_ac68550394f9f4e0b73e80dc050875325_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classFirmaDigital_a912b493f793c1e2ca268b534e65a65a0}{}\label{classFirmaDigital_a912b493f793c1e2ca268b534e65a65a0} 
+\index{Firma\+Digital@{Firma\+Digital}!clave\+\_\+privada@{clave\+\_\+privada}}
+\index{clave\+\_\+privada@{clave\+\_\+privada}!Firma\+Digital@{Firma\+Digital}}
+\subsubsection{\texorpdfstring{clave\+\_\+privada}{clave\_privada}}
+{\footnotesize\ttfamily string Firma\+Digital\+::clave\+\_\+privada}
+
+
+
+clave\+\_\+privada 
+
+
+
+Definición en la línea 30 del archivo Firma\+Digital.\+h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/\hyperlink{FirmaDigital_8h}{Firma\+Digital.\+h}\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/\hyperlink{FirmaDigital_8cpp}{Firma\+Digital.\+cpp}\end{DoxyCompactItemize}

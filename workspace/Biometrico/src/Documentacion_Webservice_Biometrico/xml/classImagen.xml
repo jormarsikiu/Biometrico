@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classImagen" kind="class" language="C++" prot="public">
+    <compoundname>Imagen</compoundname>
+    <includes refid="TemplateAFIS_8h" local="no">TemplateAFIS.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Imagen::imagen</definition>
+        <argsstring></argsstring>
+        <name>imagen</name>
+        <briefdescription>
+<para>imagen </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="102" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classImagen_1a676804752c281116609460f738b74924" compoundref="TemplateAFIS_8cpp" startline="37" endline="40">getImagen</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Imagen::nWidth</definition>
+        <argsstring></argsstring>
+        <name>nWidth</name>
+        <briefdescription>
+<para>nWidth </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="106" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a32fefd35ad3d702984aa442f4407515d" compoundref="TemplateAFIS_8cpp" startline="92" endline="133">TemplateAFIS_webservice::convert_raw_jpeg</referencedby>
+        <referencedby refid="classImagen_1a4f973d4f8e63503c3e0b4649a95e0188" compoundref="TemplateAFIS_8cpp" startline="42" endline="45">getWidth</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a92935096f7cbcc6ffe32dde43038288c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Imagen::nHeight</definition>
+        <argsstring></argsstring>
+        <name>nHeight</name>
+        <briefdescription>
+<para>nHeight </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="110" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a32fefd35ad3d702984aa442f4407515d" compoundref="TemplateAFIS_8cpp" startline="92" endline="133">TemplateAFIS_webservice::convert_raw_jpeg</referencedby>
+        <referencedby refid="classImagen_1a1f243282c3f962c9694b53bc9106215b" compoundref="TemplateAFIS_8cpp" startline="47" endline="50">getHeight</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1adb26157b4817c521f092f024d28b9435" prot="public" static="no" mutable="no">
+        <type>long int</type>
+        <definition>long int Imagen::nSize</definition>
+        <argsstring></argsstring>
+        <name>nSize</name>
+        <briefdescription>
+<para>nSize </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="114" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classImagen_1afa3177842fed7750c8c51eeeaf108adb" compoundref="TemplateAFIS_8cpp" startline="52" endline="55">getSize</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a92940ae8127167d1a7041a365555a931" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Imagen::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>id </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="118" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classImagen_1a4cac81ed0243f264dcbaae552b936038" compoundref="TemplateAFIS_8cpp" startline="57" endline="60">getId</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Imagen::id_persona</definition>
+        <argsstring></argsstring>
+        <name>id_persona</name>
+        <briefdescription>
+<para>id_persona </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="122" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classImagen_1a6fe8c566e03b1c6e2d6818b1886ad522" compoundref="TemplateAFIS_8cpp" startline="62" endline="65">getIdPersona</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Imagen::id_dedo</definition>
+        <argsstring></argsstring>
+        <name>id_dedo</name>
+        <briefdescription>
+<para>id_dedo </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="126" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classImagen_1af8f9c814f372583821f412e2475e9fda" compoundref="TemplateAFIS_8cpp" startline="67" endline="70">getIdDedo</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a6ac88dc4f15daed005f1055235020821" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Imagen::mano</definition>
+        <argsstring></argsstring>
+        <name>mano</name>
+        <briefdescription>
+<para>mano </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="130" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" compoundref="TemplateAFIS_8cpp" startline="2165" endline="2217">TemplateAFIS_webservice::borrarHuella</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1aeb75c2999e3b58cbf800b9f9ffea082c" compoundref="TemplateAFIS_8cpp" startline="1704" endline="1790">TemplateAFIS_webservice::getDatosHuella</referencedby>
+        <referencedby refid="classImagen_1a687160f46f2e80fee30dac0955268c39" compoundref="TemplateAFIS_8cpp" startline="72" endline="75">getMano</referencedby>
+        <referencedby refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" compoundref="TemplateAFIS_8cpp" startline="20" endline="30">Imagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::Imagen</definition>
+        <argsstring>(string id, unsigned char *imagen, int nWidth, int nHeight, long int nSize, string id_persona, string id_dedo, string mano)</argsstring>
+        <name>Imagen</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>imagen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>nSize</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_persona</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clase <ref refid="classImagen" kindref="compound">Imagen</ref>: Almacena las imágenes y variables. Almacena en memoria las imágenes para que puedan ser manipuladas por el webservice. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="135" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="20" bodyend="30"/>
+        <references refid="classImagen_1a92940ae8127167d1a7041a365555a931" compoundref="TemplateAFIS_8h" startline="118">id</references>
+        <references refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" compoundref="TemplateAFIS_8h" startline="126">id_dedo</references>
+        <references refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" compoundref="TemplateAFIS_8h" startline="122">id_persona</references>
+        <references refid="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" compoundref="TemplateAFIS_8h" startline="102">imagen</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">mano</references>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">nHeight</references>
+        <references refid="classImagen_1adb26157b4817c521f092f024d28b9435" compoundref="TemplateAFIS_8h" startline="114">nSize</references>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">nWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::~Imagen</definition>
+        <argsstring>()</argsstring>
+        <name>~Imagen</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="140" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a676804752c281116609460f738b74924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * Imagen::getImagen</definition>
+        <argsstring>(unsigned char *&amp;imagen)</argsstring>
+        <name>getImagen</name>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>imagen</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="classImagen" kindref="compound">Imagen</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imagen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Una imágen cualquiera (parámetro de prueba) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Obtiene la imágen. Este es el resultado. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="147" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="37" bodyend="40"/>
+        <references refid="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" compoundref="TemplateAFIS_8h" startline="102">imagen</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a4f973d4f8e63503c3e0b4649a95e0188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Imagen::getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+<para>Get Width. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene ancho de la imágen. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="153" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="42" bodyend="45"/>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">nWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a1f243282c3f962c9694b53bc9106215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Imagen::getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+<para>Get Height. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene alto de la imágen. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="159" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="47" bodyend="50"/>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">nHeight</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1afa3177842fed7750c8c51eeeaf108adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int Imagen::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get Size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene tamaño de la imágen. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="165" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="52" bodyend="55"/>
+        <references refid="classImagen_1adb26157b4817c521f092f024d28b9435" compoundref="TemplateAFIS_8h" startline="114">nSize</references>
+        <referencedby refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" compoundref="TemplateAFIS_8cpp" startline="77" endline="80">sizeofObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a4cac81ed0243f264dcbaae552b936038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Imagen::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <briefdescription>
+<para>Get Id. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene Id de la imágen en la Base de Datos. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="171" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="57" bodyend="60"/>
+        <references refid="classImagen_1a92940ae8127167d1a7041a365555a931" compoundref="TemplateAFIS_8h" startline="118">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a6fe8c566e03b1c6e2d6818b1886ad522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Imagen::getIdPersona</definition>
+        <argsstring>()</argsstring>
+        <name>getIdPersona</name>
+        <briefdescription>
+<para>Get Id Persona. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene Id de la persona asociada a la imágen en la Base de Datos. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="177" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="62" bodyend="65"/>
+        <references refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" compoundref="TemplateAFIS_8h" startline="122">id_persona</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1af8f9c814f372583821f412e2475e9fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Imagen::getIdDedo</definition>
+        <argsstring>()</argsstring>
+        <name>getIdDedo</name>
+        <briefdescription>
+<para>Get Id Persona. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene Id del dedo asociado a la imágen en la Base de Datos. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="183" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="67" bodyend="70"/>
+        <references refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" compoundref="TemplateAFIS_8h" startline="126">id_dedo</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a687160f46f2e80fee30dac0955268c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Imagen::getMano</definition>
+        <argsstring>()</argsstring>
+        <name>getMano</name>
+        <briefdescription>
+<para>Get Id Persona. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene mano asociada a la imágen en la Base de Datos. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="189" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="72" bodyend="75"/>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">mano</references>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1afae009c9516b1d67bf7aca237f6ef403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int Imagen::sizeofObject</definition>
+        <argsstring>()</argsstring>
+        <name>sizeofObject</name>
+        <briefdescription>
+<para>Get Id Persona. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene el tamaño del objeto <ref refid="classImagen" kindref="compound">Imagen</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="195" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="77" bodyend="80"/>
+        <references refid="classImagen_1afa3177842fed7750c8c51eeeaf108adb" compoundref="TemplateAFIS_8cpp" startline="52" endline="55">getSize</references>
+        <references refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" compoundref="TemplateAFIS_8h" startline="126">id_dedo</references>
+        <references refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" compoundref="TemplateAFIS_8h" startline="122">id_persona</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">mano</references>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">nHeight</references>
+        <references refid="classImagen_1adb26157b4817c521f092f024d28b9435" compoundref="TemplateAFIS_8h" startline="114">nSize</references>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">nWidth</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase <ref refid="classImagen" kindref="compound">Imagen</ref>: Almacena las imágenes y variables. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="97" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="96" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classImagen_1a1f243282c3f962c9694b53bc9106215b" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getHeight</name></member>
+      <member refid="classImagen_1a4cac81ed0243f264dcbaae552b936038" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getId</name></member>
+      <member refid="classImagen_1af8f9c814f372583821f412e2475e9fda" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getIdDedo</name></member>
+      <member refid="classImagen_1a6fe8c566e03b1c6e2d6818b1886ad522" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getIdPersona</name></member>
+      <member refid="classImagen_1a676804752c281116609460f738b74924" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getImagen</name></member>
+      <member refid="classImagen_1a687160f46f2e80fee30dac0955268c39" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getMano</name></member>
+      <member refid="classImagen_1afa3177842fed7750c8c51eeeaf108adb" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getSize</name></member>
+      <member refid="classImagen_1a4f973d4f8e63503c3e0b4649a95e0188" prot="public" virt="non-virtual"><scope>Imagen</scope><name>getWidth</name></member>
+      <member refid="classImagen_1a92940ae8127167d1a7041a365555a931" prot="public" virt="non-virtual"><scope>Imagen</scope><name>id</name></member>
+      <member refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" prot="public" virt="non-virtual"><scope>Imagen</scope><name>id_dedo</name></member>
+      <member refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" prot="public" virt="non-virtual"><scope>Imagen</scope><name>id_persona</name></member>
+      <member refid="classImagen_1a806163aa3eaf4022030a49275ddf4d2b" prot="public" virt="non-virtual"><scope>Imagen</scope><name>Imagen</name></member>
+      <member refid="classImagen_1a8485fa6dd60a7f067e2d2066599314b0" prot="public" virt="non-virtual"><scope>Imagen</scope><name>imagen</name></member>
+      <member refid="classImagen_1a6ac88dc4f15daed005f1055235020821" prot="public" virt="non-virtual"><scope>Imagen</scope><name>mano</name></member>
+      <member refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" prot="public" virt="non-virtual"><scope>Imagen</scope><name>nHeight</name></member>
+      <member refid="classImagen_1adb26157b4817c521f092f024d28b9435" prot="public" virt="non-virtual"><scope>Imagen</scope><name>nSize</name></member>
+      <member refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" prot="public" virt="non-virtual"><scope>Imagen</scope><name>nWidth</name></member>
+      <member refid="classImagen_1afae009c9516b1d67bf7aca237f6ef403" prot="public" virt="non-virtual"><scope>Imagen</scope><name>sizeofObject</name></member>
+      <member refid="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" prot="public" virt="non-virtual"><scope>Imagen</scope><name>~Imagen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

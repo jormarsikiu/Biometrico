@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classSHA512" kind="class" language="C++" prot="public">
+    <compoundname>SHA512</compoundname>
+    <includes refid="sha512_8h" local="no">sha512.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classSHA512_1a92a2b23b4b5217fefcb5b1884f40c054" prot="protected" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char SHA512::uint8</definition>
+        <argsstring></argsstring>
+        <name>uint8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="63" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classSHA512_1a52085ac598de8ad6c5f157eafcefc047" prot="protected" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long SHA512::uint32</definition>
+        <argsstring></argsstring>
+        <name>uint32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="64" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classSHA512_1af8e6d233ae15030174e481d6d79b1786" prot="protected" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long SHA512::uint64</definition>
+        <argsstring></argsstring>
+        <name>uint64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="65" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" prot="protected" static="yes" mutable="no">
+        <type>const <ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref></type>
+        <definition>const unsigned long long SHA512::sha512_k</definition>
+        <argsstring>[]</argsstring>
+        <name>sha512_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="67" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">transform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" prot="protected" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int SHA512::SHA384_512_BLOCK_SIZE</definition>
+        <argsstring></argsstring>
+        <name>SHA384_512_BLOCK_SIZE</name>
+        <initializer>= (1024/8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="68" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classSHA512_1a911d66aedbff405df349ef300791d8eb" prot="public" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int SHA512::DIGEST_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DIGEST_SIZE</name>
+        <initializer>= ( 512 / 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="74" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" compoundref="sha512_8cpp" startline="149" endline="163">sha512</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SHA512::m_tot_len</definition>
+        <argsstring></argsstring>
+        <name>m_tot_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="78" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" compoundref="sha512_8cpp" startline="93" endline="105">init</referencedby>
+        <referencedby refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SHA512::m_len</definition>
+        <argsstring></argsstring>
+        <name>m_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="79" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" compoundref="sha512_8cpp" startline="93" endline="105">init</referencedby>
+        <referencedby refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" prot="protected" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char SHA512::m_block[2 *SHA384_512_BLOCK_SIZE]</definition>
+        <argsstring>[2 *SHA384_512_BLOCK_SIZE]</argsstring>
+        <name>m_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="80" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref></type>
+        <definition>uint64 SHA512::m_h[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>m_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="81" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" compoundref="sha512_8cpp" startline="93" endline="105">init</referencedby>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">transform</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SHA512::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="71" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="93" bodyend="105"/>
+        <references refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" compoundref="sha512_8h" startline="81">m_h</references>
+        <references refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" compoundref="sha512_8h" startline="79">m_len</references>
+        <references refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" compoundref="sha512_8h" startline="78">m_tot_len</references>
+        <referencedby refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" compoundref="sha512_8cpp" startline="149" endline="163">sha512</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SHA512::update</definition>
+        <argsstring>(const unsigned char *message, unsigned int len)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="72" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="107" bodyend="128"/>
+        <references refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" compoundref="sha512_8h" startline="80">m_block</references>
+        <references refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" compoundref="sha512_8h" startline="79">m_len</references>
+        <references refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" compoundref="sha512_8h" startline="78">m_tot_len</references>
+        <references refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" compoundref="sha512_8h" startline="68">SHA384_512_BLOCK_SIZE</references>
+        <references refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">transform</references>
+        <referencedby refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" compoundref="sha512_8cpp" startline="149" endline="163">sha512</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSHA512_1a6db56be0379bbf38babee9567356ad68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SHA512::final</definition>
+        <argsstring>(unsigned char *digest)</argsstring>
+        <name>final</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>digest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="73" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="130" bodyend="147"/>
+        <references refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" compoundref="sha512_8h" startline="80">m_block</references>
+        <references refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" compoundref="sha512_8h" startline="81">m_h</references>
+        <references refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" compoundref="sha512_8h" startline="79">m_len</references>
+        <references refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" compoundref="sha512_8h" startline="78">m_tot_len</references>
+        <references refid="sha512_8h_1a2dc032adc83afe8e265a7941ef11f258" compoundref="sha512_8h" startline="96">SHA2_UNPACK32</references>
+        <references refid="sha512_8h_1a81e6dc4766f3664c56beb47948d35e23" compoundref="sha512_8h" startline="103">SHA2_UNPACK64</references>
+        <references refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" compoundref="sha512_8h" startline="68">SHA384_512_BLOCK_SIZE</references>
+        <references refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">transform</references>
+        <referencedby refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" compoundref="sha512_8cpp" startline="149" endline="163">sha512</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SHA512::transform</definition>
+        <argsstring>(const unsigned char *message, unsigned int block_nb)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>block_nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="77" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="55" bodyend="91"/>
+        <references refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" compoundref="sha512_8h" startline="81">m_h</references>
+        <references refid="sha512_8h_1a1d4a72c3cb3d85b0c82736081042c1a4" compoundref="sha512_8h" startline="90">SHA2_CH</references>
+        <references refid="sha512_8h_1ae9222f6c22449097806fb1dac2a58107" compoundref="sha512_8h" startline="91">SHA2_MAJ</references>
+        <references refid="sha512_8h_1abfcad1e5762f93ffd8cd566bbe261a19" compoundref="sha512_8h" startline="114">SHA2_PACK64</references>
+        <references refid="sha512_8h_1a8c65d2c0860cf623b5607b2aec6a870a" compoundref="sha512_8h" startline="92">SHA512_F1</references>
+        <references refid="sha512_8h_1a41b8a672f8ed1a11ea49acb032550fa6" compoundref="sha512_8h" startline="93">SHA512_F2</references>
+        <references refid="sha512_8h_1a278e83abc8c71fec8a719065e5d51106" compoundref="sha512_8h" startline="94">SHA512_F3</references>
+        <references refid="sha512_8h_1ad6d26f67626668a9ec4f113bd05bee2b" compoundref="sha512_8h" startline="95">SHA512_F4</references>
+        <references refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" compoundref="sha512_8h" startline="67">sha512_k</references>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">final</referencedby>
+        <referencedby refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase de la comunidad: Se incluyó para estabilizar <ref refid="md5_8cpp" kindref="compound">md5.cpp</ref> para evitar que, si el cliente tiene una versión diferente de las bibliotecas de <ref refid="classMD5" kindref="compound">MD5</ref> o de <ref refid="classSHA512" kindref="compound">SHA512</ref> que el servidor, no choquen. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="61" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="60" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" prot="public" virt="non-virtual"><scope>SHA512</scope><name>DIGEST_SIZE</name></member>
+      <member refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" prot="public" virt="non-virtual"><scope>SHA512</scope><name>final</name></member>
+      <member refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" prot="public" virt="non-virtual"><scope>SHA512</scope><name>init</name></member>
+      <member refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>m_block</name></member>
+      <member refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>m_h</name></member>
+      <member refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>m_len</name></member>
+      <member refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>m_tot_len</name></member>
+      <member refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>SHA384_512_BLOCK_SIZE</name></member>
+      <member refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>sha512_k</name></member>
+      <member refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>transform</name></member>
+      <member refid="classSHA512_1a52085ac598de8ad6c5f157eafcefc047" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>uint32</name></member>
+      <member refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>uint64</name></member>
+      <member refid="classSHA512_1a92a2b23b4b5217fefcb5b1884f40c054" prot="protected" virt="non-virtual"><scope>SHA512</scope><name>uint8</name></member>
+      <member refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" prot="public" virt="non-virtual"><scope>SHA512</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

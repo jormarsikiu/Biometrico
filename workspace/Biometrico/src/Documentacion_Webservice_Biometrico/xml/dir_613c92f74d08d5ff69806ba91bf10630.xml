@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_613c92f74d08d5ff69806ba91bf10630" kind="dir">
+    <compoundname>TemplateAFIS_webservice_lib/Conexion_webservice</compoundname>
+    <innerfile refid="Fingerprint_8cpp">Fingerprint.cpp</innerfile>
+    <innerfile refid="GuiWsOpenErp_8cpp">GuiWsOpenErp.cpp</innerfile>
+    <innerfile refid="Variables__Webservice__OpenERP_8cpp">Variables_Webservice_OpenERP.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/Conexion_webservice/"/>
+  </compounddef>
+</doxygen>

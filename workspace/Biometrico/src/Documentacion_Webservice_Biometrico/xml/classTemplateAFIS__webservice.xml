@@ -1,0 +1,2588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classTemplateAFIS__webservice" kind="class" language="C++" prot="public">
+    <compoundname>TemplateAFIS_webservice</compoundname>
+    <includes refid="TemplateAFIS_8h" local="no">TemplateAFIS.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a9e97e8c2a5aa5de8ee51fbdfe4644c39" prot="private" static="no" mutable="no">
+        <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+        <definition>HUFMatcher TemplateAFIS_webservice::m_hMatcher</definition>
+        <argsstring></argsstring>
+        <name>m_hMatcher</name>
+        <briefdescription>
+<para>m_hMatcher </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="209" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a955d31aac4c820b4399ccbafe1b59b63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::tipo_template</definition>
+        <argsstring></argsstring>
+        <name>tipo_template</name>
+        <briefdescription>
+<para>tipo_template </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="213" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a8809dc8920da337f97252597ef492671" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::m_nSecurityLevel</definition>
+        <argsstring></argsstring>
+        <name>m_nSecurityLevel</name>
+        <briefdescription>
+<para>m_nSecurityLevel </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="217" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a2c8421c26cc3dd7d6a3295ace4fd82ce" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::m_bFastMode</definition>
+        <argsstring></argsstring>
+        <name>m_bFastMode</name>
+        <briefdescription>
+<para>m_bFastMode </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="221" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a83ff03441c588729601736d18eb65afd" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char TemplateAFIS_webservice::m_strError[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>m_strError</name>
+        <briefdescription>
+<para>m_strError[128] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="225" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1ad979fde0c45dd460249d041a669a9914" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::m_nEnrollQuality</definition>
+        <argsstring></argsstring>
+        <name>m_nEnrollQuality</name>
+        <briefdescription>
+<para>m_nEnrollQuality </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="229" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a0d609b06768f2c253f43654966bd41e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::m_nCurScannerIndex</definition>
+        <argsstring></argsstring>
+        <name>m_nCurScannerIndex</name>
+        <briefdescription>
+<para>m_nCurScannerIndex </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="233" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a09c632296df4dd488ab09fee6e26f4eb" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TemplateAFIS_webservice::base64_chars</definition>
+        <argsstring></argsstring>
+        <name>base64_chars</name>
+        <briefdescription>
+<para>base64_chars </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="238" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a5be66b367a1276c21ffc3450c1f69643" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <briefdescription>
+<para>padding </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="243" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTemplateAFIS__webservice_1a829e57a86d8c1c0b17631eebf8a8e0cf" prot="public" static="no" mutable="no">
+        <type><ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref> *</type>
+        <definition>FirmaDigital* TemplateAFIS_webservice::firma_digital</definition>
+        <argsstring></argsstring>
+        <name>firma_digital</name>
+        <briefdescription>
+<para>firma_figital </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="260" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a32fefd35ad3d702984aa442f4407515d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::convert_raw_jpeg</definition>
+        <argsstring>(string filename, unsigned char *raw, int nWidth, int nHeight)</argsstring>
+        <name>convert_raw_jpeg</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>raw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+<para>Convert_raw_jpeg. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Donde se guardará la imágen. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Binario a convertir. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho de imágen. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto de imágen. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de conversión.</para></simplesect>
+Método <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>: Realiza las funciones de Identify, Verify y Enroll, y almacena las huellas en la Base de Datos.</para><para>Método convert_raw_jpeg: Convierte un binario de imágen a jpeg. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="253" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="92" bodyend="133"/>
+        <references refid="librawjpeg_8cpp_1ad1fad3c6fec2bf6f7d7933e68b4b0de5" compoundref="librawjpeg_8cpp" startline="30">bytes_per_pixel</references>
+        <references refid="librawjpeg_8cpp_1a853aaff670a934d0e6fcf7ab4fda6c7c" compoundref="librawjpeg_8cpp" startline="31">color_space</references>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">Imagen::nHeight</references>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">Imagen::nWidth</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ace8ba45d6e489c7d34bfbfb55970724f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TemplateAFIS_webservice::TemplateAFIS_webservice</definition>
+        <argsstring>(string param1, string param2, string param3, string param4, string param5)</argsstring>
+        <name>TemplateAFIS_webservice</name>
+        <param>
+          <type>string</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param3</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param4</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param5</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Método constructor para la clase <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>. Permite realizar la conexión con el wbservice de Odoo. Se verifica que esté conectado el captahuellas, se genera la firma digital y se encripta una cookie. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="265" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="141" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ad58b565c76e20bdd9272401d7319cb25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TemplateAFIS_webservice::~TemplateAFIS_webservice</definition>
+        <argsstring>()</argsstring>
+        <name>~TemplateAFIS_webservice</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Método desconstructor para la clase <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="270" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a85f73ddfc479ea1f9ba3a6467d1c028b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * TemplateAFIS_webservice::pElMismo</definition>
+        <argsstring>()</argsstring>
+        <name>pElMismo</name>
+        <briefdescription>
+<para>pElMismo </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene a si mismo.</para></simplesect>
+Obtener el mismo objeto, a sí mismo. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="276" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a6357de3d3323010cb5890d2f583e0f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::SetTipoTemplate</definition>
+        <argsstring>(int tipo)</argsstring>
+        <name>SetTipoTemplate</name>
+        <param>
+          <type>int</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+<para>Set Tipo Template. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo de template</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método SetTipoTemplate: Establece el tipo de Template. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="282" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1afc08ffa4abcde0b3c0f1c13d973755e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::SaveTemplate2ISO</definition>
+        <argsstring>()</argsstring>
+        <name>SaveTemplate2ISO</name>
+        <briefdescription>
+<para>Save Template2ISO: Salva el Template a ISO. (En pruebas) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="286" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ae233b5bd61f6754d877e54788332fe92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::SaveImagenWSQ</definition>
+        <argsstring>()</argsstring>
+        <name>SaveImagenWSQ</name>
+        <briefdescription>
+<para>Save ImagenWSQ: Salva el Template a WSQ. (En pruebas) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="290" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a664f93880a7054b22a2b1faaacda95c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::GetSecurityLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetSecurityLevel</name>
+        <briefdescription>
+<para>Get Security Level. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene el nivel de seguridad para el Matcher, asociado al captahuellas.</para></simplesect>
+Método GetSecurityLevel: Establece el nivel de seguridad. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="296" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="190" bodyend="197"/>
+        <references refid="UFMatcher_8h_1afb212a97a41793a0fd74bfb650a918a9">UFM_GetParameter</references>
+        <references refid="UFMatcher_8h_1a5d0370d1076ac54f7d7b7563ed912f4a" compoundref="UFMatcher_8h" startline="48">UFM_PARAM_SECURITY_LEVEL</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a4842d911ed73f5c33bf5150a6e3bcad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::GetFastMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetFastMode</name>
+        <briefdescription>
+<para>Get Fast Mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene el nivel de rapidez para el Matcher, asociado al captahuellas.</para></simplesect>
+Método GetFastMode: Obtiene el valor de obtención de la huella, FAST_MODE Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="302" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="204" bodyend="211"/>
+        <references refid="UFMatcher_8h_1afb212a97a41793a0fd74bfb650a918a9">UFM_GetParameter</references>
+        <references refid="UFMatcher_8h_1ad4efc16f8b2857a655258bd02993a3a6" compoundref="UFMatcher_8h" startline="47">UFM_PARAM_FAST_MODE</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ac6ac32ddd0df850b0e25aa0943c39113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::GetMatcherSettings</definition>
+        <argsstring>()</argsstring>
+        <name>GetMatcherSettings</name>
+        <briefdescription>
+<para>Get Matcher Settings: Muestra la configuración del Matcher (Pruebas) </para>        </briefdescription>
+        <detaileddescription>
+<para>Método GetMatcherSettings: Configuraciones del Matcher. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="307" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="218" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::initMatcher</definition>
+        <argsstring>()</argsstring>
+        <name>initMatcher</name>
+        <briefdescription>
+<para>Init Matcher. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene el estado de inicialización del Matcher. True o False</para></simplesect>
+Método initMatcher: Inicializa el Matcher. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="313" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="229" bodyend="251"/>
+        <references refid="UFMatcher_8h_1a9de90893d3d009923f2076dd76f28c0a">UFM_Create</references>
+        <references refid="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6">UFM_GetErrorString</references>
+        <references refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" compoundref="UFMatcher_8h" startline="34">UFM_OK</references>
+        <references refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" compoundref="UFMatcher_8h" startline="31">UFM_STATUS</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a90522f2c2f10ae8fa3ab6abd0273b714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::unInitMatcher</definition>
+        <argsstring>()</argsstring>
+        <name>unInitMatcher</name>
+        <briefdescription>
+<para>unInit Matcher </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obtiene el estado de desinicialización del Matcher. True o False</para></simplesect>
+Método unInitMatcher: Desinicializa el Matcher. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="319" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="258" bodyend="279"/>
+        <references refid="UFMatcher_8h_1af9f0345bed21dee80f547e50a7affaed">UFM_Delete</references>
+        <references refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" compoundref="UFMatcher_8h" startline="34">UFM_OK</references>
+        <references refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" compoundref="UFMatcher_8h" startline="31">UFM_STATUS</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a40bd372e1a5b01d9bc2b4e1898be967f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::OnGetParameters</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetParameters</name>
+        <briefdescription>
+<para>On Get Parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Muestra los parámetros del Matcher</para></simplesect>
+Método OnGetParameters: Obtener los parámetros del objeto Matcher. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="325" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="286" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::OnSetTemplateType</definition>
+        <argsstring>(int value)</argsstring>
+        <name>OnSetTemplateType</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>On Set Template Type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de tipo de Template. 1 para SUPREMA, 2 para ISO19794_2, 3 para ANSI378 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado luego de establecer el tipo de Template.</para></simplesect>
+Método OnSetTemplateType: Establecer los tipos de template. Protocolo de SUPREMA indicado en el SDK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="332" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="300" bodyend="347"/>
+        <references refid="UFMatcher_8h_1a2b56c7917382718d233eef3e2a62936f">UFM_SetTemplateType</references>
+        <references refid="UFScanner_8h_1ae684cea3d7abbb624ce51ccd7093039a" compoundref="UFScanner_8h" startline="91">UFS_TEMPLATE_TYPE_ANSI378</references>
+        <references refid="UFScanner_8h_1a7e0b453bdecb68689853015e66cad114" compoundref="UFScanner_8h" startline="90">UFS_TEMPLATE_TYPE_ISO19794_2</references>
+        <references refid="UFScanner_8h_1ae731432fe41dcbfbba8286555b994dd4" compoundref="UFScanner_8h" startline="89">UFS_TEMPLATE_TYPE_SUPREMA</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::OnEnroll</definition>
+        <argsstring>(string usuario, string password, string id_persona, string id_dedo, string mano, string hash, unsigned char *&amp;m_template, int m_template_size, unsigned char *&amp;pImageData, int nWidth, int nHeight, string &amp;id_persona_out, string &amp;id_dedo_out, string &amp;mano_out)</argsstring>
+        <name>OnEnroll</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_persona</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>m_template</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m_template_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>id_persona_out</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>id_dedo_out</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>mano_out</declname>
+        </param>
+        <briefdescription>
+<para>On Enroll. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_persona</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a guardar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_template_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a guardar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pImageData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Imágen de huella a guardar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho de imágen de huella a guardar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto de imágen de huella a guardar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_persona_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si la huella está repetida, Cédula de la persona donde está repetida. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si la huella está repetida, Dedo de la persona donde está repetida. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si la huella está repetida, Mano de la persona donde está repetida. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de guardado.</para></simplesect>
+Método OnEnroll: Guarda la huella en Odoo. Permite relacionar el Captahuellas con Odoo. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="352" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="353" bodyend="488"/>
+        <references refid="classFingerprint_1abbe118d1fdaaba8d64c6e17320c7c835" compoundref="Fingerprint_8cpp" startline="861" endline="915">Fingerprint::actualizarFingerprintWebService</references>
+        <references refid="classFingerprint_1a049f81227a4f59f459c2f52627f12d76" compoundref="Fingerprint_8cpp" startline="710" endline="753">Fingerprint::insertarFingerprintWebService</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">Imagen::nHeight</references>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">Imagen::nWidth</references>
+        <references refid="classFingerprint_1a35437b95c59d90bb3719f3d90f5f300b" compoundref="Fingerprint_8cpp" startline="251" endline="291">Fingerprint::searchFingerprint</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::OnVerify</definition>
+        <argsstring>(string usuario, string password, string id_proyecto, string id_persona, string id_dedo, string mano, unsigned char *&amp;Template, int TemplateSize, string &amp;cedula, string &amp;dedo, string &amp;hand, string &amp;situr)</argsstring>
+        <name>OnVerify</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_proyecto</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_persona</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>Template</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>TemplateSize</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>dedo</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>situr</declname>
+        </param>
+        <briefdescription>
+<para>On Verify: Verifica una huella. Si la huella no es la verificada, utiliza el Médoto OnIdentifyOnVerify, para obtener donde está, obteniendo cedula, dedo, mano y código Situr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_persona</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si no es la huella, Cédula de la persona donde está la huella. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si no es la huella, Dedo de la persona donde está la huella. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si no es la huella, Mano de la persona donde está la huella. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>situr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si no es la huella, Situr de la persona donde está la huella. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de verificacion.</para></simplesect>
+Método OnVerify: Realiza la verificación de una huella. Permite relacionar el Captahuellas con Odoo. Verifica el usuario y aplica las llamadas a SUPREMA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="372" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="495" bodyend="652"/>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" compoundref="Fingerprint_8cpp" startline="353" endline="369">Fingerprint::readFingerprint</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6">UFM_GetErrorString</references>
+        <references refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" compoundref="UFMatcher_8h" startline="34">UFM_OK</references>
+        <references refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" compoundref="UFMatcher_8h" startline="31">UFM_STATUS</references>
+        <references refid="UFMatcher_8h_1a793cb6585d436183cb9a684040010ebf">UFM_Verify</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::OnIdentify</definition>
+        <argsstring>(string usuario, string password, unsigned char *Template, int TemplateSize, string cedula_in, string &amp;cedula, string &amp;dedo, string &amp;hand)</argsstring>
+        <name>OnIdentify</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>Template</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>TemplateSize</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula_in</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>dedo</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>hand</declname>
+        </param>
+        <briefdescription>
+<para>iteracionIdentify: Identifica usando verificación en cada iteración. Se utiliza con OnIdentifyVerify (No OnIdentifyOnVerify. iteacionIdentify, no se utiliza en esta versión) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estado de la verificación </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id de la huella en la Base de Datos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_persona_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo encontrado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_partner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id partner a comparar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo a comparar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano a comparar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ufm_res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estado de la verificación. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bVerifySucceed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Verificación exitosa (o no) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de verificacion. OnIdentifyVerify: Identifica usando verificación en cada iteración. Se utiliza con iteacionIdentify (OnIdentifyVerify, no se utiliza en esta versión) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo de la persona a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano de la persona a verificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo de la persona encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano de la persona encontrada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de verificacion (Identificación). OnIdentify: Identifica usando el método de identificación de BioSuprema </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a identificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a identificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona, cuando se va a buscar por estado. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona encontrada. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo de la persona encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano de la persona encontrada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de identificación.</para></simplesect>
+Método iteracionIdentify: Realiza la iteración de identificación de una huella, una por una; esto quiere decir un verify a cada huella. Utiliza el método de verificación de BioSuprema.</para><para>Método OnIdentifyVerify: Identifica las huellas una por una. Utiliza el método de verificación de BioSuprema.</para><para>Método OnIdentify: Identifica una huella contra muchas. Utiliza el método de identificación de BioSuprema. Verifica que el captahuellas esté conectado. Verifica que el usuario de Odoo sea el correcto. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="421" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="945" bodyend="1188"/>
+        <references refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" compoundref="TemplateAFIS_8h" startline="126">Imagen::id_dedo</references>
+        <references refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" compoundref="TemplateAFIS_8h" startline="122">Imagen::id_persona</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">Imagen::mano</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" compoundref="Fingerprint_8cpp" startline="353" endline="369">Fingerprint::readFingerprint</references>
+        <references refid="classFingerprint_1a83bbd80ab7157b66a568c8a354f86f02" compoundref="Fingerprint_8cpp" startline="213" endline="237">Fingerprint::readVatPersona</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6">UFM_GetErrorString</references>
+        <references refid="UFMatcher_8h_1a55219b8f85e3a651db76b9fb850fe45b">UFM_Identify</references>
+        <references refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" compoundref="UFMatcher_8h" startline="34">UFM_OK</references>
+        <references refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" compoundref="UFMatcher_8h" startline="31">UFM_STATUS</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::OnIdentifyOnVerify</definition>
+        <argsstring>(string usuario, string password, unsigned char *&amp;Template, int TemplateSize, string cedula_in, string &amp;cedula, string &amp;dedo, string &amp;hand, string &amp;situr)</argsstring>
+        <name>OnIdentifyOnVerify</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>Template</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>TemplateSize</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula_in</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>dedo</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>situr</declname>
+        </param>
+        <briefdescription>
+<para>OnIdentifyOnVerify: Identifica usando el método de identificación de BioSuprema. Se utiliza con OnVerify. Si la verificación falla, llama a este método. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella a identificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de huella a identificar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona, cuando se va a buscar por estado. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona encontrada. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo de la persona encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano de la persona encontrada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>situr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Código SITUR de la persona encontrada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de identificación.</para></simplesect>
+OPTIMIZAR: Revisar Método OnIdentifyOnVerify Revisar Narrativa de SINCO </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="436" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1193" bodyend="1408"/>
+        <references refid="classImagen_1abdf777e9a6d41cb3b6ee54e9702d0e52" compoundref="TemplateAFIS_8h" startline="126">Imagen::id_dedo</references>
+        <references refid="classImagen_1aef38d4f4f82b0f19b4b13b20d66e38ba" compoundref="TemplateAFIS_8h" startline="122">Imagen::id_persona</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">Imagen::mano</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" compoundref="Fingerprint_8cpp" startline="353" endline="369">Fingerprint::readFingerprint</references>
+        <references refid="classFingerprint_1a83bbd80ab7157b66a568c8a354f86f02" compoundref="Fingerprint_8cpp" startline="213" endline="237">Fingerprint::readVatPersona</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6">UFM_GetErrorString</references>
+        <references refid="UFMatcher_8h_1a55219b8f85e3a651db76b9fb850fe45b">UFM_Identify</references>
+        <references refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" compoundref="UFMatcher_8h" startline="34">UFM_OK</references>
+        <references refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" compoundref="UFMatcher_8h" startline="31">UFM_STATUS</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::salvarJPEG</definition>
+        <argsstring>(string usuario, string password, string id_persona, string id_dedo, string mano, unsigned char *&amp;imagen_buffer, int &amp;width, int &amp;height, int &amp;size, string &amp;id_imagen)</argsstring>
+        <name>salvarJPEG</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_persona</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>imagen_buffer</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>id_imagen</declname>
+        </param>
+        <briefdescription>
+<para>Salvar JPEG: Salva una imágen a JPEG. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_persona</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula de la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo de la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano de la persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imagen_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer donde se guardará la imágen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho de Imágen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto de Imágen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de Imágen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_imagen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id de la Imágen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado.</para></simplesect>
+Método salvarJPEG: Extrae una imágen de la Base de Datos. Almacena las imagenes jpg de las huellas en la Base de datos de Odoo. Verifica el usuario que realiza la petición y sus permisos, luego busca la huella en la base de datos del usuario. Si la encuentra, la convierte y la almacena en imagen_buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="452" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1417" bodyend="1569"/>
+        <references refid="classImagen_1a92940ae8127167d1a7041a365555a931" compoundref="TemplateAFIS_8h" startline="118">Imagen::id</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classImagen_1a92935096f7cbcc6ffe32dde43038288c" compoundref="TemplateAFIS_8h" startline="110">Imagen::nHeight</references>
+        <references refid="classImagen_1adb26157b4817c521f092f024d28b9435" compoundref="TemplateAFIS_8h" startline="114">Imagen::nSize</references>
+        <references refid="classImagen_1a7b9235e12e5cc50f29614e9c08d72c4f" compoundref="TemplateAFIS_8h" startline="106">Imagen::nWidth</references>
+        <references refid="classFingerprint_1a1060a55c0807ddea7c8ce3235f3bab49" compoundref="Fingerprint_8cpp" startline="423" endline="474">Fingerprint::readFingerprintImage</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a5491ba1e8737a0adea2527fcbbc428af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::comprobar</definition>
+        <argsstring>(string usuario, string password)</argsstring>
+        <name>comprobar</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Comprobar: Comprueba que haga login. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado de login.</para></simplesect>
+Método comprobar: Comprueba si un usuario puede hacer login, en el Webservice de OpenERP.</para><para>OPTIMIZAR: Método debe borrarse no se utiliza </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="460" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1579" bodyend="1630"/>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="classFingerprint_1a162821c388965772022ac5aeaf52be63" compoundref="Fingerprint_8cpp" startline="136" endline="156">Fingerprint::isURE</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a11ad395942529648ef3a9ddf43df3262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getUsuario</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getUsuario</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Usuario. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getUsuario (XMLRPC): Recibe el usuario y el password. Devuelve el parámetros verificacion, para validar un usuario.</para><para>OPTIMIZAR: Método no se utiliza debe borrarse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="469" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1640" bodyend="1694"/>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aeb75c2999e3b58cbf800b9f9ffea082c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getDatosHuella</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, string cedula, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getDatosHuella</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Datos Huella. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getDatosHuella (XMLRPC): Recibe el usuario, password y cédula. Verifica que el usuario tenga permisos, y pide los datos de la huella en base a la mano, dedo, persona. Devuelve el dedo y la mano, de cada huella.</para><para>OPTIMIZAR: Método no se utiliza debe borrarse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="479" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1704" bodyend="1790"/>
+        <references refid="classGuiWsOpenErp_1a96d20089ae0aa7b9c262c23d66956274" compoundref="GuiWsOpenErp_8cpp" startline="697" endline="814">GuiWsOpenErp::getDatoHuella</references>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">Imagen::mano</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1adc47efe142e56d2899f8eb8da72ab8eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getDatosPersonaOBPP</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, string codigo_obpp, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getDatosPersonaOBPP</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>codigo_obpp</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Datos Persona OBPP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>codigo_obpp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Código OBPP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getDatosPersonaOBPP (XMLRPC): Recibe el usuario, password y codigo_obpp. Devuelve el nombre y la cédula de cada persona perteneciente a esa obpp. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="489" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1799" bodyend="1860"/>
+        <references refid="classGuiWsOpenErp_1aeb56055280e6dcceb9b3da722c20a5ce" compoundref="GuiWsOpenErp_8cpp" startline="246" endline="388">GuiWsOpenErp::GetPersonaByOBPP</references>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a096dfa38545612233dbb64006b01f3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getDatosPersona</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, string cedula, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getDatosPersona</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Datos Persona. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getDatosPersona (XMLRPC): Recibe el usuario, password y cédula. Devuelve el nombre y la cédula de la persona. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="499" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1868" bodyend="1944"/>
+        <references refid="classGuiWsOpenErp_1ae6d4fbf9fa54b3ab177f541dcb15b64f" compoundref="GuiWsOpenErp_8cpp" startline="189" endline="239">GuiWsOpenErp::GetDatoPersona</references>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a88c4dc259776908b70505380256b68f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getDatosPersonaVerificacion</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, string cedula, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getDatosPersonaVerificacion</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Datos Persona Verificacion. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getDatosPersonaVerificacion (XMLRPC): Recibe el usuario, password y cédula. Devuelve el nombre obpp a la que pertenece, código SITUR, la cédula de la persona y nombre de la persona. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="509" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="1954" bodyend="2067"/>
+        <references refid="classGuiWsOpenErp_1a128600b86f70773fb336c6b59c853b42" compoundref="GuiWsOpenErp_8cpp" startline="467" endline="643">GuiWsOpenErp::getDatoPersonaVerificacion</references>
+        <references refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" compoundref="GuiWsOpenErp_8cpp" startline="107" endline="124">GuiWsOpenErp::Inicializar</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aea7f1b638633ee2440c38573e74d8984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getDatosIdImagen</definition>
+        <argsstring>(xmlrpc_env *env, string usuario, string password, string cedula, string mano, string id_dedo, xmlrpc_value *&amp;myArrayP)</argsstring>
+        <name>getDatosIdImagen</name>
+        <param>
+          <type>xmlrpc_env *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>xmlrpc_value *&amp;</type>
+          <declname>myArrayP</declname>
+        </param>
+        <briefdescription>
+<para>Get Datos Id <ref refid="classImagen" kindref="compound">Imagen</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>env</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC de ambiente </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myArrayP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable XMLRPC que volverá con los valores</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getDatosIdImagen (XMLRPC): Recibe el usuario, password, cédula, mano e id_dedo. Devuelve el ID <ref refid="classImagen" kindref="compound">Imagen</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="521" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2076" bodyend="2158"/>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" compoundref="Fingerprint_8cpp" startline="353" endline="369">Fingerprint::readFingerprint</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::borrarHuella</definition>
+        <argsstring>(string usuario, string password, string cedula, string mano, string id_dedo)</argsstring>
+        <name>borrarHuella</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <briefdescription>
+<para>Borrar Huella. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método borrarHuella: Borrar huella. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="531" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2165" bodyend="2217"/>
+        <references refid="classFingerprint_1a991f8682bd5fb908804eb35e2c584d17" compoundref="Fingerprint_8cpp" startline="928" endline="961">Fingerprint::borrarFingerprintImg</references>
+        <references refid="classImagen_1a6ac88dc4f15daed005f1055235020821" compoundref="TemplateAFIS_8h" startline="130">Imagen::mano</references>
+        <references refid="Fingerprint_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="Fingerprint_8cpp" startline="13">NAME</references>
+        <references refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" compoundref="Fingerprint_8cpp" startline="166" endline="205">Fingerprint::searchPersona</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="Fingerprint_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="Fingerprint_8cpp" startline="17">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ab867c16199162845402d90191f769b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::archivo_webservice_config</definition>
+        <argsstring>(string directorio, string config_url, string default_url, string *&amp;params)</argsstring>
+        <name>archivo_webservice_config</name>
+        <param>
+          <type>string</type>
+          <declname>directorio</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>config_url</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>default_url</declname>
+        </param>
+        <param>
+          <type>string *&amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Archivo Webservice Config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directorio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Directorio donde está el archivo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de archivo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de archivo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parámetros que retorna.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método archivo_webservice_config: Archivo de Configuración del Webservice. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="540" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2224" bodyend="2287"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a9c035f2b4dc64d540ae6e4e9161e0fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getWebServiceOpenERP</definition>
+        <argsstring>(string usuario, string pass, Fingerprint *&amp;fing)</argsstring>
+        <name>getWebServiceOpenERP</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type><ref refid="classFingerprint" kindref="compound">Fingerprint</ref> *&amp;</type>
+          <declname>fing</declname>
+        </param>
+        <briefdescription>
+<para>Get Webservice OpenERP: Objeto que hace conexión con el Webservice de OpenERP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Objeto <ref refid="classFingerprint" kindref="compound">Fingerprint</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getWebServiceOpenERP: Obtiene un objeto para realizar transacciones XMLRPC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="548" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2295" bodyend="2319"/>
+        <references refid="Variables__Webservice__OpenERP_8cpp_1a9c1896bf4b60da60fa2ed167f842e81a" compoundref="Variables__Webservice__OpenERP_8cpp" startline="32">NUM_WEBSERVICE</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1acd9566662ac9e462b438e21c788d5f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::getWebServiceGUIOpenERP</definition>
+        <argsstring>(string usuario, string pass, GuiWsOpenErp *&amp;fing)</argsstring>
+        <name>getWebServiceGUIOpenERP</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type><ref refid="classGuiWsOpenErp" kindref="compound">GuiWsOpenErp</ref> *&amp;</type>
+          <declname>fing</declname>
+        </param>
+        <briefdescription>
+<para>Get Webservice GUI OpenERP: Objeto que hace conexión con el Webservice de OpenERP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usuario URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password URE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Objeto <ref refid="classGuiWsOpenErp" kindref="compound">GuiWsOpenErp</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Método getWebServiceGUIOpenERP: Obtiene un objeto para realizar transacciones XMLRPC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="556" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2327" bodyend="2351"/>
+        <references refid="Variables__Webservice__OpenERP_8cpp_1a9c1896bf4b60da60fa2ed167f842e81a" compoundref="Variables__Webservice__OpenERP_8cpp" startline="32">NUM_WEBSERVICE</references>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aab3e90fdea004b744610ab0ec12147b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateAFIS_webservice::base64_decodestring</definition>
+        <argsstring>(std::string text, unsigned char *&amp;out, size_t &amp;tlen)</argsstring>
+        <name>base64_decodestring</name>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>tlen</declname>
+        </param>
+        <briefdescription>
+<para>base64_decodestring </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texto original </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base64 decode Out </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>largo de Base64 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="564" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2353" bodyend="2373"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a1fb45563a560d59202d2d051fa649798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TemplateAFIS_webservice::is_base64</definition>
+        <argsstring>(unsigned char c)</argsstring>
+        <name>is_base64</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>is_base64 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caracter base64 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="570" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2375" bodyend="2377"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aba3daf9219a01536921126e56003c9e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string TemplateAFIS_webservice::base64_decode_crypt</definition>
+        <argsstring>(std::string const &amp;encoded_string)</argsstring>
+        <name>base64_decode_crypt</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>encoded_string</declname>
+        </param>
+        <briefdescription>
+<para>base64_decode Para encriptación o desencriptación </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoded_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cadena codificada en base64 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="576" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2379" bodyend="2418"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ab2f8808e62b3917c8530d121feaf71b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>std::string TemplateAFIS_webservice::base64_encode_crypt</definition>
+        <argsstring>(unsigned char const *bytes_to_encode, unsigned int in_len)</argsstring>
+        <name>base64_encode_crypt</name>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>bytes_to_encode</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>in_len</declname>
+        </param>
+        <briefdescription>
+<para>base64_encode Para encriptación o desencriptación </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bytes_to_encode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned char * en base64 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="583" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2420" bodyend="2461"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a5cf955ee6d8a2cca9fa1116906440f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RSA *</type>
+        <definition>RSA * TemplateAFIS_webservice::createRSA</definition>
+        <argsstring>(unsigned char *key, int publica)</argsstring>
+        <name>createRSA</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>publica</declname>
+        </param>
+        <briefdescription>
+<para>createRSA </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clave </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>publica</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si es o no pública </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="590" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2463" bodyend="2487"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ac758d0e51ad6676b2bd2659d4438ae35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::public_encrypt</definition>
+        <argsstring>(unsigned char *data, int data_len, unsigned char *key, unsigned char *encrypted)</argsstring>
+        <name>public_encrypt</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>encrypted</declname>
+        </param>
+        <briefdescription>
+<para>public_encrypt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data a encriptar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de data a encriptar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Llave pública </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encrypted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resultado de la encriptación </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="599" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2489" bodyend="2495"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ae94ac0d97d82afb530698db6f22c0a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::private_decrypt</definition>
+        <argsstring>(unsigned char *enc_data, int data_len, unsigned char *key, unsigned char *decrypted)</argsstring>
+        <name>private_decrypt</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>enc_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>decrypted</declname>
+        </param>
+        <briefdescription>
+<para>private_decrypt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enc_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data encriptada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de data encriptada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Llave privada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resultado de la desencriptación </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="608" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2496" bodyend="2502"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1ad332d60ad475ff5ec824d4a004defb45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::private_encrypt</definition>
+        <argsstring>(unsigned char *data, int data_len, unsigned char *key, unsigned char *encrypted)</argsstring>
+        <name>private_encrypt</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>encrypted</declname>
+        </param>
+        <briefdescription>
+<para>private_encrypt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data a encriptar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de data a encriptar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Llave privada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encrypted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resultado de la encriptación </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="617" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2504" bodyend="2510"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a881bbae5e1b28f4bb6e821f7cae1fdde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::public_decrypt</definition>
+        <argsstring>(unsigned char *enc_data, int data_len, unsigned char *key, unsigned char *decrypted)</argsstring>
+        <name>public_decrypt</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>enc_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>decrypted</declname>
+        </param>
+        <briefdescription>
+<para>public_decrypt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enc_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data encriptada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño de data encriptada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Llave pública </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resultado de la desencriptación </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="626" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2511" bodyend="2517"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a432d8a18012883bacddf5f9db4b58b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string TemplateAFIS_webservice::leerTodoUnArchivo</definition>
+        <argsstring>(string nombre_archivo)</argsstring>
+        <name>leerTodoUnArchivo</name>
+        <param>
+          <type>string</type>
+          <declname>nombre_archivo</declname>
+        </param>
+        <briefdescription>
+<para>leerTodoUnArchivo </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre_archivo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de archivo a abrir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="632" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2519" bodyend="2536"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1a4da03ee6cb795586858c4a09f3cdc789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string TemplateAFIS_webservice::desencriptarPrivada</definition>
+        <argsstring>(string encriptado_base64)</argsstring>
+        <name>desencriptarPrivada</name>
+        <param>
+          <type>string</type>
+          <declname>encriptado_base64</declname>
+        </param>
+        <briefdescription>
+<para>desencriptarPrivada </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encriptado_base64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de archivo a abrir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="638" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="2538" bodyend="2570"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TemplateAFIS_webservice::guardarIncidencia</definition>
+        <argsstring>(string usuario, string password, string id_persona, string id_dedo, string mano, string id_proyecto)</argsstring>
+        <name>guardarIncidencia</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_persona</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_dedo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id_proyecto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="640" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp" bodystart="654" bodyend="670"/>
+        <references refid="classFingerprint_1a673ea9e701f981e8d47873da6c018959" compoundref="Fingerprint_8cpp" startline="50">Fingerprint::dbname</references>
+        <references refid="classestado__proyecto_1a275a1af5b6d1251c68a11bf2b01d66e3" compoundref="ws_8cpp" startline="38" endline="45">estado_proyecto::set_variables</references>
+        <references refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" compoundref="Fingerprint_8cpp" startline="62">Fingerprint::URL</references>
+        <references refid="classestado__proyecto_1a80aae285a18e7e7b1e97ee14dcc5c366" compoundref="ws_8cpp" startline="708" endline="736">estado_proyecto::validacion_incidencias_huella</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Clase <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref>: Realiza las funciones de Identify, Verify y Enroll, y almacena las huellas en la Base de Datos. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>TemplateAFIS_webservice</label>
+        <link refid="classTemplateAFIS__webservice"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>firma_digital</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>FirmaDigital</label>
+        <link refid="classFirmaDigital"/>
+      </node>
+    </collaborationgraph>
+    <location file="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" line="204" column="1" bodyfile="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" bodystart="204" bodyend="641"/>
+    <listofallmembers>
+      <member refid="classTemplateAFIS__webservice_1ab867c16199162845402d90191f769b74" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>archivo_webservice_config</name></member>
+      <member refid="classTemplateAFIS__webservice_1a09c632296df4dd488ab09fee6e26f4eb" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>base64_chars</name></member>
+      <member refid="classTemplateAFIS__webservice_1aba3daf9219a01536921126e56003c9e0" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>base64_decode_crypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1aab3e90fdea004b744610ab0ec12147b0" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>base64_decodestring</name></member>
+      <member refid="classTemplateAFIS__webservice_1ab2f8808e62b3917c8530d121feaf71b8" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>base64_encode_crypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>borrarHuella</name></member>
+      <member refid="classTemplateAFIS__webservice_1a5491ba1e8737a0adea2527fcbbc428af" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>comprobar</name></member>
+      <member refid="classTemplateAFIS__webservice_1a32fefd35ad3d702984aa442f4407515d" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>convert_raw_jpeg</name></member>
+      <member refid="classTemplateAFIS__webservice_1a5cf955ee6d8a2cca9fa1116906440f41" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>createRSA</name></member>
+      <member refid="classTemplateAFIS__webservice_1a4da03ee6cb795586858c4a09f3cdc789" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>desencriptarPrivada</name></member>
+      <member refid="classTemplateAFIS__webservice_1a829e57a86d8c1c0b17631eebf8a8e0cf" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>firma_digital</name></member>
+      <member refid="classTemplateAFIS__webservice_1aeb75c2999e3b58cbf800b9f9ffea082c" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getDatosHuella</name></member>
+      <member refid="classTemplateAFIS__webservice_1aea7f1b638633ee2440c38573e74d8984" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getDatosIdImagen</name></member>
+      <member refid="classTemplateAFIS__webservice_1a096dfa38545612233dbb64006b01f3e3" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getDatosPersona</name></member>
+      <member refid="classTemplateAFIS__webservice_1adc47efe142e56d2899f8eb8da72ab8eb" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getDatosPersonaOBPP</name></member>
+      <member refid="classTemplateAFIS__webservice_1a88c4dc259776908b70505380256b68f8" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getDatosPersonaVerificacion</name></member>
+      <member refid="classTemplateAFIS__webservice_1a4842d911ed73f5c33bf5150a6e3bcad4" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>GetFastMode</name></member>
+      <member refid="classTemplateAFIS__webservice_1ac6ac32ddd0df850b0e25aa0943c39113" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>GetMatcherSettings</name></member>
+      <member refid="classTemplateAFIS__webservice_1a664f93880a7054b22a2b1faaacda95c3" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>GetSecurityLevel</name></member>
+      <member refid="classTemplateAFIS__webservice_1a11ad395942529648ef3a9ddf43df3262" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getUsuario</name></member>
+      <member refid="classTemplateAFIS__webservice_1acd9566662ac9e462b438e21c788d5f48" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getWebServiceGUIOpenERP</name></member>
+      <member refid="classTemplateAFIS__webservice_1a9c035f2b4dc64d540ae6e4e9161e0fa3" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>getWebServiceOpenERP</name></member>
+      <member refid="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>guardarIncidencia</name></member>
+      <member refid="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>initMatcher</name></member>
+      <member refid="classTemplateAFIS__webservice_1a1fb45563a560d59202d2d051fa649798" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>is_base64</name></member>
+      <member refid="classTemplateAFIS__webservice_1a432d8a18012883bacddf5f9db4b58b69" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>leerTodoUnArchivo</name></member>
+      <member refid="classTemplateAFIS__webservice_1a2c8421c26cc3dd7d6a3295ace4fd82ce" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_bFastMode</name></member>
+      <member refid="classTemplateAFIS__webservice_1a9e97e8c2a5aa5de8ee51fbdfe4644c39" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_hMatcher</name></member>
+      <member refid="classTemplateAFIS__webservice_1a0d609b06768f2c253f43654966bd41e1" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_nCurScannerIndex</name></member>
+      <member refid="classTemplateAFIS__webservice_1ad979fde0c45dd460249d041a669a9914" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_nEnrollQuality</name></member>
+      <member refid="classTemplateAFIS__webservice_1a8809dc8920da337f97252597ef492671" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_nSecurityLevel</name></member>
+      <member refid="classTemplateAFIS__webservice_1a83ff03441c588729601736d18eb65afd" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>m_strError</name></member>
+      <member refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnEnroll</name></member>
+      <member refid="classTemplateAFIS__webservice_1a40bd372e1a5b01d9bc2b4e1898be967f" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnGetParameters</name></member>
+      <member refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnIdentify</name></member>
+      <member refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnIdentifyOnVerify</name></member>
+      <member refid="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnSetTemplateType</name></member>
+      <member refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>OnVerify</name></member>
+      <member refid="classTemplateAFIS__webservice_1a5be66b367a1276c21ffc3450c1f69643" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>padding</name></member>
+      <member refid="classTemplateAFIS__webservice_1a85f73ddfc479ea1f9ba3a6467d1c028b" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>pElMismo</name></member>
+      <member refid="classTemplateAFIS__webservice_1ae94ac0d97d82afb530698db6f22c0a71" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>private_decrypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1ad332d60ad475ff5ec824d4a004defb45" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>private_encrypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1a881bbae5e1b28f4bb6e821f7cae1fdde" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>public_decrypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1ac758d0e51ad6676b2bd2659d4438ae35" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>public_encrypt</name></member>
+      <member refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>salvarJPEG</name></member>
+      <member refid="classTemplateAFIS__webservice_1ae233b5bd61f6754d877e54788332fe92" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>SaveImagenWSQ</name></member>
+      <member refid="classTemplateAFIS__webservice_1afc08ffa4abcde0b3c0f1c13d973755e1" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>SaveTemplate2ISO</name></member>
+      <member refid="classTemplateAFIS__webservice_1a6357de3d3323010cb5890d2f583e0f94" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>SetTipoTemplate</name></member>
+      <member refid="classTemplateAFIS__webservice_1ace8ba45d6e489c7d34bfbfb55970724f" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>TemplateAFIS_webservice</name></member>
+      <member refid="classTemplateAFIS__webservice_1a955d31aac4c820b4399ccbafe1b59b63" prot="private" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>tipo_template</name></member>
+      <member refid="classTemplateAFIS__webservice_1a90522f2c2f10ae8fa3ab6abd0273b714" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>unInitMatcher</name></member>
+      <member refid="classTemplateAFIS__webservice_1ad58b565c76e20bdd9272401d7319cb25" prot="public" virt="non-virtual"><scope>TemplateAFIS_webservice</scope><name>~TemplateAFIS_webservice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

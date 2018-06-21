@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="UFMatcher_8h" kind="file" language="C++">
+    <compoundname>UFMatcher.h</compoundname>
+    <includedby refid="TemplateAFIS_8h" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.h</includedby>
+    <invincdepgraph>
+      <node id="187">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="185">
+        <label>TemplateAFIS_webservice_lib/include/UFMatcher.h</label>
+        <link refid="UFMatcher_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" prot="public" static="no">
+        <name>UFM_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="22" column="11" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" prot="public" static="no">
+        <name>UFM_STATUS</name>
+        <initializer>int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="31" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" compoundref="TemplateAFIS_8cpp" startline="229" endline="251">TemplateAFIS_webservice::initMatcher</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a90522f2c2f10ae8fa3ab6abd0273b714" compoundref="TemplateAFIS_8cpp" startline="258" endline="279">TemplateAFIS_webservice::unInitMatcher</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" prot="public" static="no">
+        <name>UFM_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="34" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" compoundref="TemplateAFIS_8cpp" startline="229" endline="251">TemplateAFIS_webservice::initMatcher</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a90522f2c2f10ae8fa3ab6abd0273b714" compoundref="TemplateAFIS_8cpp" startline="258" endline="279">TemplateAFIS_webservice::unInitMatcher</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a8fa26a0736542b05b8989004b3e66b85" prot="public" static="no">
+        <name>UFM_ERROR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="35" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1aac4e230863e244ff55d62a82979e04e9" prot="public" static="no">
+        <name>UFM_ERR_NO_LICENSE</name>
+        <initializer>-101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="36" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1afd54939ad6ef977cd7aa8de9ce40f035" prot="public" static="no">
+        <name>UFM_ERR_LICENSE_NOT_MATCH</name>
+        <initializer>-102</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="37" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a202fa0685130d7d403d796f5980d64ec" prot="public" static="no">
+        <name>UFM_ERR_LICENSE_EXPIRED</name>
+        <initializer>-103</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="38" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1ad2243dc1a76d9ec7de20aa982637c3a4" prot="public" static="no">
+        <name>UFM_ERR_NOT_SUPPORTED</name>
+        <initializer>-111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="39" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a8b7c2fdbf03c28bc5f8d075604c99531" prot="public" static="no">
+        <name>UFM_ERR_INVALID_PARAMETERS</name>
+        <initializer>-112</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="40" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1abb266f0095c134e462b2e8e5bf41a562" prot="public" static="no">
+        <name>UFM_ERR_MATCH_TIMEOUT</name>
+        <initializer>-401</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="42" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1ab63c1a1ae5e13464f73dc2210f328d74" prot="public" static="no">
+        <name>UFM_ERR_MATCH_ABORTED</name>
+        <initializer>-402</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="43" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a4a14fa8b0232d16fac5794e996438999" prot="public" static="no">
+        <name>UFM_ERR_TEMPLATE_TYPE</name>
+        <initializer>-411</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="44" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1ad4efc16f8b2857a655258bd02993a3a6" prot="public" static="no">
+        <name>UFM_PARAM_FAST_MODE</name>
+        <initializer>301</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="47" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a4842d911ed73f5c33bf5150a6e3bcad4" compoundref="TemplateAFIS_8cpp" startline="204" endline="211">TemplateAFIS_webservice::GetFastMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a5d0370d1076ac54f7d7b7563ed912f4a" prot="public" static="no">
+        <name>UFM_PARAM_SECURITY_LEVEL</name>
+        <initializer>302</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="48" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a664f93880a7054b22a2b1faaacda95c3" compoundref="TemplateAFIS_8cpp" startline="190" endline="197">TemplateAFIS_webservice::GetSecurityLevel</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1ad104d9ff4527514fcda6f30dd7362687" prot="public" static="no">
+        <name>UFM_PARAM_USE_SIF</name>
+        <initializer>311</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="49" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a2f89ee2f2c1fcb0eb05691ad9dad0355" prot="public" static="no">
+        <name>UFM_TEMPLATE_TYPE_SUPREMA</name>
+        <initializer>2001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="51" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a13ba8cbc82822fb734233e2276210647" prot="public" static="no">
+        <name>UFM_TEMPLATE_TYPE_ISO19794_2</name>
+        <initializer>2002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="52" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFMatcher_8h_1a0921cbcfc47d8b0f5e0cea06b82a9630" prot="public" static="no">
+        <name>UFM_TEMPLATE_TYPE_ANSI378</name>
+        <initializer>2003</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="53" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* HUFMatcher</definition>
+        <argsstring></argsstring>
+        <name>HUFMatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="56" column="1" bodyfile="TemplateAFIS_webservice_lib/include/UFMatcher.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="UFMatcher_8h_1a9de90893d3d009923f2076dd76f28c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_Create</definition>
+        <argsstring>(HUFMatcher *phMatcher)</argsstring>
+        <name>UFM_Create</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref> *</type>
+          <declname>phMatcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="59" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" compoundref="TemplateAFIS_8cpp" startline="229" endline="251">TemplateAFIS_webservice::initMatcher</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1af9f0345bed21dee80f547e50a7affaed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_Delete</definition>
+        <argsstring>(HUFMatcher hMatcher)</argsstring>
+        <name>UFM_Delete</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="60" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a90522f2c2f10ae8fa3ab6abd0273b714" compoundref="TemplateAFIS_8cpp" startline="258" endline="279">TemplateAFIS_webservice::unInitMatcher</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1afb212a97a41793a0fd74bfb650a918a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_GetParameter</definition>
+        <argsstring>(HUFMatcher hMatcher, int nParam, void *pValue)</argsstring>
+        <name>UFM_GetParameter</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nParam</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="62" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a4842d911ed73f5c33bf5150a6e3bcad4" compoundref="TemplateAFIS_8cpp" startline="204" endline="211">TemplateAFIS_webservice::GetFastMode</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a664f93880a7054b22a2b1faaacda95c3" compoundref="TemplateAFIS_8cpp" startline="190" endline="197">TemplateAFIS_webservice::GetSecurityLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1ad89348186bb7e84910e4f5ff36c0db2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_SetParameter</definition>
+        <argsstring>(HUFMatcher hMatcher, int nParam, void *pValue)</argsstring>
+        <name>UFM_SetParameter</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nParam</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a793cb6585d436183cb9a684040010ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_Verify</definition>
+        <argsstring>(HUFMatcher hMatcher, unsigned char *pTemplate1, int nTemplate1Size, unsigned char *pTemplate2, int nTemplate2Size, int *bVerifySucceed)</argsstring>
+        <name>UFM_Verify</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate1Size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate2Size</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bVerifySucceed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="65" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a55219b8f85e3a651db76b9fb850fe45b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_Identify</definition>
+        <argsstring>(HUFMatcher hMatcher, unsigned char *pTemplate1, int nTemplate1Size, unsigned char **ppTemplate2, int *pnTemplate2Size, int nTemplate2Num, int nTimeout, int *pnMatchTemplate2Index)</argsstring>
+        <name>UFM_Identify</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate1Size</declname>
+        </param>
+        <param>
+          <type>unsigned char **</type>
+          <declname>ppTemplate2</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplate2Size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate2Num</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTimeout</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnMatchTemplate2Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="68" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1ae5432af114939007a7e52a767d750203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_AbortIdentify</definition>
+        <argsstring>(HUFMatcher hMatcher)</argsstring>
+        <name>UFM_AbortIdentify</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a2b0b239cba44aa145cd68fe44c8022c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_IdentifyInit</definition>
+        <argsstring>(HUFMatcher hMatcher, unsigned char *pTemplate1, int nTemplate1Size)</argsstring>
+        <name>UFM_IdentifyInit</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate1Size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a756f6065c292e96e3dedcfa62aa5ea55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_IdentifyNext</definition>
+        <argsstring>(HUFMatcher hMatcher, unsigned char *pTemplate2, int nTemplate2Size, int *bIdentifySucceed)</argsstring>
+        <name>UFM_IdentifyNext</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplate2Size</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bIdentifySucceed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a346acb6c3896b6abca515a85d5ccc9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_RotateTemplate</definition>
+        <argsstring>(HUFMatcher hMatcher, unsigned char *pTemplate, int nTemplateSize)</argsstring>
+        <name>UFM_RotateTemplate</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_GetErrorString</definition>
+        <argsstring>(UFM_STATUS res, char *szErrorString)</argsstring>
+        <name>UFM_GetErrorString</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szErrorString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="76" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a8698c0f638f3be26a0664edd56038847" compoundref="TemplateAFIS_8cpp" startline="229" endline="251">TemplateAFIS_webservice::initMatcher</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1a2b56c7917382718d233eef3e2a62936f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_SetTemplateType</definition>
+        <argsstring>(HUFMatcher hMatcher, int nTemplateType)</argsstring>
+        <name>UFM_SetTemplateType</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="78" column="1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" compoundref="TemplateAFIS_8cpp" startline="300" endline="347">TemplateAFIS_webservice::OnSetTemplateType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="UFMatcher_8h_1aabf811ca3667f0db28b80f1e929448ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref> <ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref></type>
+        <definition>UFM_STATUS UFM_API UFM_GetTemplateType</definition>
+        <argsstring>(HUFMatcher hMatcher, int *nTemplateType)</argsstring>
+        <name>UFM_GetTemplateType</name>
+        <param>
+          <type><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref></type>
+          <declname>hMatcher</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nTemplateType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UniFinger<sp/>Engine<sp/>SDK<sp/>3.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UFMatcher.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Header<sp/>file<sp/>for<sp/>UFMatcher<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2007<sp/>Suprema<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_UFMATCHER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_UFMATCHER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>UFM_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>UFM_API<sp/>__declspec(dllexport)<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>UFM_API<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UFM_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Status<sp/>Definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Status<sp/>Return<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="UFMatcher_8h_1ae5e30cd55f54e2f622a8d25fa0874852" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="UFMatcher_8h_1a8fa26a0736542b05b8989004b3e66b85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="UFMatcher_8h_1aac4e230863e244ff55d62a82979e04e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_NO_LICENSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="UFMatcher_8h_1afd54939ad6ef977cd7aa8de9ce40f035" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_LICENSE_NOT_MATCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-102</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="UFMatcher_8h_1a202fa0685130d7d403d796f5980d64ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_LICENSE_EXPIRED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-103</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="UFMatcher_8h_1ad2243dc1a76d9ec7de20aa982637c3a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_NOT_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="UFMatcher_8h_1a8b7c2fdbf03c28bc5f8d075604c99531" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_INVALID_PARAMETERS<sp/><sp/><sp/><sp/><sp/><sp/>-112</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Matching</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="UFMatcher_8h_1abb266f0095c134e462b2e8e5bf41a562" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_MATCH_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-401</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="UFMatcher_8h_1ab63c1a1ae5e13464f73dc2210f328d74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_MATCH_ABORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-402</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="UFMatcher_8h_1a4a14fa8b0232d16fac5794e996438999" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_ERR_TEMPLATE_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-411</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="UFMatcher_8h_1ad4efc16f8b2857a655258bd02993a3a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_PARAM_FAST_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>301</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="UFMatcher_8h_1a5d0370d1076ac54f7d7b7563ed912f4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_PARAM_SECURITY_LEVEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>302</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="UFMatcher_8h_1ad104d9ff4527514fcda6f30dd7362687" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_PARAM_USE_SIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>311</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="UFMatcher_8h_1a2f89ee2f2c1fcb0eb05691ad9dad0355" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_TEMPLATE_TYPE_SUPREMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="UFMatcher_8h_1a13ba8cbc82822fb734233e2276210647" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_TEMPLATE_TYPE_ISO19794_2<sp/><sp/><sp/><sp/>2002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="UFMatcher_8h_1a0921cbcfc47d8b0f5e0cea06b82a9630" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFM_TEMPLATE_TYPE_ANSI378<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="UFMatcher_8h_1a2a955bd8ef5ebcf92278a2b037f6e739" kindref="member">HUFMatcher</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a9de90893d3d009923f2076dd76f28c0a" kindref="member">UFM_Create</ref>(HUFMatcher*<sp/>phMatcher);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1af9f0345bed21dee80f547e50a7affaed" kindref="member">UFM_Delete</ref>(HUFMatcher<sp/>hMatcher);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1afb212a97a41793a0fd74bfb650a918a9" kindref="member">UFM_GetParameter</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nParam,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pValue);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1ad89348186bb7e84910e4f5ff36c0db2e" kindref="member">UFM_SetParameter</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nParam,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pValue);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a793cb6585d436183cb9a684040010ebf" kindref="member">UFM_Verify</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate1Size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate2Size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>bVerifySucceed);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//UFM_STATUS<sp/>UFM_API<sp/>UFM_VerifyEx(HUFMatcher<sp/>hMatcher,<sp/>unsigned<sp/>char*<sp/>pTemplate1,<sp/>int<sp/>nTemplate1Size,<sp/>unsigned<sp/>char*<sp/>pTemplate2,<sp/>int<sp/>nTemplate2Size,<sp/>float*<sp/>fScore,<sp/>int*<sp/>bVerifySucceed);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a55219b8f85e3a651db76b9fb850fe45b" kindref="member">UFM_Identify</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate1Size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>ppTemplate2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplate2Size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate2Num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTimeout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnMatchTemplate2Index);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1ae5432af114939007a7e52a767d750203" kindref="member">UFM_AbortIdentify</ref>(HUFMatcher<sp/>hMatcher);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a2b0b239cba44aa145cd68fe44c8022c4" kindref="member">UFM_IdentifyInit</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate1Size);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a756f6065c292e96e3dedcfa62aa5ea55" kindref="member">UFM_IdentifyNext</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplate2Size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>bIdentifySucceed);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a346acb6c3896b6abca515a85d5ccc9ad" kindref="member">UFM_RotateTemplate</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateSize);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a7220a2dfdd0deb0027cfcd774d9c61a6" kindref="member">UFM_GetErrorString</ref>(<ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/>res,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szErrorString);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1a2b56c7917382718d233eef3e2a62936f" kindref="member">UFM_SetTemplateType</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateType);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="UFMatcher_8h_1a867d11bffbf308246cf2022e3aae0244" kindref="member">UFM_STATUS</ref><sp/><ref refid="UFMatcher_8h_1a7206edc28b0113b3b4eb5a08b3b7dd50" kindref="member">UFM_API</ref><sp/><ref refid="UFMatcher_8h_1aabf811ca3667f0db28b80f1e929448ac" kindref="member">UFM_GetTemplateType</ref>(HUFMatcher<sp/>hMatcher,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nTemplateType);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_UFMATCHER_H_</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/include/UFMatcher.h"/>
+  </compounddef>
+</doxygen>

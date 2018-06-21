@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::comprobar" name="TemplateAFIS_webservice::comprobar">
+<area shape="rect" id="node2" href="$classGuiWsOpenErp.html#a48d629317e4b3be8b5471e5a14a60082" title="Inicializar se encarga de la autentificacion contra el OpenERP. " alt="" coords="232,5,408,32"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#a162821c388965772022ac5aeaf52be63" title="Is URE: Pregunta si un usuario es URE. Se buscan la huella y la plantilla a partir de una cédula u ot..." alt="" coords="255,56,385,83"/>
+</map>

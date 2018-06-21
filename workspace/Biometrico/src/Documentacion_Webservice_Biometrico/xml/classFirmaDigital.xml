@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classFirmaDigital" kind="class" language="C++" prot="public">
+    <compoundname>FirmaDigital</compoundname>
+    <includes refid="FirmaDigital_8h" local="no">FirmaDigital.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFirmaDigital_1a912b493f793c1e2ca268b534e65a65a0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FirmaDigital::clave_privada</definition>
+        <argsstring></argsstring>
+        <name>clave_privada</name>
+        <briefdescription>
+<para>clave_privada </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" line="30" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFirmaDigital_1a327b0fa8329a7e33cc04f8d4793652be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FirmaDigital::FirmaDigital</definition>
+        <argsstring>(string clave_privada)</argsstring>
+        <name>FirmaDigital</name>
+        <param>
+          <type>string</type>
+          <declname>clave_privada</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clave_privada</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La clave privada para la firma</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Constructor de la clase <ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" line="35" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFirmaDigital_1ac68550394f9f4e0b73e80dc050875325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string FirmaDigital::firma_srcl</definition>
+        <argsstring>(string cadena)</argsstring>
+        <name>firma_srcl</name>
+        <param>
+          <type>string</type>
+          <declname>cadena</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Método firma_srcl: Recibe una cadena generadora y devuelve una clave Algoritmo usado: <ref refid="classMD5" kindref="compound">MD5</ref> Se crea una firma digital con una lista de palabras secretas. Se le adiciona la fecha y hora. La palabra secreta depende del día de la semana. Con la palabra secreta se hace un token o cookie para cada sesión cliente-servidor. Luego se le da formato y se calcula el hash <ref refid="classMD5" kindref="compound">MD5</ref>. La función del cliente es tomar la fecha y hora, seleccionar una de las palabras de la lista y hashear el resultado. Ese hash se pasa al servidor. En el lado del servidor se hace lo mismo en cada petición. Se comparan los haches y si son iguales, se procesa la petición (comparar, almacenar, borrar, etc.)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cadena</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La cadena a firmar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Obtiene la cadena firmada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" line="42" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp" bodystart="46" bodyend="96"/>
+        <references refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" compoundref="md5_8cpp" startline="351" endline="356">md5</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que permite realizar Firma Digital. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" line="25" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h" bodystart="24" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classFirmaDigital_1a912b493f793c1e2ca268b534e65a65a0" prot="public" virt="non-virtual"><scope>FirmaDigital</scope><name>clave_privada</name></member>
+      <member refid="classFirmaDigital_1ac68550394f9f4e0b73e80dc050875325" prot="public" virt="non-virtual"><scope>FirmaDigital</scope><name>firma_srcl</name></member>
+      <member refid="classFirmaDigital_1a327b0fa8329a7e33cc04f8d4793652be" prot="public" virt="non-virtual"><scope>FirmaDigital</scope><name>FirmaDigital</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

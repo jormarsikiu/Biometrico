@@ -1,0 +1,755 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classMD5" kind="class" language="C++" prot="public">
+    <compoundname>MD5</compoundname>
+    <includes refid="md5_8h" local="no">md5.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classMD5_1a227e6f16f2409956b516b453e6bc7429" prot="private" static="no">
+        <name>@0</name>
+        <enumvalue id="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" prot="private">
+          <name>blocksize</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="87" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" prot="private" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char MD5::uint1</definition>
+        <argsstring></argsstring>
+        <name>uint1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="85" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMD5_1a2e5b84a3d7db292f49873061214a0444" prot="private" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int MD5::uint4</definition>
+        <argsstring></argsstring>
+        <name>uint4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="86" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMD5_1aa836972700679dbcff6ae8337f6db464" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int MD5::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="73" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMD5_1a696e995f7045cf0146a207c720386f9c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MD5::finalized</definition>
+        <argsstring></argsstring>
+        <name>finalized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="93" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" compoundref="md5_8cpp" startline="329" endline="340">hexdigest</referencedby>
+        <referencedby refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" compoundref="md5_8cpp" startline="121" endline="133">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" prot="private" static="no" mutable="no">
+        <type><ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref></type>
+        <definition>uint1 MD5::buffer[blocksize]</definition>
+        <argsstring>[blocksize]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="94" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" prot="private" static="no" mutable="no">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>uint4 MD5::count[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="95" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" compoundref="md5_8cpp" startline="121" endline="133">init</referencedby>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMD5_1aae3f861952f5b129463f550170836db0" prot="private" static="no" mutable="no">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>uint4 MD5::state[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="96" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" compoundref="md5_8cpp" startline="121" endline="133">init</referencedby>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" prot="private" static="no" mutable="no">
+        <type><ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref></type>
+        <definition>uint1 MD5::digest[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>digest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="97" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" compoundref="md5_8cpp" startline="329" endline="340">hexdigest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MD5::MD5</definition>
+        <argsstring>()</argsstring>
+        <name>MD5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="75" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="107" bodyend="110"/>
+        <references refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" compoundref="md5_8cpp" startline="121" endline="133">init</references>
+        <referencedby refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" compoundref="md5_8cpp" startline="351" endline="356">md5</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a155356ffd713345e69e6dcbd9f8da6ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MD5::MD5</definition>
+        <argsstring>(const std::string &amp;text)</argsstring>
+        <name>MD5</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="76" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="114" bodyend="119"/>
+        <references refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</references>
+        <references refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" compoundref="md5_8cpp" startline="121" endline="133">init</references>
+        <references refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045">update</references>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1ac5ddf6cd8f940422396d321ea90ed045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::update</definition>
+        <argsstring>(const unsigned char *buf, size_type length)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref></type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="77" column="1"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+        <referencedby refid="classMD5_1a155356ffd713345e69e6dcbd9f8da6ce" compoundref="md5_8cpp" startline="114" endline="119">MD5</referencedby>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1ac5ccba375539b993958fb235f8ac849c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::update</definition>
+        <argsstring>(const char *buf, size_type length)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref></type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMD5" kindref="compound">MD5</ref> &amp;</type>
+        <definition>MD5 &amp; MD5::finalize</definition>
+        <argsstring>()</argsstring>
+        <name>finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="79" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="292" bodyend="324"/>
+        <references refid="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" compoundref="md5_8h" startline="94">buffer</references>
+        <references refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" compoundref="md5_8h" startline="95">count</references>
+        <references refid="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" compoundref="md5_8h" startline="97">digest</references>
+        <references refid="classMD5_1a52603a1b589b2863cad4caae7f259b7e" compoundref="md5_8cpp" startline="147" endline="155">encode</references>
+        <references refid="classMD5_1a696e995f7045cf0146a207c720386f9c" compoundref="md5_8h" startline="93">finalized</references>
+        <references refid="classMD5_1aae3f861952f5b129463f550170836db0" compoundref="md5_8h" startline="96">state</references>
+        <references refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045">update</references>
+        <referencedby refid="classMD5_1a155356ffd713345e69e6dcbd9f8da6ce" compoundref="md5_8cpp" startline="114" endline="119">MD5</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string MD5::hexdigest</definition>
+        <argsstring>() const</argsstring>
+        <name>hexdigest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="80" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="329" bodyend="340"/>
+        <references refid="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" compoundref="md5_8h" startline="97">digest</references>
+        <references refid="classMD5_1a696e995f7045cf0146a207c720386f9c" compoundref="md5_8h" startline="93">finalized</references>
+        <referencedby refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" compoundref="md5_8cpp" startline="351" endline="356">md5</referencedby>
+        <referencedby refid="md5_8cpp_1a80cbf042ee22a0e557ac7938a6218e55" compoundref="md5_8cpp" startline="344" endline="347">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMD5_1a0739666fd0f3a7117546f6c50e0783b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, MD5 md5)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type><ref refid="classMD5" kindref="compound">MD5</ref></type>
+          <declname>md5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="81" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="344" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="84" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="121" bodyend="133"/>
+        <references refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" compoundref="md5_8h" startline="95">count</references>
+        <references refid="classMD5_1a696e995f7045cf0146a207c720386f9c" compoundref="md5_8h" startline="93">finalized</references>
+        <references refid="classMD5_1aae3f861952f5b129463f550170836db0" compoundref="md5_8h" startline="96">state</references>
+        <referencedby refid="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" compoundref="md5_8cpp" startline="107" endline="110">MD5</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a9d569ab2a3e564793e116f774a3ad269" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::transform</definition>
+        <argsstring>(const uint1 block[blocksize])</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const <ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref></type>
+          <declname>block</declname>
+          <array>[blocksize]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="89" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="159" bodyend="243"/>
+        <references refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" compoundref="md5_8h" startline="87">blocksize</references>
+        <references refid="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" compoundref="md5_8h" startline="94">buffer</references>
+        <references refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" compoundref="md5_8h" startline="95">count</references>
+        <references refid="classMD5_1a7eef3463c43a2cdfb56a0261b640f873" compoundref="md5_8cpp" startline="137" endline="142">decode</references>
+        <references refid="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" compoundref="md5_8cpp" startline="89" endline="91">FF</references>
+        <references refid="classMD5_1a8ebdbe52608e522516d1759a31753212" compoundref="md5_8cpp" startline="93" endline="95">GG</references>
+        <references refid="classMD5_1aaad039caf0b33abf1bf3f3589166543c" compoundref="md5_8cpp" startline="97" endline="99">HH</references>
+        <references refid="classMD5_1a7af0184654644964ecdb57b1203e5ec7" compoundref="md5_8cpp" startline="101" endline="103">II</references>
+        <references refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" compoundref="md5_8cpp" startline="47">S11</references>
+        <references refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" compoundref="md5_8cpp" startline="48">S12</references>
+        <references refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" compoundref="md5_8cpp" startline="49">S13</references>
+        <references refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" compoundref="md5_8cpp" startline="50">S14</references>
+        <references refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" compoundref="md5_8cpp" startline="51">S21</references>
+        <references refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" compoundref="md5_8cpp" startline="52">S22</references>
+        <references refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" compoundref="md5_8cpp" startline="53">S23</references>
+        <references refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" compoundref="md5_8cpp" startline="54">S24</references>
+        <references refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" compoundref="md5_8cpp" startline="55">S31</references>
+        <references refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" compoundref="md5_8cpp" startline="56">S32</references>
+        <references refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" compoundref="md5_8cpp" startline="57">S33</references>
+        <references refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" compoundref="md5_8cpp" startline="58">S34</references>
+        <references refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" compoundref="md5_8cpp" startline="59">S41</references>
+        <references refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" compoundref="md5_8cpp" startline="60">S42</references>
+        <references refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" compoundref="md5_8cpp" startline="61">S43</references>
+        <references refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" compoundref="md5_8cpp" startline="62">S44</references>
+        <references refid="classMD5_1aae3f861952f5b129463f550170836db0" compoundref="md5_8h" startline="96">state</references>
+        <references refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045">update</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classMD5_1a7eef3463c43a2cdfb56a0261b640f873" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::decode</definition>
+        <argsstring>(uint4 output[], const uint1 input[], size_type len)</argsstring>
+        <name>decode</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>output</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const <ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref></type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="90" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="137" bodyend="142"/>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a52603a1b589b2863cad4caae7f259b7e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::encode</definition>
+        <argsstring>(uint1 output[], const uint4 input[], size_type len)</argsstring>
+        <name>encode</name>
+        <param>
+          <type><ref refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" kindref="member">uint1</ref></type>
+          <declname>output</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const <ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="91" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="147" bodyend="155"/>
+        <referencedby refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" compoundref="md5_8cpp" startline="292" endline="324">finalize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a95b7adf4602b92e84ca5f34084859e79" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>MD5::uint4 MD5::F</definition>
+        <argsstring>(uint4 x, uint4 y, uint4 z)</argsstring>
+        <name>F</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="100" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="66" bodyend="68"/>
+        <referencedby refid="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" compoundref="md5_8cpp" startline="89" endline="91">FF</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1afbc3ab3591fca4e780f647dac3952bc8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>MD5::uint4 MD5::G</definition>
+        <argsstring>(uint4 x, uint4 y, uint4 z)</argsstring>
+        <name>G</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="101" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="70" bodyend="72"/>
+        <referencedby refid="classMD5_1a8ebdbe52608e522516d1759a31753212" compoundref="md5_8cpp" startline="93" endline="95">GG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a59392e8552045b37628a48497ede9cf0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>MD5::uint4 MD5::H</definition>
+        <argsstring>(uint4 x, uint4 y, uint4 z)</argsstring>
+        <name>H</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="102" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="74" bodyend="76"/>
+        <referencedby refid="classMD5_1aaad039caf0b33abf1bf3f3589166543c" compoundref="md5_8cpp" startline="97" endline="99">HH</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1ad2c1682834e38219894728830e3996c3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>MD5::uint4 MD5::I</definition>
+        <argsstring>(uint4 x, uint4 y, uint4 z)</argsstring>
+        <name>I</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="103" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="78" bodyend="80"/>
+        <referencedby refid="classMD5_1a7af0184654644964ecdb57b1203e5ec7" compoundref="md5_8cpp" startline="101" endline="103">II</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+        <definition>MD5::uint4 MD5::rotate_left</definition>
+        <argsstring>(uint4 x, int n)</argsstring>
+        <name>rotate_left</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="104" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="83" bodyend="85"/>
+        <referencedby refid="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" compoundref="md5_8cpp" startline="89" endline="91">FF</referencedby>
+        <referencedby refid="classMD5_1a8ebdbe52608e522516d1759a31753212" compoundref="md5_8cpp" startline="93" endline="95">GG</referencedby>
+        <referencedby refid="classMD5_1aaad039caf0b33abf1bf3f3589166543c" compoundref="md5_8cpp" startline="97" endline="99">HH</referencedby>
+        <referencedby refid="classMD5_1a7af0184654644964ecdb57b1203e5ec7" compoundref="md5_8cpp" startline="101" endline="103">II</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::FF</definition>
+        <argsstring>(uint4 &amp;a, uint4 b, uint4 c, uint4 d, uint4 x, uint4 s, uint4 ac)</argsstring>
+        <name>FF</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="105" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="89" bodyend="91"/>
+        <references refid="classMD5_1a95b7adf4602b92e84ca5f34084859e79" compoundref="md5_8cpp" startline="66" endline="68">F</references>
+        <references refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" compoundref="md5_8cpp" startline="83" endline="85">rotate_left</references>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a8ebdbe52608e522516d1759a31753212" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::GG</definition>
+        <argsstring>(uint4 &amp;a, uint4 b, uint4 c, uint4 d, uint4 x, uint4 s, uint4 ac)</argsstring>
+        <name>GG</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="106" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="93" bodyend="95"/>
+        <references refid="classMD5_1afbc3ab3591fca4e780f647dac3952bc8" compoundref="md5_8cpp" startline="70" endline="72">G</references>
+        <references refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" compoundref="md5_8cpp" startline="83" endline="85">rotate_left</references>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1aaad039caf0b33abf1bf3f3589166543c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::HH</definition>
+        <argsstring>(uint4 &amp;a, uint4 b, uint4 c, uint4 d, uint4 x, uint4 s, uint4 ac)</argsstring>
+        <name>HH</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="107" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="97" bodyend="99"/>
+        <references refid="classMD5_1a59392e8552045b37628a48497ede9cf0" compoundref="md5_8cpp" startline="74" endline="76">H</references>
+        <references refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" compoundref="md5_8cpp" startline="83" endline="85">rotate_left</references>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMD5_1a7af0184654644964ecdb57b1203e5ec7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5::II</definition>
+        <argsstring>(uint4 &amp;a, uint4 b, uint4 c, uint4 d, uint4 x, uint4 s, uint4 ac)</argsstring>
+        <name>II</name>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" kindref="member">uint4</ref></type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="108" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.cpp" bodystart="101" bodyend="103"/>
+        <references refid="classMD5_1ad2c1682834e38219894728830e3996c3" compoundref="md5_8cpp" startline="78" endline="80">I</references>
+        <references refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" compoundref="md5_8cpp" startline="83" endline="85">rotate_left</references>
+        <referencedby refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" compoundref="md5_8cpp" startline="159" endline="243">transform</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase de la comunidad: Se encarga de generar un hash alfanumérico de un tamaño predeterminado, no importa cuál sea la entrada que le suministren. Es igual al que se usa para comparar dos archivos, o en encriptación. Se incluye en la compilación para evitar que un cambio de versión en el sistema de operación de una máquina pudiese afectar la comunicación. (Recibe la información de <ref refid="FirmaDigital_8cpp" kindref="compound">FirmaDigital.cpp</ref> y crea los hash correspondientes para encriptarlo en <ref refid="sha512_8cpp" kindref="compound">sha512.cpp</ref>) </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classMD5" kindref="compound">MD5</ref> <ulink url="http://www.zedwood.com/article/cpp-md5-function">http://www.zedwood.com/article/cpp-md5-function</ulink> converted to C++ class by Frank Thilo (<ulink url="mailto:thilo@unix-ag.org">thilo@unix-ag.org</ulink>) for bzflag (<ulink url="http://www.bzflag.org">http://www.bzflag.org</ulink>)</para><para>based on:</para><para><ref refid="md5_8h" kindref="compound">md5.h</ref> and md5.c reference implementation of RFC 1321</para><para>Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All rights reserved.</para><para>License to copy and use this software is granted provided that it is identified as the &quot;RSA Data Security, Inc. MD5 Message-Digest
+Algorithm&quot; in all material mentioning or referencing this software or this function.</para><para>License is also granted to make and use derivative works provided that such works are identified as &quot;derived from the RSA Data
+Security, Inc. MD5 Message-Digest Algorithm&quot; in all material mentioning or referencing the derived work.</para><para>RSA Data Security, Inc. makes no representations concerning either the merchantability of this software or the suitability of this software for any particular purpose. It is provided &quot;as is&quot; without express or implied warranty of any kind.</para><para>These notices must be retained in any copies of any part of this documentation and/or software.</para><para>/**A small class for calculating <ref refid="classMD5" kindref="compound">MD5</ref> hashes of strings or byte arrays it is not meant to be fast or secure usage: 1) feed it blocks of uchars with <ref refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update()</ref> 2) <ref refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" kindref="member">finalize()</ref> 3) get <ref refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" kindref="member">hexdigest()</ref> string or <ref refid="classMD5" kindref="compound">MD5(std::string)</ref>.<ref refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" kindref="member">hexdigest()</ref> assumes that char is 8 bit and int is 32 bit</para><para>OPTIMIZAR: Traducir! </para>    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/md5.h" line="71" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/md5.h" bodystart="70" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classMD5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" prot="private" virt="non-virtual"><scope>MD5</scope><name>blocksize</name></member>
+      <member refid="classMD5_1a0df603b8332399d5c1daa08ab5a315ea" prot="private" virt="non-virtual"><scope>MD5</scope><name>buffer</name></member>
+      <member refid="classMD5_1a52a9ff26a3de9e831b17c1740aa5388a" prot="private" virt="non-virtual"><scope>MD5</scope><name>count</name></member>
+      <member refid="classMD5_1a7eef3463c43a2cdfb56a0261b640f873" prot="private" virt="non-virtual"><scope>MD5</scope><name>decode</name></member>
+      <member refid="classMD5_1a31058e1dca10bbf29818bb5177ff02ac" prot="private" virt="non-virtual"><scope>MD5</scope><name>digest</name></member>
+      <member refid="classMD5_1a52603a1b589b2863cad4caae7f259b7e" prot="private" virt="non-virtual"><scope>MD5</scope><name>encode</name></member>
+      <member refid="classMD5_1a95b7adf4602b92e84ca5f34084859e79" prot="private" virt="non-virtual"><scope>MD5</scope><name>F</name></member>
+      <member refid="classMD5_1a31479b157441ace2dbc2ae0edd0d2e38" prot="private" virt="non-virtual"><scope>MD5</scope><name>FF</name></member>
+      <member refid="classMD5_1a10f607494a3f2e3e515fc4b99d1a06cc" prot="public" virt="non-virtual"><scope>MD5</scope><name>finalize</name></member>
+      <member refid="classMD5_1a696e995f7045cf0146a207c720386f9c" prot="private" virt="non-virtual"><scope>MD5</scope><name>finalized</name></member>
+      <member refid="classMD5_1afbc3ab3591fca4e780f647dac3952bc8" prot="private" virt="non-virtual"><scope>MD5</scope><name>G</name></member>
+      <member refid="classMD5_1a8ebdbe52608e522516d1759a31753212" prot="private" virt="non-virtual"><scope>MD5</scope><name>GG</name></member>
+      <member refid="classMD5_1a59392e8552045b37628a48497ede9cf0" prot="private" virt="non-virtual"><scope>MD5</scope><name>H</name></member>
+      <member refid="classMD5_1aaf466f683b4bd8b1b66544f48bf09608" prot="public" virt="non-virtual"><scope>MD5</scope><name>hexdigest</name></member>
+      <member refid="classMD5_1aaad039caf0b33abf1bf3f3589166543c" prot="private" virt="non-virtual"><scope>MD5</scope><name>HH</name></member>
+      <member refid="classMD5_1ad2c1682834e38219894728830e3996c3" prot="private" virt="non-virtual"><scope>MD5</scope><name>I</name></member>
+      <member refid="classMD5_1a7af0184654644964ecdb57b1203e5ec7" prot="private" virt="non-virtual"><scope>MD5</scope><name>II</name></member>
+      <member refid="classMD5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" prot="private" virt="non-virtual"><scope>MD5</scope><name>init</name></member>
+      <member refid="classMD5_1afa6155ec36de415ab2dcf5e54b670d13" prot="public" virt="non-virtual"><scope>MD5</scope><name>MD5</name></member>
+      <member refid="classMD5_1a155356ffd713345e69e6dcbd9f8da6ce" prot="public" virt="non-virtual"><scope>MD5</scope><name>MD5</name></member>
+      <member refid="classMD5_1a0739666fd0f3a7117546f6c50e0783b2" prot="public" virt="non-virtual"><scope>MD5</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classMD5_1a97ece3d8221e3c9c994aa9d13001b1d9" prot="private" virt="non-virtual"><scope>MD5</scope><name>rotate_left</name></member>
+      <member refid="classMD5_1aa836972700679dbcff6ae8337f6db464" prot="public" virt="non-virtual"><scope>MD5</scope><name>size_type</name></member>
+      <member refid="classMD5_1aae3f861952f5b129463f550170836db0" prot="private" virt="non-virtual"><scope>MD5</scope><name>state</name></member>
+      <member refid="classMD5_1a9d569ab2a3e564793e116f774a3ad269" prot="private" virt="non-virtual"><scope>MD5</scope><name>transform</name></member>
+      <member refid="classMD5_1a3b1c4901139aef256ee49c4ab14d09f9" prot="private" virt="non-virtual"><scope>MD5</scope><name>uint1</name></member>
+      <member refid="classMD5_1a2e5b84a3d7db292f49873061214a0444" prot="private" virt="non-virtual"><scope>MD5</scope><name>uint4</name></member>
+      <member refid="classMD5_1ac5ddf6cd8f940422396d321ea90ed045" prot="public" virt="non-virtual"><scope>MD5</scope><name>update</name></member>
+      <member refid="classMD5_1ac5ccba375539b993958fb235f8ac849c" prot="public" virt="non-virtual"><scope>MD5</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,411 @@
+\hypertarget{classGuiWsOpenErp}{}\section{Referencia de la Clase Gui\+Ws\+Open\+Erp}
+\label{classGuiWsOpenErp}\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+
+
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP. (No están en uso actualmente.)  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGuiWsOpenErp_a468b3c76510469edce574ee3c2a86056}{Gui\+Ws\+Open\+Erp} (string \hyperlink{classGuiWsOpenErp_aa872d8ffb6c11032ec0dcfd8ee49e234}{dbname}, string \hyperlink{classGuiWsOpenErp_a34037b0900d58859cc4c42e77f170d82}{user}, string \hyperlink{classGuiWsOpenErp_ad82141631eb4a41cd62b1c8892424a92}{pwd}, string \hyperlink{classGuiWsOpenErp_a96c46b5aed53de6d0fca055f28862be5}{U\+RL})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGuiWsOpenErp_ac01e603d5d8486d9fef6f55b679cc8b6}{$\sim$\+Gui\+Ws\+Open\+Erp} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGuiWsOpenErp_a72e93c46fcdf1317d7a554181f6e08e1}{Cargar\+Variables} (string \hyperlink{classGuiWsOpenErp_aa872d8ffb6c11032ec0dcfd8ee49e234}{dbname}, string \hyperlink{classGuiWsOpenErp_a34037b0900d58859cc4c42e77f170d82}{user}, string \hyperlink{classGuiWsOpenErp_ad82141631eb4a41cd62b1c8892424a92}{pwd}, string \hyperlink{classGuiWsOpenErp_a96c46b5aed53de6d0fca055f28862be5}{U\+RL})
+\begin{DoxyCompactList}\small\item\em Cargar\+Variables Seteo de variables. \end{DoxyCompactList}\item 
+long int \hyperlink{classGuiWsOpenErp_a48d629317e4b3be8b5471e5a14a60082}{Inicializar} ()
+\begin{DoxyCompactList}\small\item\em Inicializar se encarga de la autentificacion contra el Open\+E\+RP. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_a417ed5728168fa74561efd022a42ae49}{Get\+Usuario} (string usuario)
+\begin{DoxyCompactList}\small\item\em Get\+Usuario Este metodo se encarga de buscar en la tabla res.\+users parametrizado con la variable \char`\"{}usuario\char`\"{}. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_ae6d4fbf9fa54b3ab177f541dcb15b64f}{Get\+Dato\+Persona} (string cedula\+\_\+identidad)
+\begin{DoxyCompactList}\small\item\em Get\+Dato\+Persona Este metodo se encarga de buscar en la tabla res.\+partner. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_aeb56055280e6dcceb9b3da722c20a5ce}{Get\+Persona\+By\+O\+B\+PP} (string situr\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Get\+Persona\+By\+O\+B\+PP Este metodo se encarga de buscar todas las personas a la cual pertene una obpp, para ello se parametriza la busquedad con el cdigo situr. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_ac8f72cfebf3c98364303d4851752fbf6}{Get\+Datoid\+Imagen} (long int partner\+\_\+id, string hand, string finger)
+\begin{DoxyCompactList}\small\item\em Get\+Datoid\+Imagen Este metodo se encarga de obtener el id de un registro en la tabla res.\+partner.\+fingerprint para ello la busquedad es parametrizada con partner\+\_\+id, hand y finger. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_a128600b86f70773fb336c6b59c853b42}{get\+Dato\+Persona\+Verificacion} (string cedula)
+\begin{DoxyCompactList}\small\item\em get\+Dato\+Persona\+Verificacion Este metodo se encarga de buscar los datos de la persona, a la cual se le verifica la huella. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_a331ff67a1bff59ac435a372fbd08b04b}{buscar\+Proyecto} (int id\+\_\+obpp)
+\item 
+Xml\+Rpc\+Value \hyperlink{classGuiWsOpenErp_a96d20089ae0aa7b9c262c23d66956274}{get\+Dato\+Huella} (string cedula, string \&mano, int \&dedo)
+\begin{DoxyCompactList}\small\item\em get\+Dato\+Huella Este metodo se encarga de buscar las huellas que tiene registrado un integrante de la obpp, cuando se va a verificar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classGuiWsOpenErp_aa872d8ffb6c11032ec0dcfd8ee49e234}{dbname}
+\begin{DoxyCompactList}\small\item\em dbname \end{DoxyCompactList}\item 
+string \hyperlink{classGuiWsOpenErp_a34037b0900d58859cc4c42e77f170d82}{user}
+\begin{DoxyCompactList}\small\item\em user \end{DoxyCompactList}\item 
+string \hyperlink{classGuiWsOpenErp_ad82141631eb4a41cd62b1c8892424a92}{pwd}
+\begin{DoxyCompactList}\small\item\em pwd \end{DoxyCompactList}\item 
+string \hyperlink{classGuiWsOpenErp_aa01da7bfce4fce442c869c6d1c988c4b}{model}
+\begin{DoxyCompactList}\small\item\em U\+RL. \end{DoxyCompactList}\item 
+string \hyperlink{classGuiWsOpenErp_a96c46b5aed53de6d0fca055f28862be5}{U\+RL}
+\begin{DoxyCompactList}\small\item\em U\+RL. \end{DoxyCompactList}\item 
+Xml\+Rpc\+Value\+::int32 \hyperlink{classGuiWsOpenErp_a791f1dd8b0b16f454ae7f1a2abe0a761}{uid}
+\begin{DoxyCompactList}\small\item\em uid \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP. (No están en uso actualmente.) 
+
+Definición en la línea 39 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classGuiWsOpenErp_a468b3c76510469edce574ee3c2a86056}{}\label{classGuiWsOpenErp_a468b3c76510469edce574ee3c2a86056} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Gui\+Ws\+Open\+Erp()}{GuiWsOpenErp()}}
+{\footnotesize\ttfamily Gui\+Ws\+Open\+Erp\+::\+Gui\+Ws\+Open\+Erp (\begin{DoxyParamCaption}\item[{string}]{dbname,  }\item[{string}]{user,  }\item[{string}]{pwd,  }\item[{string}]{U\+RL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dbname} & Nombre de la base de datos \\
+\hline
+{\em user} & Nombre de usuario \\
+\hline
+{\em pwd} & Contraseña de user \\
+\hline
+{\em U\+RL} & U\+RL \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 73 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_ac01e603d5d8486d9fef6f55b679cc8b6}{}\label{classGuiWsOpenErp_ac01e603d5d8486d9fef6f55b679cc8b6} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!````~Gui\+Ws\+Open\+Erp@{$\sim$\+Gui\+Ws\+Open\+Erp}}
+\index{````~Gui\+Ws\+Open\+Erp@{$\sim$\+Gui\+Ws\+Open\+Erp}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{$\sim$\+Gui\+Ws\+Open\+Erp()}{~GuiWsOpenErp()}}
+{\footnotesize\ttfamily Gui\+Ws\+Open\+Erp\+::$\sim$\+Gui\+Ws\+Open\+Erp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+
+Definición en la línea 84 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classGuiWsOpenErp_a331ff67a1bff59ac435a372fbd08b04b}{}\label{classGuiWsOpenErp_a331ff67a1bff59ac435a372fbd08b04b} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!buscar\+Proyecto@{buscar\+Proyecto}}
+\index{buscar\+Proyecto@{buscar\+Proyecto}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{buscar\+Proyecto()}{buscarProyecto()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::buscar\+Proyecto (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+obpp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 645 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a72e93c46fcdf1317d7a554181f6e08e1}{}\label{classGuiWsOpenErp_a72e93c46fcdf1317d7a554181f6e08e1} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Cargar\+Variables@{Cargar\+Variables}}
+\index{Cargar\+Variables@{Cargar\+Variables}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Cargar\+Variables()}{CargarVariables()}}
+{\footnotesize\ttfamily void Gui\+Ws\+Open\+Erp\+::\+Cargar\+Variables (\begin{DoxyParamCaption}\item[{string}]{dbname,  }\item[{string}]{user,  }\item[{string}]{pwd,  }\item[{string}]{U\+RL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cargar\+Variables Seteo de variables. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dbname} & \\
+\hline
+{\em user} & \\
+\hline
+{\em pwd} & \\
+\hline
+{\em U\+RL} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 95 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a96d20089ae0aa7b9c262c23d66956274}{}\label{classGuiWsOpenErp_a96d20089ae0aa7b9c262c23d66956274} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!get\+Dato\+Huella@{get\+Dato\+Huella}}
+\index{get\+Dato\+Huella@{get\+Dato\+Huella}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{get\+Dato\+Huella()}{getDatoHuella()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::get\+Dato\+Huella (\begin{DoxyParamCaption}\item[{string}]{cedula,  }\item[{string \&}]{mano,  }\item[{int \&}]{dedo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Dato\+Huella Este metodo se encarga de buscar las huellas que tiene registrado un integrante de la obpp, cuando se va a verificar. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cedula} & \\
+\hline
+{\em mano} & \\
+\hline
+{\em dedo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna mano y dedo por referencia. Y datos de la Huella por Xml\+Rpc\+Value 
+\end{DoxyReturn}
+
+
+Definición en la línea 697 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Huella().
+
+\hypertarget{classGuiWsOpenErp_ac8f72cfebf3c98364303d4851752fbf6}{}\label{classGuiWsOpenErp_ac8f72cfebf3c98364303d4851752fbf6} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Get\+Datoid\+Imagen@{Get\+Datoid\+Imagen}}
+\index{Get\+Datoid\+Imagen@{Get\+Datoid\+Imagen}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Get\+Datoid\+Imagen()}{GetDatoidImagen()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::\+Get\+Datoid\+Imagen (\begin{DoxyParamCaption}\item[{long int}]{partner\+\_\+id,  }\item[{string}]{hand,  }\item[{string}]{finger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Datoid\+Imagen Este metodo se encarga de obtener el id de un registro en la tabla res.\+partner.\+fingerprint para ello la busquedad es parametrizada con partner\+\_\+id, hand y finger. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em partner\+\_\+id} & Viene de la G\+UI \\
+\hline
+{\em hand} & Viene de la G\+UI \\
+\hline
+{\em finger} & Viene de la G\+UI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+result\+\_\+read es un struct Xml\+Rpc\+Value 
+\end{DoxyReturn}
+
+
+Definición en la línea 398 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_ae6d4fbf9fa54b3ab177f541dcb15b64f}{}\label{classGuiWsOpenErp_ae6d4fbf9fa54b3ab177f541dcb15b64f} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Get\+Dato\+Persona@{Get\+Dato\+Persona}}
+\index{Get\+Dato\+Persona@{Get\+Dato\+Persona}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Get\+Dato\+Persona()}{GetDatoPersona()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::\+Get\+Dato\+Persona (\begin{DoxyParamCaption}\item[{string}]{cedula\+\_\+identidad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Dato\+Persona Este metodo se encarga de buscar en la tabla res.\+partner. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cedula\+\_\+identidad} & Viene de la G\+UI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+identification\+\_\+id \& name. 
+\end{DoxyReturn}
+
+
+Definición en la línea 189 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona().
+
+\hypertarget{classGuiWsOpenErp_a128600b86f70773fb336c6b59c853b42}{}\label{classGuiWsOpenErp_a128600b86f70773fb336c6b59c853b42} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!get\+Dato\+Persona\+Verificacion@{get\+Dato\+Persona\+Verificacion}}
+\index{get\+Dato\+Persona\+Verificacion@{get\+Dato\+Persona\+Verificacion}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{get\+Dato\+Persona\+Verificacion()}{getDatoPersonaVerificacion()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::get\+Dato\+Persona\+Verificacion (\begin{DoxyParamCaption}\item[{string}]{cedula }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Dato\+Persona\+Verificacion Este metodo se encarga de buscar los datos de la persona, a la cual se le verifica la huella. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cedula} & Viene de la G\+UI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Datos de verificación para una persona 
+\end{DoxyReturn}
+
+
+Definición en la línea 467 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+Verificacion().
+
+\hypertarget{classGuiWsOpenErp_aeb56055280e6dcceb9b3da722c20a5ce}{}\label{classGuiWsOpenErp_aeb56055280e6dcceb9b3da722c20a5ce} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Get\+Persona\+By\+O\+B\+PP@{Get\+Persona\+By\+O\+B\+PP}}
+\index{Get\+Persona\+By\+O\+B\+PP@{Get\+Persona\+By\+O\+B\+PP}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Get\+Persona\+By\+O\+B\+P\+P()}{GetPersonaByOBPP()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::\+Get\+Persona\+By\+O\+B\+PP (\begin{DoxyParamCaption}\item[{string}]{situr\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Persona\+By\+O\+B\+PP Este metodo se encarga de buscar todas las personas a la cual pertene una obpp, para ello se parametriza la busquedad con el cdigo situr. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em situr\+\_\+code} & Viene de la G\+UI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valores de la O\+B\+PP 
+\end{DoxyReturn}
+
+
+Definición en la línea 246 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+Hace referencia a N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+O\+B\+P\+P().
+
+\hypertarget{classGuiWsOpenErp_a417ed5728168fa74561efd022a42ae49}{}\label{classGuiWsOpenErp_a417ed5728168fa74561efd022a42ae49} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Get\+Usuario@{Get\+Usuario}}
+\index{Get\+Usuario@{Get\+Usuario}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Get\+Usuario()}{GetUsuario()}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value Gui\+Ws\+Open\+Erp\+::\+Get\+Usuario (\begin{DoxyParamCaption}\item[{string}]{usuario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Usuario Este metodo se encarga de buscar en la tabla res.\+users parametrizado con la variable \char`\"{}usuario\char`\"{}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Viene de la G\+UI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+id \& login. 
+\end{DoxyReturn}
+
+
+Definición en la línea 131 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a48d629317e4b3be8b5471e5a14a60082}{}\label{classGuiWsOpenErp_a48d629317e4b3be8b5471e5a14a60082} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!Inicializar@{Inicializar}}
+\index{Inicializar@{Inicializar}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{Inicializar()}{Inicializar()}}
+{\footnotesize\ttfamily long int Gui\+Ws\+Open\+Erp\+::\+Inicializar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializar se encarga de la autentificacion contra el Open\+E\+RP. 
+
+\begin{DoxyReturn}{Devuelve}
+el id del usuario que se autentifica. 
+\end{DoxyReturn}
+
+
+Definición en la línea 107 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+Hace referencia a N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::comprobar(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+O\+B\+P\+P(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+Verificacion() y Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Usuario().
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classGuiWsOpenErp_aa872d8ffb6c11032ec0dcfd8ee49e234}{}\label{classGuiWsOpenErp_aa872d8ffb6c11032ec0dcfd8ee49e234} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!dbname@{dbname}}
+\index{dbname@{dbname}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{dbname}{dbname}}
+{\footnotesize\ttfamily string Gui\+Ws\+Open\+Erp\+::dbname\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dbname 
+
+
+
+Definición en la línea 43 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_aa01da7bfce4fce442c869c6d1c988c4b}{}\label{classGuiWsOpenErp_aa01da7bfce4fce442c869c6d1c988c4b} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!model@{model}}
+\index{model@{model}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily string Gui\+Ws\+Open\+Erp\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+U\+RL. 
+
+
+
+Definición en la línea 55 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_ad82141631eb4a41cd62b1c8892424a92}{}\label{classGuiWsOpenErp_ad82141631eb4a41cd62b1c8892424a92} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!pwd@{pwd}}
+\index{pwd@{pwd}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{pwd}{pwd}}
+{\footnotesize\ttfamily string Gui\+Ws\+Open\+Erp\+::pwd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pwd 
+
+
+
+Definición en la línea 51 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a791f1dd8b0b16f454ae7f1a2abe0a761}{}\label{classGuiWsOpenErp_a791f1dd8b0b16f454ae7f1a2abe0a761} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!uid@{uid}}
+\index{uid@{uid}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily Xml\+Rpc\+Value\+::int32 Gui\+Ws\+Open\+Erp\+::uid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+uid 
+
+
+
+Definición en la línea 63 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a96c46b5aed53de6d0fca055f28862be5}{}\label{classGuiWsOpenErp_a96c46b5aed53de6d0fca055f28862be5} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!U\+RL@{U\+RL}}
+\index{U\+RL@{U\+RL}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{U\+RL}{URL}}
+{\footnotesize\ttfamily string Gui\+Ws\+Open\+Erp\+::\+U\+RL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+U\+RL. 
+
+
+
+Definición en la línea 59 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+\hypertarget{classGuiWsOpenErp_a34037b0900d58859cc4c42e77f170d82}{}\label{classGuiWsOpenErp_a34037b0900d58859cc4c42e77f170d82} 
+\index{Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}!user@{user}}
+\index{user@{user}!Gui\+Ws\+Open\+Erp@{Gui\+Ws\+Open\+Erp}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily string Gui\+Ws\+Open\+Erp\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+user 
+
+
+
+Definición en la línea 47 del archivo Gui\+Ws\+Open\+Erp.\+cpp.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\hyperlink{GuiWsOpenErp_8cpp}{Gui\+Ws\+Open\+Erp.\+cpp}\end{DoxyCompactItemize}

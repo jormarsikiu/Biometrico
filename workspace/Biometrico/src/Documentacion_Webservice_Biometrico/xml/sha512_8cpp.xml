@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="sha512_8cpp" kind="file" language="C++">
+    <compoundname>sha512.cpp</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="sha512_8h" local="yes">sha512.h</includes>
+    <incdepgraph>
+      <node id="98">
+        <label>string</label>
+      </node>
+      <node id="96">
+        <label>fstream</label>
+      </node>
+      <node id="94">
+        <label>TemplateAFIS_webservice_lib/firma_digital/sha512.cpp</label>
+        <link refid="sha512_8cpp"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>sha512.h</label>
+        <link refid="sha512_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sha512_8cpp_1acab52167a6e7f6daf06e9cbeae13aae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sha512</definition>
+        <argsstring>(std::string input)</argsstring>
+        <name>sha512</name>
+        <param>
+          <type>std::string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" line="149" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="149" bodyend="163"/>
+        <references refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" compoundref="sha512_8h" startline="74">SHA512::DIGEST_SIZE</references>
+        <references refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">SHA512::final</references>
+        <references refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" compoundref="sha512_8cpp" startline="93" endline="105">SHA512::init</references>
+        <references refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">SHA512::update</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase cabecera para estabilizar la clase <ref refid="md5_8cpp" kindref="compound">md5.cpp</ref> por versiones diferentes de las bibliotecas de <ref refid="classMD5" kindref="compound">MD5</ref> o de <ref refid="classSHA512" kindref="compound">SHA512</ref> en el servidor. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><ulink url="http://www.zedwood.com/article/cpp-sha512-function">http://www.zedwood.com/article/cpp-sha512-function</ulink> This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sha512_8h" kindref="compound">sha512.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" kindref="member">SHA512::sha512_k</ref>[80]<sp/>=<sp/></highlight><highlight class="comment">//ULL<sp/>=<sp/>uint64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0x428a2f98d728ae22ULL,<sp/>0x7137449123ef65cdULL,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xb5c0fbcfec4d3b2fULL,<sp/>0xe9b5dba58189dbbcULL,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3956c25bf348b538ULL,<sp/>0x59f111f1b605d019ULL,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x923f82a4af194f9bULL,<sp/>0xab1c5ed5da6d8118ULL,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xd807aa98a3030242ULL,<sp/>0x12835b0145706fbeULL,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x243185be4ee4b28cULL,<sp/>0x550c7dc3d5ffb4e2ULL,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x72be5d74f27b896fULL,<sp/>0x80deb1fe3b1696b1ULL,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9bdc06a725c71235ULL,<sp/>0xc19bf174cf692694ULL,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xe49b69c19ef14ad2ULL,<sp/>0xefbe4786384f25e3ULL,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0fc19dc68b8cd5b5ULL,<sp/>0x240ca1cc77ac9c65ULL,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2de92c6f592b0275ULL,<sp/>0x4a7484aa6ea6e483ULL,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5cb0a9dcbd41fbd4ULL,<sp/>0x76f988da831153b5ULL,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x983e5152ee66dfabULL,<sp/>0xa831c66d2db43210ULL,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xb00327c898fb213fULL,<sp/>0xbf597fc7beef0ee4ULL,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc6e00bf33da88fc2ULL,<sp/>0xd5a79147930aa725ULL,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06ca6351e003826fULL,<sp/>0x142929670a0e6e70ULL,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x27b70a8546d22ffcULL,<sp/>0x2e1b21385c26c926ULL,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4d2c6dfc5ac42aedULL,<sp/>0x53380d139d95b3dfULL,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x650a73548baf63deULL,<sp/>0x766a0abb3c77b2a8ULL,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x81c2c92e47edaee6ULL,<sp/>0x92722c851482353bULL,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xa2bfe8a14cf10364ULL,<sp/>0xa81a664bbc423001ULL,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc24b8b70d0f89791ULL,<sp/>0xc76c51a30654be30ULL,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xd192e819d6ef5218ULL,<sp/>0xd69906245565a910ULL,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf40e35855771202aULL,<sp/>0x106aa07032bbd1b8ULL,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x19a4c116b8d2d0c8ULL,<sp/>0x1e376c085141ab53ULL,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2748774cdf8eeb99ULL,<sp/>0x34b0bcb5e19b48a8ULL,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x391c0cb3c5c95a63ULL,<sp/>0x4ed8aa4ae3418acbULL,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5b9cca4f7763e373ULL,<sp/>0x682e6ff3d6b2b8a3ULL,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x748f82ee5defb2fcULL,<sp/>0x78a5636f43172f60ULL,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x84c87814a1f0ab72ULL,<sp/>0x8cc702081a6439ecULL,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x90befffa23631e28ULL,<sp/>0xa4506cebde82bde9ULL,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xbef9a3f7b2c67915ULL,<sp/>0xc67178f2e372532bULL,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xca273eceea26619cULL,<sp/>0xd186b8c721c0c207ULL,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xeada7dd6cde0eb1eULL,<sp/>0xf57d4f7fee6ed178ULL,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06f067aa72176fbaULL,<sp/>0x0a637dc5a2c898a6ULL,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x113f9804bef90daeULL,<sp/>0x1b710b35131c471bULL,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x28db77f523047d84ULL,<sp/>0x32caab7b40c72493ULL,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3c9ebe0a15c9bebcULL,<sp/>0x431d67c49c100d4cULL,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4cc5d4becb3e42b6ULL,<sp/>0x597f299cfc657e2aULL,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5fcb6fab3ad6faecULL,<sp/>0x6c44198c4a475817ULL};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="55" refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" kindref="member">SHA512::transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block_nb)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref><sp/>w[80];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref><sp/>wv[8];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref><sp/>t1,<sp/>t2;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*sub_block;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(int)<sp/>block_nb;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub_block<sp/>=<sp/>message<sp/>+<sp/>(i<sp/>&lt;&lt;<sp/>7);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>16;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sha512_8h_1abfcad1e5762f93ffd8cd566bbe261a19" kindref="member">SHA2_PACK64</ref>(&amp;sub_block[j<sp/>&lt;&lt;<sp/>3],<sp/>&amp;w[j]);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>16;<sp/>j<sp/>&lt;<sp/>80;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w[j]<sp/>=<sp/><sp/><ref refid="sha512_8h_1ad6d26f67626668a9ec4f113bd05bee2b" kindref="member">SHA512_F4</ref>(w[j<sp/>-<sp/><sp/>2])<sp/>+<sp/>w[j<sp/>-<sp/><sp/>7]<sp/>+<sp/><ref refid="sha512_8h_1a278e83abc8c71fec8a719065e5d51106" kindref="member">SHA512_F3</ref>(w[j<sp/>-<sp/>15])<sp/>+<sp/>w[j<sp/>-<sp/>16];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>8;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[j]<sp/>=<sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[j];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>80;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t1<sp/>=<sp/>wv[7]<sp/>+<sp/><ref refid="sha512_8h_1a41b8a672f8ed1a11ea49acb032550fa6" kindref="member">SHA512_F2</ref>(wv[4])<sp/>+<sp/><ref refid="sha512_8h_1a1d4a72c3cb3d85b0c82736081042c1a4" kindref="member">SHA2_CH</ref>(wv[4],<sp/>wv[5],<sp/>wv[6])</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/><ref refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" kindref="member">sha512_k</ref>[j]<sp/>+<sp/>w[j];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t2<sp/>=<sp/><ref refid="sha512_8h_1a8c65d2c0860cf623b5607b2aec6a870a" kindref="member">SHA512_F1</ref>(wv[0])<sp/>+<sp/><ref refid="sha512_8h_1ae9222f6c22449097806fb1dac2a58107" kindref="member">SHA2_MAJ</ref>(wv[0],<sp/>wv[1],<sp/>wv[2]);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[7]<sp/>=<sp/>wv[6];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[6]<sp/>=<sp/>wv[5];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[5]<sp/>=<sp/>wv[4];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[4]<sp/>=<sp/>wv[3]<sp/>+<sp/>t1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[3]<sp/>=<sp/>wv[2];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[2]<sp/>=<sp/>wv[1];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[1]<sp/>=<sp/>wv[0];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wv[0]<sp/>=<sp/>t1<sp/>+<sp/>t2;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>8;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[j]<sp/>+=<sp/>wv[j];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="93" refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" kindref="member">SHA512::init</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[0]<sp/>=<sp/>0x6a09e667f3bcc908ULL;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[1]<sp/>=<sp/>0xbb67ae8584caa73bULL;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[2]<sp/>=<sp/>0x3c6ef372fe94f82bULL;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[3]<sp/>=<sp/>0xa54ff53a5f1d36f1ULL;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[4]<sp/>=<sp/>0x510e527fade682d1ULL;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[5]<sp/>=<sp/>0x9b05688c2b3e6c1fULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[6]<sp/>=<sp/>0x1f83d9abfb41bd6bULL;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[7]<sp/>=<sp/>0x5be0cd19137e2179ULL;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" kindref="member">m_tot_len</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="107" refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" kindref="member">SHA512::update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block_nb;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_len,<sp/>rem_len,<sp/>tmp_len;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*shifted_message;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_len<sp/>=<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref><sp/>-<sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>rem_len<sp/>=<sp/>len<sp/>&lt;<sp/>tmp_len<sp/>?<sp/>len<sp/>:<sp/>tmp_len;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;<ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>[m_len],<sp/>message,<sp/>rem_len);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_len<sp/>+<sp/>len<sp/>&lt;<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_len<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>new_len<sp/>=<sp/>len<sp/>-<sp/>rem_len;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>block_nb<sp/>=<sp/>new_len<sp/>/<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>shifted_message<sp/>=<sp/>message<sp/>+<sp/>rem_len;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" kindref="member">transform</ref>(<ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" kindref="member">transform</ref>(shifted_message,<sp/>block_nb);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>rem_len<sp/>=<sp/>new_len<sp/>%<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(<ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>,<sp/>&amp;shifted_message[block_nb<sp/>&lt;&lt;<sp/>7],<sp/>rem_len);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>m_len<sp/>=<sp/>rem_len;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" kindref="member">m_tot_len</ref><sp/>+=<sp/>(block_nb<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/>7;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="130" refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" kindref="member">SHA512::final</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*digest)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block_nb;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pm_len;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_b;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>block_nb<sp/>=<sp/>1<sp/>+<sp/>((<ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref><sp/>-<sp/>17)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;<sp/>(<ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref><sp/>%<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref>));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>len_b<sp/>=<sp/>(<ref refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" kindref="member">m_tot_len</ref><sp/>+<sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>)<sp/>&lt;&lt;<sp/>3;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>pm_len<sp/>=<sp/>block_nb<sp/>&lt;&lt;<sp/>7;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref><sp/>+<sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>,<sp/>0,<sp/>pm_len<sp/>-<sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>[<ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>]<sp/>=<sp/>0x80;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sha512_8h_1a2dc032adc83afe8e265a7941ef11f258" kindref="member">SHA2_UNPACK32</ref>(len_b,<sp/><ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref><sp/>+<sp/>pm_len<sp/>-<sp/>4);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" kindref="member">transform</ref>(<ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>,<sp/>block_nb);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sha512_8h_1a81e6dc4766f3664c56beb47948d35e23" kindref="member">SHA2_UNPACK64</ref>(<ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[i],<sp/>&amp;digest[i<sp/>&lt;&lt;<sp/>3]);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="149" refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" refkind="member"><highlight class="normal">std::string<sp/><ref refid="sha512_8cpp_1acab52167a6e7f6daf06e9cbeae13aae6" kindref="member">sha512</ref>(std::string<sp/>input)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>digest[<ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">SHA512::DIGEST_SIZE</ref>];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(digest,0,<ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">SHA512::DIGEST_SIZE</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSHA512" kindref="compound">SHA512</ref><sp/>ctx<sp/>=<sp/><ref refid="classSHA512" kindref="compound">SHA512</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx.<ref refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx.<ref refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" kindref="member">update</ref>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)input.c_str(),<sp/>input.length());</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx.<ref refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" kindref="member">final</ref>(digest);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[2*<ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">SHA512::DIGEST_SIZE</ref>+1];</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[2*<ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">SHA512::DIGEST_SIZE</ref>]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">SHA512::DIGEST_SIZE</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(buf+i*2,<sp/></highlight><highlight class="stringliteral">&quot;%02x&quot;</highlight><highlight class="normal">,<sp/>digest[i]);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buf);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>Updated<sp/>to<sp/>C++,<sp/>zedwood.com<sp/>2012</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*<sp/>Based<sp/>on<sp/>Olivier<sp/>Gay&apos;s<sp/>version</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/>See<sp/>Modified<sp/>BSD<sp/>License<sp/>below:<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/>FIPS<sp/>180-2<sp/>SHA-224/256/384/512<sp/>implementation</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*<sp/>Issue<sp/>date:<sp/><sp/>04/30/2005</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/>http://www.ouah.org/ogay/sha2/</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2005,<sp/>2007<sp/>Olivier<sp/>Gay<sp/>&lt;olivier.gay@a3.epfl.ch&gt;</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>3.<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>project<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>PROJECT<sp/>AND<sp/>CONTRIBUTORS<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>PROJECT<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/>*<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/>*<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/>*<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/>*<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp"/>
+  </compounddef>
+</doxygen>

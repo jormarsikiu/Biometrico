@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="compilar_8sh" kind="file" language="C++">
+    <compoundname>compilar.sh</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#!/bin/sh</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@file<sp/>compilar.sh</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@author<sp/>Asociación<sp/>Cooperativa<sp/>Simón<sp/>Rodríguez<sp/>para<sp/>el<sp/>Conocimiento<sp/>Libre<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@author<sp/>Lcdo.<sp/>César<sp/>Cordero,<sp/>Ing.<sp/>Servio<sp/>Zambrano<sp/>y<sp/>Ángel<sp/>Ramírez<sp/>Isea.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@date<sp/>Abril<sp/>-<sp/>Agosto<sp/>de<sp/>2014.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>@brief<sp/>Script<sp/>de<sp/>instalación<sp/>del<sp/>webservice.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">############################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Establecer<sp/>las<sp/>variables<sp/>de<sp/>entorno.<sp/>Éstas<sp/>implican<sp/>haber<sp/>instalado<sp/>primero<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>libtool,<sp/>automake<sp/>y<sp/>autoconf,<sp/>y<sp/>compilado<sp/>desde<sp/>fuentes:<sp/>libwww<sp/>de<sp/>w3c<sp/>y<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>xmlrpc.1.25.26<sp/>(en<sp/>ese<sp/>orden),<sp/>habiendo<sp/>corregido<sp/>los<sp/>enlaces<sp/>simbólicos<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>faltantes.<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">//############################################################################</highlight></codeline>
+<codeline><highlight class="normal">CLIENT_CFLAGS=`xmlrpc-c-config<sp/>c++<sp/>libwww-client<sp/>--cflags`</highlight></codeline>
+<codeline><highlight class="normal">CLIENT_LIBS=`xmlrpc-c-config<sp/>c++<sp/>libwww-client<sp/>--libs`</highlight></codeline>
+<codeline><highlight class="normal">CGI_CFLAGS=`xmlrpc-c-config<sp/>cgi-server<sp/>--cflags`</highlight></codeline>
+<codeline><highlight class="normal">CGI_LIBS=`xmlrpc-c-config<sp/>cgi-server<sp/>--libs`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Se<sp/>instala<sp/>dependencias<sp/>de<sp/>compilación.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>El<sp/>comando<sp/>g++<sp/>usualmente<sp/>indica<sp/>si<sp/>nos<sp/>falta<sp/>alguna<sp/>dependencia<sp/>o<sp/>si<sp/>la<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>actualización<sp/>de<sp/>alguna<sp/>biblioteca<sp/>choca<sp/>con<sp/>el<sp/>código.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>No<sp/>es<sp/>común,<sp/>pero<sp/>como<sp/>en<sp/>los<sp/>temas<sp/>de<sp/>seguridad<sp/>(bibliotecas<sp/>SSL)<sp/>y<sp/>de<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>criptografía<sp/>casi<sp/>todos<sp/>los<sp/>días<sp/>se<sp/>descubre<sp/>un<sp/>bug<sp/>o<sp/>hay<sp/>un<sp/>avance,<sp/>es<sp/>bueno<sp/>leer<sp/>toda<sp/>la<sp/>salida.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">g++<sp/>-lssl<sp/>$CGI_CFLAGS<sp/>$CLIENT_CFLAGS<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservices_lib/firma_digital/FirmaDigital.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservices_lib/include/Utilidades.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservices_lib/firma_digital/md5.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservices_lib/include/TemplateAFIS.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservice.cpp<sp/>TemplateAFIS_webservices_lib/include/ws.cpp<sp/>-o<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TemplateAFIS_webservice.cgi<sp/>-lpqxx<sp/>-lUFScanner<sp/>-lUFMatcher<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$CGI_LIBS<sp/>$CLIENT_LIBS<sp/>-L/usr/local/lib<sp/>-lusb<sp/>-ljpeg<sp/>-lcrypto</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Copiar<sp/>el<sp/>binario<sp/>(.cgi),<sp/>la<sp/>licencia<sp/>y<sp/>el<sp/>subdirectorio<sp/>con<sp/>dependencias:<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Cuando<sp/>el<sp/>proceso<sp/>termina<sp/>produce<sp/>TemplateAFIS_webservice.cgi.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Lo<sp/>mueve<sp/>a<sp/>la<sp/>carpeta<sp/>desde<sp/>la<sp/>cual<sp/>Apache<sp/>sirve<sp/>los<sp/>binarios</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>TemplateAFIS_webservice.cgi<sp/>/usr/lib/cgi-bin/sinco/</highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>UFLicense.dat<sp/>/usr/lib/cgi-bin/sinco/</highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>-r<sp/>TemplateAFIS_webservices_lib<sp/>/usr/lib/cgi-bin/sinco/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">/*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Otorgar<sp/>permisos<sp/>y<sp/>establecer<sp/>el<sp/>propietario<sp/>de<sp/>los<sp/>archivos:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">################################################################################</highlight></codeline>
+<codeline><highlight class="normal">chmod<sp/>740<sp/>/usr/lib/cgi-bin/<sp/>-R</highlight></codeline>
+<codeline><highlight class="normal">chown<sp/>www-data:www-data<sp/>/usr/lib/cgi-bin/<sp/>-R</highlight></codeline>
+    </programlisting>
+    <location file="compilar.sh"/>
+  </compounddef>
+</doxygen>

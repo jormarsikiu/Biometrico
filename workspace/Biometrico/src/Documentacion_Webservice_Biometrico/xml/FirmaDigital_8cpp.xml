@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="FirmaDigital_8cpp" kind="file" language="C++">
+    <compoundname>FirmaDigital.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">ctime</includes>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <incdepgraph>
+      <node id="70">
+        <label>stdlib.h</label>
+      </node>
+      <node id="67">
+        <label>TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp</label>
+        <link refid="FirmaDigital_8cpp"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>string</label>
+      </node>
+      <node id="73">
+        <label>ctime</label>
+      </node>
+      <node id="71">
+        <label>sstream</label>
+      </node>
+      <node id="68">
+        <label>iostream</label>
+      </node>
+      <node id="74">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>stdio.h</label>
+      </node>
+      <node id="75">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Se definen los métodos para generar la clave que será la firma de cada paquete XML-RPC. </para>    </briefdescription>
+    <detaileddescription>
+<para>Comando de compilación: g++ <ref refid="sha512_8cpp" kindref="compound">sha512.cpp</ref> firma_srcl.cpp -o firma_srcl &amp;&amp; ./firma_srcl</para><para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. <ulink url="mailto:contacto@simonrodriguez.org.ve">contacto@simonrodriguez.org.ve</ulink> </para></simplesect>
+<simplesect kind="date"><para>2014 This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="md5_8h" kindref="compound">md5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FirmaDigital_8h" kindref="compound">FirmaDigital.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classFirmaDigital_1a327b0fa8329a7e33cc04f8d4793652be" refkind="member"><highlight class="normal"><ref refid="classFirmaDigital_1a327b0fa8329a7e33cc04f8d4793652be" kindref="member">FirmaDigital::FirmaDigital</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>clave_privada)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;clave_privada<sp/>=<sp/>clave_privada;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classFirmaDigital_1ac68550394f9f4e0b73e80dc050875325" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classFirmaDigital_1ac68550394f9f4e0b73e80dc050875325" kindref="member">FirmaDigital::firma_srcl</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cadena){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>clave_privada;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>ss,<sp/>sstm;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>firma;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>arreglo[7];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[0]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Cabimas&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[1]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Ciudad<sp/>Ojeda&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[2]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Lagunillas&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[3]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Maracaibo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[4]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Puerto<sp/>Caballo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[5]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Santa<sp/>Rita&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>arreglo[6]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Catatumbo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>*<sp/>ptm;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>comp_mon,<sp/>comp_day;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio,<sp/>mes,<sp/>day,<sp/>daySem;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;clave_privada<sp/>=<sp/>&quot;nonosdevolvemos.2013&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Obteniendo<sp/>la<sp/>hora</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>AHORA<sp/>=<sp/>time(0);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ptm<sp/>=<sp/>gmtime(&amp;AHORA);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>anio<sp/>=<sp/>ptm-&gt;tm_year+1900;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>mes<sp/>=<sp/>ptm-&gt;tm_mon+1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>day<sp/>=<sp/>ptm-&gt;tm_mday;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>daySem<sp/>=<sp/>ptm-&gt;tm_wday;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>comp_mon<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mes<sp/>&lt;<sp/>10)<sp/>comp_mon<sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>comp_day<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(day<sp/>&lt;<sp/>10)<sp/>comp_day<sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Palabra<sp/>q<sp/>cambia<sp/>por<sp/>día<sp/>de<sp/>la<sp/>Semana</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>palabraSemana<sp/>=<sp/>arreglo[daySem];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Formateando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>sstm<sp/>&lt;&lt;<sp/>anio<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>comp_mon<sp/>&lt;&lt;<sp/>mes<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>comp_day<sp/>&lt;&lt;<sp/>day;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Concatenando<sp/>CADENA<sp/>SEMILLA<sp/>+<sp/>TIEMPO<sp/>+<sp/>PALABRASEMANA<sp/>+<sp/>CLAVE<sp/>PRIVADA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>cadena.c_str()<sp/>&lt;&lt;<sp/>sstm.str()<sp/>&lt;&lt;<sp/>palabraSemana.c_str()<sp/>&lt;&lt;<sp/>this-&gt;clave_privada.c_str();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>firma<sp/>=<sp/>ss.str();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;Cadena:<sp/>&quot;<sp/>&lt;&lt;<sp/>firma<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>firma<sp/>=<sp/><ref refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>(firma);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//firma<sp/>=<sp/>sha512(firma);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>firma;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp"/>
+  </compounddef>
+</doxygen>

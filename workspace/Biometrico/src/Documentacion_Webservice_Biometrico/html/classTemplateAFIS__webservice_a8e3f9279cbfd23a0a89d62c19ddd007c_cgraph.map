@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::salvarJPEG" name="TemplateAFIS_webservice::salvarJPEG">
+<area shape="rect" id="node2" href="$classFingerprint.html#a1060a55c0807ddea7c8ce3235f3bab49" title="Método readFingerprintImage: Obtiene todos los campos de la tabla res.partner.fingerprint.image. " alt="" coords="233,5,410,47"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#ae1db425a60d85686567fc95ec23fb497" title="Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibl..." alt="" coords="232,71,411,98"/>
+</map>

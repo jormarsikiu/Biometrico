@@ -1,0 +1,69 @@
+\hypertarget{md5_8h}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.h}
+\label{md5_8h}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.\+h@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.\+h}}
+
+
+Clase cabecera que se encarga de generar un hash alfanumérico de un tamaño predeterminado.  
+
+
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Dependencia gráfica adjunta para md5.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{md5_8h__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{md5_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMD5}{M\+D5}
+\begin{DoxyCompactList}\small\item\em Clase de la comunidad\+: Se encarga de generar un hash alfanumérico de un tamaño predeterminado, no importa cuál sea la entrada que le suministren. Es igual al que se usa para comparar dos archivos, o en encriptación. Se incluye en la compilación para evitar que un cambio de versión en el sistema de operación de una máquina pudiese afectar la comunicación. (Recibe la información de \hyperlink{FirmaDigital_8cpp}{Firma\+Digital.\+cpp} y crea los hash correspondientes para encriptarlo en \hyperlink{sha512_8cpp}{sha512.\+cpp}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{md5_8h_a92c6eed2e9b51298af559aff6792770b}{md5} (const std\+::string str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase cabecera que se encarga de generar un hash alfanumérico de un tamaño predeterminado. 
+
+\begin{DoxyAuthor}{Autor}
+Frank Thilo (\href{mailto:thilo@unix-ag.org}{\tt thilo@unix-\/ag.\+org}) This file is part of Sistema de Identificación Biométrica para las O\+B\+PP. 
+\end{DoxyAuthor}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{md5_8h_a92c6eed2e9b51298af559aff6792770b}{}\label{md5_8h_a92c6eed2e9b51298af559aff6792770b} 
+\index{md5.\+h@{md5.\+h}!md5@{md5}}
+\index{md5@{md5}!md5.\+h@{md5.\+h}}
+\subsubsection{\texorpdfstring{md5()}{md5()}}
+{\footnotesize\ttfamily std\+::string md5 (\begin{DoxyParamCaption}\item[{const std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 351 del archivo md5.\+cpp.
+
+
+
+Hace referencia a M\+D5\+::hexdigest(), M\+D5\+::\+M\+D5() y md5().
+
+
+
+Referenciado por Firma\+Digital\+::firma\+\_\+srcl() y md5().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{md5_8h_a92c6eed2e9b51298af559aff6792770b_cgraph}
+\end{center}
+\end{figure}

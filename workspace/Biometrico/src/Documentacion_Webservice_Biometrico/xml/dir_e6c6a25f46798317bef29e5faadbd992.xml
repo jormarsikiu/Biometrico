@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_e6c6a25f46798317bef29e5faadbd992" kind="dir">
+    <compoundname>TemplateAFIS_webservice_lib/firma_digital</compoundname>
+    <innerfile refid="FirmaDigital_8cpp">FirmaDigital.cpp</innerfile>
+    <innerfile refid="FirmaDigital_8h">FirmaDigital.h</innerfile>
+    <innerfile refid="md5_8cpp">md5.cpp</innerfile>
+    <innerfile refid="md5_8h">md5.h</innerfile>
+    <innerfile refid="sha512_8cpp">sha512.cpp</innerfile>
+    <innerfile refid="sha512_8h">sha512.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/"/>
+  </compounddef>
+</doxygen>

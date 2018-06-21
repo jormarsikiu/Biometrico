@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::guardarIncidencia" name="TemplateAFIS_webservice::guardarIncidencia">
+<area shape="rect" id="node2" href="$classestado__proyecto.html#a275a1af5b6d1251c68a11bf2b01d66e3" title="Método set_variables: Se usan para «loguearse» en el webservice de Odoo. Con eso se establece la comu..." alt="" coords="252,5,396,47"/>
+<area shape="rect" id="node3" href="$classestado__proyecto.html#a80aae285a18e7e7b1e97ee14dcc5c366" title="Método validacion_incidencias_huella: Es un método para detectar la falla a nivel de red: Si la falla..." alt="" coords="232,71,416,112"/>
+</map>

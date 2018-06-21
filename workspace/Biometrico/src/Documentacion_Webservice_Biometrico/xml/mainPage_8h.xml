@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="mainPage_8h" kind="file" language="C++">
+    <compoundname>mainPage.h</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/>@section<sp/>features_sec<sp/>Características</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/>*<sp/>Aquí<sp/>irian<sp/>las<sp/>características</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>@section<sp/>architecture_sec<sp/>Arquitectura</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>Fue<sp/>realizado<sp/>para<sp/>Arquitectura<sp/>64<sp/>bits.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>@section<sp/>contact_sec<sp/>Contacto</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Si<sp/>tienes<sp/>cualquier<sp/>duda<sp/>puedes<sp/>contactar<sp/>a<sp/>la<sp/>Cooperativa<sp/>en</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>contacto@simonrodriguez.org.ve</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="mainPage.h"/>
+  </compounddef>
+</doxygen>

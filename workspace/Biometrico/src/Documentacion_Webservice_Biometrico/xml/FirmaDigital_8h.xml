@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="FirmaDigital_8h" kind="file" language="C++">
+    <compoundname>FirmaDigital.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includedby refid="TemplateAFIS_8h" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.h</includedby>
+    <incdepgraph>
+      <node id="77">
+        <label>TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h</label>
+        <link refid="FirmaDigital_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="81">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="79">
+        <label>TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h</label>
+        <link refid="FirmaDigital_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFirmaDigital" prot="public">FirmaDigital</innerclass>
+    <briefdescription>
+<para>Archivo de cabecera de las clases <ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre, R.S. </para></simplesect>
+<simplesect kind="date"><para>2014 </para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<ulink url="mailto:contacto@simonrodriguez.org.ve">contacto@simonrodriguez.org.ve</ulink></para><para>This file is part of Sistema de Identificación Biométrica para las OBPP. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classFirmaDigital" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="classFirmaDigital_1a912b493f793c1e2ca268b534e65a65a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classFirmaDigital_1a912b493f793c1e2ca268b534e65a65a0" kindref="member">clave_privada</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFirmaDigital" kindref="compound">FirmaDigital</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>clave_privada);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>firma_srcl(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cadena);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.h"/>
+  </compounddef>
+</doxygen>

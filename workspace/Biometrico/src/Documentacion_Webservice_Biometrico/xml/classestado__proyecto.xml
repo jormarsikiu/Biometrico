@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classestado__proyecto" kind="class" language="C++" prot="public">
+    <compoundname>estado_proyecto</compoundname>
+    <includes refid="ws_8h" local="no">ws.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classestado__proyecto_1ad68c2876b60b2507510f01291b6a351e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::dbname</definition>
+        <argsstring></argsstring>
+        <name>dbname</name>
+        <briefdescription>
+<para>dbname </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="48" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1a44126a25c5181e9f06b0c831aa4cc2ce" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+<para>user </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="52" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1a1dd02106c2ec6c2bba1146e0a4871423" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::pwd</definition>
+        <argsstring></argsstring>
+        <name>pwd</name>
+        <briefdescription>
+<para>pwd </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="56" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1af1c6ec6fe4c01a1faeab40a61e7e21d4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+<para>model </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="60" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1aeadf1825e0dafa90f3c33e88e17d3d1c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::URL</definition>
+        <argsstring></argsstring>
+        <name>URL</name>
+        <briefdescription>
+<para>URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="64" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1af4cd30e97fc087097e738d2ef1d958c9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string estado_proyecto::URL2</definition>
+        <argsstring></argsstring>
+        <name>URL2</name>
+        <briefdescription>
+<para>URL2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="68" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1a4dfe6545f55e5b6ac0077ad0f1d7e3c9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int estado_proyecto::parent_id</definition>
+        <argsstring></argsstring>
+        <name>parent_id</name>
+        <briefdescription>
+<para>parent_id </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="73" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1a1545134dd661b72333b06cfc9c11ae49" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int estado_proyecto::id_la_tabla_res_partner</definition>
+        <argsstring></argsstring>
+        <name>id_la_tabla_res_partner</name>
+        <briefdescription>
+<para>id_la_tabla_res_partner </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="77" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1afae9b5a359fb7c20ef16050a6cf0cbf7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int estado_proyecto::id_res_partner_fingerprint</definition>
+        <argsstring></argsstring>
+        <name>id_res_partner_fingerprint</name>
+        <briefdescription>
+<para>id_res_partner_fingerprint </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="83" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1af82165bfe4a2b094605bed0955da6b46" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int estado_proyecto::id_del_proyecto</definition>
+        <argsstring></argsstring>
+        <name>id_del_proyecto</name>
+        <briefdescription>
+<para>id_del_proyecto </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="87" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestado__proyecto_1adc11a194fc56d3dffdd269dcd090c762" prot="public" static="no" mutable="no">
+        <type>XmlRpcValue::int32</type>
+        <definition>XmlRpcValue::int32 estado_proyecto::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+<para>uid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="92" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classestado__proyecto_1a4a6b71e81903d4b3b729acbfc5b4eef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estado_proyecto::estado_proyecto</definition>
+        <argsstring>()</argsstring>
+        <name>estado_proyecto</name>
+        <briefdescription>
+<para>Constructor de la clase <ref refid="classestado__proyecto_1a4a6b71e81903d4b3b729acbfc5b4eef8" kindref="member">estado_proyecto()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="97" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1afd91dfa4205c3c3af3f7af6e6744c711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estado_proyecto::~estado_proyecto</definition>
+        <argsstring>()</argsstring>
+        <name>~estado_proyecto</name>
+        <briefdescription>
+<para>Destructor de la clase <ref refid="classestado__proyecto_1a4a6b71e81903d4b3b729acbfc5b4eef8" kindref="member">estado_proyecto()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="102" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a275a1af5b6d1251c68a11bf2b01d66e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void estado_proyecto::set_variables</definition>
+        <argsstring>(string dbname, string user, string pwd, string URL, string URL2)</argsstring>
+        <name>set_variables</name>
+        <param>
+          <type>string</type>
+          <declname>dbname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>URL</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>URL2</declname>
+        </param>
+        <briefdescription>
+<para>Método set_variables: Se usan para «loguearse» en el webservice de Odoo. Con eso se establece la comunicación entre ambos webservices (captahuellas y Odoo). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dbname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre de la base de datos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de usuario </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contraseña </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="114" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="38" bodyend="45"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" compoundref="TemplateAFIS_8cpp" startline="654" endline="670">TemplateAFIS_webservice::guardarIncidencia</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a823dcbf923e91074f2f7dd4501d578e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::inicializar</definition>
+        <argsstring>()</argsstring>
+        <name>inicializar</name>
+        <briefdescription>
+<para>Método inicializar: Se define para establecer la conexión entre ambos webservices (Servidor del captahuellas y webservice de Odoo). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dbname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la base de datos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del usuario </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contraseña </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="127" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="47" bodyend="59"/>
+        <references refid="ws_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="ws_8cpp" startline="11">NAME</references>
+        <references refid="ws_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="ws_8cpp" startline="12">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a9e5d463c32524544b33ac2f069d8eb13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::buscar_id_obpp</definition>
+        <argsstring>(string cedula)</argsstring>
+        <name>buscar_id_obpp</name>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <briefdescription>
+<para>Método buscar_id_obpp: Permite ubicar el proyecto a partir de la cédula de la persona a quien le vas a capturar la huella, primero se debe buscar la persona en una tabla que relaciona personas con OBPP. Se toma el ID de la tabla de OBPP a la cual pertenece la persona, con un READ en lugar de un BROWSE. Esas funciones son necesarias para la consulta hay que hacer una matriz XML-RPC para pasársela a Odoo. </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZAR: método <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de Cédula </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="140" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="61" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a888654e845012a36987ae8b1956f2841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string estado_proyecto::buscar_estado_proyecto</definition>
+        <argsstring>(int id_proyecto)</argsstring>
+        <name>buscar_estado_proyecto</name>
+        <param>
+          <type>int</type>
+          <declname>id_proyecto</declname>
+        </param>
+        <briefdescription>
+<para>buscar_estado_proyecto (estatus): Odoo deberá informar el status es si está en «por ir a la cita». La cita es cuando los voceros asisten y se les captan las huellas. Se reliza la búsqueda del proyecto que se arma en las líneas anteriores. Se hace el READ (en lugar de BROWSE) para sacar el estatus del proyecto. Lo que está comentado es una lógica que se aplicó al principio (cuando una BPP tenía más de un proyecto), pero eso se eliminó. Se retorna el estatus y cierra el método. Se extrae el estatus del resultado de la consulta </para>        </briefdescription>
+        <detaileddescription>
+<para>string <ref refid="classestado__proyecto_1a888654e845012a36987ae8b1956f2841" kindref="member">buscar_estado_proyecto(int id_obpp)</ref>.</para><para>Optimizar: El comentado es el codigo “legacy” que ya no se utiliza. Se debe cambiar el nombre de la función de estado a estatus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id_proyecto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del Proyecto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="160" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="110" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a8033814539c3d61e0bddd29254b07355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::validacion_del_estado_del_proyecto</definition>
+        <argsstring>(string cedula, string mano, int dedo, int id_proyecto)</argsstring>
+        <name>validacion_del_estado_del_proyecto</name>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dedo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_proyecto</declname>
+        </param>
+        <briefdescription>
+<para>Método validacion_del_estado_del_proyecto: Devuelve un estatus del proyecto al obtener la cédula del vocero, mano, dedo e id del proyecto. Busca los estatus en SINCO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_proyecto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del Proyecto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="172" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="472" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a9bb10a2ce0824b9f63b72736012285bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void estado_proyecto::set_id_de_res_partner_fingerprint</definition>
+        <argsstring>(string mano, int id_la_tabla_res_partner, int dedo)</argsstring>
+        <name>set_id_de_res_partner_fingerprint</name>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_la_tabla_res_partner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dedo</declname>
+        </param>
+        <briefdescription>
+<para>Método set_id_de_res_partner_fingerprint: Permite identificar la huela en base a la persona (partner), el dedo y la mano especificados. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_la_tabla_res_partner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador de la tabla res_partner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de Dedo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="181" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="302" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a1fe9a0efbba448d2480c9b58b38463c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::write_res_partner_fingerprint_verification</definition>
+        <argsstring>(int fingerprint_id, int project_id, int accountability_id)</argsstring>
+        <name>write_res_partner_fingerprint_verification</name>
+        <param>
+          <type>int</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>project_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>accountability_id</declname>
+        </param>
+        <briefdescription>
+<para>Método write_res_partner_fingerprint_verification: Escribe cuando se hace la verificación de huella. Sirve para llevar la cuenta y poder auditar las validaciones que se hacen con las huellas. Esas verificaciones siempre se relacionan con el proyecto y/o con una rendición de cuentas. if(accountability_id &gt; 0): El write permite validar la carga del proyecto, o para validar la rendición de cuentas de ese proyecto. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador-Fingerprint </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>project_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del Proyecto </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accountability_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador Accountability </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="196" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="441" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a74f54f504416b6febb66b9a8fac7c4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool estado_proyecto::validacion_verificacion</definition>
+        <argsstring>(int fingerprint_id, int project_id, string estatus_proyecto, int accountability_id)</argsstring>
+        <name>validacion_verificacion</name>
+        <param>
+          <type>int</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>project_id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>estatus_proyecto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>accountability_id</declname>
+        </param>
+        <briefdescription>
+<para>Método validacion_verificacion: Realiza la búsqueda de la huella, en res.partner.fingerprint.verification donde se registran las veces que se validaron las huellas (luego de haber sido registradas). </para>        </briefdescription>
+        <detaileddescription>
+<para>Proceso para la validacion_verificación:<orderedlist>
+<listitem><para>Se realiza una busqueda en el método <ref refid="classestado__proyecto" kindref="compound">estado_proyecto</ref> y se ubica el ID de la rendición de cuentas</para></listitem><listitem><para>La variable accountability_id se pasa de argumento este metodo validación_verificación</para></listitem><listitem><para>Se ubica el proyecto que tiene esa rendción de cuenta para saber si hay verificaciones duplicadas</para></listitem><listitem><para>Es para auditar las veces que la gente va a la URE.</para></listitem><listitem><para>El metodo validacion_verificacion verifica si se hizo la rendicion de cuenta del proyecto</para></listitem><listitem><para>La huella evita el repudio de la rendición de cuentas.</para></listitem></orderedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador-Fingerprint </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>project_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del Proyecto </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accountability_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador Accountability </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="207" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="364" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a3029c517ed772189246c0469e58f6012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::buscar_accountability</definition>
+        <argsstring>(int id_proyecto)</argsstring>
+        <name>buscar_accountability</name>
+        <param>
+          <type>int</type>
+          <declname>id_proyecto</declname>
+        </param>
+        <briefdescription>
+<para>Método buscar_accountability: Busca las rendiciones de cuentas (los eventos de rendición de cuenta o los documentos que se entregan para rendir cuentas). Se capturan huellas al momento de rendir cuentas. Es una forma de que no puedan repudiar el reporte del uso de los fondos. La huellas capturadas se requieren cuando van a la cita a solicitar el proyecto y para certificar al usuario que reportó el uso de los fondos. Es la «no repudiabilidad». </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZACIÓN: Usar el BROWSE y especificar qué datos son necesarios. Actualmente trae todos los datos. Usa mucha memoria</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id_proyecto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del proyecto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resultado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="223" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="234" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a6785dec0403ee8c1ed4c659f7fbf7109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::write_res_partner_fingerprint_verification_incidence</definition>
+        <argsstring>(long int fingerprint_id, long int project_id, string state, string incidence_state)</argsstring>
+        <name>write_res_partner_fingerprint_verification_incidence</name>
+        <param>
+          <type>long int</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>project_id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>incidence_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="225" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="641" bodyend="705"/>
+        <references refid="ws_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="ws_8cpp" startline="11">NAME</references>
+        <references refid="ws_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="ws_8cpp" startline="12">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a01259da662364a21bbc7f485025af9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool estado_proyecto::validacion_incidencia</definition>
+        <argsstring>(long int fingerprint_id, long int project_id, string state, string incidence_state)</argsstring>
+        <name>validacion_incidencia</name>
+        <param>
+          <type>long int</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>project_id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>incidence_state</declname>
+        </param>
+        <briefdescription>
+<para>Método validacion_incidencia: La incidencia es un booleano que se activa cuando ocurre algo en la validación. Si hay una incidencia se muestra en error XML-RPC Luego se cierra la comunicación con el cliente. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador-fingerprint </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>project_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del proyecto </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estado(estatus) del proyecto </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incidence_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estatus de incidencia del proyecto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="238" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="562" bodyend="639"/>
+        <references refid="ws_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="ws_8cpp" startline="11">NAME</references>
+        <references refid="ws_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="ws_8cpp" startline="12">VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="classestado__proyecto_1a80aae285a18e7e7b1e97ee14dcc5c366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estado_proyecto::validacion_incidencias_huella</definition>
+        <argsstring>(string cedula, string mano, int dedo, long int id_proy)</argsstring>
+        <name>validacion_incidencias_huella</name>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dedo</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>id_proy</declname>
+        </param>
+        <briefdescription>
+<para>Método validacion_incidencias_huella: Es un método para detectar la falla a nivel de red: Si la falla es a nivel del webservice se atrapa con el Odoo, sino la falla es de a nivel de la red y se verifica si se realizó un registro adecuado en la base de datos. Este método llama al método write cuando se da cuenta que hubo una falla en la validación y luego verifica si se escribió en el registro, sino se escribió nada se corta al cliente. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número del dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_proy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del proyecto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="254" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.cpp" bodystart="708" bodyend="736"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" compoundref="TemplateAFIS_8cpp" startline="654" endline="670">TemplateAFIS_webservice::guardarIncidencia</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase para manipular el <ref refid="classestado__proyecto" kindref="compound">estado_proyecto</ref> (status) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/include/ws.h" line="41" column="1" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="40" bodyend="255"/>
+    <listofallmembers>
+      <member refid="classestado__proyecto_1a3029c517ed772189246c0469e58f6012" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>buscar_accountability</name></member>
+      <member refid="classestado__proyecto_1a888654e845012a36987ae8b1956f2841" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>buscar_estado_proyecto</name></member>
+      <member refid="classestado__proyecto_1a9e5d463c32524544b33ac2f069d8eb13" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>buscar_id_obpp</name></member>
+      <member refid="classestado__proyecto_1ad68c2876b60b2507510f01291b6a351e" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>dbname</name></member>
+      <member refid="classestado__proyecto_1a4a6b71e81903d4b3b729acbfc5b4eef8" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>estado_proyecto</name></member>
+      <member refid="classestado__proyecto_1af82165bfe4a2b094605bed0955da6b46" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>id_del_proyecto</name></member>
+      <member refid="classestado__proyecto_1a1545134dd661b72333b06cfc9c11ae49" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>id_la_tabla_res_partner</name></member>
+      <member refid="classestado__proyecto_1afae9b5a359fb7c20ef16050a6cf0cbf7" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>id_res_partner_fingerprint</name></member>
+      <member refid="classestado__proyecto_1a823dcbf923e91074f2f7dd4501d578e9" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>inicializar</name></member>
+      <member refid="classestado__proyecto_1af1c6ec6fe4c01a1faeab40a61e7e21d4" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>model</name></member>
+      <member refid="classestado__proyecto_1a4dfe6545f55e5b6ac0077ad0f1d7e3c9" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>parent_id</name></member>
+      <member refid="classestado__proyecto_1a1dd02106c2ec6c2bba1146e0a4871423" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>pwd</name></member>
+      <member refid="classestado__proyecto_1a9bb10a2ce0824b9f63b72736012285bf" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>set_id_de_res_partner_fingerprint</name></member>
+      <member refid="classestado__proyecto_1a275a1af5b6d1251c68a11bf2b01d66e3" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>set_variables</name></member>
+      <member refid="classestado__proyecto_1adc11a194fc56d3dffdd269dcd090c762" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>uid</name></member>
+      <member refid="classestado__proyecto_1aeadf1825e0dafa90f3c33e88e17d3d1c" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>URL</name></member>
+      <member refid="classestado__proyecto_1af4cd30e97fc087097e738d2ef1d958c9" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>URL2</name></member>
+      <member refid="classestado__proyecto_1a44126a25c5181e9f06b0c831aa4cc2ce" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>user</name></member>
+      <member refid="classestado__proyecto_1a8033814539c3d61e0bddd29254b07355" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>validacion_del_estado_del_proyecto</name></member>
+      <member refid="classestado__proyecto_1a01259da662364a21bbc7f485025af9ad" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>validacion_incidencia</name></member>
+      <member refid="classestado__proyecto_1a80aae285a18e7e7b1e97ee14dcc5c366" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>validacion_incidencias_huella</name></member>
+      <member refid="classestado__proyecto_1a74f54f504416b6febb66b9a8fac7c4a7" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>validacion_verificacion</name></member>
+      <member refid="classestado__proyecto_1a1fe9a0efbba448d2480c9b58b38463c9" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>write_res_partner_fingerprint_verification</name></member>
+      <member refid="classestado__proyecto_1a6785dec0403ee8c1ed4c659f7fbf7109" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>write_res_partner_fingerprint_verification_incidence</name></member>
+      <member refid="classestado__proyecto_1afd91dfa4205c3c3af3f7af6e6744c711" prot="public" virt="non-virtual"><scope>estado_proyecto</scope><name>~estado_proyecto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

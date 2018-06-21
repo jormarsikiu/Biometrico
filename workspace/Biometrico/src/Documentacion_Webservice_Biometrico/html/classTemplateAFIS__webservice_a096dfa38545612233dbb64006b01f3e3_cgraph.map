@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::getDatosPersona" name="TemplateAFIS_webservice::getDatosPersona">
+<area shape="rect" id="node2" href="$classGuiWsOpenErp.html#ae6d4fbf9fa54b3ab177f541dcb15b64f" title="GetDatoPersona Este metodo se encarga de buscar en la tabla res.partner. " alt="" coords="232,5,451,32"/>
+<area shape="rect" id="node3" href="$classGuiWsOpenErp.html#a48d629317e4b3be8b5471e5a14a60082" title="Inicializar se encarga de la autentificacion contra el OpenERP. " alt="" coords="253,56,429,83"/>
+</map>

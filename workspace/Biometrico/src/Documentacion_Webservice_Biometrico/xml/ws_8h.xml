@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="ws_8h" kind="file" language="C++">
+    <compoundname>ws.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">XmlRpcCpp.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cctype</includes>
+    <includedby refid="TemplateAFIS_8h" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.h</includedby>
+    <includedby refid="ws_8cpp" local="yes">TemplateAFIS_webservice_lib/include/ws.cpp</includedby>
+    <incdepgraph>
+      <node id="211">
+        <label>XmlRpcCpp.h</label>
+      </node>
+      <node id="212">
+        <label>stdlib.h</label>
+      </node>
+      <node id="215">
+        <label>fstream</label>
+      </node>
+      <node id="208">
+        <label>string.h</label>
+      </node>
+      <node id="214">
+        <label>ctime</label>
+      </node>
+      <node id="213">
+        <label>sstream</label>
+      </node>
+      <node id="209">
+        <label>cstdlib</label>
+      </node>
+      <node id="217">
+        <label>cctype</label>
+      </node>
+      <node id="210">
+        <label>iostream</label>
+      </node>
+      <node id="216">
+        <label>algorithm</label>
+      </node>
+      <node id="207">
+        <label>stdio.h</label>
+      </node>
+      <node id="206">
+        <label>TemplateAFIS_webservice_lib/include/ws.h</label>
+        <link refid="ws_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="220">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="221">
+        <label>TemplateAFIS_webservice_lib/include/ws.cpp</label>
+        <link refid="ws_8cpp"/>
+      </node>
+      <node id="219">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>TemplateAFIS_webservice_lib/include/ws.h</label>
+        <link refid="ws_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classestado__proyecto" prot="public">estado_proyecto</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ws_8h_1a47f2e62c0dbebc787052c165afcada0e" prot="public" static="no">
+        <name>NAME</name>
+        <initializer>&quot;XML-RPC CFG C++ Client&quot;</initializer>
+        <briefdescription>
+<para>NAME. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="20" column="9" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>&quot;2.0&quot;</initializer>
+        <briefdescription>
+<para>VERSION. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/ws.h" line="24" column="9" bodyfile="TemplateAFIS_webservice_lib/include/ws.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Archivo de cabecera de las clases estado proyecto. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. <ulink url="mailto:contacto@simonrodriguez.org.ve">contacto@simonrodriguez.org.ve</ulink> </para></simplesect>
+<simplesect kind="authors"><para>Lcdo. César Cordero, Ing. Servio Zambrano y Ángel Ramírez Isea. </para></simplesect>
+<simplesect kind="date"><para>2014 </para></simplesect>
+<simplesect kind="version"><para>2.0 This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;XmlRpcCpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="ws_8h_1a47f2e62c0dbebc787052c165afcada0e" refkind="member"><highlight class="preprocessor">#define<sp/>NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;XML-RPC<sp/>CFG<sp/>C++<sp/>Client&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="ws_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" refkind="member"><highlight class="preprocessor">#define<sp/>VERSION<sp/><sp/><sp/><sp/>&quot;2.0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classestado__proyecto" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classestado__proyecto" kindref="compound">estado_proyecto</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classestado__proyecto_1ad68c2876b60b2507510f01291b6a351e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1ad68c2876b60b2507510f01291b6a351e" kindref="member">dbname</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classestado__proyecto_1a44126a25c5181e9f06b0c831aa4cc2ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1a44126a25c5181e9f06b0c831aa4cc2ce" kindref="member">user</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classestado__proyecto_1a1dd02106c2ec6c2bba1146e0a4871423" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1a1dd02106c2ec6c2bba1146e0a4871423" kindref="member">pwd</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classestado__proyecto_1af1c6ec6fe4c01a1faeab40a61e7e21d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1af1c6ec6fe4c01a1faeab40a61e7e21d4" kindref="member">model</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classestado__proyecto_1aeadf1825e0dafa90f3c33e88e17d3d1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1aeadf1825e0dafa90f3c33e88e17d3d1c" kindref="member">URL</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classestado__proyecto_1af4cd30e97fc087097e738d2ef1d958c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1af4cd30e97fc087097e738d2ef1d958c9" kindref="member">URL2</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classestado__proyecto_1a4dfe6545f55e5b6ac0077ad0f1d7e3c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1a4dfe6545f55e5b6ac0077ad0f1d7e3c9" kindref="member">parent_id</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classestado__proyecto_1a1545134dd661b72333b06cfc9c11ae49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1a1545134dd661b72333b06cfc9c11ae49" kindref="member">id_la_tabla_res_partner</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Las<sp/>dos<sp/>variables<sp/>importantes<sp/>que<sp/>se<sp/>van<sp/>a<sp/>insertar<sp/>en<sp/>la<sp/>nueva<sp/>tabla.</highlight></codeline>
+<codeline lineno="83" refid="classestado__proyecto_1afae9b5a359fb7c20ef16050a6cf0cbf7" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1afae9b5a359fb7c20ef16050a6cf0cbf7" kindref="member">id_res_partner_fingerprint</ref>;</highlight></codeline>
+<codeline lineno="87" refid="classestado__proyecto_1af82165bfe4a2b094605bed0955da6b46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classestado__proyecto_1af82165bfe4a2b094605bed0955da6b46" kindref="member">id_del_proyecto</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classestado__proyecto_1adc11a194fc56d3dffdd269dcd090c762" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>XmlRpcValue::int32<sp/><ref refid="classestado__proyecto_1adc11a194fc56d3dffdd269dcd090c762" kindref="member">uid</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classestado__proyecto" kindref="compound">estado_proyecto</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classestado__proyecto" kindref="compound">estado_proyecto</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_variables(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dbname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>user,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pwd,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>URL,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>URL2);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inicializar();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buscar_id_obpp(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>buscar_estado_proyecto(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_proyecto);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>validacion_del_estado_del_proyecto(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mano,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dedo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_proyecto);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_id_de_res_partner_fingerprint(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mano,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_la_tabla_res_partner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dedo);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>write_res_partner_fingerprint_verification(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fingerprint_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>project_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>accountability_id);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validacion_verificacion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fingerprint_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>project_id,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>estatus_proyecto,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>accountability_id);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buscar_accountability(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_proyecto);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>write_res_partner_fingerprint_verification_incidence(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fingerprint_id,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>project_id,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>state,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>incidence_state);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validacion_incidencia(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fingerprint_id,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>project_id,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>state,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>incidence_state);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>validacion_incidencias_huella(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cedula,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mano,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dedo,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_proy);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/include/ws.h"/>
+  </compounddef>
+</doxygen>

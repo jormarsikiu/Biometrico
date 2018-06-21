@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice_lib/firma_digital/md5.h" name="TemplateAFIS_webservice_lib/firma_digital/md5.h">
+<area shape="rect" id="node2" href="$FirmaDigital_8cpp.html" title="Se definen los métodos para generar la clave que será la firma de cada paquete XML&#45;RPC. " alt="" coords="5,95,220,136"/>
+<area shape="rect" id="node3" href="$md5_8cpp.html" title="Clase que se encarga de generar un hash alfanumérico de un tamaño predeterminado. ..." alt="" coords="245,95,423,136"/>
+</map>

@@ -1,0 +1,610 @@
+\hypertarget{classMD5}{}\section{Referencia de la Clase M\+D5}
+\label{classMD5}\index{M\+D5@{M\+D5}}
+
+
+Clase de la comunidad\+: Se encarga de generar un hash alfanumérico de un tamaño predeterminado, no importa cuál sea la entrada que le suministren. Es igual al que se usa para comparar dos archivos, o en encriptación. Se incluye en la compilación para evitar que un cambio de versión en el sistema de operación de una máquina pudiese afectar la comunicación. (Recibe la información de \hyperlink{FirmaDigital_8cpp}{Firma\+Digital.\+cpp} y crea los hash correspondientes para encriptarlo en \hyperlink{sha512_8cpp}{sha512.\+cpp})  
+
+
+
+
+{\ttfamily \#include $<$md5.\+h$>$}
+
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMD5_afa6155ec36de415ab2dcf5e54b670d13}{M\+D5} ()
+\item 
+\hyperlink{classMD5_a155356ffd713345e69e6dcbd9f8da6ce}{M\+D5} (const std\+::string \&text)
+\item 
+void \hyperlink{classMD5_ac5ddf6cd8f940422396d321ea90ed045}{update} (const unsigned char $\ast$buf, \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type} length)
+\item 
+void \hyperlink{classMD5_ac5ccba375539b993958fb235f8ac849c}{update} (const char $\ast$buf, \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type} length)
+\item 
+\hyperlink{classMD5}{M\+D5} \& \hyperlink{classMD5_a10f607494a3f2e3e515fc4b99d1a06cc}{finalize} ()
+\item 
+std\+::string \hyperlink{classMD5_aaf466f683b4bd8b1b66544f48bf09608}{hexdigest} () const
+\end{DoxyCompactItemize}
+\subsection*{Tipos privados}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963}{blocksize} = 64
+ \}
+\item 
+typedef unsigned char \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1}
+\item 
+typedef unsigned int \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMD5_a65ddaecdd0bd0b09043a2f3b2601bc2e}{init} ()
+\item 
+void \hyperlink{classMD5_a9d569ab2a3e564793e116f774a3ad269}{transform} (const \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} block\mbox{[}\hyperlink{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963}{blocksize}\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classMD5_a7eef3463c43a2cdfb56a0261b640f873}{decode} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} output\mbox{[}$\,$\mbox{]}, const \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} input\mbox{[}$\,$\mbox{]}, \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type} len)
+\item 
+static void \hyperlink{classMD5_a52603a1b589b2863cad4caae7f259b7e}{encode} (\hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} output\mbox{[}$\,$\mbox{]}, const \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} input\mbox{[}$\,$\mbox{]}, \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type} len)
+\item 
+static \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_a95b7adf4602b92e84ca5f34084859e79}{F} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} y, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} z)
+\item 
+static \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_afbc3ab3591fca4e780f647dac3952bc8}{G} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} y, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} z)
+\item 
+static \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_a59392e8552045b37628a48497ede9cf0}{H} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} y, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} z)
+\item 
+static \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_ad2c1682834e38219894728830e3996c3}{I} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} y, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} z)
+\item 
+static \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_a97ece3d8221e3c9c994aa9d13001b1d9}{rotate\+\_\+left} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, int n)
+\item 
+static void \hyperlink{classMD5_a31479b157441ace2dbc2ae0edd0d2e38}{FF} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&a, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} b, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} c, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} d, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} s, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} ac)
+\item 
+static void \hyperlink{classMD5_a8ebdbe52608e522516d1759a31753212}{GG} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&a, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} b, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} c, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} d, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} s, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} ac)
+\item 
+static void \hyperlink{classMD5_aaad039caf0b33abf1bf3f3589166543c}{HH} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&a, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} b, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} c, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} d, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} s, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} ac)
+\item 
+static void \hyperlink{classMD5_a7af0184654644964ecdb57b1203e5ec7}{II} (\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&a, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} b, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} c, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} d, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} x, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} s, \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} ac)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classMD5_a696e995f7045cf0146a207c720386f9c}{finalized}
+\item 
+\hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} \hyperlink{classMD5_a0df603b8332399d5c1daa08ab5a315ea}{buffer} \mbox{[}\hyperlink{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963}{blocksize}\mbox{]}
+\item 
+\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_a52a9ff26a3de9e831b17c1740aa5388a}{count} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \hyperlink{classMD5_aae3f861952f5b129463f550170836db0}{state} \mbox{[}4\mbox{]}
+\item 
+\hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} \hyperlink{classMD5_a31058e1dca10bbf29818bb5177ff02ac}{digest} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classMD5_a0739666fd0f3a7117546f6c50e0783b2}{operator$<$$<$} (std\+::ostream \&, \hyperlink{classMD5}{M\+D5} \hyperlink{md5_8h_a92c6eed2e9b51298af559aff6792770b}{md5})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase de la comunidad\+: Se encarga de generar un hash alfanumérico de un tamaño predeterminado, no importa cuál sea la entrada que le suministren. Es igual al que se usa para comparar dos archivos, o en encriptación. Se incluye en la compilación para evitar que un cambio de versión en el sistema de operación de una máquina pudiese afectar la comunicación. (Recibe la información de \hyperlink{FirmaDigital_8cpp}{Firma\+Digital.\+cpp} y crea los hash correspondientes para encriptarlo en \hyperlink{sha512_8cpp}{sha512.\+cpp}) 
+
+\hyperlink{classMD5}{M\+D5} \href{http://www.zedwood.com/article/cpp-md5-function}{\tt http\+://www.\+zedwood.\+com/article/cpp-\/md5-\/function} converted to C++ class by Frank Thilo (\href{mailto:thilo@unix-ag.org}{\tt thilo@unix-\/ag.\+org}) for bzflag (\href{http://www.bzflag.org}{\tt http\+://www.\+bzflag.\+org})
+
+based on\+:
+
+\hyperlink{md5_8h}{md5.\+h} and md5.\+c reference implementation of R\+FC 1321
+
+Copyright (C) 1991-\/2, R\+SA Data Security, Inc. Created 1991. All rights reserved.
+
+License to copy and use this software is granted provided that it is identified as the \char`\"{}\+R\+S\+A Data Security, Inc. M\+D5 Message-\/\+Digest
+\+Algorithm\char`\"{} in all material mentioning or referencing this software or this function.
+
+License is also granted to make and use derivative works provided that such works are identified as \char`\"{}derived from the R\+S\+A Data
+\+Security, Inc. M\+D5 Message-\/\+Digest Algorithm\char`\"{} in all material mentioning or referencing the derived work.
+
+R\+SA Data Security, Inc. makes no representations concerning either the merchantability of this software or the suitability of this software for any particular purpose. It is provided \char`\"{}as is\char`\"{} without express or implied warranty of any kind.
+
+These notices must be retained in any copies of any part of this documentation and/or software.
+
+/$\ast$$\ast$A small class for calculating \hyperlink{classMD5}{M\+D5} hashes of strings or byte arrays it is not meant to be fast or secure usage\+: 1) feed it blocks of uchars with \hyperlink{classMD5_ac5ddf6cd8f940422396d321ea90ed045}{update()} 2) \hyperlink{classMD5_a10f607494a3f2e3e515fc4b99d1a06cc}{finalize()} 3) get \hyperlink{classMD5_aaf466f683b4bd8b1b66544f48bf09608}{hexdigest()} string or \hyperlink{classMD5}{M\+D5(std\+::string)}.\hyperlink{classMD5_aaf466f683b4bd8b1b66544f48bf09608}{hexdigest()} assumes that char is 8 bit and int is 32 bit
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Traducir! 
+
+Definición en la línea 70 del archivo md5.\+h.
+
+
+
+\subsection{Documentación de los \textquotesingle{}Typedef\textquotesingle{} miembros de la clase}
+\hypertarget{classMD5_aa836972700679dbcff6ae8337f6db464}{}\label{classMD5_aa836972700679dbcff6ae8337f6db464} 
+\index{M\+D5@{M\+D5}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily typedef unsigned int \hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{M\+D5\+::size\+\_\+type}}
+
+
+
+Definición en la línea 73 del archivo md5.\+h.
+
+\hypertarget{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{}\label{classMD5_a3b1c4901139aef256ee49c4ab14d09f9} 
+\index{M\+D5@{M\+D5}!uint1@{uint1}}
+\index{uint1@{uint1}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{uint1}{uint1}}
+{\footnotesize\ttfamily typedef unsigned char \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{M\+D5\+::uint1}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 85 del archivo md5.\+h.
+
+\hypertarget{classMD5_a2e5b84a3d7db292f49873061214a0444}{}\label{classMD5_a2e5b84a3d7db292f49873061214a0444} 
+\index{M\+D5@{M\+D5}!uint4@{uint4}}
+\index{uint4@{uint4}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{uint4}{uint4}}
+{\footnotesize\ttfamily typedef unsigned int \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 86 del archivo md5.\+h.
+
+
+
+\subsection{Documentación de las enumeraciones miembro de la clase}
+\hypertarget{classMD5_a227e6f16f2409956b516b453e6bc7429}{}\label{classMD5_a227e6f16f2409956b516b453e6bc7429} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{blocksize@{blocksize}!M\+D5@{M\+D5}}\index{M\+D5@{M\+D5}!blocksize@{blocksize}}}\hypertarget{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963}{}\label{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963} 
+blocksize&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definición en la línea 87 del archivo md5.\+h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classMD5_afa6155ec36de415ab2dcf5e54b670d13}{}\label{classMD5_afa6155ec36de415ab2dcf5e54b670d13} 
+\index{M\+D5@{M\+D5}!M\+D5@{M\+D5}}
+\index{M\+D5@{M\+D5}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{M\+D5()}{MD5()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily M\+D5\+::\+M\+D5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 107 del archivo md5.\+cpp.
+
+
+
+Hace referencia a init().
+
+
+
+Referenciado por md5().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classMD5_afa6155ec36de415ab2dcf5e54b670d13_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_a155356ffd713345e69e6dcbd9f8da6ce}{}\label{classMD5_a155356ffd713345e69e6dcbd9f8da6ce} 
+\index{M\+D5@{M\+D5}!M\+D5@{M\+D5}}
+\index{M\+D5@{M\+D5}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{M\+D5()}{MD5()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily M\+D5\+::\+M\+D5 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 114 del archivo md5.\+cpp.
+
+
+
+Hace referencia a finalize(), init() y update().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMD5_a155356ffd713345e69e6dcbd9f8da6ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classMD5_a7eef3463c43a2cdfb56a0261b640f873}{}\label{classMD5_a7eef3463c43a2cdfb56a0261b640f873} 
+\index{M\+D5@{M\+D5}!decode@{decode}}
+\index{decode@{decode}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily void M\+D5\+::decode (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{output\mbox{[}$\,$\mbox{]},  }\item[{const \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1}}]{input\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 137 del archivo md5.\+cpp.
+
+
+
+Referenciado por transform().
+
+\hypertarget{classMD5_a52603a1b589b2863cad4caae7f259b7e}{}\label{classMD5_a52603a1b589b2863cad4caae7f259b7e} 
+\index{M\+D5@{M\+D5}!encode@{encode}}
+\index{encode@{encode}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily void M\+D5\+::encode (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1}}]{output\mbox{[}$\,$\mbox{]},  }\item[{const \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{input\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 147 del archivo md5.\+cpp.
+
+
+
+Referenciado por finalize().
+
+\hypertarget{classMD5_a95b7adf4602b92e84ca5f34084859e79}{}\label{classMD5_a95b7adf4602b92e84ca5f34084859e79} 
+\index{M\+D5@{M\+D5}!F@{F}}
+\index{F@{F}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4} M\+D5\+::F (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{y,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 66 del archivo md5.\+cpp.
+
+
+
+Referenciado por F\+F().
+
+\hypertarget{classMD5_a31479b157441ace2dbc2ae0edd0d2e38}{}\label{classMD5_a31479b157441ace2dbc2ae0edd0d2e38} 
+\index{M\+D5@{M\+D5}!FF@{FF}}
+\index{FF@{FF}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{F\+F()}{FF()}}
+{\footnotesize\ttfamily void M\+D5\+::\+FF (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&}]{a,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{b,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{c,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{d,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{s,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{ac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 89 del archivo md5.\+cpp.
+
+
+
+Hace referencia a F() y rotate\+\_\+left().
+
+
+
+Referenciado por transform().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classMD5_a31479b157441ace2dbc2ae0edd0d2e38_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_a10f607494a3f2e3e515fc4b99d1a06cc}{}\label{classMD5_a10f607494a3f2e3e515fc4b99d1a06cc} 
+\index{M\+D5@{M\+D5}!finalize@{finalize}}
+\index{finalize@{finalize}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily \hyperlink{classMD5}{M\+D5} \& M\+D5\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 292 del archivo md5.\+cpp.
+
+
+
+Hace referencia a buffer, count, digest, encode(), finalized, state y update().
+
+
+
+Referenciado por M\+D5().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classMD5_a10f607494a3f2e3e515fc4b99d1a06cc_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_afbc3ab3591fca4e780f647dac3952bc8}{}\label{classMD5_afbc3ab3591fca4e780f647dac3952bc8} 
+\index{M\+D5@{M\+D5}!G@{G}}
+\index{G@{G}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4} M\+D5\+::G (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{y,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 70 del archivo md5.\+cpp.
+
+
+
+Referenciado por G\+G().
+
+\hypertarget{classMD5_a8ebdbe52608e522516d1759a31753212}{}\label{classMD5_a8ebdbe52608e522516d1759a31753212} 
+\index{M\+D5@{M\+D5}!GG@{GG}}
+\index{GG@{GG}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{G\+G()}{GG()}}
+{\footnotesize\ttfamily void M\+D5\+::\+GG (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&}]{a,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{b,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{c,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{d,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{s,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{ac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 93 del archivo md5.\+cpp.
+
+
+
+Hace referencia a G() y rotate\+\_\+left().
+
+
+
+Referenciado por transform().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classMD5_a8ebdbe52608e522516d1759a31753212_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_a59392e8552045b37628a48497ede9cf0}{}\label{classMD5_a59392e8552045b37628a48497ede9cf0} 
+\index{M\+D5@{M\+D5}!H@{H}}
+\index{H@{H}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{H()}{H()}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4} M\+D5\+::H (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{y,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 74 del archivo md5.\+cpp.
+
+
+
+Referenciado por H\+H().
+
+\hypertarget{classMD5_aaf466f683b4bd8b1b66544f48bf09608}{}\label{classMD5_aaf466f683b4bd8b1b66544f48bf09608} 
+\index{M\+D5@{M\+D5}!hexdigest@{hexdigest}}
+\index{hexdigest@{hexdigest}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{hexdigest()}{hexdigest()}}
+{\footnotesize\ttfamily std\+::string M\+D5\+::hexdigest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea 329 del archivo md5.\+cpp.
+
+
+
+Hace referencia a digest y finalized.
+
+
+
+Referenciado por md5() y operator$<$$<$().
+
+\hypertarget{classMD5_aaad039caf0b33abf1bf3f3589166543c}{}\label{classMD5_aaad039caf0b33abf1bf3f3589166543c} 
+\index{M\+D5@{M\+D5}!HH@{HH}}
+\index{HH@{HH}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{H\+H()}{HH()}}
+{\footnotesize\ttfamily void M\+D5\+::\+HH (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&}]{a,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{b,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{c,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{d,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{s,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{ac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 97 del archivo md5.\+cpp.
+
+
+
+Hace referencia a H() y rotate\+\_\+left().
+
+
+
+Referenciado por transform().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classMD5_aaad039caf0b33abf1bf3f3589166543c_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_ad2c1682834e38219894728830e3996c3}{}\label{classMD5_ad2c1682834e38219894728830e3996c3} 
+\index{M\+D5@{M\+D5}!I@{I}}
+\index{I@{I}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{I()}{I()}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4} M\+D5\+::I (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{y,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 78 del archivo md5.\+cpp.
+
+
+
+Referenciado por I\+I().
+
+\hypertarget{classMD5_a7af0184654644964ecdb57b1203e5ec7}{}\label{classMD5_a7af0184654644964ecdb57b1203e5ec7} 
+\index{M\+D5@{M\+D5}!II@{II}}
+\index{II@{II}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{I\+I()}{II()}}
+{\footnotesize\ttfamily void M\+D5\+::\+II (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} \&}]{a,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{b,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{c,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{d,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{s,  }\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{ac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 101 del archivo md5.\+cpp.
+
+
+
+Hace referencia a I() y rotate\+\_\+left().
+
+
+
+Referenciado por transform().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classMD5_a7af0184654644964ecdb57b1203e5ec7_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_a65ddaecdd0bd0b09043a2f3b2601bc2e}{}\label{classMD5_a65ddaecdd0bd0b09043a2f3b2601bc2e} 
+\index{M\+D5@{M\+D5}!init@{init}}
+\index{init@{init}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void M\+D5\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 121 del archivo md5.\+cpp.
+
+
+
+Hace referencia a count, finalized y state.
+
+
+
+Referenciado por M\+D5().
+
+\hypertarget{classMD5_a97ece3d8221e3c9c994aa9d13001b1d9}{}\label{classMD5_a97ece3d8221e3c9c994aa9d13001b1d9} 
+\index{M\+D5@{M\+D5}!rotate\+\_\+left@{rotate\+\_\+left}}
+\index{rotate\+\_\+left@{rotate\+\_\+left}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{rotate\+\_\+left()}{rotate\_left()}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{M\+D5\+::uint4} M\+D5\+::rotate\+\_\+left (\begin{DoxyParamCaption}\item[{\hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4}}]{x,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 83 del archivo md5.\+cpp.
+
+
+
+Referenciado por F\+F(), G\+G(), H\+H() y I\+I().
+
+\hypertarget{classMD5_a9d569ab2a3e564793e116f774a3ad269}{}\label{classMD5_a9d569ab2a3e564793e116f774a3ad269} 
+\index{M\+D5@{M\+D5}!transform@{transform}}
+\index{transform@{transform}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void M\+D5\+::transform (\begin{DoxyParamCaption}\item[{const \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1}}]{block\mbox{[}blocksize\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 159 del archivo md5.\+cpp.
+
+
+
+Hace referencia a blocksize, buffer, count, decode(), F\+F(), G\+G(), H\+H(), I\+I(), S11, S12, S13, S14, S21, S22, S23, S24, S31, S32, S33, S34, S41, S42, S43, S44, state y update().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMD5_a9d569ab2a3e564793e116f774a3ad269_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classMD5_ac5ddf6cd8f940422396d321ea90ed045}{}\label{classMD5_ac5ddf6cd8f940422396d321ea90ed045} 
+\index{M\+D5@{M\+D5}!update@{update}}
+\index{update@{update}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void M\+D5\+::update (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{buf,  }\item[{\hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type}}]{length }\end{DoxyParamCaption})}
+
+
+
+Referenciado por finalize(), M\+D5() y transform().
+
+\hypertarget{classMD5_ac5ccba375539b993958fb235f8ac849c}{}\label{classMD5_ac5ccba375539b993958fb235f8ac849c} 
+\index{M\+D5@{M\+D5}!update@{update}}
+\index{update@{update}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void M\+D5\+::update (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buf,  }\item[{\hyperlink{classMD5_aa836972700679dbcff6ae8337f6db464}{size\+\_\+type}}]{length }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{classMD5_a0739666fd0f3a7117546f6c50e0783b2}{}\label{classMD5_a0739666fd0f3a7117546f6c50e0783b2} 
+\index{M\+D5@{M\+D5}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\hyperlink{classMD5}{M\+D5}}]{md5 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definición en la línea 344 del archivo md5.\+cpp.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classMD5_a0df603b8332399d5c1daa08ab5a315ea}{}\label{classMD5_a0df603b8332399d5c1daa08ab5a315ea} 
+\index{M\+D5@{M\+D5}!buffer@{buffer}}
+\index{buffer@{buffer}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} M\+D5\+::buffer\mbox{[}\hyperlink{classMD5_a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963}{blocksize}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 94 del archivo md5.\+h.
+
+
+
+Referenciado por finalize() y transform().
+
+\hypertarget{classMD5_a52a9ff26a3de9e831b17c1740aa5388a}{}\label{classMD5_a52a9ff26a3de9e831b17c1740aa5388a} 
+\index{M\+D5@{M\+D5}!count@{count}}
+\index{count@{count}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} M\+D5\+::count\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 95 del archivo md5.\+h.
+
+
+
+Referenciado por finalize(), init() y transform().
+
+\hypertarget{classMD5_a31058e1dca10bbf29818bb5177ff02ac}{}\label{classMD5_a31058e1dca10bbf29818bb5177ff02ac} 
+\index{M\+D5@{M\+D5}!digest@{digest}}
+\index{digest@{digest}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{digest}{digest}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a3b1c4901139aef256ee49c4ab14d09f9}{uint1} M\+D5\+::digest\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 97 del archivo md5.\+h.
+
+
+
+Referenciado por finalize() y hexdigest().
+
+\hypertarget{classMD5_a696e995f7045cf0146a207c720386f9c}{}\label{classMD5_a696e995f7045cf0146a207c720386f9c} 
+\index{M\+D5@{M\+D5}!finalized@{finalized}}
+\index{finalized@{finalized}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{finalized}{finalized}}
+{\footnotesize\ttfamily bool M\+D5\+::finalized\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 93 del archivo md5.\+h.
+
+
+
+Referenciado por finalize(), hexdigest() y init().
+
+\hypertarget{classMD5_aae3f861952f5b129463f550170836db0}{}\label{classMD5_aae3f861952f5b129463f550170836db0} 
+\index{M\+D5@{M\+D5}!state@{state}}
+\index{state@{state}!M\+D5@{M\+D5}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \hyperlink{classMD5_a2e5b84a3d7db292f49873061214a0444}{uint4} M\+D5\+::state\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 96 del archivo md5.\+h.
+
+
+
+Referenciado por finalize(), init() y transform().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/\hyperlink{md5_8h}{md5.\+h}\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/\hyperlink{md5_8cpp}{md5.\+cpp}\end{DoxyCompactItemize}

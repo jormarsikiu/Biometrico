@@ -1,0 +1,9 @@
+<map id="TemplateAFIS_webservice_lib/include/TemplateAFIS.h" name="TemplateAFIS_webservice_lib/include/TemplateAFIS.h">
+<area shape="rect" id="node20" href="$UFMatcher_8h.html" title="UFMatcher.h" alt="" coords="1947,109,2046,136"/>
+<area shape="rect" id="node21" href="$UFScanner_8h.html" title="UFScanner.h" alt="" coords="2070,109,2169,136"/>
+<area shape="rect" id="node22" href="$FirmaDigital_8h.html" title="Archivo de cabecera de las clases FirmaDigital. " alt="" coords="63,199,253,225"/>
+<area shape="rect" id="node24" href="$Variables__Webservice__OpenERP_8cpp.html" title="Archivo de puente entre TemplateAFIS_webservice y, Fingerprint y GuiWsOpenERP. Conexión del Webservic..." alt="" coords="562,95,725,151"/>
+<area shape="rect" id="node34" href="$ws_8h.html" title="Archivo de cabecera de las clases estado proyecto. " alt="" coords="591,199,642,225"/>
+<area shape="rect" id="node25" href="$Fingerprint_8cpp.html" title="Clase que permite realizar la interacción con el Webservice con OpenERP. " alt="" coords="667,199,775,225"/>
+<area shape="rect" id="node33" href="$GuiWsOpenErp_8cpp.html" title="Archivo de cabecera de las clases GuiWsOpenErp. " alt="" coords="429,199,567,225"/>
+</map>

@@ -1,0 +1,200 @@
+\hypertarget{librawjpeg_8cpp}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/include/librawjpeg.cpp}
+\label{librawjpeg_8cpp}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/include/librawjpeg.\+cpp@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/include/librawjpeg.\+cpp}}
+
+
+Métodos que permiten convertir de imágenes en formato R\+AW (crudo o nativo) a J\+PG. Incluye unos archivos de cabecera que se deben descargar para cada sistema de operación (jpeglib.\+h). El captahuellas Suprema captura en formatos en R\+AW y W\+SQ (formato del F\+BI). Se usa J\+PG para mostrarlo en la web.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$jpeglib.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Dependencia gráfica adjunta para librawjpeg.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{librawjpeg_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{librawjpeg_8cpp_a6389da5254621aa41a0ea72e8367a44d}{read\+\_\+jpeg\+\_\+file} (string filename)
+\item 
+int \hyperlink{librawjpeg_8cpp_a0465dd33dca19c866b036b857dd1ccad}{write\+\_\+jpeg\+\_\+file} (string filename)
+\item 
+int \hyperlink{librawjpeg_8cpp_a89717143fcd881e495a3afdb70763ab0}{convert\+\_\+raw\+\_\+jpeg} (string filename, unsigned char $\ast$raw, int n\+Width, int n\+Height)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{librawjpeg_8cpp_aa0a06e9ee4ca87dd830202258e34ba63}{raw\+\_\+image} = N\+U\+LL
+\item 
+int \hyperlink{librawjpeg_8cpp_a2474a5474cbff19523a51eb1de01cda4}{width} = 260
+\item 
+int \hyperlink{librawjpeg_8cpp_ad12fc34ce789bce6c8a05d8a17138534}{height} = 340
+\item 
+int \hyperlink{librawjpeg_8cpp_ad1fad3c6fec2bf6f7d7933e68b4b0de5}{bytes\+\_\+per\+\_\+pixel} = 1
+\item 
+J\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+P\+A\+CE \hyperlink{librawjpeg_8cpp_a853aaff670a934d0e6fcf7ab4fda6c7c}{color\+\_\+space} = J\+C\+S\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Métodos que permiten convertir de imágenes en formato R\+AW (crudo o nativo) a J\+PG. Incluye unos archivos de cabecera que se deben descargar para cada sistema de operación (jpeglib.\+h). El captahuellas Suprema captura en formatos en R\+AW y W\+SQ (formato del F\+BI). Se usa J\+PG para mostrarlo en la web. 
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Traducir
+
+\begin{DoxyDate}{Fecha}
+2014 This file is part of Sistema de Identificación Biométrica para las O\+B\+PP. 
+\end{DoxyDate}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{librawjpeg_8cpp_a89717143fcd881e495a3afdb70763ab0}{}\label{librawjpeg_8cpp_a89717143fcd881e495a3afdb70763ab0} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!convert\+\_\+raw\+\_\+jpeg@{convert\+\_\+raw\+\_\+jpeg}}
+\index{convert\+\_\+raw\+\_\+jpeg@{convert\+\_\+raw\+\_\+jpeg}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{convert\+\_\+raw\+\_\+jpeg()}{convert\_raw\_jpeg()}}
+{\footnotesize\ttfamily int convert\+\_\+raw\+\_\+jpeg (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{unsigned char $\ast$}]{raw,  }\item[{int}]{n\+Width,  }\item[{int}]{n\+Height }\end{DoxyParamCaption})}
+
+write\+\_\+jpeg\+\_\+file\+: Writes the raw image data stored in the raw\+\_\+image buffer to a jpeg image with default compression and smoothing options in the file specified by $\ast$filename.
+
+\begin{DoxyReturn}{Devuelve}
+positive integer if successful, -\/1 otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parámetros}
+{\em $\ast$filename} & char string specifying the file name to save to \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 158 del archivo librawjpeg.\+cpp.
+
+
+
+Hace referencia a bytes\+\_\+per\+\_\+pixel y color\+\_\+space.
+
+\hypertarget{librawjpeg_8cpp_a6389da5254621aa41a0ea72e8367a44d}{}\label{librawjpeg_8cpp_a6389da5254621aa41a0ea72e8367a44d} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!read\+\_\+jpeg\+\_\+file@{read\+\_\+jpeg\+\_\+file}}
+\index{read\+\_\+jpeg\+\_\+file@{read\+\_\+jpeg\+\_\+file}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{read\+\_\+jpeg\+\_\+file()}{read\_jpeg\_file()}}
+{\footnotesize\ttfamily int read\+\_\+jpeg\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+read\+\_\+jpeg\+\_\+file\+: Reads from a jpeg file on disk specified by filename and saves into the raw\+\_\+image buffer in an uncompressed format.
+
+\begin{DoxyReturn}{Devuelve}
+positive integer if successful, -\/1 otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parámetros}
+{\em $\ast$filename} & char string specifying the file name to read from \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 43 del archivo librawjpeg.\+cpp.
+
+
+
+Hace referencia a raw\+\_\+image.
+
+\hypertarget{librawjpeg_8cpp_a0465dd33dca19c866b036b857dd1ccad}{}\label{librawjpeg_8cpp_a0465dd33dca19c866b036b857dd1ccad} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!write\+\_\+jpeg\+\_\+file@{write\+\_\+jpeg\+\_\+file}}
+\index{write\+\_\+jpeg\+\_\+file@{write\+\_\+jpeg\+\_\+file}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{write\+\_\+jpeg\+\_\+file()}{write\_jpeg\_file()}}
+{\footnotesize\ttfamily int write\+\_\+jpeg\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+write\+\_\+jpeg\+\_\+file\+: Writes the raw image data stored in the raw\+\_\+image buffer to a jpeg image with default compression and smoothing options in the file specified by $\ast$filename.
+
+\begin{DoxyReturn}{Devuelve}
+positive integer if successful, -\/1 otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parámetros}
+{\em $\ast$filename} & char string specifying the file name to save to \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 108 del archivo librawjpeg.\+cpp.
+
+
+
+Hace referencia a bytes\+\_\+per\+\_\+pixel, color\+\_\+space, height, raw\+\_\+image y width.
+
+
+
+\subsection{Documentación de las variables}
+\hypertarget{librawjpeg_8cpp_ad1fad3c6fec2bf6f7d7933e68b4b0de5}{}\label{librawjpeg_8cpp_ad1fad3c6fec2bf6f7d7933e68b4b0de5} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}}
+\index{bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{bytes\+\_\+per\+\_\+pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily int bytes\+\_\+per\+\_\+pixel = 1}
+
+
+
+Definición en la línea 30 del archivo librawjpeg.\+cpp.
+
+
+
+Referenciado por convert\+\_\+raw\+\_\+jpeg(), Template\+A\+F\+I\+S\+\_\+webservice\+::convert\+\_\+raw\+\_\+jpeg() y write\+\_\+jpeg\+\_\+file().
+
+\hypertarget{librawjpeg_8cpp_a853aaff670a934d0e6fcf7ab4fda6c7c}{}\label{librawjpeg_8cpp_a853aaff670a934d0e6fcf7ab4fda6c7c} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!color\+\_\+space@{color\+\_\+space}}
+\index{color\+\_\+space@{color\+\_\+space}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{color\+\_\+space}{color\_space}}
+{\footnotesize\ttfamily J\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+P\+A\+CE color\+\_\+space = J\+C\+S\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE}
+
+
+
+Definición en la línea 31 del archivo librawjpeg.\+cpp.
+
+
+
+Referenciado por convert\+\_\+raw\+\_\+jpeg(), Template\+A\+F\+I\+S\+\_\+webservice\+::convert\+\_\+raw\+\_\+jpeg() y write\+\_\+jpeg\+\_\+file().
+
+\hypertarget{librawjpeg_8cpp_ad12fc34ce789bce6c8a05d8a17138534}{}\label{librawjpeg_8cpp_ad12fc34ce789bce6c8a05d8a17138534} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!height@{height}}
+\index{height@{height}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height = 340}
+
+
+
+Definición en la línea 29 del archivo librawjpeg.\+cpp.
+
+
+
+Referenciado por write\+\_\+jpeg\+\_\+file().
+
+\hypertarget{librawjpeg_8cpp_aa0a06e9ee4ca87dd830202258e34ba63}{}\label{librawjpeg_8cpp_aa0a06e9ee4ca87dd830202258e34ba63} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!raw\+\_\+image@{raw\+\_\+image}}
+\index{raw\+\_\+image@{raw\+\_\+image}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{raw\+\_\+image}{raw\_image}}
+{\footnotesize\ttfamily unsigned char$\ast$ raw\+\_\+image = N\+U\+LL}
+
+
+
+Definición en la línea 25 del archivo librawjpeg.\+cpp.
+
+
+
+Referenciado por read\+\_\+jpeg\+\_\+file() y write\+\_\+jpeg\+\_\+file().
+
+\hypertarget{librawjpeg_8cpp_a2474a5474cbff19523a51eb1de01cda4}{}\label{librawjpeg_8cpp_a2474a5474cbff19523a51eb1de01cda4} 
+\index{librawjpeg.\+cpp@{librawjpeg.\+cpp}!width@{width}}
+\index{width@{width}!librawjpeg.\+cpp@{librawjpeg.\+cpp}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int width = 260}
+
+
+
+Definición en la línea 28 del archivo librawjpeg.\+cpp.
+
+
+
+Referenciado por write\+\_\+jpeg\+\_\+file().
+

@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::getDatosPersonaVerificacion" name="TemplateAFIS_webservice::getDatosPersonaVerificacion">
+<area shape="rect" id="node2" href="$classGuiWsOpenErp.html#a128600b86f70773fb336c6b59c853b42" title="getDatoPersonaVerificacion Este metodo se encarga de buscar los datos de la persona, a la cual se le verifica la huella. " alt="" coords="252,5,467,47"/>
+<area shape="rect" id="node3" href="$classGuiWsOpenErp.html#a48d629317e4b3be8b5471e5a14a60082" title="Inicializar se encarga de la autentificacion contra el OpenERP. " alt="" coords="271,71,447,98"/>
+</map>

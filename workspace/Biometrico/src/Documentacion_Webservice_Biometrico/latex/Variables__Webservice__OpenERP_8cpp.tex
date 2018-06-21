@@ -1,0 +1,96 @@
+\hypertarget{Variables__Webservice__OpenERP_8cpp}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+RP.cpp}
+\label{Variables__Webservice__OpenERP_8cpp}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}}
+
+
+Archivo de puente entre \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice} y, \hyperlink{classFingerprint}{Fingerprint} y Gui\+Ws\+Open\+E\+RP. Conexión del Webservice con Odoo. Se especifican los parámetros de conexión.  
+
+
+{\ttfamily \#include \char`\"{}Fingerprint.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gui\+Ws\+Open\+Erp.\+cpp\char`\"{}}\newline
+Dependencia gráfica adjunta para Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Variables__Webservice__OpenERP_8cpp__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{Variables__Webservice__OpenERP_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Variables__Webservice__OpenERP_8cpp_a038affabc8202723068994b56f58d3d6}{W\+E\+B\+S\+E\+R\+V\+I\+C\+ES}~\{ \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}\}, \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}\} \};
+\begin{DoxyCompactList}\small\item\em Se define la clase principal W\+E\+B\+S\+E\+R\+V\+I\+C\+ES No cambiar estos valores, a menos que modifiquen el código fuente N\+U\+M\+\_\+\+C\+O\+N\+E\+X\+I\+O\+N\+ES debe ser mayor o igual a 2, nunca menor. \end{DoxyCompactList}\item 
+\#define \hyperlink{Variables__Webservice__OpenERP_8cpp_a9c1896bf4b60da60fa2ed167f842e81a}{N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}~2
+\begin{DoxyCompactList}\small\item\em N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE N\+U\+M\+\_\+\+P\+A\+R\+A\+MS debe ser siempre igual a 5. \end{DoxyCompactList}\item 
+\#define \hyperlink{Variables__Webservice__OpenERP_8cpp_adb8e82262d7fbb05fa04a5a8fe8859b3}{N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}~2
+\begin{DoxyCompactList}\small\item\em N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Archivo de puente entre \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice} y, \hyperlink{classFingerprint}{Fingerprint} y Gui\+Ws\+Open\+E\+RP. Conexión del Webservice con Odoo. Se especifican los parámetros de conexión. 
+
+\begin{DoxyAuthor}{Autor}
+Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. \href{mailto:contacto@simonrodriguez.org.ve}{\tt contacto@simonrodriguez.\+org.\+ve} 
+
+Lcdo. César Cordero, Ing. Servio Zambrano y Ángel Ramírez Isea. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+2014
+\end{DoxyDate}
+Para agregar otra variable de conexión, agrega una coma al arreglo y un vector al mismo. De esta forma\+:
+
+\#define W\+E\+B\+S\+E\+R\+V\+I\+C\+ES = \{ \{\char`\"{}\+I\+N\+T\+E\+G\+R\+A\+C\+I\+O\+N-\/\+C\+A\+P\+T\+A\+H\+U\+E\+L\+L\+A\+S\char`\"{}, \char`\"{}admin\char`\"{}, \char`\"{}123456\char`\"{}, \char`\"{}probando.\+hoatzin.\+org\char`\"{}\}, \{\char`\"{}\+I\+N\+T\+E\+G\+R\+A\+C\+I\+O\+N-\/\+C\+A\+P\+T\+A\+H\+U\+E\+L\+L\+A\+S-\/2\char`\"{}, \char`\"{}admin\char`\"{}, \char`\"{}123456\char`\"{}, \char`\"{}probando.\+hoatzin.\+org\char`\"{}\} \}; 
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{Variables__Webservice__OpenERP_8cpp_adb8e82262d7fbb05fa04a5a8fe8859b3}{}\label{Variables__Webservice__OpenERP_8cpp_adb8e82262d7fbb05fa04a5a8fe8859b3} 
+\index{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}!N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE@{N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}}
+\index{N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE@{N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}!Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}{NUM\_PARAMS\_WEBSERVICE}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE~2}
+
+
+
+N\+U\+M\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE. 
+
+
+
+Definición en la línea 37 del archivo Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp.
+
+\hypertarget{Variables__Webservice__OpenERP_8cpp_a9c1896bf4b60da60fa2ed167f842e81a}{}\label{Variables__Webservice__OpenERP_8cpp_a9c1896bf4b60da60fa2ed167f842e81a} 
+\index{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}!N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE@{N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}}
+\index{N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE@{N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}!Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE}{NUM\_WEBSERVICE}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE~2}
+
+
+
+N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE N\+U\+M\+\_\+\+P\+A\+R\+A\+MS debe ser siempre igual a 5. 
+
+
+
+Definición en la línea 32 del archivo Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Web\+Service\+G\+U\+I\+Open\+E\+R\+P() y Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Web\+Service\+Open\+E\+R\+P().
+
+\hypertarget{Variables__Webservice__OpenERP_8cpp_a038affabc8202723068994b56f58d3d6}{}\label{Variables__Webservice__OpenERP_8cpp_a038affabc8202723068994b56f58d3d6} 
+\index{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}!W\+E\+B\+S\+E\+R\+V\+I\+C\+ES@{W\+E\+B\+S\+E\+R\+V\+I\+C\+ES}}
+\index{W\+E\+B\+S\+E\+R\+V\+I\+C\+ES@{W\+E\+B\+S\+E\+R\+V\+I\+C\+ES}!Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp@{Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp}}
+\subsubsection{\texorpdfstring{W\+E\+B\+S\+E\+R\+V\+I\+C\+ES}{WEBSERVICES}}
+{\footnotesize\ttfamily \#define W\+E\+B\+S\+E\+R\+V\+I\+C\+ES~\{ \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}\}, \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}\} \};}
+
+
+
+Se define la clase principal W\+E\+B\+S\+E\+R\+V\+I\+C\+ES No cambiar estos valores, a menos que modifiquen el código fuente N\+U\+M\+\_\+\+C\+O\+N\+E\+X\+I\+O\+N\+ES debe ser mayor o igual a 2, nunca menor. 
+
+
+
+Definición en la línea 26 del archivo Variables\+\_\+\+Webservice\+\_\+\+Open\+E\+R\+P.\+cpp.
+

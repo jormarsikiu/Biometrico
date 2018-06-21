@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="sha512_8h" kind="file" language="C++">
+    <compoundname>sha512.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="sha512_8cpp" local="yes">TemplateAFIS_webservice_lib/firma_digital/sha512.cpp</includedby>
+    <incdepgraph>
+      <node id="101">
+        <label>string</label>
+      </node>
+      <node id="100">
+        <label>TemplateAFIS_webservice_lib/firma_digital/sha512.h</label>
+        <link refid="sha512_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="103">
+        <label>TemplateAFIS_webservice_lib/firma_digital/sha512.cpp</label>
+        <link refid="sha512_8cpp"/>
+      </node>
+      <node id="102">
+        <label>TemplateAFIS_webservice_lib/firma_digital/sha512.h</label>
+        <link refid="sha512_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSHA512" prot="public">SHA512</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sha512_8h_1a0a0e7e0d135e9feff1da2e46fa556d50" prot="public" static="no">
+        <name>SHA2_SHFR</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(x &gt;&gt; n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="87" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" prot="public" static="no">
+        <name>SHA2_ROTR</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((x &gt;&gt; n) | (x &lt;&lt; ((sizeof(x) &lt;&lt; 3) - n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="88" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a0fcefdff5f2609b2c5eb1d0f99214199" prot="public" static="no">
+        <name>SHA2_ROTL</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((x &lt;&lt; n) | (x &gt;&gt; ((sizeof(x) &lt;&lt; 3) - n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="89" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a1d4a72c3cb3d85b0c82736081042c1a4" prot="public" static="no">
+        <name>SHA2_CH</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((x &amp; y) ^ (~x &amp; z))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="90" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1ae9222f6c22449097806fb1dac2a58107" prot="public" static="no">
+        <name>SHA2_MAJ</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((x &amp; y) ^ (x &amp; z) ^ (y &amp; z))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="91" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a8c65d2c0860cf623b5607b2aec6a870a" prot="public" static="no">
+        <name>SHA512_F1</name>
+        <param><defname>x</defname></param>
+        <initializer>(<ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 28) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 34) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 39))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="92" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a41b8a672f8ed1a11ea49acb032550fa6" prot="public" static="no">
+        <name>SHA512_F2</name>
+        <param><defname>x</defname></param>
+        <initializer>(<ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 14) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 18) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 41))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="93" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a278e83abc8c71fec8a719065e5d51106" prot="public" static="no">
+        <name>SHA512_F3</name>
+        <param><defname>x</defname></param>
+        <initializer>(<ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x,  1) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x,  8) ^ <ref refid="sha512_8h_1a0a0e7e0d135e9feff1da2e46fa556d50" kindref="member">SHA2_SHFR</ref>(x,  7))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="94" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1ad6d26f67626668a9ec4f113bd05bee2b" prot="public" static="no">
+        <name>SHA512_F4</name>
+        <param><defname>x</defname></param>
+        <initializer>(<ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 19) ^ <ref refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" kindref="member">SHA2_ROTR</ref>(x, 61) ^ <ref refid="sha512_8h_1a0a0e7e0d135e9feff1da2e46fa556d50" kindref="member">SHA2_SHFR</ref>(x,  6))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="95" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a2dc032adc83afe8e265a7941ef11f258" prot="public" static="no">
+        <name>SHA2_UNPACK32</name>
+        <param><defname>x</defname></param>
+        <param><defname>str</defname></param>
+        <initializer>{                                             \
+    *((str) + 3) = (uint8) ((x)      );       \
+    *((str) + 2) = (uint8) ((x) &gt;&gt;  8);       \
+    *((str) + 1) = (uint8) ((x) &gt;&gt; 16);       \
+    *((str) + 0) = (uint8) ((x) &gt;&gt; 24);       \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="96" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">SHA512::final</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1a81e6dc4766f3664c56beb47948d35e23" prot="public" static="no">
+        <name>SHA2_UNPACK64</name>
+        <param><defname>x</defname></param>
+        <param><defname>str</defname></param>
+        <initializer>{                                             \
+    *((str) + 7) = (uint8) ((x)      );       \
+    *((str) + 6) = (uint8) ((x) &gt;&gt;  8);       \
+    *((str) + 5) = (uint8) ((x) &gt;&gt; 16);       \
+    *((str) + 4) = (uint8) ((x) &gt;&gt; 24);       \
+    *((str) + 3) = (uint8) ((x) &gt;&gt; 32);       \
+    *((str) + 2) = (uint8) ((x) &gt;&gt; 40);       \
+    *((str) + 1) = (uint8) ((x) &gt;&gt; 48);       \
+    *((str) + 0) = (uint8) ((x) &gt;&gt; 56);       \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="103" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">SHA512::final</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sha512_8h_1abfcad1e5762f93ffd8cd566bbe261a19" prot="public" static="no">
+        <name>SHA2_PACK64</name>
+        <param><defname>str</defname></param>
+        <param><defname>x</defname></param>
+        <initializer>{                                             \
+    *(x) =   ((uint64) *((str) + 7)      )    \
+           | ((uint64) *((str) + 6) &lt;&lt;  8)    \
+           | ((uint64) *((str) + 5) &lt;&lt; 16)    \
+           | ((uint64) *((str) + 4) &lt;&lt; 24)    \
+           | ((uint64) *((str) + 3) &lt;&lt; 32)    \
+           | ((uint64) *((str) + 2) &lt;&lt; 40)    \
+           | ((uint64) *((str) + 1) &lt;&lt; 48)    \
+           | ((uint64) *((str) + 0) &lt;&lt; 56);   \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="114" column="9" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" compoundref="sha512_8cpp" startline="55" endline="91">SHA512::transform</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sha512</definition>
+        <argsstring>(std::string input)</argsstring>
+        <name>sha512</name>
+        <param>
+          <type>std::string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h" line="85" column="1" bodyfile="TemplateAFIS_webservice_lib/firma_digital/sha512.cpp" bodystart="149" bodyend="163"/>
+        <references refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" compoundref="sha512_8h" startline="74">SHA512::DIGEST_SIZE</references>
+        <references refid="classSHA512_1a6db56be0379bbf38babee9567356ad68" compoundref="sha512_8cpp" startline="130" endline="147">SHA512::final</references>
+        <references refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" compoundref="sha512_8cpp" startline="93" endline="105">SHA512::init</references>
+        <references refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" compoundref="sha512_8cpp" startline="107" endline="128">SHA512::update</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase cabecera para estabilizar la clase <ref refid="md5_8cpp" kindref="compound">md5.cpp</ref> por versiones diferentes de las bibliotecas de <ref refid="classMD5" kindref="compound">MD5</ref> o de <ref refid="classSHA512" kindref="compound">SHA512</ref> en el servidor. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><ulink url="http://www.zedwood.com/article/cpp-sha512-function">http://www.zedwood.com/article/cpp-sha512-function</ulink> This file is part of Sistema de Identificación Biométrica para las OBPP. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Updated<sp/>to<sp/>C++,<sp/>zedwood.com<sp/>2012</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>http://www.zedwood.com/article/cpp-sha512-function</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Based<sp/>on<sp/>Olivier<sp/>Gay&apos;s<sp/>version</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>Modified<sp/>BSD<sp/>License<sp/>below:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>FIPS<sp/>180-2<sp/>SHA-224/256/384/512<sp/>implementation</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Issue<sp/>date:<sp/><sp/>04/30/2005</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>http://www.ouah.org/ogay/sha2/</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2005,<sp/>2007<sp/>Olivier<sp/>Gay<sp/>&lt;olivier.gay@a3.epfl.ch&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>3.<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>project<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>PROJECT<sp/>AND<sp/>CONTRIBUTORS<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>PROJECT<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHA512_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA512_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classSHA512" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSHA512" kindref="compound">SHA512</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="classSHA512_1a92a2b23b4b5217fefcb5b1884f40c054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a92a2b23b4b5217fefcb5b1884f40c054" kindref="member">uint8</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classSHA512_1a52085ac598de8ad6c5f157eafcefc047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a52085ac598de8ad6c5f157eafcefc047" kindref="member">uint32</ref>;</highlight></codeline>
+<codeline lineno="65" refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1af8e6d233ae15030174e481d6d79b1786" kindref="member">uint64</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="67" refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint64<sp/><ref refid="classSHA512_1af6d393ef5aa7458c3545efa1b9d92900" kindref="member">sha512_k</ref>[];</highlight></codeline>
+<codeline lineno="68" refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref><sp/>=<sp/>(1024/8);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a92d7e88a28d0bd70930df68bfcd4d136" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1aa1c4c23e601cbc51deda2fecbfed71d6" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*digest);</highlight></codeline>
+<codeline lineno="74" refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a911d66aedbff405df349ef300791d8eb" kindref="member">DIGEST_SIZE</ref><sp/>=<sp/>(<sp/>512<sp/>/<sp/>8);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1aaa6717d3ffe1b8efa2d17b838276ab29" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block_nb);</highlight></codeline>
+<codeline lineno="78" refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1a99134ffe06076eaf88e6db543304d0ef" kindref="member">m_tot_len</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1ac08a6cd41b96a9ca98ca567c3225bdca" kindref="member">m_len</ref>;</highlight></codeline>
+<codeline lineno="80" refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classSHA512_1aef099f8df4da2e3ea0a56bf5f0479fce" kindref="member">m_block</ref>[2<sp/>*<sp/><ref refid="classSHA512_1a5191f35aa313f5fd0447d2c272a82c99" kindref="member">SHA384_512_BLOCK_SIZE</ref>];</highlight></codeline>
+<codeline lineno="81" refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64<sp/><ref refid="classSHA512_1a6fcfcd454382329628cd6baa0487bee5" kindref="member">m_h</ref>[8];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">std::string<sp/><ref refid="sha512_8h_1acab52167a6e7f6daf06e9cbeae13aae6" kindref="member">sha512</ref>(std::string<sp/>input);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="87" refid="sha512_8h_1a0a0e7e0d135e9feff1da2e46fa556d50" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_SHFR(x,<sp/>n)<sp/><sp/><sp/><sp/>(x<sp/>&gt;&gt;<sp/>n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="sha512_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_ROTR(x,<sp/>n)<sp/><sp/><sp/>((x<sp/>&gt;&gt;<sp/>n)<sp/>|<sp/>(x<sp/>&lt;&lt;<sp/>((sizeof(x)<sp/>&lt;&lt;<sp/>3)<sp/>-<sp/>n)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="sha512_8h_1a0fcefdff5f2609b2c5eb1d0f99214199" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_ROTL(x,<sp/>n)<sp/><sp/><sp/>((x<sp/>&lt;&lt;<sp/>n)<sp/>|<sp/>(x<sp/>&gt;&gt;<sp/>((sizeof(x)<sp/>&lt;&lt;<sp/>3)<sp/>-<sp/>n)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="sha512_8h_1a1d4a72c3cb3d85b0c82736081042c1a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_CH(x,<sp/>y,<sp/>z)<sp/><sp/>((x<sp/>&amp;<sp/>y)<sp/>^<sp/>(~x<sp/>&amp;<sp/>z))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="sha512_8h_1ae9222f6c22449097806fb1dac2a58107" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_MAJ(x,<sp/>y,<sp/>z)<sp/>((x<sp/>&amp;<sp/>y)<sp/>^<sp/>(x<sp/>&amp;<sp/>z)<sp/>^<sp/>(y<sp/>&amp;<sp/>z))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="sha512_8h_1a8c65d2c0860cf623b5607b2aec6a870a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA512_F1(x)<sp/>(SHA2_ROTR(x,<sp/>28)<sp/>^<sp/>SHA2_ROTR(x,<sp/>34)<sp/>^<sp/>SHA2_ROTR(x,<sp/>39))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="sha512_8h_1a41b8a672f8ed1a11ea49acb032550fa6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA512_F2(x)<sp/>(SHA2_ROTR(x,<sp/>14)<sp/>^<sp/>SHA2_ROTR(x,<sp/>18)<sp/>^<sp/>SHA2_ROTR(x,<sp/>41))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="sha512_8h_1a278e83abc8c71fec8a719065e5d51106" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA512_F3(x)<sp/>(SHA2_ROTR(x,<sp/><sp/>1)<sp/>^<sp/>SHA2_ROTR(x,<sp/><sp/>8)<sp/>^<sp/>SHA2_SHFR(x,<sp/><sp/>7))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="sha512_8h_1ad6d26f67626668a9ec4f113bd05bee2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA512_F4(x)<sp/>(SHA2_ROTR(x,<sp/>19)<sp/>^<sp/>SHA2_ROTR(x,<sp/>61)<sp/>^<sp/>SHA2_SHFR(x,<sp/><sp/>6))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="sha512_8h_1a2dc032adc83afe8e265a7941ef11f258" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_UNPACK32(x,<sp/>str)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>3)<sp/>=<sp/>(uint8)<sp/>((x)<sp/><sp/><sp/><sp/><sp/><sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>2)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/><sp/>8);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>1)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>16);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>0)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>24);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="sha512_8h_1a81e6dc4766f3664c56beb47948d35e23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_UNPACK64(x,<sp/>str)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>7)<sp/>=<sp/>(uint8)<sp/>((x)<sp/><sp/><sp/><sp/><sp/><sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>6)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/><sp/>8);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>5)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>16);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>4)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>24);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>3)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>32);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>2)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>40);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>1)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>48);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>0)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>56);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="sha512_8h_1abfcad1e5762f93ffd8cd566bbe261a19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_PACK64(str,<sp/>x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*(x)<sp/>=<sp/><sp/><sp/>((uint64)<sp/>*((str)<sp/>+<sp/>7)<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>6)<sp/>&lt;&lt;<sp/><sp/>8)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>5)<sp/>&lt;&lt;<sp/>16)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>4)<sp/>&lt;&lt;<sp/>24)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>3)<sp/>&lt;&lt;<sp/>32)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>2)<sp/>&lt;&lt;<sp/>40)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/>48)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint64)<sp/>*((str)<sp/>+<sp/>0)<sp/>&lt;&lt;<sp/>56);<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/firma_digital/sha512.h"/>
+  </compounddef>
+</doxygen>

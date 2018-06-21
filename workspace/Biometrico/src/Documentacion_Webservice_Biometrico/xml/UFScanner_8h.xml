@@ -1,0 +1,1443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="UFScanner_8h" kind="file" language="C++">
+    <compoundname>UFScanner.h</compoundname>
+    <includedby refid="TemplateAFIS_8h" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.h</includedby>
+    <invincdepgraph>
+      <node id="191">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="189">
+        <label>TemplateAFIS_webservice_lib/include/UFScanner.h</label>
+        <link refid="UFScanner_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" prot="public" static="no">
+        <name>UFS_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="23" column="11" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" prot="public" static="no">
+        <name>UFS_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="24" column="10" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" prot="public" static="no">
+        <name>UFS_CALLBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="25" column="10" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" prot="public" static="no">
+        <name>UFS_STATUS</name>
+        <initializer>int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="34" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a6e43f498791f5d4195cc8ca0fdab351a" prot="public" static="no">
+        <name>UFS_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="37" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1adce5d87fa29e50049811293c5dd2010c" prot="public" static="no">
+        <name>UFS_ERROR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="38" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a8fcacdedff24142e790322d94326bb69" prot="public" static="no">
+        <name>UFS_ERR_NO_LICENSE</name>
+        <initializer>-101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="39" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a33474783360c66ac4612bff83ca24f6f" prot="public" static="no">
+        <name>UFS_ERR_LICENSE_NOT_MATCH</name>
+        <initializer>-102</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="40" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a5650b81fc51e06f96dc1a177a5520ac9" prot="public" static="no">
+        <name>UFS_ERR_LICENSE_EXPIRED</name>
+        <initializer>-103</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="41" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a7c923dddb814427a63c208d07c3514a7" prot="public" static="no">
+        <name>UFS_ERR_NOT_SUPPORTED</name>
+        <initializer>-111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="42" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a5881f26eb4e4e6b9673b3ae06b2465a3" prot="public" static="no">
+        <name>UFS_ERR_INVALID_PARAMETERS</name>
+        <initializer>-112</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="43" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a03d5dd251f28dfee1aaafb93163d718a" prot="public" static="no">
+        <name>UFS_ERR_ALREADY_INITIALIZED</name>
+        <initializer>-201</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="45" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a940b25864f601413b6ff6041580d6e6a" prot="public" static="no">
+        <name>UFS_ERR_NOT_INITIALIZED</name>
+        <initializer>-202</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="46" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a10305d12c6fd7126dc20b7e4c7dc14f8" prot="public" static="no">
+        <name>UFS_ERR_DEVICE_NUMBER_EXCEED</name>
+        <initializer>-203</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="47" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a1025510f8a1a54914195576287aefdbc" prot="public" static="no">
+        <name>UFS_ERR_LOAD_SCANNER_LIBRARY</name>
+        <initializer>-204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="48" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a167181351378778a3e7b4b7c826d9e97" prot="public" static="no">
+        <name>UFS_ERR_CAPTURE_RUNNING</name>
+        <initializer>-211</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="49" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a1a338615c20e596c18fa6fe9fbee412f" prot="public" static="no">
+        <name>UFS_ERR_CAPTURE_FAILED</name>
+        <initializer>-212</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="50" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a95e727440336e95d5c2530b35b7946f2" prot="public" static="no">
+        <name>UFS_ERR_NOT_GOOD_IMAGE</name>
+        <initializer>-301</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="52" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1adeb39f01355b3f918a61d73048d1bdf5" prot="public" static="no">
+        <name>UFS_ERR_EXTRACTION_FAILED</name>
+        <initializer>-302</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="53" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ac1dde6c135fc611a1d3da5df6c3602df" prot="public" static="no">
+        <name>UFS_ERR_CORE_NOT_DETECTED</name>
+        <initializer>-351</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="55" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a768cd4f3274ab6b277dac18c4b50ade8" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_LEFT</name>
+        <initializer>-352</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="56" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a4ae8b7311220cd523902d2117d89c4a3" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_LEFT_TOP</name>
+        <initializer>-353</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="57" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1af895596164d7f8986da6601fbc75cd2b" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_TOP</name>
+        <initializer>-354</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="58" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1abbb870bd244f3c8a0af05761dd98aeb5" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_RIGHT_TOP</name>
+        <initializer>-355</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="59" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a67b085bfb3caa4ce79762ebd4338657f" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_RIGHT</name>
+        <initializer>-356</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="60" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ae64a68d451c2d08aee79df2433cfd018" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_RIGHT_BOTTOM</name>
+        <initializer>-357</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="61" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a7d929444caf61ee059175093be97ce9b" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_BOTTOM</name>
+        <initializer>-358</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="62" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ad584b3803ee2ec3c047fe939644beb45" prot="public" static="no">
+        <name>UFS_ERR_CORE_TO_LEFT_BOTTOM</name>
+        <initializer>-359</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="63" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a918d3fc1410445c679977dc34f10404b" prot="public" static="no">
+        <name>UFS_ERR_FAKE_FINGER</name>
+        <initializer>-221</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="65" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ae03e483a6baefe7d4f4fa7aadc982bcf" prot="public" static="no">
+        <name>UFS_ERR_FINGER_ON_SENSOR</name>
+        <initializer>-231</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="67" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a14d9796c801128d9d9214146202e2735" prot="public" static="no">
+        <name>UFS_PARAM_TIMEOUT</name>
+        <initializer>201</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="71" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1af287ad9d7c42176c44270863ed99bea4" prot="public" static="no">
+        <name>UFS_PARAM_BRIGHTNESS</name>
+        <initializer>202</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="72" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a9a617c505d0501c96339a72ed00518d6" prot="public" static="no">
+        <name>UFS_PARAM_SENSITIVITY</name>
+        <initializer>203</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="73" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a867755769a8dd0fe9170d223f764488b" prot="public" static="no">
+        <name>UFS_PARAM_SERIAL</name>
+        <initializer>204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="74" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a1f939c1d37c5f5f6b7a83d5852614807" prot="public" static="no">
+        <name>UFS_PARAM_DETECT_CORE</name>
+        <initializer>301</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="76" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a66e9ad53098af2cc03f1b5233b1f6cc7" prot="public" static="no">
+        <name>UFS_PARAM_TEMPLATE_SIZE</name>
+        <initializer>302</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="77" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a7e6a550d41cb6c7ee54afbe0b0b66f90" prot="public" static="no">
+        <name>UFS_PARAM_USE_SIF</name>
+        <initializer>311</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="78" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ad5d3dc01545942ffd2483c847b8ef299" prot="public" static="no">
+        <name>UFS_PARAM_DETECT_FAKE</name>
+        <initializer>312</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="80" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1acda2aebd4a8fe2d04fc60cba9dd6cd54" prot="public" static="no">
+        <name>UFS_SCANNER_TYPE_SFR200</name>
+        <initializer>1001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="83" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1aab03dbfa408273e5d4f25fcab92d5c58" prot="public" static="no">
+        <name>UFS_SCANNER_TYPE_SFR300</name>
+        <initializer>1002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="84" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a25077b41d08c12fbcebd8406fcf37442" prot="public" static="no">
+        <name>UFS_SCANNER_TYPE_SFR300v2</name>
+        <initializer>1003</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="85" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a93d368723f26cec61a77273c252a1372" prot="public" static="no">
+        <name>UFS_SCANNER_TYPE_SFR500</name>
+        <initializer>1004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="86" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ae731432fe41dcbfbba8286555b994dd4" prot="public" static="no">
+        <name>UFS_TEMPLATE_TYPE_SUPREMA</name>
+        <initializer>2001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="89" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" compoundref="TemplateAFIS_8cpp" startline="300" endline="347">TemplateAFIS_webservice::OnSetTemplateType</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1a7e0b453bdecb68689853015e66cad114" prot="public" static="no">
+        <name>UFS_TEMPLATE_TYPE_ISO19794_2</name>
+        <initializer>2002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="90" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" compoundref="TemplateAFIS_8cpp" startline="300" endline="347">TemplateAFIS_webservice::OnSetTemplateType</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="UFScanner_8h_1ae684cea3d7abbb624ce51ccd7093039a" prot="public" static="no">
+        <name>UFS_TEMPLATE_TYPE_ANSI378</name>
+        <initializer>2003</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="91" column="9" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa89af892ebe892d1a92f1e2dad5e998d" compoundref="TemplateAFIS_8cpp" startline="300" endline="347">TemplateAFIS_webservice::OnSetTemplateType</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* HUFScanner</definition>
+        <argsstring></argsstring>
+        <name>HUFScanner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="94" column="1" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="UFScanner_8h_1a40b89c6bf3fc93911dd777bca6702221" prot="public" static="no">
+        <type>int <ref refid="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" kindref="member">UFS_CALLBACK</ref></type>
+        <definition>typedef int UFS_CALLBACK UFS_SCANNER_PROC(const char *szScannerID, int bSensorOn, void *pParam)</definition>
+        <argsstring>(const char *szScannerID, int bSensorOn, void *pParam)</argsstring>
+        <name>UFS_SCANNER_PROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="96" column="1" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="UFScanner_8h_1aa941af7b811eb43329e54094f00a8e48" prot="public" static="no">
+        <type>int <ref refid="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" kindref="member">UFS_CALLBACK</ref></type>
+        <definition>typedef int UFS_CALLBACK UFS_CAPTURE_PROC(HUFScanner hScanner, int bFingerOn, unsigned char *pImage, int nWidth, int nHeight, int nResolution, void *pParam)</definition>
+        <argsstring>(HUFScanner hScanner, int bFingerOn, unsigned char *pImage, int nWidth, int nHeight, int nResolution, void *pParam)</argsstring>
+        <name>UFS_CAPTURE_PROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="97" column="1" bodyfile="TemplateAFIS_webservice_lib/include/UFScanner.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="UFScanner_8h_1a0a401d5264990fbd4105ecfdffd6baf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_Init</definition>
+        <argsstring>()</argsstring>
+        <name>UFS_Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a46ce0a92ac702ecf9078f6059b8c9705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_Update</definition>
+        <argsstring>()</argsstring>
+        <name>UFS_Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1ae00518cdeb527efbb5d1962afbdb6557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_Uninit</definition>
+        <argsstring>()</argsstring>
+        <name>UFS_Uninit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a594ae96f0200c5819f79cd29115052bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SetScannerCallback</definition>
+        <argsstring>(UFS_SCANNER_PROC *pScannerProc, void *pParam)</argsstring>
+        <name>UFS_SetScannerCallback</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a40b89c6bf3fc93911dd777bca6702221" kindref="member">UFS_SCANNER_PROC</ref> *</type>
+          <declname>pScannerProc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a2e9b5a1c06d029542ff44983ffc9a984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_RemoveScannerCallback</definition>
+        <argsstring>()</argsstring>
+        <name>UFS_RemoveScannerCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a6458df6064b71e113da3d559a13751c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerNumber</definition>
+        <argsstring>(int *pnScannerNumber)</argsstring>
+        <name>UFS_GetScannerNumber</name>
+        <param>
+          <type>int *</type>
+          <declname>pnScannerNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a141c44f9964e47e8e783ab52803dfc3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerHandle</definition>
+        <argsstring>(int nScannerIndex, HUFScanner *phScanner)</argsstring>
+        <name>UFS_GetScannerHandle</name>
+        <param>
+          <type>int</type>
+          <declname>nScannerIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref> *</type>
+          <declname>phScanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a7a2dd13eae0c2c70d4ba44af8bcad749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerHandleByID</definition>
+        <argsstring>(const char *szScannerID, HUFScanner *phScanner)</argsstring>
+        <name>UFS_GetScannerHandleByID</name>
+        <param>
+          <type>const char *</type>
+          <declname>szScannerID</declname>
+        </param>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref> *</type>
+          <declname>phScanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1ab2c51db87dc06f99d273723233ef560c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerIndex</definition>
+        <argsstring>(HUFScanner hScanner, int *pnScannerIndex)</argsstring>
+        <name>UFS_GetScannerIndex</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnScannerIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a6692006fb7eb6d95c079daea68b5606f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerID</definition>
+        <argsstring>(HUFScanner hScanner, char *szScannerID)</argsstring>
+        <name>UFS_GetScannerID</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szScannerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a94dbff32094be092c98436dd2e11c294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetScannerType</definition>
+        <argsstring>(HUFScanner hScanner, int *pnScannerType)</argsstring>
+        <name>UFS_GetScannerType</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnScannerType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a3461537093629eed96133342e9948a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetParameter</definition>
+        <argsstring>(HUFScanner hScanner, int nParam, void *pValue)</argsstring>
+        <name>UFS_GetParameter</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nParam</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1afea11d00f032d286eb5abf59ce2d4aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SetParameter</definition>
+        <argsstring>(HUFScanner hScanner, int nParam, void *pValue)</argsstring>
+        <name>UFS_SetParameter</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nParam</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a03e70eb4428ac1031bc73fbff1fb65a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_IsSensorOn</definition>
+        <argsstring>(HUFScanner hScanner, int *pbSensorOn)</argsstring>
+        <name>UFS_IsSensorOn</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pbSensorOn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1aa18e2f3c2d7a9ecac95ffbb70ff03477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_IsFingerOn</definition>
+        <argsstring>(HUFScanner hScanner, int *pbFingerOn)</argsstring>
+        <name>UFS_IsFingerOn</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pbFingerOn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1ab03c04a3efb5b3de2b33f77737b747e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_CaptureSingleImage</definition>
+        <argsstring>(HUFScanner hScanner)</argsstring>
+        <name>UFS_CaptureSingleImage</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1ade72c15e8e42bc59472bb8b88d02b0d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_StartCapturing</definition>
+        <argsstring>(HUFScanner hScanner, UFS_CAPTURE_PROC *pCaptureProc, void *pParam)</argsstring>
+        <name>UFS_StartCapturing</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type><ref refid="UFScanner_8h_1aa941af7b811eb43329e54094f00a8e48" kindref="member">UFS_CAPTURE_PROC</ref> *</type>
+          <declname>pCaptureProc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a2b0c56cf7eb4f01a9514a0c1dec91d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_IsCapturing</definition>
+        <argsstring>(HUFScanner hScanner, int *pbCapturing)</argsstring>
+        <name>UFS_IsCapturing</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pbCapturing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a5b7a7eeca001f83331f3ec0fc4c41290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_AbortCapturing</definition>
+        <argsstring>(HUFScanner hScanner)</argsstring>
+        <name>UFS_AbortCapturing</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a0be41ad28deb6529670ac7420f621855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_Extract</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char *pTemplate, int *pnTemplateSize, int *pnEnrollQuality)</argsstring>
+        <name>UFS_Extract</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplate</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplateSize</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnEnrollQuality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a3a349d62f0428c11a2152e5c420e3eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SetEncryptionKey</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char *pKey)</argsstring>
+        <name>UFS_SetEncryptionKey</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a7246104077baf84421273a693d87e5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_EncryptTemplate</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char *pTemplateInput, int nTemplateInputSize, unsigned char *pTemplateOutput, int *pnTemplateOutputSize)</argsstring>
+        <name>UFS_EncryptTemplate</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplateInput</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateInputSize</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplateOutput</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplateOutputSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1aff80725f6f498ee2c45446e687154c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_DecryptTemplate</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char *pTemplateInput, int nTemplateInputSize, unsigned char *pTemplateOutput, int *pnTemplateOutputSize)</argsstring>
+        <name>UFS_DecryptTemplate</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplateInput</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateInputSize</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pTemplateOutput</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplateOutputSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a247b220d27ae055d7ce057a0e1036301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetCaptureImageBufferInfo</definition>
+        <argsstring>(HUFScanner hScanner, int *pnWidth, int *pnHeight, int *pnResolution)</argsstring>
+        <name>UFS_GetCaptureImageBufferInfo</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnWidth</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnHeight</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnResolution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a3b9e64942f83a5d7a44017cfc310139b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetCaptureImageBuffer</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char *pImageData)</argsstring>
+        <name>UFS_GetCaptureImageBuffer</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pImageData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a213a411b1ed4ad1ee0c532b559543e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SaveCaptureImageBufferToWSQ</definition>
+        <argsstring>(HUFScanner hScanner, const float ratio, char *szFileName)</argsstring>
+        <name>UFS_SaveCaptureImageBufferToWSQ</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>ratio</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1ad99660c4a94744a45a3e32de1aeb7070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SaveCaptureImageBufferTo19794_4</definition>
+        <argsstring>(HUFScanner hScanner, char *szFileName)</argsstring>
+        <name>UFS_SaveCaptureImageBufferTo19794_4</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1aa8288d7dbce0dab484b1c1552513695c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_ClearCaptureImageBuffer</definition>
+        <argsstring>(HUFScanner hScanner)</argsstring>
+        <name>UFS_ClearCaptureImageBuffer</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a453e03452491e3747673d9f90921e063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetErrorString</definition>
+        <argsstring>(UFS_STATUS res, char *szErrorString)</argsstring>
+        <name>UFS_GetErrorString</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szErrorString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1aec5dec30593b6a1f9091dd25da8a2757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SetTemplateType</definition>
+        <argsstring>(HUFScanner hScanner, int nTemplateType)</argsstring>
+        <name>UFS_SetTemplateType</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a171b284ea9445b0d242238b89486f971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetTemplateType</definition>
+        <argsstring>(HUFScanner hScanner, int *nTemplateType)</argsstring>
+        <name>UFS_GetTemplateType</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nTemplateType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a74a9e3c3f60a18828e006d3edc00c0de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_SelectTemplate</definition>
+        <argsstring>(HUFScanner hScanner, unsigned char **ppTemplateInput, int *pnTemplateInputSize, int nTemplateInputNum, unsigned char **ppTemplateOutput, int *pnTemplateOutputSize, int nTemplateOutputNum)</argsstring>
+        <name>UFS_SelectTemplate</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>unsigned char **</type>
+          <declname>ppTemplateInput</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplateInputSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateInputNum</declname>
+        </param>
+        <param>
+          <type>unsigned char **</type>
+          <declname>ppTemplateOutput</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnTemplateOutputSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTemplateOutputNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="UFScanner_8h_1a1005d4a3292e364f2bce827f55bcb127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref> <ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref></type>
+        <definition>UFS_STATUS UFS_API UFS_GetNFIQScore</definition>
+        <argsstring>(HUFScanner hScanner, int *pnNFIQ)</argsstring>
+        <name>UFS_GetNFIQScore</name>
+        <param>
+          <type><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref></type>
+          <declname>hScanner</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pnNFIQ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/include/UFScanner.h" line="148" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UniFinger<sp/>Engine<sp/>SDK<sp/>3.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UFScanner.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Header<sp/>file<sp/>for<sp/>UFScanner<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2007<sp/>Suprema<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_UFSCANNER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_UFSCANNER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>UFS_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>UFS_API<sp/>__declspec(dllexport)<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>UFS_API<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UFS_CALLBACK<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UFS_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UFS_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UFS_CALLBACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Status<sp/>Definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Status<sp/>Return<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="UFScanner_8h_1a6e43f498791f5d4195cc8ca0fdab351a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="UFScanner_8h_1adce5d87fa29e50049811293c5dd2010c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="UFScanner_8h_1a8fcacdedff24142e790322d94326bb69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_NO_LICENSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="UFScanner_8h_1a33474783360c66ac4612bff83ca24f6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_LICENSE_NOT_MATCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-102</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="UFScanner_8h_1a5650b81fc51e06f96dc1a177a5520ac9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_LICENSE_EXPIRED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-103</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="UFScanner_8h_1a7c923dddb814427a63c208d07c3514a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_NOT_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="UFScanner_8h_1a5881f26eb4e4e6b9673b3ae06b2465a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_INVALID_PARAMETERS<sp/><sp/><sp/><sp/><sp/><sp/>-112</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Scanner</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="UFScanner_8h_1a03d5dd251f28dfee1aaafb93163d718a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_ALREADY_INITIALIZED<sp/><sp/><sp/><sp/><sp/>-201</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="UFScanner_8h_1a940b25864f601413b6ff6041580d6e6a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_NOT_INITIALIZED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-202</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="UFScanner_8h_1a10305d12c6fd7126dc20b7e4c7dc14f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_DEVICE_NUMBER_EXCEED<sp/><sp/><sp/><sp/>-203</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="UFScanner_8h_1a1025510f8a1a54914195576287aefdbc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_LOAD_SCANNER_LIBRARY<sp/><sp/><sp/><sp/>-204</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="UFScanner_8h_1a167181351378778a3e7b4b7c826d9e97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CAPTURE_RUNNING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-211</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="UFScanner_8h_1a1a338615c20e596c18fa6fe9fbee412f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CAPTURE_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-212</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Extraction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="UFScanner_8h_1a95e727440336e95d5c2530b35b7946f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_NOT_GOOD_IMAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-301</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="UFScanner_8h_1adeb39f01355b3f918a61d73048d1bdf5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_EXTRACTION_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-302</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Extraction:<sp/>Core<sp/>Detection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="UFScanner_8h_1ac1dde6c135fc611a1d3da5df6c3602df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_NOT_DETECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-351</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="UFScanner_8h_1a768cd4f3274ab6b277dac18c4b50ade8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_LEFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-352</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="UFScanner_8h_1a4ae8b7311220cd523902d2117d89c4a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_LEFT_TOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-353</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="UFScanner_8h_1af895596164d7f8986da6601fbc75cd2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_TOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-354</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="UFScanner_8h_1abbb870bd244f3c8a0af05761dd98aeb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_RIGHT_TOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-355</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="UFScanner_8h_1a67b085bfb3caa4ce79762ebd4338657f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_RIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-356</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="UFScanner_8h_1ae64a68d451c2d08aee79df2433cfd018" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_RIGHT_BOTTOM<sp/><sp/><sp/><sp/>-357</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="UFScanner_8h_1a7d929444caf61ee059175093be97ce9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_BOTTOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-358</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="UFScanner_8h_1ad584b3803ee2ec3c047fe939644beb45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_CORE_TO_LEFT_BOTTOM<sp/><sp/><sp/><sp/><sp/>-359</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="UFScanner_8h_1a918d3fc1410445c679977dc34f10404b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_FAKE_FINGER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-221</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="UFScanner_8h_1ae03e483a6baefe7d4f4fa7aadc982bcf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_ERR_FINGER_ON_SENSOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-231</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Scanner</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="UFScanner_8h_1a14d9796c801128d9d9214146202e2735" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>201</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="UFScanner_8h_1af287ad9d7c42176c44270863ed99bea4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_BRIGHTNESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>202</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="UFScanner_8h_1a9a617c505d0501c96339a72ed00518d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>203</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="UFScanner_8h_1a867755769a8dd0fe9170d223f764488b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_SERIAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>204</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>Extraction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="UFScanner_8h_1a1f939c1d37c5f5f6b7a83d5852614807" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_DETECT_CORE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>301</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="UFScanner_8h_1a66e9ad53098af2cc03f1b5233b1f6cc7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_TEMPLATE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>302</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="UFScanner_8h_1a7e6a550d41cb6c7ee54afbe0b0b66f90" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_USE_SIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>311</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="UFScanner_8h_1ad5d3dc01545942ffd2483c847b8ef299" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_PARAM_DETECT_FAKE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>312</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scanner<sp/>Type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="UFScanner_8h_1acda2aebd4a8fe2d04fc60cba9dd6cd54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_SCANNER_TYPE_SFR200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="UFScanner_8h_1aab03dbfa408273e5d4f25fcab92d5c58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_SCANNER_TYPE_SFR300<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="UFScanner_8h_1a25077b41d08c12fbcebd8406fcf37442" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_SCANNER_TYPE_SFR300v2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="UFScanner_8h_1a93d368723f26cec61a77273c252a1372" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_SCANNER_TYPE_SFR500<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="UFScanner_8h_1ae731432fe41dcbfbba8286555b994dd4" refkind="member"><highlight class="preprocessor">#define<sp/>UFS_TEMPLATE_TYPE_SUPREMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="UFScanner_8h_1a7e0b453bdecb68689853015e66cad114" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_TEMPLATE_TYPE_ISO19794_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="UFScanner_8h_1ae684cea3d7abbb624ce51ccd7093039a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UFS_TEMPLATE_TYPE_ANSI378<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="UFScanner_8h_1a299ac8a7427342734e293e7b0641fa8d" kindref="member">HUFScanner</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="UFScanner_8h_1a40b89c6bf3fc93911dd777bca6702221" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" kindref="member">UFS_CALLBACK</ref><sp/><ref refid="UFScanner_8h_1a40b89c6bf3fc93911dd777bca6702221" kindref="member">UFS_SCANNER_PROC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szScannerID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bSensorOn,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pParam);</highlight></codeline>
+<codeline lineno="97" refid="UFScanner_8h_1aa941af7b811eb43329e54094f00a8e48" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="UFScanner_8h_1a97d4a5a005e24cb3f68100d9569d35fe" kindref="member">UFS_CALLBACK</ref><sp/><ref refid="UFScanner_8h_1aa941af7b811eb43329e54094f00a8e48" kindref="member">UFS_CAPTURE_PROC</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bFingerOn,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pImage,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nHeight,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nResolution,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pParam);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a0a401d5264990fbd4105ecfdffd6baf4" kindref="member">UFS_Init</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a46ce0a92ac702ecf9078f6059b8c9705" kindref="member">UFS_Update</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1ae00518cdeb527efbb5d1962afbdb6557" kindref="member">UFS_Uninit</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a594ae96f0200c5819f79cd29115052bc" kindref="member">UFS_SetScannerCallback</ref>(<ref refid="UFScanner_8h_1a40b89c6bf3fc93911dd777bca6702221" kindref="member">UFS_SCANNER_PROC</ref>*<sp/>pScannerProc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pParam);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a2e9b5a1c06d029542ff44983ffc9a984" kindref="member">UFS_RemoveScannerCallback</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a6458df6064b71e113da3d559a13751c9" kindref="member">UFS_GetScannerNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnScannerNumber);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a141c44f9964e47e8e783ab52803dfc3d" kindref="member">UFS_GetScannerHandle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nScannerIndex,<sp/>HUFScanner*<sp/>phScanner);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a7a2dd13eae0c2c70d4ba44af8bcad749" kindref="member">UFS_GetScannerHandleByID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szScannerID,<sp/>HUFScanner*<sp/>phScanner);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1ab2c51db87dc06f99d273723233ef560c" kindref="member">UFS_GetScannerIndex</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnScannerIndex);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a6692006fb7eb6d95c079daea68b5606f" kindref="member">UFS_GetScannerID</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szScannerID);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a94dbff32094be092c98436dd2e11c294" kindref="member">UFS_GetScannerType</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnScannerType);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a3461537093629eed96133342e9948a70" kindref="member">UFS_GetParameter</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nParam,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pValue);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1afea11d00f032d286eb5abf59ce2d4aec" kindref="member">UFS_SetParameter</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nParam,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pValue);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a03e70eb4428ac1031bc73fbff1fb65a7" kindref="member">UFS_IsSensorOn</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pbSensorOn);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1aa18e2f3c2d7a9ecac95ffbb70ff03477" kindref="member">UFS_IsFingerOn</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pbFingerOn);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1ab03c04a3efb5b3de2b33f77737b747e6" kindref="member">UFS_CaptureSingleImage</ref>(HUFScanner<sp/>hScanner);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1ade72c15e8e42bc59472bb8b88d02b0d2" kindref="member">UFS_StartCapturing</ref>(HUFScanner<sp/>hScanner,<sp/><ref refid="UFScanner_8h_1aa941af7b811eb43329e54094f00a8e48" kindref="member">UFS_CAPTURE_PROC</ref>*<sp/>pCaptureProc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pParam);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a2b0c56cf7eb4f01a9514a0c1dec91d46" kindref="member">UFS_IsCapturing</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pbCapturing);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a5b7a7eeca001f83331f3ec0fc4c41290" kindref="member">UFS_AbortCapturing</ref>(HUFScanner<sp/>hScanner);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a0be41ad28deb6529670ac7420f621855" kindref="member">UFS_Extract</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplateSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnEnrollQuality);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a3a349d62f0428c11a2152e5c420e3eb8" kindref="member">UFS_SetEncryptionKey</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pKey);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a7246104077baf84421273a693d87e5eb" kindref="member">UFS_EncryptTemplate</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplateInput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateInputSize,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplateOutput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplateOutputSize);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1aff80725f6f498ee2c45446e687154c3c" kindref="member">UFS_DecryptTemplate</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplateInput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateInputSize,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pTemplateOutput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplateOutputSize);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a247b220d27ae055d7ce057a0e1036301" kindref="member">UFS_GetCaptureImageBufferInfo</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnHeight,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnResolution);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a3b9e64942f83a5d7a44017cfc310139b" kindref="member">UFS_GetCaptureImageBuffer</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pImageData);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/>UFS_DrawCaptureImageBuffer(HUFScanner<sp/>hScanner,<sp/>HDC<sp/>hDC,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nLeft,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRight,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBottom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bCore);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/>UFS_SaveCaptureImageBufferToBMP(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szFileName);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a213a411b1ed4ad1ee0c532b559543e72" kindref="member">UFS_SaveCaptureImageBufferToWSQ</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ratio,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szFileName);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1ad99660c4a94744a45a3e32de1aeb7070" kindref="member">UFS_SaveCaptureImageBufferTo19794_4</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szFileName);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1aa8288d7dbce0dab484b1c1552513695c" kindref="member">UFS_ClearCaptureImageBuffer</ref>(HUFScanner<sp/>hScanner);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a453e03452491e3747673d9f90921e063" kindref="member">UFS_GetErrorString</ref>(<ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/>res,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>szErrorString);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1aec5dec30593b6a1f9091dd25da8a2757" kindref="member">UFS_SetTemplateType</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateType);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a171b284ea9445b0d242238b89486f971" kindref="member">UFS_GetTemplateType</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nTemplateType);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a74a9e3c3f60a18828e006d3edc00c0de" kindref="member">UFS_SelectTemplate</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>ppTemplateInput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplateInputSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateInputNum,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>ppTemplateOutput,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnTemplateOutputSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTemplateOutputNum);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><ref refid="UFScanner_8h_1a174418c197eb1250fb19158c6f3037cc" kindref="member">UFS_STATUS</ref><sp/><ref refid="UFScanner_8h_1a373013bb7a13135bcac2729faebe7ac6" kindref="member">UFS_API</ref><sp/><ref refid="UFScanner_8h_1a1005d4a3292e364f2bce827f55bcb127" kindref="member">UFS_GetNFIQScore</ref>(HUFScanner<sp/>hScanner,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pnNFIQ);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_UFSCANNER_H_</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/include/UFScanner.h"/>
+  </compounddef>
+</doxygen>

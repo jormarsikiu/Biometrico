@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::borrarHuella" name="TemplateAFIS_webservice::borrarHuella">
+<area shape="rect" id="node2" href="$classFingerprint.html#a991f8682bd5fb908804eb35e2c584d17" title="Método borrarFingerprintImg: Borrar un registro de la tabla: res.partner.fingerprint.image. Función para eliminar huellas. " alt="" coords="232,5,439,32"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#ae1db425a60d85686567fc95ec23fb497" title="Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibl..." alt="" coords="246,56,425,83"/>
+</map>

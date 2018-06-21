@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_0b51ec7d61b597b4f697933498f6a61d" kind="dir">
+    <compoundname>TemplateAFIS_webservice_lib</compoundname>
+    <innerdir refid="dir_613c92f74d08d5ff69806ba91bf10630">TemplateAFIS_webservice_lib/Conexion_webservice</innerdir>
+    <innerdir refid="dir_e6c6a25f46798317bef29e5faadbd992">TemplateAFIS_webservice_lib/firma_digital</innerdir>
+    <innerdir refid="dir_3c672bebb7cc86b373cec2c41350c06a">TemplateAFIS_webservice_lib/include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/"/>
+  </compounddef>
+</doxygen>

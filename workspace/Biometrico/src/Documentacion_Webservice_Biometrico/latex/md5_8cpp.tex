@@ -1,0 +1,342 @@
+\hypertarget{md5_8cpp}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.cpp}
+\label{md5_8cpp}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.\+cpp@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/md5.\+cpp}}
+
+
+Clase que se encarga de generar un hash alfanumérico de un tamaño predeterminado.  
+
+
+{\ttfamily \#include \char`\"{}md5.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+Dependencia gráfica adjunta para md5.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{md5_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{md5_8cpp_a51398c0e5541164ad4d6615880073305}{S11}~7
+\item 
+\#define \hyperlink{md5_8cpp_a1ec499cd0e54ecc28c2ac2afea5b038e}{S12}~12
+\item 
+\#define \hyperlink{md5_8cpp_aaeec90429105fb54d853dd4fc7027a54}{S13}~17
+\item 
+\#define \hyperlink{md5_8cpp_a78342b0ccde2ed12fdf19a113cc266cf}{S14}~22
+\item 
+\#define \hyperlink{md5_8cpp_ab6d5354f647a0e7592a1f051fc8377b2}{S21}~5
+\item 
+\#define \hyperlink{md5_8cpp_addad30455da936bc1879ee9c72b46d59}{S22}~9
+\item 
+\#define \hyperlink{md5_8cpp_a6321a8b29628936f76e9e78cf5bda95f}{S23}~14
+\item 
+\#define \hyperlink{md5_8cpp_a0c09eb77d30a0d5f9154914147b86c20}{S24}~20
+\item 
+\#define \hyperlink{md5_8cpp_aef26590f8a880ee6f4a158168defcd89}{S31}~4
+\item 
+\#define \hyperlink{md5_8cpp_a1d512424dd8a91e0a5bcc98563f33914}{S32}~11
+\item 
+\#define \hyperlink{md5_8cpp_a1c854214533f6220e859b0063196abb3}{S33}~16
+\item 
+\#define \hyperlink{md5_8cpp_af6472be1d535970afee8e5266a74aa07}{S34}~23
+\item 
+\#define \hyperlink{md5_8cpp_ab674ba129e588da55d1d494e1cf3c15e}{S41}~6
+\item 
+\#define \hyperlink{md5_8cpp_a268ef1a49114a94b931cc6b313e3cd1b}{S42}~10
+\item 
+\#define \hyperlink{md5_8cpp_a5aaa7121f39650d472746942ca68f959}{S43}~15
+\item 
+\#define \hyperlink{md5_8cpp_a6a3989af72b55d169bd73a66f8620aae}{S44}~21
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{md5_8cpp_a80cbf042ee22a0e557ac7938a6218e55}{operator$<$$<$} (std\+::ostream \&out, \hyperlink{classMD5}{M\+D5} \hyperlink{md5_8h_a92c6eed2e9b51298af559aff6792770b}{md5})
+\item 
+std\+::string \hyperlink{md5_8cpp_a92c6eed2e9b51298af559aff6792770b}{md5} (const std\+::string str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que se encarga de generar un hash alfanumérico de un tamaño predeterminado. 
+
+\begin{DoxyAuthor}{Autor}
+Frank Thilo (\href{mailto:thilo@unix-ag.org}{\tt thilo@unix-\/ag.\+org}) This file is part of Sistema de Identificación Biométrica para las O\+B\+PP. 
+\end{DoxyAuthor}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{md5_8cpp_a51398c0e5541164ad4d6615880073305}{}\label{md5_8cpp_a51398c0e5541164ad4d6615880073305} 
+\index{md5.\+cpp@{md5.\+cpp}!S11@{S11}}
+\index{S11@{S11}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S11}{S11}}
+{\footnotesize\ttfamily \#define S11~7}
+
+
+
+Definición en la línea 47 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a1ec499cd0e54ecc28c2ac2afea5b038e}{}\label{md5_8cpp_a1ec499cd0e54ecc28c2ac2afea5b038e} 
+\index{md5.\+cpp@{md5.\+cpp}!S12@{S12}}
+\index{S12@{S12}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S12}{S12}}
+{\footnotesize\ttfamily \#define S12~12}
+
+
+
+Definición en la línea 48 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_aaeec90429105fb54d853dd4fc7027a54}{}\label{md5_8cpp_aaeec90429105fb54d853dd4fc7027a54} 
+\index{md5.\+cpp@{md5.\+cpp}!S13@{S13}}
+\index{S13@{S13}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S13}{S13}}
+{\footnotesize\ttfamily \#define S13~17}
+
+
+
+Definición en la línea 49 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a78342b0ccde2ed12fdf19a113cc266cf}{}\label{md5_8cpp_a78342b0ccde2ed12fdf19a113cc266cf} 
+\index{md5.\+cpp@{md5.\+cpp}!S14@{S14}}
+\index{S14@{S14}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S14}{S14}}
+{\footnotesize\ttfamily \#define S14~22}
+
+
+
+Definición en la línea 50 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_ab6d5354f647a0e7592a1f051fc8377b2}{}\label{md5_8cpp_ab6d5354f647a0e7592a1f051fc8377b2} 
+\index{md5.\+cpp@{md5.\+cpp}!S21@{S21}}
+\index{S21@{S21}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S21}{S21}}
+{\footnotesize\ttfamily \#define S21~5}
+
+
+
+Definición en la línea 51 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_addad30455da936bc1879ee9c72b46d59}{}\label{md5_8cpp_addad30455da936bc1879ee9c72b46d59} 
+\index{md5.\+cpp@{md5.\+cpp}!S22@{S22}}
+\index{S22@{S22}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S22}{S22}}
+{\footnotesize\ttfamily \#define S22~9}
+
+
+
+Definición en la línea 52 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a6321a8b29628936f76e9e78cf5bda95f}{}\label{md5_8cpp_a6321a8b29628936f76e9e78cf5bda95f} 
+\index{md5.\+cpp@{md5.\+cpp}!S23@{S23}}
+\index{S23@{S23}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S23}{S23}}
+{\footnotesize\ttfamily \#define S23~14}
+
+
+
+Definición en la línea 53 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a0c09eb77d30a0d5f9154914147b86c20}{}\label{md5_8cpp_a0c09eb77d30a0d5f9154914147b86c20} 
+\index{md5.\+cpp@{md5.\+cpp}!S24@{S24}}
+\index{S24@{S24}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S24}{S24}}
+{\footnotesize\ttfamily \#define S24~20}
+
+
+
+Definición en la línea 54 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_aef26590f8a880ee6f4a158168defcd89}{}\label{md5_8cpp_aef26590f8a880ee6f4a158168defcd89} 
+\index{md5.\+cpp@{md5.\+cpp}!S31@{S31}}
+\index{S31@{S31}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S31}{S31}}
+{\footnotesize\ttfamily \#define S31~4}
+
+
+
+Definición en la línea 55 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a1d512424dd8a91e0a5bcc98563f33914}{}\label{md5_8cpp_a1d512424dd8a91e0a5bcc98563f33914} 
+\index{md5.\+cpp@{md5.\+cpp}!S32@{S32}}
+\index{S32@{S32}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S32}{S32}}
+{\footnotesize\ttfamily \#define S32~11}
+
+
+
+Definición en la línea 56 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a1c854214533f6220e859b0063196abb3}{}\label{md5_8cpp_a1c854214533f6220e859b0063196abb3} 
+\index{md5.\+cpp@{md5.\+cpp}!S33@{S33}}
+\index{S33@{S33}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S33}{S33}}
+{\footnotesize\ttfamily \#define S33~16}
+
+
+
+Definición en la línea 57 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_af6472be1d535970afee8e5266a74aa07}{}\label{md5_8cpp_af6472be1d535970afee8e5266a74aa07} 
+\index{md5.\+cpp@{md5.\+cpp}!S34@{S34}}
+\index{S34@{S34}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S34}{S34}}
+{\footnotesize\ttfamily \#define S34~23}
+
+
+
+Definición en la línea 58 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_ab674ba129e588da55d1d494e1cf3c15e}{}\label{md5_8cpp_ab674ba129e588da55d1d494e1cf3c15e} 
+\index{md5.\+cpp@{md5.\+cpp}!S41@{S41}}
+\index{S41@{S41}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S41}{S41}}
+{\footnotesize\ttfamily \#define S41~6}
+
+
+
+Definición en la línea 59 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a268ef1a49114a94b931cc6b313e3cd1b}{}\label{md5_8cpp_a268ef1a49114a94b931cc6b313e3cd1b} 
+\index{md5.\+cpp@{md5.\+cpp}!S42@{S42}}
+\index{S42@{S42}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S42}{S42}}
+{\footnotesize\ttfamily \#define S42~10}
+
+
+
+Definición en la línea 60 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a5aaa7121f39650d472746942ca68f959}{}\label{md5_8cpp_a5aaa7121f39650d472746942ca68f959} 
+\index{md5.\+cpp@{md5.\+cpp}!S43@{S43}}
+\index{S43@{S43}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S43}{S43}}
+{\footnotesize\ttfamily \#define S43~15}
+
+
+
+Definición en la línea 61 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+\hypertarget{md5_8cpp_a6a3989af72b55d169bd73a66f8620aae}{}\label{md5_8cpp_a6a3989af72b55d169bd73a66f8620aae} 
+\index{md5.\+cpp@{md5.\+cpp}!S44@{S44}}
+\index{S44@{S44}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{S44}{S44}}
+{\footnotesize\ttfamily \#define S44~21}
+
+
+
+Definición en la línea 62 del archivo md5.\+cpp.
+
+
+
+Referenciado por M\+D5\+::transform().
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{md5_8cpp_a92c6eed2e9b51298af559aff6792770b}{}\label{md5_8cpp_a92c6eed2e9b51298af559aff6792770b} 
+\index{md5.\+cpp@{md5.\+cpp}!md5@{md5}}
+\index{md5@{md5}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{md5()}{md5()}}
+{\footnotesize\ttfamily std\+::string md5 (\begin{DoxyParamCaption}\item[{const std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 351 del archivo md5.\+cpp.
+
+
+
+Hace referencia a M\+D5\+::hexdigest(), M\+D5\+::\+M\+D5() y md5().
+
+
+
+Referenciado por Firma\+Digital\+::firma\+\_\+srcl() y md5().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{md5_8cpp_a92c6eed2e9b51298af559aff6792770b_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{md5_8cpp_a80cbf042ee22a0e557ac7938a6218e55}{}\label{md5_8cpp_a80cbf042ee22a0e557ac7938a6218e55} 
+\index{md5.\+cpp@{md5.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!md5.\+cpp@{md5.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\hyperlink{classMD5}{M\+D5}}]{md5 }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 344 del archivo md5.\+cpp.
+
+
+
+Hace referencia a M\+D5\+::hexdigest().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{md5_8cpp_a80cbf042ee22a0e557ac7938a6218e55_cgraph}
+\end{center}
+\end{figure}

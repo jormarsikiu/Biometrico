@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classGuiWsOpenErp" kind="class" language="C++" prot="public">
+    <compoundname>GuiWsOpenErp</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGuiWsOpenErp_1aa872d8ffb6c11032ec0dcfd8ee49e234" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GuiWsOpenErp::dbname</definition>
+        <argsstring></argsstring>
+        <name>dbname</name>
+        <briefdescription>
+<para>dbname </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="43" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiWsOpenErp_1a34037b0900d58859cc4c42e77f170d82" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GuiWsOpenErp::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+<para>user </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="47" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiWsOpenErp_1ad82141631eb4a41cd62b1c8892424a92" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GuiWsOpenErp::pwd</definition>
+        <argsstring></argsstring>
+        <name>pwd</name>
+        <briefdescription>
+<para>pwd </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="51" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiWsOpenErp_1aa01da7bfce4fce442c869c6d1c988c4b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GuiWsOpenErp::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+<para>URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="55" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiWsOpenErp_1a96c46b5aed53de6d0fca055f28862be5" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GuiWsOpenErp::URL</definition>
+        <argsstring></argsstring>
+        <name>URL</name>
+        <briefdescription>
+<para>URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="59" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiWsOpenErp_1a791f1dd8b0b16f454ae7f1a2abe0a761" prot="private" static="no" mutable="no">
+        <type>XmlRpcValue::int32</type>
+        <definition>XmlRpcValue::int32 GuiWsOpenErp::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+<para>uid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="63" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGuiWsOpenErp_1a468b3c76510469edce574ee3c2a86056" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GuiWsOpenErp::GuiWsOpenErp</definition>
+        <argsstring>(string dbname, string user, string pwd, string URL)</argsstring>
+        <name>GuiWsOpenErp</name>
+        <param>
+          <type>string</type>
+          <declname>dbname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dbname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la base de datos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de usuario </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contraseña de user </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="73" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1ac01e603d5d8486d9fef6f55b679cc8b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GuiWsOpenErp::~GuiWsOpenErp</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiWsOpenErp</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="84" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a72e93c46fcdf1317d7a554181f6e08e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GuiWsOpenErp::CargarVariables</definition>
+        <argsstring>(string dbname, string user, string pwd, string URL)</argsstring>
+        <name>CargarVariables</name>
+        <param>
+          <type>string</type>
+          <declname>dbname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>CargarVariables Seteo de variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dbname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="95" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int GuiWsOpenErp::Inicializar</definition>
+        <argsstring>()</argsstring>
+        <name>Inicializar</name>
+        <briefdescription>
+<para>Inicializar se encarga de la autentificacion contra el OpenERP. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>el id del usuario que se autentifica. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="107" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="107" bodyend="124"/>
+        <references refid="GuiWsOpenErp_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="GuiWsOpenErp_8cpp" startline="14">NAME</references>
+        <references refid="GuiWsOpenErp_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="GuiWsOpenErp_8cpp" startline="19">VERSION</references>
+        <referencedby refid="classTemplateAFIS__webservice_1a5491ba1e8737a0adea2527fcbbc428af" compoundref="TemplateAFIS_8cpp" startline="1579" endline="1630">TemplateAFIS_webservice::comprobar</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1aeb75c2999e3b58cbf800b9f9ffea082c" compoundref="TemplateAFIS_8cpp" startline="1704" endline="1790">TemplateAFIS_webservice::getDatosHuella</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a096dfa38545612233dbb64006b01f3e3" compoundref="TemplateAFIS_8cpp" startline="1868" endline="1944">TemplateAFIS_webservice::getDatosPersona</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1adc47efe142e56d2899f8eb8da72ab8eb" compoundref="TemplateAFIS_8cpp" startline="1799" endline="1860">TemplateAFIS_webservice::getDatosPersonaOBPP</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a88c4dc259776908b70505380256b68f8" compoundref="TemplateAFIS_8cpp" startline="1954" endline="2067">TemplateAFIS_webservice::getDatosPersonaVerificacion</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a11ad395942529648ef3a9ddf43df3262" compoundref="TemplateAFIS_8cpp" startline="1640" endline="1694">TemplateAFIS_webservice::getUsuario</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a417ed5728168fa74561efd022a42ae49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::GetUsuario</definition>
+        <argsstring>(string usuario)</argsstring>
+        <name>GetUsuario</name>
+        <param>
+          <type>string</type>
+          <declname>usuario</declname>
+        </param>
+        <briefdescription>
+<para>GetUsuario Este metodo se encarga de buscar en la tabla res.users parametrizado con la variable &quot;usuario&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>id &amp; login. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="131" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="131" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1ae6d4fbf9fa54b3ab177f541dcb15b64f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::GetDatoPersona</definition>
+        <argsstring>(string cedula_identidad)</argsstring>
+        <name>GetDatoPersona</name>
+        <param>
+          <type>string</type>
+          <declname>cedula_identidad</declname>
+        </param>
+        <briefdescription>
+<para>GetDatoPersona Este metodo se encarga de buscar en la tabla res.partner. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula_identidad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>identification_id &amp; name. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="189" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="189" bodyend="239"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a096dfa38545612233dbb64006b01f3e3" compoundref="TemplateAFIS_8cpp" startline="1868" endline="1944">TemplateAFIS_webservice::getDatosPersona</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1aeb56055280e6dcceb9b3da722c20a5ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::GetPersonaByOBPP</definition>
+        <argsstring>(string situr_code)</argsstring>
+        <name>GetPersonaByOBPP</name>
+        <param>
+          <type>string</type>
+          <declname>situr_code</declname>
+        </param>
+        <briefdescription>
+<para>GetPersonaByOBPP Este metodo se encarga de buscar todas las personas a la cual pertene una obpp, para ello se parametriza la busquedad con el cdigo situr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>situr_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valores de la OBPP </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="246" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="246" bodyend="388"/>
+        <references refid="GuiWsOpenErp_8cpp_1a47f2e62c0dbebc787052c165afcada0e" compoundref="GuiWsOpenErp_8cpp" startline="14">NAME</references>
+        <references refid="GuiWsOpenErp_8cpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" compoundref="GuiWsOpenErp_8cpp" startline="19">VERSION</references>
+        <referencedby refid="classTemplateAFIS__webservice_1adc47efe142e56d2899f8eb8da72ab8eb" compoundref="TemplateAFIS_8cpp" startline="1799" endline="1860">TemplateAFIS_webservice::getDatosPersonaOBPP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1ac8f72cfebf3c98364303d4851752fbf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::GetDatoidImagen</definition>
+        <argsstring>(long int partner_id, string hand, string finger)</argsstring>
+        <name>GetDatoidImagen</name>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>finger</declname>
+        </param>
+        <briefdescription>
+<para>GetDatoidImagen Este metodo se encarga de obtener el id de un registro en la tabla res.partner.fingerprint para ello la busquedad es parametrizada con partner_id, hand y finger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result_read es un struct XmlRpcValue </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="398" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="398" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a128600b86f70773fb336c6b59c853b42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::getDatoPersonaVerificacion</definition>
+        <argsstring>(string cedula)</argsstring>
+        <name>getDatoPersonaVerificacion</name>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <briefdescription>
+<para>getDatoPersonaVerificacion Este metodo se encarga de buscar los datos de la persona, a la cual se le verifica la huella. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viene de la GUI </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Datos de verificación para una persona </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="467" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="467" bodyend="643"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a88c4dc259776908b70505380256b68f8" compoundref="TemplateAFIS_8cpp" startline="1954" endline="2067">TemplateAFIS_webservice::getDatosPersonaVerificacion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a331ff67a1bff59ac435a372fbd08b04b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::buscarProyecto</definition>
+        <argsstring>(int id_obpp)</argsstring>
+        <name>buscarProyecto</name>
+        <param>
+          <type>int</type>
+          <declname>id_obpp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="645" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="645" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuiWsOpenErp_1a96d20089ae0aa7b9c262c23d66956274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue GuiWsOpenErp::getDatoHuella</definition>
+        <argsstring>(string cedula, string &amp;mano, int &amp;dedo)</argsstring>
+        <name>getDatoHuella</name>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>mano</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>dedo</declname>
+        </param>
+        <briefdescription>
+<para>getDatoHuella Este metodo se encarga de buscar las huellas que tiene registrado un integrante de la obpp, cuando se va a verificar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mano</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dedo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna mano y dedo por referencia. Y datos de la Huella por XmlRpcValue </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="697" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="697" bodyend="814"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aeb75c2999e3b58cbf800b9f9ffea082c" compoundref="TemplateAFIS_8cpp" startline="1704" endline="1790">TemplateAFIS_webservice::getDatosHuella</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que permite realizar la interacción con el Webservice con OpenERP. (No están en uso actualmente.) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" line="39" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/GuiWsOpenErp.cpp" bodystart="39" bodyend="816"/>
+    <listofallmembers>
+      <member refid="classGuiWsOpenErp_1a331ff67a1bff59ac435a372fbd08b04b" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>buscarProyecto</name></member>
+      <member refid="classGuiWsOpenErp_1a72e93c46fcdf1317d7a554181f6e08e1" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>CargarVariables</name></member>
+      <member refid="classGuiWsOpenErp_1aa872d8ffb6c11032ec0dcfd8ee49e234" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>dbname</name></member>
+      <member refid="classGuiWsOpenErp_1a96d20089ae0aa7b9c262c23d66956274" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>getDatoHuella</name></member>
+      <member refid="classGuiWsOpenErp_1ac8f72cfebf3c98364303d4851752fbf6" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>GetDatoidImagen</name></member>
+      <member refid="classGuiWsOpenErp_1ae6d4fbf9fa54b3ab177f541dcb15b64f" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>GetDatoPersona</name></member>
+      <member refid="classGuiWsOpenErp_1a128600b86f70773fb336c6b59c853b42" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>getDatoPersonaVerificacion</name></member>
+      <member refid="classGuiWsOpenErp_1aeb56055280e6dcceb9b3da722c20a5ce" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>GetPersonaByOBPP</name></member>
+      <member refid="classGuiWsOpenErp_1a417ed5728168fa74561efd022a42ae49" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>GetUsuario</name></member>
+      <member refid="classGuiWsOpenErp_1a468b3c76510469edce574ee3c2a86056" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>GuiWsOpenErp</name></member>
+      <member refid="classGuiWsOpenErp_1a48d629317e4b3be8b5471e5a14a60082" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>Inicializar</name></member>
+      <member refid="classGuiWsOpenErp_1aa01da7bfce4fce442c869c6d1c988c4b" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>model</name></member>
+      <member refid="classGuiWsOpenErp_1ad82141631eb4a41cd62b1c8892424a92" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>pwd</name></member>
+      <member refid="classGuiWsOpenErp_1a791f1dd8b0b16f454ae7f1a2abe0a761" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>uid</name></member>
+      <member refid="classGuiWsOpenErp_1a96c46b5aed53de6d0fca055f28862be5" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>URL</name></member>
+      <member refid="classGuiWsOpenErp_1a34037b0900d58859cc4c42e77f170d82" prot="private" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>user</name></member>
+      <member refid="classGuiWsOpenErp_1ac01e603d5d8486d9fef6f55b679cc8b6" prot="public" virt="non-virtual"><scope>GuiWsOpenErp</scope><name>~GuiWsOpenErp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

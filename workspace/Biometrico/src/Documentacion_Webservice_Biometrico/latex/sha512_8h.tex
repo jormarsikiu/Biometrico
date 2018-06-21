@@ -1,0 +1,285 @@
+\hypertarget{sha512_8h}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/sha512.h}
+\label{sha512_8h}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/sha512.\+h@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/firma\+\_\+digital/sha512.\+h}}
+
+
+Clase cabecera para estabilizar la clase \hyperlink{md5_8cpp}{md5.\+cpp} por versiones diferentes de las bibliotecas de \hyperlink{classMD5}{M\+D5} o de \hyperlink{classSHA512}{S\+H\+A512} en el servidor.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Dependencia gráfica adjunta para sha512.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{sha512_8h__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{sha512_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSHA512}{S\+H\+A512}
+\begin{DoxyCompactList}\small\item\em Clase de la comunidad\+: Se incluyó para estabilizar \hyperlink{md5_8cpp}{md5.\+cpp} para evitar que, si el cliente tiene una versión diferente de las bibliotecas de \hyperlink{classMD5}{M\+D5} o de \hyperlink{classSHA512}{S\+H\+A512} que el servidor, no choquen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{S\+H\+A2\+\_\+\+S\+H\+FR}(x,  n)~(x $>$$>$ n)
+\item 
+\#define \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x,  n)~((x $>$$>$ n) $\vert$ (x $<$$<$ ((sizeof(x) $<$$<$ 3) -\/ n)))
+\item 
+\#define \hyperlink{sha512_8h_a0fcefdff5f2609b2c5eb1d0f99214199}{S\+H\+A2\+\_\+\+R\+O\+TL}(x,  n)~((x $<$$<$ n) $\vert$ (x $>$$>$ ((sizeof(x) $<$$<$ 3) -\/ n)))
+\item 
+\#define \hyperlink{sha512_8h_a1d4a72c3cb3d85b0c82736081042c1a4}{S\+H\+A2\+\_\+\+CH}(x,  y,  z)~((x \& y) $^\wedge$ ($\sim$x \& z))
+\item 
+\#define \hyperlink{sha512_8h_ae9222f6c22449097806fb1dac2a58107}{S\+H\+A2\+\_\+\+M\+AJ}(x,  y,  z)~((x \& y) $^\wedge$ (x \& z) $^\wedge$ (y \& z))
+\item 
+\#define \hyperlink{sha512_8h_a8c65d2c0860cf623b5607b2aec6a870a}{S\+H\+A512\+\_\+\+F1}(x)~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 28) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 34) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 39))
+\item 
+\#define \hyperlink{sha512_8h_a41b8a672f8ed1a11ea49acb032550fa6}{S\+H\+A512\+\_\+\+F2}(x)~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 14) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 18) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 41))
+\item 
+\#define \hyperlink{sha512_8h_a278e83abc8c71fec8a719065e5d51106}{S\+H\+A512\+\_\+\+F3}(x)~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x,  1) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x,  8) $^\wedge$ \hyperlink{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{S\+H\+A2\+\_\+\+S\+H\+FR}(x,  7))
+\item 
+\#define \hyperlink{sha512_8h_ad6d26f67626668a9ec4f113bd05bee2b}{S\+H\+A512\+\_\+\+F4}(x)~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 19) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 61) $^\wedge$ \hyperlink{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{S\+H\+A2\+\_\+\+S\+H\+FR}(x,  6))
+\item 
+\#define \hyperlink{sha512_8h_a2dc032adc83afe8e265a7941ef11f258}{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32}(x,  str)
+\item 
+\#define \hyperlink{sha512_8h_a81e6dc4766f3664c56beb47948d35e23}{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64}(x,  str)
+\item 
+\#define \hyperlink{sha512_8h_abfcad1e5762f93ffd8cd566bbe261a19}{S\+H\+A2\+\_\+\+P\+A\+C\+K64}(str,  x)
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{sha512_8h_acab52167a6e7f6daf06e9cbeae13aae6}{sha512} (std\+::string input)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase cabecera para estabilizar la clase \hyperlink{md5_8cpp}{md5.\+cpp} por versiones diferentes de las bibliotecas de \hyperlink{classMD5}{M\+D5} o de \hyperlink{classSHA512}{S\+H\+A512} en el servidor. 
+
+\begin{DoxyAuthor}{Autor}
+\href{http://www.zedwood.com/article/cpp-sha512-function}{\tt http\+://www.\+zedwood.\+com/article/cpp-\/sha512-\/function} This file is part of Sistema de Identificación Biométrica para las O\+B\+PP. 
+\end{DoxyAuthor}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{sha512_8h_a1d4a72c3cb3d85b0c82736081042c1a4}{}\label{sha512_8h_a1d4a72c3cb3d85b0c82736081042c1a4} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+CH@{S\+H\+A2\+\_\+\+CH}}
+\index{S\+H\+A2\+\_\+\+CH@{S\+H\+A2\+\_\+\+CH}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+CH}{SHA2\_CH}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+CH(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((x \& y) $^\wedge$ ($\sim$x \& z))}
+
+
+
+Definición en la línea 90 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_ae9222f6c22449097806fb1dac2a58107}{}\label{sha512_8h_ae9222f6c22449097806fb1dac2a58107} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+M\+AJ@{S\+H\+A2\+\_\+\+M\+AJ}}
+\index{S\+H\+A2\+\_\+\+M\+AJ@{S\+H\+A2\+\_\+\+M\+AJ}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+M\+AJ}{SHA2\_MAJ}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+M\+AJ(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((x \& y) $^\wedge$ (x \& z) $^\wedge$ (y \& z))}
+
+
+
+Definición en la línea 91 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_abfcad1e5762f93ffd8cd566bbe261a19}{}\label{sha512_8h_abfcad1e5762f93ffd8cd566bbe261a19} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+P\+A\+C\+K64@{S\+H\+A2\+\_\+\+P\+A\+C\+K64}}
+\index{S\+H\+A2\+\_\+\+P\+A\+C\+K64@{S\+H\+A2\+\_\+\+P\+A\+C\+K64}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+P\+A\+C\+K64}{SHA2\_PACK64}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+P\+A\+C\+K64(\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Valor\+:}
+\begin{DoxyCode}
+\{                                             \(\backslash\)
+    *(x) =   ((uint64) *((str) + 7)      )    \(\backslash\)
+           | ((uint64) *((str) + 6) <<  8)    \(\backslash\)
+           | ((uint64) *((str) + 5) << 16)    \(\backslash\)
+           | ((uint64) *((str) + 4) << 24)    \(\backslash\)
+           | ((uint64) *((str) + 3) << 32)    \(\backslash\)
+           | ((uint64) *((str) + 2) << 40)    \(\backslash\)
+           | ((uint64) *((str) + 1) << 48)    \(\backslash\)
+           | ((uint64) *((str) + 0) << 56);   \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definición en la línea 114 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_a0fcefdff5f2609b2c5eb1d0f99214199}{}\label{sha512_8h_a0fcefdff5f2609b2c5eb1d0f99214199} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+R\+O\+TL@{S\+H\+A2\+\_\+\+R\+O\+TL}}
+\index{S\+H\+A2\+\_\+\+R\+O\+TL@{S\+H\+A2\+\_\+\+R\+O\+TL}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+R\+O\+TL}{SHA2\_ROTL}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+R\+O\+TL(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{n }\end{DoxyParamCaption})~((x $<$$<$ n) $\vert$ (x $>$$>$ ((sizeof(x) $<$$<$ 3) -\/ n)))}
+
+
+
+Definición en la línea 89 del archivo sha512.\+h.
+
+\hypertarget{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{}\label{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+R\+O\+TR@{S\+H\+A2\+\_\+\+R\+O\+TR}}
+\index{S\+H\+A2\+\_\+\+R\+O\+TR@{S\+H\+A2\+\_\+\+R\+O\+TR}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+R\+O\+TR}{SHA2\_ROTR}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+R\+O\+TR(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{n }\end{DoxyParamCaption})~((x $>$$>$ n) $\vert$ (x $<$$<$ ((sizeof(x) $<$$<$ 3) -\/ n)))}
+
+
+
+Definición en la línea 88 del archivo sha512.\+h.
+
+\hypertarget{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{}\label{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+S\+H\+FR@{S\+H\+A2\+\_\+\+S\+H\+FR}}
+\index{S\+H\+A2\+\_\+\+S\+H\+FR@{S\+H\+A2\+\_\+\+S\+H\+FR}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+S\+H\+FR}{SHA2\_SHFR}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+S\+H\+FR(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{n }\end{DoxyParamCaption})~(x $>$$>$ n)}
+
+
+
+Definición en la línea 87 del archivo sha512.\+h.
+
+\hypertarget{sha512_8h_a2dc032adc83afe8e265a7941ef11f258}{}\label{sha512_8h_a2dc032adc83afe8e265a7941ef11f258} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32@{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32}}
+\index{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32@{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32}{SHA2\_UNPACK32}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K32(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{str }\end{DoxyParamCaption})}
+
+{\bfseries Valor\+:}
+\begin{DoxyCode}
+\{                                             \(\backslash\)
+    *((str) + 3) = (uint8) ((x)      );       \(\backslash\)
+    *((str) + 2) = (uint8) ((x) >>  8);       \(\backslash\)
+    *((str) + 1) = (uint8) ((x) >> 16);       \(\backslash\)
+    *((str) + 0) = (uint8) ((x) >> 24);       \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definición en la línea 96 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::final().
+
+\hypertarget{sha512_8h_a81e6dc4766f3664c56beb47948d35e23}{}\label{sha512_8h_a81e6dc4766f3664c56beb47948d35e23} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64@{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64}}
+\index{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64@{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64}{SHA2\_UNPACK64}}
+{\footnotesize\ttfamily \#define S\+H\+A2\+\_\+\+U\+N\+P\+A\+C\+K64(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{str }\end{DoxyParamCaption})}
+
+{\bfseries Valor\+:}
+\begin{DoxyCode}
+\{                                             \(\backslash\)
+    *((str) + 7) = (uint8) ((x)      );       \(\backslash\)
+    *((str) + 6) = (uint8) ((x) >>  8);       \(\backslash\)
+    *((str) + 5) = (uint8) ((x) >> 16);       \(\backslash\)
+    *((str) + 4) = (uint8) ((x) >> 24);       \(\backslash\)
+    *((str) + 3) = (uint8) ((x) >> 32);       \(\backslash\)
+    *((str) + 2) = (uint8) ((x) >> 40);       \(\backslash\)
+    *((str) + 1) = (uint8) ((x) >> 48);       \(\backslash\)
+    *((str) + 0) = (uint8) ((x) >> 56);       \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definición en la línea 103 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::final().
+
+\hypertarget{sha512_8h_a8c65d2c0860cf623b5607b2aec6a870a}{}\label{sha512_8h_a8c65d2c0860cf623b5607b2aec6a870a} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A512\+\_\+\+F1@{S\+H\+A512\+\_\+\+F1}}
+\index{S\+H\+A512\+\_\+\+F1@{S\+H\+A512\+\_\+\+F1}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A512\+\_\+\+F1}{SHA512\_F1}}
+{\footnotesize\ttfamily \#define S\+H\+A512\+\_\+\+F1(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 28) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 34) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 39))}
+
+
+
+Definición en la línea 92 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_a41b8a672f8ed1a11ea49acb032550fa6}{}\label{sha512_8h_a41b8a672f8ed1a11ea49acb032550fa6} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A512\+\_\+\+F2@{S\+H\+A512\+\_\+\+F2}}
+\index{S\+H\+A512\+\_\+\+F2@{S\+H\+A512\+\_\+\+F2}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A512\+\_\+\+F2}{SHA512\_F2}}
+{\footnotesize\ttfamily \#define S\+H\+A512\+\_\+\+F2(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 14) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 18) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 41))}
+
+
+
+Definición en la línea 93 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_a278e83abc8c71fec8a719065e5d51106}{}\label{sha512_8h_a278e83abc8c71fec8a719065e5d51106} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A512\+\_\+\+F3@{S\+H\+A512\+\_\+\+F3}}
+\index{S\+H\+A512\+\_\+\+F3@{S\+H\+A512\+\_\+\+F3}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A512\+\_\+\+F3}{SHA512\_F3}}
+{\footnotesize\ttfamily \#define S\+H\+A512\+\_\+\+F3(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x,  1) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x,  8) $^\wedge$ \hyperlink{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{S\+H\+A2\+\_\+\+S\+H\+FR}(x,  7))}
+
+
+
+Definición en la línea 94 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+\hypertarget{sha512_8h_ad6d26f67626668a9ec4f113bd05bee2b}{}\label{sha512_8h_ad6d26f67626668a9ec4f113bd05bee2b} 
+\index{sha512.\+h@{sha512.\+h}!S\+H\+A512\+\_\+\+F4@{S\+H\+A512\+\_\+\+F4}}
+\index{S\+H\+A512\+\_\+\+F4@{S\+H\+A512\+\_\+\+F4}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A512\+\_\+\+F4}{SHA512\_F4}}
+{\footnotesize\ttfamily \#define S\+H\+A512\+\_\+\+F4(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(\hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 19) $^\wedge$ \hyperlink{sha512_8h_a9509f7c1f927cb12f98d9995ae2f92d3}{S\+H\+A2\+\_\+\+R\+O\+TR}(x, 61) $^\wedge$ \hyperlink{sha512_8h_a0a0e7e0d135e9feff1da2e46fa556d50}{S\+H\+A2\+\_\+\+S\+H\+FR}(x,  6))}
+
+
+
+Definición en la línea 95 del archivo sha512.\+h.
+
+
+
+Referenciado por S\+H\+A512\+::transform().
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{sha512_8h_acab52167a6e7f6daf06e9cbeae13aae6}{}\label{sha512_8h_acab52167a6e7f6daf06e9cbeae13aae6} 
+\index{sha512.\+h@{sha512.\+h}!sha512@{sha512}}
+\index{sha512@{sha512}!sha512.\+h@{sha512.\+h}}
+\subsubsection{\texorpdfstring{sha512()}{sha512()}}
+{\footnotesize\ttfamily std\+::string sha512 (\begin{DoxyParamCaption}\item[{std\+::string}]{input }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 149 del archivo sha512.\+cpp.
+
+
+
+Hace referencia a S\+H\+A512\+::\+D\+I\+G\+E\+S\+T\+\_\+\+S\+I\+ZE, S\+H\+A512\+::final(), S\+H\+A512\+::init() y S\+H\+A512\+::update().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sha512_8h_acab52167a6e7f6daf06e9cbeae13aae6_cgraph}
+\end{center}
+\end{figure}

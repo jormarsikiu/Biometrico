@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Identificacion Biometrica para las OBPP. Version Webservice: Fichero Fuente TemplateAFIS_webservice_lib/firma_digital/FirmaDigital.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sistema de Identificacion Biometrica para las OBPP. Version Webservice
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('FirmaDigital_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">FirmaDigital.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="FirmaDigital_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="md5_8h.html">md5.h</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FirmaDigital_8h.html">FirmaDigital.h</a>&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classFirmaDigital.html#a327b0fa8329a7e33cc04f8d4793652be">   28</a></span>&#160;<a class="code" href="classFirmaDigital.html#a327b0fa8329a7e33cc04f8d4793652be">FirmaDigital::FirmaDigital</a>(<span class="keywordtype">string</span> clave_privada)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;clave_privada = clave_privada;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classFirmaDigital.html#ac68550394f9f4e0b73e80dc050875325">   46</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classFirmaDigital.html#ac68550394f9f4e0b73e80dc050875325">FirmaDigital::firma_srcl</a>(<span class="keywordtype">string</span> cadena){</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">string</span> clave_privada;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    stringstream ss, sstm;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">string</span> firma;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">string</span> arreglo[7];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    arreglo[0] = <span class="stringliteral">&quot;Cabimas&quot;</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    arreglo[1] = <span class="stringliteral">&quot;Ciudad Ojeda&quot;</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    arreglo[2] = <span class="stringliteral">&quot;Lagunillas&quot;</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    arreglo[3] = <span class="stringliteral">&quot;Maracaibo&quot;</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    arreglo[4] = <span class="stringliteral">&quot;Puerto Caballo&quot;</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    arreglo[5] = <span class="stringliteral">&quot;Santa Rita&quot;</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    arreglo[6] = <span class="stringliteral">&quot;Catatumbo&quot;</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">struct </span>tm * ptm;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">char</span> comp_mon, comp_day;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> anio, mes, day, daySem;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//this-&gt;clave_privada = &quot;nonosdevolvemos.2013&quot;;</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Obteniendo la hora</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    time_t AHORA = time(0);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ptm = gmtime(&amp;AHORA);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    anio = ptm-&gt;tm_year+1900;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    mes = ptm-&gt;tm_mon+1;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    day = ptm-&gt;tm_mday;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    daySem = ptm-&gt;tm_wday;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    comp_mon = <span class="charliteral">&#39;\0&#39;</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (mes &lt; 10) comp_mon = <span class="charliteral">&#39;0&#39;</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    comp_day = <span class="charliteral">&#39;\0&#39;</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (day &lt; 10) comp_day = <span class="charliteral">&#39;0&#39;</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// Palabra q cambia por día de la Semana</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">string</span> palabraSemana = arreglo[daySem];</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Formateando</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    sstm &lt;&lt; anio &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; comp_mon &lt;&lt; mes &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; comp_day &lt;&lt; day;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Concatenando CADENA SEMILLA + TIEMPO + PALABRASEMANA + CLAVE PRIVADA</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ss &lt;&lt; cadena.c_str() &lt;&lt; sstm.str() &lt;&lt; palabraSemana.c_str() &lt;&lt; this-&gt;clave_privada.c_str();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    firma = ss.str();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">//cout &lt;&lt; &quot;Cadena: &quot; &lt;&lt; firma &lt;&lt; endl;</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    firma = <a class="code" href="md5_8cpp.html#a92c6eed2e9b51298af559aff6792770b">md5</a>(firma);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//firma = sha512(firma);</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> firma;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="FirmaDigital_8h_html"><div class="ttname"><a href="FirmaDigital_8h.html">FirmaDigital.h</a></div><div class="ttdoc">Archivo de cabecera de las clases FirmaDigital. </div></div>
+<div class="ttc" id="classFirmaDigital_html_ac68550394f9f4e0b73e80dc050875325"><div class="ttname"><a href="classFirmaDigital.html#ac68550394f9f4e0b73e80dc050875325">FirmaDigital::firma_srcl</a></div><div class="ttdeci">string firma_srcl(string cadena)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="FirmaDigital_8cpp_source.html#l00046">FirmaDigital.cpp:46</a></div></div>
+<div class="ttc" id="classFirmaDigital_html_a327b0fa8329a7e33cc04f8d4793652be"><div class="ttname"><a href="classFirmaDigital.html#a327b0fa8329a7e33cc04f8d4793652be">FirmaDigital::FirmaDigital</a></div><div class="ttdeci">FirmaDigital(string clave_privada)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="FirmaDigital_8cpp_source.html#l00028">FirmaDigital.cpp:28</a></div></div>
+<div class="ttc" id="md5_8cpp_html_a92c6eed2e9b51298af559aff6792770b"><div class="ttname"><a href="md5_8cpp.html#a92c6eed2e9b51298af559aff6792770b">md5</a></div><div class="ttdeci">std::string md5(const std::string str)</div><div class="ttdef"><b>Definition:</b> <a href="md5_8cpp_source.html#l00351">md5.cpp:351</a></div></div>
+<div class="ttc" id="md5_8h_html"><div class="ttname"><a href="md5_8h.html">md5.h</a></div><div class="ttdoc">Clase cabecera que se encarga de generar un hash alfanumérico de un tamaño predeterminado. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0b51ec7d61b597b4f697933498f6a61d.html">TemplateAFIS_webservice_lib</a></li><li class="navelem"><a class="el" href="dir_e6c6a25f46798317bef29e5faadbd992.html">firma_digital</a></li><li class="navelem"><a class="el" href="FirmaDigital_8cpp.html">FirmaDigital.cpp</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

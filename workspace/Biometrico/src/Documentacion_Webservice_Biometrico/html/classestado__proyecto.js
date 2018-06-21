@@ -1,0 +1,28 @@
+var classestado__proyecto =
+[
+    [ "estado_proyecto", "classestado__proyecto.html#a4a6b71e81903d4b3b729acbfc5b4eef8", null ],
+    [ "~estado_proyecto", "classestado__proyecto.html#afd91dfa4205c3c3af3f7af6e6744c711", null ],
+    [ "buscar_accountability", "classestado__proyecto.html#a3029c517ed772189246c0469e58f6012", null ],
+    [ "buscar_estado_proyecto", "classestado__proyecto.html#a888654e845012a36987ae8b1956f2841", null ],
+    [ "buscar_id_obpp", "classestado__proyecto.html#a9e5d463c32524544b33ac2f069d8eb13", null ],
+    [ "inicializar", "classestado__proyecto.html#a823dcbf923e91074f2f7dd4501d578e9", null ],
+    [ "set_id_de_res_partner_fingerprint", "classestado__proyecto.html#a9bb10a2ce0824b9f63b72736012285bf", null ],
+    [ "set_variables", "classestado__proyecto.html#a275a1af5b6d1251c68a11bf2b01d66e3", null ],
+    [ "validacion_del_estado_del_proyecto", "classestado__proyecto.html#a8033814539c3d61e0bddd29254b07355", null ],
+    [ "validacion_incidencia", "classestado__proyecto.html#a01259da662364a21bbc7f485025af9ad", null ],
+    [ "validacion_incidencias_huella", "classestado__proyecto.html#a80aae285a18e7e7b1e97ee14dcc5c366", null ],
+    [ "validacion_verificacion", "classestado__proyecto.html#a74f54f504416b6febb66b9a8fac7c4a7", null ],
+    [ "write_res_partner_fingerprint_verification", "classestado__proyecto.html#a1fe9a0efbba448d2480c9b58b38463c9", null ],
+    [ "write_res_partner_fingerprint_verification_incidence", "classestado__proyecto.html#a6785dec0403ee8c1ed4c659f7fbf7109", null ],
+    [ "dbname", "classestado__proyecto.html#ad68c2876b60b2507510f01291b6a351e", null ],
+    [ "id_del_proyecto", "classestado__proyecto.html#af82165bfe4a2b094605bed0955da6b46", null ],
+    [ "id_la_tabla_res_partner", "classestado__proyecto.html#a1545134dd661b72333b06cfc9c11ae49", null ],
+    [ "id_res_partner_fingerprint", "classestado__proyecto.html#afae9b5a359fb7c20ef16050a6cf0cbf7", null ],
+    [ "model", "classestado__proyecto.html#af1c6ec6fe4c01a1faeab40a61e7e21d4", null ],
+    [ "parent_id", "classestado__proyecto.html#a4dfe6545f55e5b6ac0077ad0f1d7e3c9", null ],
+    [ "pwd", "classestado__proyecto.html#a1dd02106c2ec6c2bba1146e0a4871423", null ],
+    [ "uid", "classestado__proyecto.html#adc11a194fc56d3dffdd269dcd090c762", null ],
+    [ "URL", "classestado__proyecto.html#aeadf1825e0dafa90f3c33e88e17d3d1c", null ],
+    [ "URL2", "classestado__proyecto.html#af4cd30e97fc087097e738d2ef1d958c9", null ],
+    [ "user", "classestado__proyecto.html#a44126a25c5181e9f06b0c831aa4cc2ce", null ]
+];

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Sistema de Identificación Biométrica para las OBPP</title>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre, R.S. </para></simplesect>
+</para><sect1 id="index_1intro_sec">
+<title>Introducción</title>
+<para>Esta documentación fue realizada para el proyecto de Sistema de Identificación Biométrica para las OBPP.</para><para>Documentación realizada por Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre, R.S.</para><para>El Sistema Automatizado de Identificación Biométrica es un medio electrónico para verificar y autenticar a las personas representantes de las Organizaciones del Poder Popular (OBPP) en los trámites ante el Consejo Federal de Gobierno. Dentro de él intervienen varios factores, entre ellos se encuentra usted como la parte humana dentro de este sistema, por tanto, debe seguir las instrucciones siguientes para garantizar el logro de los objetivos que la institución desea alcanzar.</para></sect1>
+<sect1 id="index_1install_sec">
+<title>Instalación</title>
+<para>Para instalar, correr el archivo <ref refid="instalar_8sh" kindref="compound">instalar.sh</ref>:</para><para>sh <ref refid="instalar_8sh" kindref="compound">instalar.sh</ref></para></sect1>
+<sect1 id="index_1compile_sec">
+<title>Compilar</title>
+<para>Para compilar, correr el archivo <ref refid="compilar_8sh" kindref="compound">compilar.sh</ref>:</para><para>sh <ref refid="compilar_8sh" kindref="compound">compilar.sh</ref> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

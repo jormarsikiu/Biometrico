@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::getDatosPersonaOBPP" name="TemplateAFIS_webservice::getDatosPersonaOBPP">
+<area shape="rect" id="node2" href="$classGuiWsOpenErp.html#aeb56055280e6dcceb9b3da722c20a5ce" title="GetPersonaByOBPP Este metodo se encarga de buscar todas las personas a la cual pertene una obpp..." alt="" coords="232,5,423,47"/>
+<area shape="rect" id="node3" href="$classGuiWsOpenErp.html#a48d629317e4b3be8b5471e5a14a60082" title="Inicializar se encarga de la autentificacion contra el OpenERP. " alt="" coords="239,71,415,98"/>
+</map>

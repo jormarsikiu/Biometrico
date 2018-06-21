@@ -1,0 +1,4 @@
+<map id="TemplateAFIS_webservice::getDatosIdImagen" name="TemplateAFIS_webservice::getDatosIdImagen">
+<area shape="rect" id="node2" href="$classFingerprint.html#af2bb2ab8e1a31d1b7e41d39b728d1bb5" title="Método readFingerprint: Es una función polimorfa. " alt="" coords="233,5,410,32"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#ae1db425a60d85686567fc95ec23fb497" title="Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibl..." alt="" coords="232,56,411,83"/>
+</map>

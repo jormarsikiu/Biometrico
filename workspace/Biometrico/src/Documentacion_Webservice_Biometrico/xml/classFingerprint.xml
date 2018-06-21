@@ -1,0 +1,1230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classFingerprint" kind="class" language="C++" prot="public">
+    <compoundname>Fingerprint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFingerprint_1a673ea9e701f981e8d47873da6c018959" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Fingerprint::dbname</definition>
+        <argsstring></argsstring>
+        <name>dbname</name>
+        <briefdescription>
+<para>dbname </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="50" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" compoundref="TemplateAFIS_8cpp" startline="654" endline="670">TemplateAFIS_webservice::guardarIncidencia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFingerprint_1a23d9e08e3e34d64fcf0771a1c2590a4e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Fingerprint::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+<para>user </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="54" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFingerprint_1a1e4d2c44581328219f378933b30c9828" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Fingerprint::pwd</definition>
+        <argsstring></argsstring>
+        <name>pwd</name>
+        <briefdescription>
+<para>pwd </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="58" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Fingerprint::URL</definition>
+        <argsstring></argsstring>
+        <name>URL</name>
+        <briefdescription>
+<para>URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="62" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" compoundref="TemplateAFIS_8cpp" startline="2165" endline="2217">TemplateAFIS_webservice::borrarHuella</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a5491ba1e8737a0adea2527fcbbc428af" compoundref="TemplateAFIS_8cpp" startline="1579" endline="1630">TemplateAFIS_webservice::comprobar</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1aea7f1b638633ee2440c38573e74d8984" compoundref="TemplateAFIS_8cpp" startline="2076" endline="2158">TemplateAFIS_webservice::getDatosIdImagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1aa4536bcf883164f6c3c6d9dcb8744c7f" compoundref="TemplateAFIS_8cpp" startline="654" endline="670">TemplateAFIS_webservice::guardarIncidencia</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFingerprint_1a49a71ef02669dc397c509304fa465714" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fingerprint::Fingerprint</definition>
+        <argsstring>(string dbname, string user, string pwd, string URL)</argsstring>
+        <name>Fingerprint</name>
+        <param>
+          <type>string</type>
+          <declname>dbname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase <ref refid="classFingerprint" kindref="compound">Fingerprint</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="67" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1ac96e54eb5987d3cd64bcdef3ea5107d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int Fingerprint::getUID</definition>
+        <argsstring>()</argsstring>
+        <name>getUID</name>
+        <briefdescription>
+<para>Get UID: Realiza login. Se crea la matriz (array) con cada parámetro que Odoo necesita para loguear al usuario (chequea la base de datos, usuario y clave para el logueo). Todos los valores son procesados por XmlRpcValue. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Retorna UID de Usuario URE.Si es 0 devuelve error (credenciales erradas). Sólo los usuarios con permisos de URE (Coordinadores de las Unidades Receptoras Estadales) pueden usar el sistema de huellas. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="84" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="84" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a162821c388965772022ac5aeaf52be63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fingerprint::isURE</definition>
+        <argsstring>(XmlRpcClient server_search)</argsstring>
+        <name>isURE</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <briefdescription>
+<para>Is URE: Pregunta si un usuario es URE. Se buscan la huella y la plantilla a partir de una cédula u otro identificador del vocero. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el modelo (tablas de la base de datos) de Odoo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna si es URE o no es URE. Esta función devuelve los IDs de las huellas que tenga la persona. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="136" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="136" bodyend="156"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a5491ba1e8737a0adea2527fcbbc428af" compoundref="TemplateAFIS_8cpp" startline="1579" endline="1630">TemplateAFIS_webservice::comprobar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::searchPersona</definition>
+        <argsstring>(XmlRpcClient server_search, string cedula=&quot;&quot;, long int partner_id=0)</argsstring>
+        <name>searchPersona</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cedula</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibles por browse. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cedula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cédula persona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="166" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="166" bodyend="205"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" compoundref="TemplateAFIS_8cpp" startline="2165" endline="2217">TemplateAFIS_webservice::borrarHuella</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1aea7f1b638633ee2440c38573e74d8984" compoundref="TemplateAFIS_8cpp" startline="2076" endline="2158">TemplateAFIS_webservice::getDatosIdImagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a83bbd80ab7157b66a568c8a354f86f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::readVatPersona</definition>
+        <argsstring>(XmlRpcClient server_search, XmlRpcValue partner_id)</argsstring>
+        <name>readVatPersona</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>XmlRpcValue</type>
+          <declname>partner_id</declname>
+        </param>
+        <briefdescription>
+<para>Read Vat Persona: Ubica las huellas de la persona en base a su por partner_id. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="213" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="213" bodyend="237"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a35437b95c59d90bb3719f3d90f5f300b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::searchFingerprint</definition>
+        <argsstring>(XmlRpcClient server_search, int finger=0, string hand=&quot;&quot;, long int partner_id=0)</argsstring>
+        <name>searchFingerprint</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search <ref refid="classFingerprint" kindref="compound">Fingerprint</ref>: Busca una huella específica por dedo, mano e Id partner. </para>        </briefdescription>
+        <detaileddescription>
+<para>partner_id: identifica el registro de la persona en la base de datos de Odoo. finger: es el dedo (0 a 4, pulgar, índice, medio, anular y meñique). hand: es la mano o pie (MD, MI, PD, PI). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="251" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="251" bodyend="291"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a0aec9bd56a3983b0f5662c82258c32e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::readFingerprintImageId</definition>
+        <argsstring>(XmlRpcClient server_search, XmlRpcValue fingerprint_id)</argsstring>
+        <name>readFingerprintImageId</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>XmlRpcValue</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <briefdescription>
+<para>Método readFingerprintImageId: Obtiene el campo image_id de la tabla. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sirve para ubicar la imagen que se muestra para cada huella. De la imagen podemos obtener la plantilla (template que tiene la información geométrica de las minucias.), pero en realidad se guarda para mostrarla. Se hacen las comparaciones en base a las plantillas que genera automáticamente el captahuellas.</para><para>El captahuellas escanea la huella y mejora brillo y contraste automáticamente. Almacena un mapa de bits. El mismo captahuellas procesa la imagen y extrae las minucias según los conceptos de la imagen (islas, bifurcaciones, deltas, vacíos, etc.) Esas minucias se guardan en un archivo binario de unos 200 - 300 bytes. Y el mapa de bits también se almacena. Con ese último método, se busca la imagen de la huella. La comparación en base a las planillas es usada para saber si una huella pertenece a una persona (verificación) o a qué persona pertenece una huella (identificación), se comparan plantillas, no imágenes. Es para mostrarla en el cliente.</para><para>res.partner.fingerprint fingerprint_id, que es el id de la tabla: res.partner.fingerprint. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id tabla res_partner_fingerprint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="317" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="317" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::readFingerprint</definition>
+        <argsstring>(XmlRpcClient server_search, int finger=0, string hand=&quot;&quot;, long int partner_id=0)</argsstring>
+        <name>readFingerprint</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Método readFingerprint: Es una función polimorfa. </para>        </briefdescription>
+        <detaileddescription>
+<para>Es una función de búsqueda general. Dependiendo del input, hace diferentes búsquedas. Recibe los parámetros int finger = 0, string hand = &quot;&quot;, long int partner_id = 0. Obtiene todos los campos de la tabla: res.partner.fingerprint.</para><para>OPTIMIZAR: No es seguro que se use actualmente. Es posible que se elimine en la revisión. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="353" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="353" bodyend="369"/>
+        <referencedby refid="classTemplateAFIS__webservice_1aea7f1b638633ee2440c38573e74d8984" compoundref="TemplateAFIS_8cpp" startline="2076" endline="2158">TemplateAFIS_webservice::getDatosIdImagen</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ab66286f0a3f0702977a46332d3bce05d" compoundref="TemplateAFIS_8cpp" startline="945" endline="1188">TemplateAFIS_webservice::OnIdentify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a2c62949a4ec904bfc4571d95d577ddb4" compoundref="TemplateAFIS_8cpp" startline="1193" endline="1408">TemplateAFIS_webservice::OnIdentifyOnVerify</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1ad2d94adf36b56bf3306e52e5e20ecaab" compoundref="TemplateAFIS_8cpp" startline="495" endline="652">TemplateAFIS_webservice::OnVerify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a62325335130ebc1a65263ce5cf18ddf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::readFingerprint</definition>
+        <argsstring>(XmlRpcClient server_search, XmlRpcValue fingerprint_id)</argsstring>
+        <name>readFingerprint</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>XmlRpcValue</type>
+          <declname>fingerprint_id</declname>
+        </param>
+        <briefdescription>
+<para>Método readFingerprint: Es una función polimorfa. Recibe los parámetros XmlRpcClient server_search, XmlRpcValue fingerprint_id. </para>        </briefdescription>
+        <detaileddescription>
+<para>Obtiene todos los campos de la tabla: res.partner.fingerprint. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id <ref refid="classFingerprint" kindref="compound">Fingerprint</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="380" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="380" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a1060a55c0807ddea7c8ce3235f3bab49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::readFingerprintImage</definition>
+        <argsstring>(XmlRpcClient server_search, int finger=0, string hand=&quot;&quot;, long int partner_id=0)</argsstring>
+        <name>readFingerprintImage</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Método readFingerprintImage: Obtiene todos los campos de la tabla res.partner.fingerprint.image. </para>        </briefdescription>
+        <detaileddescription>
+<para>Es una función de consulta general, pero en base a dedo, mano y el ID de la persona.</para><para>OPTIMIZAR: No se esta usando <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Finger </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="423" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="423" bodyend="474"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a8e3f9279cbfd23a0a89d62c19ddd007c" compoundref="TemplateAFIS_8cpp" startline="1417" endline="1569">TemplateAFIS_webservice::salvarJPEG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1adbf6af7ab3485df438e8525b4089e28a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XmlRpcValue</type>
+        <definition>XmlRpcValue Fingerprint::searchFingerprintImage</definition>
+        <argsstring>(XmlRpcClient server_search, long int fingerprint_id=0)</argsstring>
+        <name>searchFingerprintImage</name>
+        <param>
+          <type>XmlRpcClient</type>
+          <declname>server_search</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>fingerprint_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Método searchFingerprintImage: Obtiene el ID de la tabla: res.partner.fingerprint.image. </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZAR: No se usa porque ya lo resuelve Odoo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>server_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Servidor XML_RPC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fingerprint_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id <ref refid="classFingerprint" kindref="compound">Fingerprint</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna XmlRpcValue resultante </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="485" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="485" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1ad21765e70cee5626ca35007dc115e1e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fingerprint::insertarFingerprintImg</definition>
+        <argsstring>(unsigned char *buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char *image, long int image_size)</argsstring>
+        <name>insertarFingerprintImg</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer_template</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>template_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>image_size</declname>
+        </param>
+        <briefdescription>
+<para>Método insertarFingerprintImg: Inserta los campos en las tablas: res.partner.fingerprint.image y res.partner.fingerprint. </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZAR: No se usa en esta versión. Actualmente usa el modelo webservice.methods</para><para>Se sustituyó por el método: int <ref refid="classFingerprint_1a049f81227a4f59f459c2f52627f12d76" kindref="member">insertarFingerprintWebService(unsigned char * &amp;buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char * &amp;image, long int image_size)</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classImagen" kindref="compound">Imagen</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna Estado de inserción </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="538" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="538" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a2d4e78e328f46d57aff25a40f69a6064" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* Fingerprint::base64</definition>
+        <argsstring>(unsigned char *&amp;input, long int length)</argsstring>
+        <name>base64</name>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Método base64: Convierte de unsigned char * a Base64. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sirve para convertir texto en UUCODE de base 64, que se usa para «desbinarizar» la plantilla binaria. Se desbinariza por compatibilidad con los tipos de datos de XML RPC. Las imágenes binarias en internet se movían como texto UUEncoded. XML RPC sólo acepta datos en matrices no-binarias. Si el argumento de la petición es un template, debemos codificarla a texto. Odoo admite peticiones a su webservice en XML. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño Raw </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Texto en base64 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="605" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="605" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a4f4c8a3a0e248d18f69c6057562b8031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Fingerprint::base64_decodestring</definition>
+        <argsstring>(std::string text)</argsstring>
+        <name>base64_decodestring</name>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Método base64_decodestring: Decodifica un string Base64 a un unsigned char *. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texto Base64 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Raw </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="632" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="632" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1aefb69bba57960202c3763d61416be5d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* Fingerprint::str2md5</definition>
+        <argsstring>(const char *str, int length)</argsstring>
+        <name>str2md5</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Método str2md5: Codifica un string a <ref refid="classMD5" kindref="compound">MD5</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sirve para convertir una cadena en <ref refid="classMD5" kindref="compound">MD5</ref>. Se usa para hashear la fecha, la hora y otras cosas, como una forma de crear una cookie para certificar cada conexión de un cliente con el servidor. Si la fecha y la hora del cliente están muy lejos de la del servidor, la conexión falla.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texto </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño texto </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Texto en <ref refid="classMD5" kindref="compound">MD5</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="661" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="661" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a049f81227a4f59f459c2f52627f12d76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fingerprint::insertarFingerprintWebService</definition>
+        <argsstring>(unsigned char *&amp;buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char *&amp;image, long int image_size)</argsstring>
+        <name>insertarFingerprintWebService</name>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>buffer_template</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>template_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>image_size</declname>
+        </param>
+        <briefdescription>
+<para>Método insertarFingerprintWebService: Inserta los campos en las tablas: res.partner.fingerprint.image y res.partner.fingerprint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Es una función para insertar las huellas a Odoo. Toma los datos del cliente, los arma en una matriz (array) que XML RPC pueda interpretar, e invoca el método correspondiente en el webservice de Odoo. Convierte la imagen de binario a texto y de texto a cadena XML RPC. webservice.methods es el modelo de Odoo que instancia el webservice de Odoo. Odoo tiene su propio cliente web, y se relaciona con la base de datos mediante ese webservice «interno». <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classImagen" kindref="compound">Imagen</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna Estado de inserción </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="710" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="710" bodyend="753"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a5194ba2b4266c2d030ac2a7d41778aad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fingerprint::actualizarFingerprintImg</definition>
+        <argsstring>(unsigned char *buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char *image, long int image_size)</argsstring>
+        <name>actualizarFingerprintImg</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer_template</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>template_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>image_size</declname>
+        </param>
+        <briefdescription>
+<para>Método actualizarFingerprintImg: Actualiza un registro en la tabla res.partner.fingerprint.image. Es la función para actualizar huellas. Para actualizar primero se ubica (searchFingerprint) y con ese ID se sobreescribe. </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZAR: * No está activa en esta versión Se sustituyó por la bool <ref refid="classFingerprint_1a5194ba2b4266c2d030ac2a7d41778aad" kindref="member">actualizarFingerprintImg(unsigned char *buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char * image, long int image_size)</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classImagen" kindref="compound">Imagen</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna Estado de actualización </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="775" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="775" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1abbe118d1fdaaba8d64c6e17320c7c835" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fingerprint::actualizarFingerprintWebService</definition>
+        <argsstring>(unsigned char *&amp;buffer_template, string hash, int finger, string hand, long int partner_id, int template_size, int image_height, int image_width, unsigned char *&amp;image, long int image_size)</argsstring>
+        <name>actualizarFingerprintWebService</name>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>buffer_template</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>template_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>unsigned char *&amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>image_size</declname>
+        </param>
+        <briefdescription>
+<para>Método actualizarFingerprintWebService: Actualiza un registro en la tabla: res.partner.fingerprint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Función actual para actualizar huellas usa el browse / read / search <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño Huella </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alto imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ancho imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classImagen" kindref="compound">Imagen</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tamaño imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna Estado de actualización </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="861" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="861" bodyend="915"/>
+        <referencedby refid="classTemplateAFIS__webservice_1a5fc2884ea75075e40a6056440021f27d" compoundref="TemplateAFIS_8cpp" startline="353" endline="488">TemplateAFIS_webservice::OnEnroll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFingerprint_1a991f8682bd5fb908804eb35e2c584d17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fingerprint::borrarFingerprintImg</definition>
+        <argsstring>(int finger, string hand, long int partner_id)</argsstring>
+        <name>borrarFingerprintImg</name>
+        <param>
+          <type>int</type>
+          <declname>finger</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hand</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>partner_id</declname>
+        </param>
+        <briefdescription>
+<para>Método borrarFingerprintImg: Borrar un registro de la tabla: res.partner.fingerprint.image. Función para eliminar huellas. </para>        </briefdescription>
+        <detaileddescription>
+<para>OPTIMIZAR: Puede que no se use porque usa usa res.partner.fingerprint.image en lugar de webservice.methods. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>finger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dedo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mano </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id Partner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna Estado de borrado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="928" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="928" bodyend="961"/>
+        <referencedby refid="classTemplateAFIS__webservice_1ac3575e5ecd80a7847c2ecda152778e38" compoundref="TemplateAFIS_8cpp" startline="2165" endline="2217">TemplateAFIS_webservice::borrarHuella</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que permite realizar la interacción con el Webservice con OpenERP. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" line="44" column="1" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Fingerprint.cpp" bodystart="43" bodyend="962"/>
+    <listofallmembers>
+      <member refid="classFingerprint_1a5194ba2b4266c2d030ac2a7d41778aad" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>actualizarFingerprintImg</name></member>
+      <member refid="classFingerprint_1abbe118d1fdaaba8d64c6e17320c7c835" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>actualizarFingerprintWebService</name></member>
+      <member refid="classFingerprint_1a2d4e78e328f46d57aff25a40f69a6064" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>base64</name></member>
+      <member refid="classFingerprint_1a4f4c8a3a0e248d18f69c6057562b8031" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>base64_decodestring</name></member>
+      <member refid="classFingerprint_1a991f8682bd5fb908804eb35e2c584d17" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>borrarFingerprintImg</name></member>
+      <member refid="classFingerprint_1a673ea9e701f981e8d47873da6c018959" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>dbname</name></member>
+      <member refid="classFingerprint_1a49a71ef02669dc397c509304fa465714" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>Fingerprint</name></member>
+      <member refid="classFingerprint_1ac96e54eb5987d3cd64bcdef3ea5107d8" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>getUID</name></member>
+      <member refid="classFingerprint_1ad21765e70cee5626ca35007dc115e1e3" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>insertarFingerprintImg</name></member>
+      <member refid="classFingerprint_1a049f81227a4f59f459c2f52627f12d76" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>insertarFingerprintWebService</name></member>
+      <member refid="classFingerprint_1a162821c388965772022ac5aeaf52be63" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>isURE</name></member>
+      <member refid="classFingerprint_1a1e4d2c44581328219f378933b30c9828" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>pwd</name></member>
+      <member refid="classFingerprint_1af2bb2ab8e1a31d1b7e41d39b728d1bb5" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>readFingerprint</name></member>
+      <member refid="classFingerprint_1a62325335130ebc1a65263ce5cf18ddf8" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>readFingerprint</name></member>
+      <member refid="classFingerprint_1a1060a55c0807ddea7c8ce3235f3bab49" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>readFingerprintImage</name></member>
+      <member refid="classFingerprint_1a0aec9bd56a3983b0f5662c82258c32e2" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>readFingerprintImageId</name></member>
+      <member refid="classFingerprint_1a83bbd80ab7157b66a568c8a354f86f02" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>readVatPersona</name></member>
+      <member refid="classFingerprint_1a35437b95c59d90bb3719f3d90f5f300b" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>searchFingerprint</name></member>
+      <member refid="classFingerprint_1adbf6af7ab3485df438e8525b4089e28a" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>searchFingerprintImage</name></member>
+      <member refid="classFingerprint_1ae1db425a60d85686567fc95ec23fb497" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>searchPersona</name></member>
+      <member refid="classFingerprint_1aefb69bba57960202c3763d61416be5d7" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>str2md5</name></member>
+      <member refid="classFingerprint_1a3e3626c36b44fa9d7d522196e2d121ff" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>URL</name></member>
+      <member refid="classFingerprint_1a23d9e08e3e34d64fcf0771a1c2590a4e" prot="public" virt="non-virtual"><scope>Fingerprint</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

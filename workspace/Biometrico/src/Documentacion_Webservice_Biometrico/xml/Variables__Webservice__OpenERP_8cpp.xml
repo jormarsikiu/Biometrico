@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="Variables__Webservice__OpenERP_8cpp" kind="file" language="C++">
+    <compoundname>Variables_Webservice_OpenERP.cpp</compoundname>
+    <includes refid="Fingerprint_8cpp" local="yes">Fingerprint.cpp</includes>
+    <includes refid="GuiWsOpenErp_8cpp" local="yes">GuiWsOpenErp.cpp</includes>
+    <includedby refid="TemplateAFIS_8h" local="yes">TemplateAFIS_webservice_lib/include/TemplateAFIS.h</includedby>
+    <incdepgraph>
+      <node id="50">
+        <label>XmlRpcCpp.h</label>
+      </node>
+      <node id="62">
+        <label>openssl/md5.h</label>
+      </node>
+      <node id="58">
+        <label>openssl/hmac.h</label>
+      </node>
+      <node id="44">
+        <label>TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp</label>
+        <link refid="Variables__Webservice__OpenERP_8cpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>stdlib.h</label>
+      </node>
+      <node id="57">
+        <label>openssl/sha.h</label>
+      </node>
+      <node id="54">
+        <label>fstream</label>
+      </node>
+      <node id="60">
+        <label>openssl/bio.h</label>
+      </node>
+      <node id="63">
+        <label>GuiWsOpenErp.cpp</label>
+        <link refid="GuiWsOpenErp_8cpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>string.h</label>
+      </node>
+      <node id="61">
+        <label>openssl/buffer.h</label>
+      </node>
+      <node id="53">
+        <label>ctime</label>
+      </node>
+      <node id="45">
+        <label>Fingerprint.cpp</label>
+        <link refid="Fingerprint_8cpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>sstream</label>
+      </node>
+      <node id="59">
+        <label>openssl/evp.h</label>
+      </node>
+      <node id="48">
+        <label>cstdlib</label>
+      </node>
+      <node id="56">
+        <label>cctype</label>
+      </node>
+      <node id="49">
+        <label>iostream</label>
+      </node>
+      <node id="55">
+        <label>algorithm</label>
+      </node>
+      <node id="46">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="66">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.cpp</label>
+        <link refid="TemplateAFIS_8cpp"/>
+      </node>
+      <node id="64">
+        <label>TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp</label>
+        <link refid="Variables__Webservice__OpenERP_8cpp"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>TemplateAFIS_webservice_lib/include/TemplateAFIS.h</label>
+        <link refid="TemplateAFIS_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Variables__Webservice__OpenERP_8cpp_1a038affabc8202723068994b56f58d3d6" prot="public" static="no">
+        <name>WEBSERVICES</name>
+        <initializer>{ {&quot;&quot;, &quot;&quot;}, {&quot;&quot;, &quot;&quot;} };</initializer>
+        <briefdescription>
+<para>Se define la clase principal WEBSERVICES No cambiar estos valores, a menos que modifiquen el código fuente NUM_CONEXIONES debe ser mayor o igual a 2, nunca menor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" line="26" column="9" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Variables__Webservice__OpenERP_8cpp_1a9c1896bf4b60da60fa2ed167f842e81a" prot="public" static="no">
+        <name>NUM_WEBSERVICE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>NUM_WEBSERVICE NUM_PARAMS debe ser siempre igual a 5. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" line="32" column="9" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classTemplateAFIS__webservice_1acd9566662ac9e462b438e21c788d5f48" compoundref="TemplateAFIS_8cpp" startline="2327" endline="2351">TemplateAFIS_webservice::getWebServiceGUIOpenERP</referencedby>
+        <referencedby refid="classTemplateAFIS__webservice_1a9c035f2b4dc64d540ae6e4e9161e0fa3" compoundref="TemplateAFIS_8cpp" startline="2295" endline="2319">TemplateAFIS_webservice::getWebServiceOpenERP</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="Variables__Webservice__OpenERP_8cpp_1adb8e82262d7fbb05fa04a5a8fe8859b3" prot="public" static="no">
+        <name>NUM_PARAMS_WEBSERVICE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>NUM_PARAMS_WEBSERVICE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" line="37" column="9" bodyfile="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Archivo de puente entre <ref refid="classTemplateAFIS__webservice" kindref="compound">TemplateAFIS_webservice</ref> y, <ref refid="classFingerprint" kindref="compound">Fingerprint</ref> y GuiWsOpenERP. Conexión del Webservice con Odoo. Se especifican los parámetros de conexión. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. <ulink url="mailto:contacto@simonrodriguez.org.ve">contacto@simonrodriguez.org.ve</ulink> </para></simplesect>
+<simplesect kind="author"><para>Lcdo. César Cordero, Ing. Servio Zambrano y Ángel Ramírez Isea. </para></simplesect>
+<simplesect kind="date"><para>2014</para></simplesect>
+Para agregar otra variable de conexión, agrega una coma al arreglo y un vector al mismo. De esta forma:</para><para>#define WEBSERVICES = { {&quot;INTEGRACION-CAPTAHUELLAS&quot;, &quot;admin&quot;, &quot;123456&quot;, &quot;probando.hoatzin.org&quot;}, {&quot;INTEGRACION-CAPTAHUELLAS-2&quot;, &quot;admin&quot;, &quot;123456&quot;, &quot;probando.hoatzin.org&quot;} }; </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Fingerprint_8cpp" kindref="compound">Fingerprint.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GuiWsOpenErp_8cpp" kindref="compound">GuiWsOpenErp.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="Variables__Webservice__OpenERP_8cpp_1a038affabc8202723068994b56f58d3d6" refkind="member"><highlight class="preprocessor">#define<sp/>WEBSERVICES<sp/>{<sp/>{&quot;&quot;,<sp/>&quot;&quot;},<sp/>{&quot;&quot;,<sp/>&quot;&quot;}<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="Variables__Webservice__OpenERP_8cpp_1a9c1896bf4b60da60fa2ed167f842e81a" refkind="member"><highlight class="preprocessor">#define<sp/>NUM_WEBSERVICE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="Variables__Webservice__OpenERP_8cpp_1adb8e82262d7fbb05fa04a5a8fe8859b3" refkind="member"><highlight class="preprocessor">#define<sp/>NUM_PARAMS_WEBSERVICE<sp/>2</highlight></codeline>
+    </programlisting>
+    <location file="TemplateAFIS_webservice_lib/Conexion_webservice/Variables_Webservice_OpenERP.cpp"/>
+  </compounddef>
+</doxygen>

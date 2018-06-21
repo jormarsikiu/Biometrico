@@ -1,0 +1,6 @@
+<map id="TemplateAFIS_webservice::OnEnroll" name="TemplateAFIS_webservice::OnEnroll">
+<area shape="rect" id="node2" href="$classFingerprint.html#abbe118d1fdaaba8d64c6e17320c7c835" title="Método actualizarFingerprintWebService: Actualiza un registro en la tabla: res.partner.fingerprint. " alt="" coords="232,5,440,47"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#a049f81227a4f59f459c2f52627f12d76" title="Método insertarFingerprintWebService: Inserta los campos en las tablas: res.partner.fingerprint.image y res.partner.fingerprint. " alt="" coords="239,71,433,112"/>
+<area shape="rect" id="node4" href="$classFingerprint.html#a35437b95c59d90bb3719f3d90f5f300b" title="Search Fingerprint: Busca una huella específica por dedo, mano e Id partner. " alt="" coords="241,137,431,163"/>
+<area shape="rect" id="node5" href="$classFingerprint.html#ae1db425a60d85686567fc95ec23fb497" title="Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibl..." alt="" coords="247,187,425,214"/>
+</map>

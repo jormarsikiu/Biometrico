@@ -1,0 +1,7 @@
+<map id="TemplateAFIS_webservice::OnIdentifyOnVerify" name="TemplateAFIS_webservice::OnIdentifyOnVerify">
+<area shape="rect" id="node2" href="$classFingerprint.html#af2bb2ab8e1a31d1b7e41d39b728d1bb5" title="Método readFingerprint: Es una función polimorfa. " alt="" coords="235,5,413,32"/>
+<area shape="rect" id="node3" href="$classFingerprint.html#a83bbd80ab7157b66a568c8a354f86f02" title="Read Vat Persona: Ubica las huellas de la persona en base a su por partner_id. " alt="" coords="232,56,416,83"/>
+<area shape="rect" id="node4" href="$classFingerprint.html#ae1db425a60d85686567fc95ec23fb497" title="Search Persona: Busca una persona por cédula o partner_id. OPTIMIZAR: Cambiar todos los search posibl..." alt="" coords="235,107,413,133"/>
+<area shape="rect" id="node5" href="$UFMatcher_8h.html#a7220a2dfdd0deb0027cfcd774d9c61a6" title="UFM_GetErrorString" alt="" coords="253,157,395,184"/>
+<area shape="rect" id="node6" href="$UFMatcher_8h.html#a55219b8f85e3a651db76b9fb850fe45b" title="UFM_Identify" alt="" coords="273,208,375,235"/>
+</map>

@@ -1,0 +1,1564 @@
+\hypertarget{classTemplateAFIS__webservice}{}\section{Referencia de la Clase Template\+A\+F\+I\+S\+\_\+webservice}
+\label{classTemplateAFIS__webservice}\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+
+
+{\ttfamily \#include $<$Template\+A\+F\+I\+S.\+h$>$}
+
+
+
+Diagrama de colaboración para Template\+A\+F\+I\+S\+\_\+webservice\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classTemplateAFIS__webservice__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTemplateAFIS__webservice_ace8ba45d6e489c7d34bfbfb55970724f}{Template\+A\+F\+I\+S\+\_\+webservice} (string param1, string param2, string param3, string param4, string param5)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classTemplateAFIS__webservice_ad58b565c76e20bdd9272401d7319cb25}{$\sim$\+Template\+A\+F\+I\+S\+\_\+webservice} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classTemplateAFIS__webservice_a85f73ddfc479ea1f9ba3a6467d1c028b}{p\+El\+Mismo} ()
+\begin{DoxyCompactList}\small\item\em p\+El\+Mismo \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a6357de3d3323010cb5890d2f583e0f94}{Set\+Tipo\+Template} (int tipo)
+\begin{DoxyCompactList}\small\item\em Set Tipo Template. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_afc08ffa4abcde0b3c0f1c13d973755e1}{Save\+Template2\+I\+SO} ()
+\begin{DoxyCompactList}\small\item\em Save Template2\+I\+SO\+: Salva el Template a I\+SO. (En pruebas) \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_ae233b5bd61f6754d877e54788332fe92}{Save\+Imagen\+W\+SQ} ()
+\begin{DoxyCompactList}\small\item\em Save Imagen\+W\+SQ\+: Salva el Template a W\+SQ. (En pruebas) \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a664f93880a7054b22a2b1faaacda95c3}{Get\+Security\+Level} ()
+\begin{DoxyCompactList}\small\item\em Get Security Level. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a4842d911ed73f5c33bf5150a6e3bcad4}{Get\+Fast\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Get Fast Mode. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_ac6ac32ddd0df850b0e25aa0943c39113}{Get\+Matcher\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Get Matcher Settings\+: Muestra la configuración del Matcher (Pruebas) \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_a8698c0f638f3be26a0664edd56038847}{init\+Matcher} ()
+\begin{DoxyCompactList}\small\item\em Init Matcher. \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_a90522f2c2f10ae8fa3ab6abd0273b714}{un\+Init\+Matcher} ()
+\begin{DoxyCompactList}\small\item\em un\+Init Matcher \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a40bd372e1a5b01d9bc2b4e1898be967f}{On\+Get\+Parameters} ()
+\begin{DoxyCompactList}\small\item\em On Get Parameters. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_aa89af892ebe892d1a92f1e2dad5e998d}{On\+Set\+Template\+Type} (int value)
+\begin{DoxyCompactList}\small\item\em On Set Template Type. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a5fc2884ea75075e40a6056440021f27d}{On\+Enroll} (string usuario, string password, string id\+\_\+persona, string id\+\_\+dedo, string mano, string hash, unsigned char $\ast$\&m\+\_\+template, int m\+\_\+template\+\_\+size, unsigned char $\ast$\&p\+Image\+Data, int n\+Width, int n\+Height, string \&id\+\_\+persona\+\_\+out, string \&id\+\_\+dedo\+\_\+out, string \&mano\+\_\+out)
+\begin{DoxyCompactList}\small\item\em On Enroll. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ad2d94adf36b56bf3306e52e5e20ecaab}{On\+Verify} (string usuario, string password, string id\+\_\+proyecto, string id\+\_\+persona, string id\+\_\+dedo, string mano, unsigned char $\ast$\&Template, int Template\+Size, string \&cedula, string \&dedo, string \&hand, string \&situr)
+\begin{DoxyCompactList}\small\item\em On Verify\+: Verifica una huella. Si la huella no es la verificada, utiliza el Médoto On\+Identify\+On\+Verify, para obtener donde está, obteniendo cedula, dedo, mano y código Situr. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ab66286f0a3f0702977a46332d3bce05d}{On\+Identify} (string usuario, string password, unsigned char $\ast$Template, int Template\+Size, string cedula\+\_\+in, string \&cedula, string \&dedo, string \&hand)
+\begin{DoxyCompactList}\small\item\em iteracion\+Identify\+: Identifica usando verificación en cada iteración. Se utiliza con On\+Identify\+Verify (No On\+Identify\+On\+Verify. iteacion\+Identify, no se utiliza en esta versión) \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a2c62949a4ec904bfc4571d95d577ddb4}{On\+Identify\+On\+Verify} (string usuario, string password, unsigned char $\ast$\&Template, int Template\+Size, string cedula\+\_\+in, string \&cedula, string \&dedo, string \&hand, string \&situr)
+\begin{DoxyCompactList}\small\item\em On\+Identify\+On\+Verify\+: Identifica usando el método de identificación de Bio\+Suprema. Se utiliza con On\+Verify. Si la verificación falla, llama a este método. \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a8e3f9279cbfd23a0a89d62c19ddd007c}{salvar\+J\+P\+EG} (string usuario, string password, string id\+\_\+persona, string id\+\_\+dedo, string mano, unsigned char $\ast$\&imagen\+\_\+buffer, int \&\hyperlink{librawjpeg_8cpp_a2474a5474cbff19523a51eb1de01cda4}{width}, int \&\hyperlink{librawjpeg_8cpp_ad12fc34ce789bce6c8a05d8a17138534}{height}, int \&size, string \&id\+\_\+imagen)
+\begin{DoxyCompactList}\small\item\em Salvar J\+P\+EG\+: Salva una imágen a J\+P\+EG. \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_a5491ba1e8737a0adea2527fcbbc428af}{comprobar} (string usuario, string password)
+\begin{DoxyCompactList}\small\item\em Comprobar\+: Comprueba que haga login. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a11ad395942529648ef3a9ddf43df3262}{get\+Usuario} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Usuario. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_aeb75c2999e3b58cbf800b9f9ffea082c}{get\+Datos\+Huella} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, string cedula, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Datos Huella. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_adc47efe142e56d2899f8eb8da72ab8eb}{get\+Datos\+Persona\+O\+B\+PP} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, string codigo\+\_\+obpp, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Datos Persona O\+B\+PP. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a096dfa38545612233dbb64006b01f3e3}{get\+Datos\+Persona} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, string cedula, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Datos Persona. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a88c4dc259776908b70505380256b68f8}{get\+Datos\+Persona\+Verificacion} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, string cedula, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Datos Persona Verificacion. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_aea7f1b638633ee2440c38573e74d8984}{get\+Datos\+Id\+Imagen} (xmlrpc\+\_\+env $\ast$env, string usuario, string password, string cedula, string mano, string id\+\_\+dedo, xmlrpc\+\_\+value $\ast$\&my\+ArrayP)
+\begin{DoxyCompactList}\small\item\em Get Datos Id \hyperlink{classImagen}{Imagen}. \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_ac3575e5ecd80a7847c2ecda152778e38}{borrar\+Huella} (string usuario, string password, string cedula, string mano, string id\+\_\+dedo)
+\begin{DoxyCompactList}\small\item\em Borrar Huella. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_ab867c16199162845402d90191f769b74}{archivo\+\_\+webservice\+\_\+config} (string directorio, string config\+\_\+url, string default\+\_\+url, string $\ast$\&params)
+\begin{DoxyCompactList}\small\item\em Archivo Webservice Config. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_a9c035f2b4dc64d540ae6e4e9161e0fa3}{get\+Web\+Service\+Open\+E\+RP} (string usuario, string pass, \hyperlink{classFingerprint}{Fingerprint} $\ast$\&fing)
+\begin{DoxyCompactList}\small\item\em Get Webservice Open\+E\+RP\+: Objeto que hace conexión con el Webservice de Open\+E\+RP. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_acd9566662ac9e462b438e21c788d5f48}{get\+Web\+Service\+G\+U\+I\+Open\+E\+RP} (string usuario, string pass, \hyperlink{classGuiWsOpenErp}{Gui\+Ws\+Open\+Erp} $\ast$\&fing)
+\begin{DoxyCompactList}\small\item\em Get Webservice G\+UI Open\+E\+RP\+: Objeto que hace conexión con el Webservice de Open\+E\+RP. \end{DoxyCompactList}\item 
+void \hyperlink{classTemplateAFIS__webservice_aab3e90fdea004b744610ab0ec12147b0}{base64\+\_\+decodestring} (std\+::string text, unsigned char $\ast$\&out, size\+\_\+t \&tlen)
+\begin{DoxyCompactList}\small\item\em base64\+\_\+decodestring \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_a1fb45563a560d59202d2d051fa649798}{is\+\_\+base64} (unsigned char c)
+\begin{DoxyCompactList}\small\item\em is\+\_\+base64 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classTemplateAFIS__webservice_aba3daf9219a01536921126e56003c9e0}{base64\+\_\+decode\+\_\+crypt} (std\+::string const \&encoded\+\_\+string)
+\begin{DoxyCompactList}\small\item\em base64\+\_\+decode Para encriptación o desencriptación \end{DoxyCompactList}\item 
+string \hyperlink{classTemplateAFIS__webservice_ab2f8808e62b3917c8530d121feaf71b8}{base64\+\_\+encode\+\_\+crypt} (unsigned char const $\ast$bytes\+\_\+to\+\_\+encode, unsigned int in\+\_\+len)
+\begin{DoxyCompactList}\small\item\em base64\+\_\+encode Para encriptación o desencriptación \end{DoxyCompactList}\item 
+R\+SA $\ast$ \hyperlink{classTemplateAFIS__webservice_a5cf955ee6d8a2cca9fa1116906440f41}{create\+R\+SA} (unsigned char $\ast$key, int publica)
+\begin{DoxyCompactList}\small\item\em create\+R\+SA \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ac758d0e51ad6676b2bd2659d4438ae35}{public\+\_\+encrypt} (unsigned char $\ast$data, int data\+\_\+len, unsigned char $\ast$key, unsigned char $\ast$encrypted)
+\begin{DoxyCompactList}\small\item\em public\+\_\+encrypt \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ae94ac0d97d82afb530698db6f22c0a71}{private\+\_\+decrypt} (unsigned char $\ast$enc\+\_\+data, int data\+\_\+len, unsigned char $\ast$key, unsigned char $\ast$decrypted)
+\begin{DoxyCompactList}\small\item\em private\+\_\+decrypt \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ad332d60ad475ff5ec824d4a004defb45}{private\+\_\+encrypt} (unsigned char $\ast$data, int data\+\_\+len, unsigned char $\ast$key, unsigned char $\ast$encrypted)
+\begin{DoxyCompactList}\small\item\em private\+\_\+encrypt \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a881bbae5e1b28f4bb6e821f7cae1fdde}{public\+\_\+decrypt} (unsigned char $\ast$enc\+\_\+data, int data\+\_\+len, unsigned char $\ast$key, unsigned char $\ast$decrypted)
+\begin{DoxyCompactList}\small\item\em public\+\_\+decrypt \end{DoxyCompactList}\item 
+string \hyperlink{classTemplateAFIS__webservice_a432d8a18012883bacddf5f9db4b58b69}{leer\+Todo\+Un\+Archivo} (string nombre\+\_\+archivo)
+\begin{DoxyCompactList}\small\item\em leer\+Todo\+Un\+Archivo \end{DoxyCompactList}\item 
+string \hyperlink{classTemplateAFIS__webservice_a4da03ee6cb795586858c4a09f3cdc789}{desencriptar\+Privada} (string encriptado\+\_\+base64)
+\begin{DoxyCompactList}\small\item\em desencriptar\+Privada \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_aa4536bcf883164f6c3c6d9dcb8744c7f}{guardar\+Incidencia} (string usuario, string password, string id\+\_\+persona, string id\+\_\+dedo, string mano, string id\+\_\+proyecto)
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFirmaDigital}{Firma\+Digital} $\ast$ \hyperlink{classTemplateAFIS__webservice_a829e57a86d8c1c0b17631eebf8a8e0cf}{firma\+\_\+digital}
+\begin{DoxyCompactList}\small\item\em firma\+\_\+figital \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTemplateAFIS__webservice_a32fefd35ad3d702984aa442f4407515d}{convert\+\_\+raw\+\_\+jpeg} (string filename, unsigned char $\ast$raw, int n\+Width, int n\+Height)
+\begin{DoxyCompactList}\small\item\em Convert\+\_\+raw\+\_\+jpeg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{UFMatcher_8h_a2a955bd8ef5ebcf92278a2b037f6e739}{H\+U\+F\+Matcher} \hyperlink{classTemplateAFIS__webservice_a9e97e8c2a5aa5de8ee51fbdfe4644c39}{m\+\_\+h\+Matcher}
+\begin{DoxyCompactList}\small\item\em m\+\_\+h\+Matcher \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a955d31aac4c820b4399ccbafe1b59b63}{tipo\+\_\+template}
+\begin{DoxyCompactList}\small\item\em tipo\+\_\+template \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a8809dc8920da337f97252597ef492671}{m\+\_\+n\+Security\+Level}
+\begin{DoxyCompactList}\small\item\em m\+\_\+n\+Security\+Level \end{DoxyCompactList}\item 
+bool \hyperlink{classTemplateAFIS__webservice_a2c8421c26cc3dd7d6a3295ace4fd82ce}{m\+\_\+b\+Fast\+Mode}
+\begin{DoxyCompactList}\small\item\em m\+\_\+b\+Fast\+Mode \end{DoxyCompactList}\item 
+char \hyperlink{classTemplateAFIS__webservice_a83ff03441c588729601736d18eb65afd}{m\+\_\+str\+Error} \mbox{[}128\mbox{]}
+\begin{DoxyCompactList}\small\item\em m\+\_\+str\+Error\mbox{[}128\mbox{]} \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_ad979fde0c45dd460249d041a669a9914}{m\+\_\+n\+Enroll\+Quality}
+\begin{DoxyCompactList}\small\item\em m\+\_\+n\+Enroll\+Quality \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a0d609b06768f2c253f43654966bd41e1}{m\+\_\+n\+Cur\+Scanner\+Index}
+\begin{DoxyCompactList}\small\item\em m\+\_\+n\+Cur\+Scanner\+Index \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classTemplateAFIS__webservice_a09c632296df4dd488ab09fee6e26f4eb}{base64\+\_\+chars}
+\begin{DoxyCompactList}\small\item\em base64\+\_\+chars \end{DoxyCompactList}\item 
+int \hyperlink{classTemplateAFIS__webservice_a5be66b367a1276c21ffc3450c1f69643}{padding}
+\begin{DoxyCompactList}\small\item\em padding \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice}\+: Realiza las funciones de Identify, Verify y Enroll, y almacena las huellas en la Base de Datos. 
+
+Definición en la línea 204 del archivo Template\+A\+F\+I\+S.\+h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classTemplateAFIS__webservice_ace8ba45d6e489c7d34bfbfb55970724f}{}\label{classTemplateAFIS__webservice_ace8ba45d6e489c7d34bfbfb55970724f} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Template\+A\+F\+I\+S\+\_\+webservice()}{TemplateAFIS\_webservice()}}
+{\footnotesize\ttfamily Template\+A\+F\+I\+S\+\_\+webservice\+::\+Template\+A\+F\+I\+S\+\_\+webservice (\begin{DoxyParamCaption}\item[{string}]{param1,  }\item[{string}]{param2,  }\item[{string}]{param3,  }\item[{string}]{param4,  }\item[{string}]{param5 }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Método constructor para la clase \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice}. Permite realizar la conexión con el wbservice de Odoo. Se verifica que esté conectado el captahuellas, se genera la firma digital y se encripta una cookie. 
+
+Definición en la línea 141 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ad58b565c76e20bdd9272401d7319cb25}{}\label{classTemplateAFIS__webservice_ad58b565c76e20bdd9272401d7319cb25} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!````~Template\+A\+F\+I\+S\+\_\+webservice@{$\sim$\+Template\+A\+F\+I\+S\+\_\+webservice}}
+\index{````~Template\+A\+F\+I\+S\+\_\+webservice@{$\sim$\+Template\+A\+F\+I\+S\+\_\+webservice}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{$\sim$\+Template\+A\+F\+I\+S\+\_\+webservice()}{~TemplateAFIS\_webservice()}}
+{\footnotesize\ttfamily Template\+A\+F\+I\+S\+\_\+webservice\+::$\sim$\+Template\+A\+F\+I\+S\+\_\+webservice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Método desconstructor para la clase \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice}. 
+
+Definición en la línea 165 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classTemplateAFIS__webservice_ab867c16199162845402d90191f769b74}{}\label{classTemplateAFIS__webservice_ab867c16199162845402d90191f769b74} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!archivo\+\_\+webservice\+\_\+config@{archivo\+\_\+webservice\+\_\+config}}
+\index{archivo\+\_\+webservice\+\_\+config@{archivo\+\_\+webservice\+\_\+config}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{archivo\+\_\+webservice\+\_\+config()}{archivo\_webservice\_config()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::archivo\+\_\+webservice\+\_\+config (\begin{DoxyParamCaption}\item[{string}]{directorio,  }\item[{string}]{config\+\_\+url,  }\item[{string}]{default\+\_\+url,  }\item[{string $\ast$\&}]{params }\end{DoxyParamCaption})}
+
+
+
+Archivo Webservice Config. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em directorio} & Directorio donde está el archivo \\
+\hline
+{\em config\+\_\+url} & Nombre de archivo \\
+\hline
+{\em default\+\_\+url} & Nombre de archivo \\
+\hline
+{\em params} & Parámetros que retorna.\\
+\hline
+\end{DoxyParams}
+Método archivo\+\_\+webservice\+\_\+config\+: Archivo de Configuración del Webservice. 
+
+Definición en la línea 2224 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_aba3daf9219a01536921126e56003c9e0}{}\label{classTemplateAFIS__webservice_aba3daf9219a01536921126e56003c9e0} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!base64\+\_\+decode\+\_\+crypt@{base64\+\_\+decode\+\_\+crypt}}
+\index{base64\+\_\+decode\+\_\+crypt@{base64\+\_\+decode\+\_\+crypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{base64\+\_\+decode\+\_\+crypt()}{base64\_decode\_crypt()}}
+{\footnotesize\ttfamily std\+::string Template\+A\+F\+I\+S\+\_\+webservice\+::base64\+\_\+decode\+\_\+crypt (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{encoded\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+base64\+\_\+decode Para encriptación o desencriptación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em encoded\+\_\+string} & Cadena codificada en base64 \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2379 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_aab3e90fdea004b744610ab0ec12147b0}{}\label{classTemplateAFIS__webservice_aab3e90fdea004b744610ab0ec12147b0} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!base64\+\_\+decodestring@{base64\+\_\+decodestring}}
+\index{base64\+\_\+decodestring@{base64\+\_\+decodestring}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{base64\+\_\+decodestring()}{base64\_decodestring()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::base64\+\_\+decodestring (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{unsigned char $\ast$\&}]{out,  }\item[{size\+\_\+t \&}]{tlen }\end{DoxyParamCaption})}
+
+
+
+base64\+\_\+decodestring 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em text} & Texto original \\
+\hline
+{\em out} & Base64 decode Out \\
+\hline
+{\em tlen} & largo de Base64 \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2353 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ab2f8808e62b3917c8530d121feaf71b8}{}\label{classTemplateAFIS__webservice_ab2f8808e62b3917c8530d121feaf71b8} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!base64\+\_\+encode\+\_\+crypt@{base64\+\_\+encode\+\_\+crypt}}
+\index{base64\+\_\+encode\+\_\+crypt@{base64\+\_\+encode\+\_\+crypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{base64\+\_\+encode\+\_\+crypt()}{base64\_encode\_crypt()}}
+{\footnotesize\ttfamily std\+::string Template\+A\+F\+I\+S\+\_\+webservice\+::base64\+\_\+encode\+\_\+crypt (\begin{DoxyParamCaption}\item[{unsigned char const $\ast$}]{bytes\+\_\+to\+\_\+encode,  }\item[{unsigned int}]{in\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+base64\+\_\+encode Para encriptación o desencriptación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em bytes\+\_\+to\+\_\+encode} & Unsigned char $\ast$ en base64 \\
+\hline
+{\em in\+\_\+len} & Tamaño \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2420 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ac3575e5ecd80a7847c2ecda152778e38}{}\label{classTemplateAFIS__webservice_ac3575e5ecd80a7847c2ecda152778e38} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!borrar\+Huella@{borrar\+Huella}}
+\index{borrar\+Huella@{borrar\+Huella}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{borrar\+Huella()}{borrarHuella()}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{cedula,  }\item[{string}]{mano,  }\item[{string}]{id\+\_\+dedo }\end{DoxyParamCaption})}
+
+
+
+Borrar Huella. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em cedula} & Cédula \\
+\hline
+{\em mano} & Mano \\
+\hline
+{\em id\+\_\+dedo} & Dedo\\
+\hline
+\end{DoxyParams}
+Método borrar\+Huella\+: Borrar huella. 
+
+Definición en la línea 2165 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Fingerprint\+::borrar\+Fingerprint\+Img(), Imagen\+::mano, N\+A\+ME, Fingerprint\+::search\+Persona(), Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_ac3575e5ecd80a7847c2ecda152778e38_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a5491ba1e8737a0adea2527fcbbc428af}{}\label{classTemplateAFIS__webservice_a5491ba1e8737a0adea2527fcbbc428af} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!comprobar@{comprobar}}
+\index{comprobar@{comprobar}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{comprobar()}{comprobar()}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::comprobar (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Comprobar\+: Comprueba que haga login. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de login.
+\end{DoxyReturn}
+Método comprobar\+: Comprueba si un usuario puede hacer login, en el Webservice de Open\+E\+RP.
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Método debe borrarse no se utiliza 
+
+Definición en la línea 1579 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::\+Inicializar(), Fingerprint\+::is\+U\+R\+E() y Fingerprint\+::\+U\+RL.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a5491ba1e8737a0adea2527fcbbc428af_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a32fefd35ad3d702984aa442f4407515d}{}\label{classTemplateAFIS__webservice_a32fefd35ad3d702984aa442f4407515d} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!convert\+\_\+raw\+\_\+jpeg@{convert\+\_\+raw\+\_\+jpeg}}
+\index{convert\+\_\+raw\+\_\+jpeg@{convert\+\_\+raw\+\_\+jpeg}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{convert\+\_\+raw\+\_\+jpeg()}{convert\_raw\_jpeg()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::convert\+\_\+raw\+\_\+jpeg (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{unsigned char $\ast$}]{raw,  }\item[{int}]{n\+Width,  }\item[{int}]{n\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert\+\_\+raw\+\_\+jpeg. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em filename} & Donde se guardará la imágen. \\
+\hline
+{\em raw} & Binario a convertir. \\
+\hline
+{\em n\+Width} & Ancho de imágen. \\
+\hline
+{\em n\+Height} & Alto de imágen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de conversión.
+\end{DoxyReturn}
+Método \hyperlink{classTemplateAFIS__webservice}{Template\+A\+F\+I\+S\+\_\+webservice}\+: Realiza las funciones de Identify, Verify y Enroll, y almacena las huellas en la Base de Datos.
+
+Método convert\+\_\+raw\+\_\+jpeg\+: Convierte un binario de imágen a jpeg. 
+
+Definición en la línea 92 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a bytes\+\_\+per\+\_\+pixel, color\+\_\+space, Imagen\+::n\+Height y Imagen\+::n\+Width.
+
+\hypertarget{classTemplateAFIS__webservice_a5cf955ee6d8a2cca9fa1116906440f41}{}\label{classTemplateAFIS__webservice_a5cf955ee6d8a2cca9fa1116906440f41} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!create\+R\+SA@{create\+R\+SA}}
+\index{create\+R\+SA@{create\+R\+SA}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{create\+R\+S\+A()}{createRSA()}}
+{\footnotesize\ttfamily R\+SA $\ast$ Template\+A\+F\+I\+S\+\_\+webservice\+::create\+R\+SA (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{key,  }\item[{int}]{publica }\end{DoxyParamCaption})}
+
+
+
+create\+R\+SA 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & Clave \\
+\hline
+{\em publica} & Si es o no pública \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2463 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a4da03ee6cb795586858c4a09f3cdc789}{}\label{classTemplateAFIS__webservice_a4da03ee6cb795586858c4a09f3cdc789} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!desencriptar\+Privada@{desencriptar\+Privada}}
+\index{desencriptar\+Privada@{desencriptar\+Privada}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{desencriptar\+Privada()}{desencriptarPrivada()}}
+{\footnotesize\ttfamily string Template\+A\+F\+I\+S\+\_\+webservice\+::desencriptar\+Privada (\begin{DoxyParamCaption}\item[{string}]{encriptado\+\_\+base64 }\end{DoxyParamCaption})}
+
+
+
+desencriptar\+Privada 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em encriptado\+\_\+base64} & Nombre de archivo a abrir \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2538 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_aeb75c2999e3b58cbf800b9f9ffea082c}{}\label{classTemplateAFIS__webservice_aeb75c2999e3b58cbf800b9f9ffea082c} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Datos\+Huella@{get\+Datos\+Huella}}
+\index{get\+Datos\+Huella@{get\+Datos\+Huella}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Datos\+Huella()}{getDatosHuella()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Huella (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{cedula,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Datos Huella. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em cedula} & Cédula \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Datos\+Huella (X\+M\+L\+R\+PC)\+: Recibe el usuario, password y cédula. Verifica que el usuario tenga permisos, y pide los datos de la huella en base a la mano, dedo, persona. Devuelve el dedo y la mano, de cada huella.
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Método no se utiliza debe borrarse 
+
+Definición en la línea 1704 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::get\+Dato\+Huella(), Gui\+Ws\+Open\+Erp\+::\+Inicializar(), Imagen\+::mano, N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_aeb75c2999e3b58cbf800b9f9ffea082c_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_aea7f1b638633ee2440c38573e74d8984}{}\label{classTemplateAFIS__webservice_aea7f1b638633ee2440c38573e74d8984} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Datos\+Id\+Imagen@{get\+Datos\+Id\+Imagen}}
+\index{get\+Datos\+Id\+Imagen@{get\+Datos\+Id\+Imagen}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Datos\+Id\+Imagen()}{getDatosIdImagen()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{cedula,  }\item[{string}]{mano,  }\item[{string}]{id\+\_\+dedo,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Datos Id \hyperlink{classImagen}{Imagen}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em cedula} & Cédula \\
+\hline
+{\em mano} & Mano \\
+\hline
+{\em id\+\_\+dedo} & Dedo \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Datos\+Id\+Imagen (X\+M\+L\+R\+PC)\+: Recibe el usuario, password, cédula, mano e id\+\_\+dedo. Devuelve el ID \hyperlink{classImagen}{Imagen}. 
+
+Definición en la línea 2076 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a N\+A\+ME, Fingerprint\+::read\+Fingerprint(), Fingerprint\+::search\+Persona(), Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_aea7f1b638633ee2440c38573e74d8984_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a096dfa38545612233dbb64006b01f3e3}{}\label{classTemplateAFIS__webservice_a096dfa38545612233dbb64006b01f3e3} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Datos\+Persona@{get\+Datos\+Persona}}
+\index{get\+Datos\+Persona@{get\+Datos\+Persona}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Datos\+Persona()}{getDatosPersona()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{cedula,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Datos Persona. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em cedula} & Cédula \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Datos\+Persona (X\+M\+L\+R\+PC)\+: Recibe el usuario, password y cédula. Devuelve el nombre y la cédula de la persona. 
+
+Definición en la línea 1868 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::\+Get\+Dato\+Persona(), Gui\+Ws\+Open\+Erp\+::\+Inicializar(), N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a096dfa38545612233dbb64006b01f3e3_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_adc47efe142e56d2899f8eb8da72ab8eb}{}\label{classTemplateAFIS__webservice_adc47efe142e56d2899f8eb8da72ab8eb} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Datos\+Persona\+O\+B\+PP@{get\+Datos\+Persona\+O\+B\+PP}}
+\index{get\+Datos\+Persona\+O\+B\+PP@{get\+Datos\+Persona\+O\+B\+PP}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Datos\+Persona\+O\+B\+P\+P()}{getDatosPersonaOBPP()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+O\+B\+PP (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{codigo\+\_\+obpp,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Datos Persona O\+B\+PP. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em codigo\+\_\+obpp} & Código O\+B\+PP \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Datos\+Persona\+O\+B\+PP (X\+M\+L\+R\+PC)\+: Recibe el usuario, password y codigo\+\_\+obpp. Devuelve el nombre y la cédula de cada persona perteneciente a esa obpp. 
+
+Definición en la línea 1799 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::\+Get\+Persona\+By\+O\+B\+P\+P(), Gui\+Ws\+Open\+Erp\+::\+Inicializar(), N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_adc47efe142e56d2899f8eb8da72ab8eb_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a88c4dc259776908b70505380256b68f8}{}\label{classTemplateAFIS__webservice_a88c4dc259776908b70505380256b68f8} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Datos\+Persona\+Verificacion@{get\+Datos\+Persona\+Verificacion}}
+\index{get\+Datos\+Persona\+Verificacion@{get\+Datos\+Persona\+Verificacion}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Datos\+Persona\+Verificacion()}{getDatosPersonaVerificacion()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+Verificacion (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{cedula,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Datos Persona Verificacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em cedula} & Cédula \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Datos\+Persona\+Verificacion (X\+M\+L\+R\+PC)\+: Recibe el usuario, password y cédula. Devuelve el nombre obpp a la que pertenece, código S\+I\+T\+UR, la cédula de la persona y nombre de la persona. 
+
+Definición en la línea 1954 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::get\+Dato\+Persona\+Verificacion(), Gui\+Ws\+Open\+Erp\+::\+Inicializar(), N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a88c4dc259776908b70505380256b68f8_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a4842d911ed73f5c33bf5150a6e3bcad4}{}\label{classTemplateAFIS__webservice_a4842d911ed73f5c33bf5150a6e3bcad4} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Get\+Fast\+Mode@{Get\+Fast\+Mode}}
+\index{Get\+Fast\+Mode@{Get\+Fast\+Mode}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Get\+Fast\+Mode()}{GetFastMode()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+Get\+Fast\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Fast Mode. 
+
+\begin{DoxyReturn}{Devuelve}
+Obtiene el nivel de rapidez para el Matcher, asociado al captahuellas.
+\end{DoxyReturn}
+Método Get\+Fast\+Mode\+: Obtiene el valor de obtención de la huella, F\+A\+S\+T\+\_\+\+M\+O\+DE Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 204 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a U\+F\+M\+\_\+\+Get\+Parameter() y U\+F\+M\+\_\+\+P\+A\+R\+A\+M\+\_\+\+F\+A\+S\+T\+\_\+\+M\+O\+DE.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a4842d911ed73f5c33bf5150a6e3bcad4_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_ac6ac32ddd0df850b0e25aa0943c39113}{}\label{classTemplateAFIS__webservice_ac6ac32ddd0df850b0e25aa0943c39113} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Get\+Matcher\+Settings@{Get\+Matcher\+Settings}}
+\index{Get\+Matcher\+Settings@{Get\+Matcher\+Settings}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Get\+Matcher\+Settings()}{GetMatcherSettings()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::\+Get\+Matcher\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Matcher Settings\+: Muestra la configuración del Matcher (Pruebas) 
+
+Método Get\+Matcher\+Settings\+: Configuraciones del Matcher. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 218 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a664f93880a7054b22a2b1faaacda95c3}{}\label{classTemplateAFIS__webservice_a664f93880a7054b22a2b1faaacda95c3} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Get\+Security\+Level@{Get\+Security\+Level}}
+\index{Get\+Security\+Level@{Get\+Security\+Level}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Get\+Security\+Level()}{GetSecurityLevel()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+Get\+Security\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Security Level. 
+
+\begin{DoxyReturn}{Devuelve}
+Obtiene el nivel de seguridad para el Matcher, asociado al captahuellas.
+\end{DoxyReturn}
+Método Get\+Security\+Level\+: Establece el nivel de seguridad. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 190 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a U\+F\+M\+\_\+\+Get\+Parameter() y U\+F\+M\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+L\+E\+V\+EL.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a664f93880a7054b22a2b1faaacda95c3_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a11ad395942529648ef3a9ddf43df3262}{}\label{classTemplateAFIS__webservice_a11ad395942529648ef3a9ddf43df3262} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Usuario@{get\+Usuario}}
+\index{get\+Usuario@{get\+Usuario}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Usuario()}{getUsuario()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Usuario (\begin{DoxyParamCaption}\item[{xmlrpc\+\_\+env $\ast$}]{env,  }\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{xmlrpc\+\_\+value $\ast$\&}]{my\+ArrayP }\end{DoxyParamCaption})}
+
+
+
+Get Usuario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em env} & Variable X\+M\+L\+R\+PC de ambiente \\
+\hline
+{\em usuario} & Login \\
+\hline
+{\em password} & Password \\
+\hline
+{\em my\+ArrayP} & Variable X\+M\+L\+R\+PC que volverá con los valores\\
+\hline
+\end{DoxyParams}
+Método get\+Usuario (X\+M\+L\+R\+PC)\+: Recibe el usuario y el password. Devuelve el parámetros verificacion, para validar un usuario.
+
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Método no se utiliza debe borrarse 
+
+Definición en la línea 1640 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Gui\+Ws\+Open\+Erp\+::\+Inicializar(), N\+A\+ME y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a11ad395942529648ef3a9ddf43df3262_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_acd9566662ac9e462b438e21c788d5f48}{}\label{classTemplateAFIS__webservice_acd9566662ac9e462b438e21c788d5f48} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Web\+Service\+G\+U\+I\+Open\+E\+RP@{get\+Web\+Service\+G\+U\+I\+Open\+E\+RP}}
+\index{get\+Web\+Service\+G\+U\+I\+Open\+E\+RP@{get\+Web\+Service\+G\+U\+I\+Open\+E\+RP}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Web\+Service\+G\+U\+I\+Open\+E\+R\+P()}{getWebServiceGUIOpenERP()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Web\+Service\+G\+U\+I\+Open\+E\+RP (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{pass,  }\item[{\hyperlink{classGuiWsOpenErp}{Gui\+Ws\+Open\+Erp} $\ast$\&}]{fing }\end{DoxyParamCaption})}
+
+
+
+Get Webservice G\+UI Open\+E\+RP\+: Objeto que hace conexión con el Webservice de Open\+E\+RP. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em pass} & Password U\+RE \\
+\hline
+{\em fing} & Objeto \hyperlink{classGuiWsOpenErp}{Gui\+Ws\+Open\+Erp}\\
+\hline
+\end{DoxyParams}
+Método get\+Web\+Service\+G\+U\+I\+Open\+E\+RP\+: Obtiene un objeto para realizar transacciones X\+M\+L\+R\+PC. 
+
+Definición en la línea 2327 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE.
+
+\hypertarget{classTemplateAFIS__webservice_a9c035f2b4dc64d540ae6e4e9161e0fa3}{}\label{classTemplateAFIS__webservice_a9c035f2b4dc64d540ae6e4e9161e0fa3} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!get\+Web\+Service\+Open\+E\+RP@{get\+Web\+Service\+Open\+E\+RP}}
+\index{get\+Web\+Service\+Open\+E\+RP@{get\+Web\+Service\+Open\+E\+RP}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{get\+Web\+Service\+Open\+E\+R\+P()}{getWebServiceOpenERP()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Web\+Service\+Open\+E\+RP (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{pass,  }\item[{\hyperlink{classFingerprint}{Fingerprint} $\ast$\&}]{fing }\end{DoxyParamCaption})}
+
+
+
+Get Webservice Open\+E\+RP\+: Objeto que hace conexión con el Webservice de Open\+E\+RP. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em pass} & Password U\+RE \\
+\hline
+{\em fing} & Objeto \hyperlink{classFingerprint}{Fingerprint}\\
+\hline
+\end{DoxyParams}
+Método get\+Web\+Service\+Open\+E\+RP\+: Obtiene un objeto para realizar transacciones X\+M\+L\+R\+PC. 
+
+Definición en la línea 2295 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a N\+U\+M\+\_\+\+W\+E\+B\+S\+E\+R\+V\+I\+CE.
+
+\hypertarget{classTemplateAFIS__webservice_aa4536bcf883164f6c3c6d9dcb8744c7f}{}\label{classTemplateAFIS__webservice_aa4536bcf883164f6c3c6d9dcb8744c7f} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!guardar\+Incidencia@{guardar\+Incidencia}}
+\index{guardar\+Incidencia@{guardar\+Incidencia}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{guardar\+Incidencia()}{guardarIncidencia()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::guardar\+Incidencia (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{id\+\_\+persona,  }\item[{string}]{id\+\_\+dedo,  }\item[{string}]{mano,  }\item[{string}]{id\+\_\+proyecto }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 654 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Fingerprint\+::dbname, estado\+\_\+proyecto\+::set\+\_\+variables(), Fingerprint\+::\+U\+RL y estado\+\_\+proyecto\+::validacion\+\_\+incidencias\+\_\+huella().
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_aa4536bcf883164f6c3c6d9dcb8744c7f_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a8698c0f638f3be26a0664edd56038847}{}\label{classTemplateAFIS__webservice_a8698c0f638f3be26a0664edd56038847} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!init\+Matcher@{init\+Matcher}}
+\index{init\+Matcher@{init\+Matcher}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{init\+Matcher()}{initMatcher()}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::init\+Matcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init Matcher. 
+
+\begin{DoxyReturn}{Devuelve}
+Obtiene el estado de inicialización del Matcher. True o False
+\end{DoxyReturn}
+Método init\+Matcher\+: Inicializa el Matcher. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 229 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a U\+F\+M\+\_\+\+Create(), U\+F\+M\+\_\+\+Get\+Error\+String(), U\+F\+M\+\_\+\+OK y U\+F\+M\+\_\+\+S\+T\+A\+T\+US.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a8698c0f638f3be26a0664edd56038847_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a1fb45563a560d59202d2d051fa649798}{}\label{classTemplateAFIS__webservice_a1fb45563a560d59202d2d051fa649798} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!is\+\_\+base64@{is\+\_\+base64}}
+\index{is\+\_\+base64@{is\+\_\+base64}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{is\+\_\+base64()}{is\_base64()}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::is\+\_\+base64 (\begin{DoxyParamCaption}\item[{unsigned char}]{c }\end{DoxyParamCaption})}
+
+
+
+is\+\_\+base64 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & Caracter base64 \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2375 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a432d8a18012883bacddf5f9db4b58b69}{}\label{classTemplateAFIS__webservice_a432d8a18012883bacddf5f9db4b58b69} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!leer\+Todo\+Un\+Archivo@{leer\+Todo\+Un\+Archivo}}
+\index{leer\+Todo\+Un\+Archivo@{leer\+Todo\+Un\+Archivo}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{leer\+Todo\+Un\+Archivo()}{leerTodoUnArchivo()}}
+{\footnotesize\ttfamily string Template\+A\+F\+I\+S\+\_\+webservice\+::leer\+Todo\+Un\+Archivo (\begin{DoxyParamCaption}\item[{string}]{nombre\+\_\+archivo }\end{DoxyParamCaption})}
+
+
+
+leer\+Todo\+Un\+Archivo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre\+\_\+archivo} & Nombre de archivo a abrir \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2519 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a5fc2884ea75075e40a6056440021f27d}{}\label{classTemplateAFIS__webservice_a5fc2884ea75075e40a6056440021f27d} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Enroll@{On\+Enroll}}
+\index{On\+Enroll@{On\+Enroll}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Enroll()}{OnEnroll()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{id\+\_\+persona,  }\item[{string}]{id\+\_\+dedo,  }\item[{string}]{mano,  }\item[{string}]{hash,  }\item[{unsigned char $\ast$\&}]{m\+\_\+template,  }\item[{int}]{m\+\_\+template\+\_\+size,  }\item[{unsigned char $\ast$\&}]{p\+Image\+Data,  }\item[{int}]{n\+Width,  }\item[{int}]{n\+Height,  }\item[{string \&}]{id\+\_\+persona\+\_\+out,  }\item[{string \&}]{id\+\_\+dedo\+\_\+out,  }\item[{string \&}]{mano\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+On Enroll. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em id\+\_\+persona} & Cédula persona \\
+\hline
+{\em id\+\_\+dedo} & Dedo \\
+\hline
+{\em mano} & Mano \\
+\hline
+{\em hash} & Hash \\
+\hline
+{\em m\+\_\+template} & Huella a guardar \\
+\hline
+{\em m\+\_\+template\+\_\+size} & Tamaño de huella a guardar \\
+\hline
+{\em p\+Image\+Data} & Imágen de huella a guardar \\
+\hline
+{\em n\+Width} & Ancho de imágen de huella a guardar \\
+\hline
+{\em n\+Height} & Alto de imágen de huella a guardar \\
+\hline
+{\em id\+\_\+persona\+\_\+out} & Si la huella está repetida, Cédula de la persona donde está repetida. \\
+\hline
+{\em id\+\_\+dedo\+\_\+out} & Si la huella está repetida, Dedo de la persona donde está repetida. \\
+\hline
+{\em mano\+\_\+out} & Si la huella está repetida, Mano de la persona donde está repetida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de guardado.
+\end{DoxyReturn}
+Método On\+Enroll\+: Guarda la huella en Odoo. Permite relacionar el Captahuellas con Odoo. 
+
+Definición en la línea 353 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Fingerprint\+::actualizar\+Fingerprint\+Web\+Service(), Fingerprint\+::insertar\+Fingerprint\+Web\+Service(), N\+A\+ME, Imagen\+::n\+Height, Imagen\+::n\+Width, Fingerprint\+::search\+Fingerprint(), Fingerprint\+::search\+Persona(), Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a5fc2884ea75075e40a6056440021f27d_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a40bd372e1a5b01d9bc2b4e1898be967f}{}\label{classTemplateAFIS__webservice_a40bd372e1a5b01d9bc2b4e1898be967f} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Get\+Parameters@{On\+Get\+Parameters}}
+\index{On\+Get\+Parameters@{On\+Get\+Parameters}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Get\+Parameters()}{OnGetParameters()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Get\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On Get Parameters. 
+
+\begin{DoxyReturn}{Devuelve}
+Muestra los parámetros del Matcher
+\end{DoxyReturn}
+Método On\+Get\+Parameters\+: Obtener los parámetros del objeto Matcher. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 286 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ab66286f0a3f0702977a46332d3bce05d}{}\label{classTemplateAFIS__webservice_ab66286f0a3f0702977a46332d3bce05d} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Identify@{On\+Identify}}
+\index{On\+Identify@{On\+Identify}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Identify()}{OnIdentify()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{unsigned char $\ast$}]{Template,  }\item[{int}]{Template\+Size,  }\item[{string}]{cedula\+\_\+in,  }\item[{string \&}]{cedula,  }\item[{string \&}]{dedo,  }\item[{string \&}]{hand }\end{DoxyParamCaption})}
+
+
+
+iteracion\+Identify\+: Identifica usando verificación en cada iteración. Se utiliza con On\+Identify\+Verify (No On\+Identify\+On\+Verify. iteacion\+Identify, no se utiliza en esta versión) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em estado} & Estado de la verificación \\
+\hline
+{\em i} & Id de la huella en la Base de Datos \\
+\hline
+{\em id\+\_\+persona\+\_\+result} & Cédula encontrada \\
+\hline
+{\em id\+\_\+dedo\+\_\+result} & Dedo encontrado \\
+\hline
+{\em mano\+\_\+result} & Mano encontrada \\
+\hline
+{\em id\+\_\+partner} & Id partner a comparar \\
+\hline
+{\em id\+\_\+dedo} & Dedo a comparar \\
+\hline
+{\em mano} & Mano a comparar \\
+\hline
+{\em Template} & Huella a verificar \\
+\hline
+{\em Template\+Size} & Tamaño de huella a verificar \\
+\hline
+{\em ufm\+\_\+res} & Estado de la verificación. \\
+\hline
+{\em b\+Verify\+Succeed} & Verificación exitosa (o no) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de verificacion. On\+Identify\+Verify\+: Identifica usando verificación en cada iteración. Se utiliza con iteacion\+Identify (On\+Identify\+Verify, no se utiliza en esta versión) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em Template} & Huella a verificar \\
+\hline
+{\em Template\+Size} & Tamaño de huella a verificar \\
+\hline
+{\em cedula} & Cédula de la persona a verificar \\
+\hline
+{\em id\+\_\+dedo} & Dedo de la persona a verificar \\
+\hline
+{\em mano} & Mano de la persona a verificar \\
+\hline
+{\em cedula\+\_\+out} & Cédula de la persona encontrada \\
+\hline
+{\em dedo\+\_\+out} & Dedo de la persona encontrada \\
+\hline
+{\em hand\+\_\+out} & Mano de la persona encontrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de verificacion (Identificación). On\+Identify\+: Identifica usando el método de identificación de Bio\+Suprema 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em Template} & Huella a identificar \\
+\hline
+{\em Template\+Size} & Tamaño de huella a identificar \\
+\hline
+{\em cedula\+\_\+in} & Cédula de la persona, cuando se va a buscar por estado. \\
+\hline
+{\em cedula} & Cédula de la persona encontrada. \\
+\hline
+{\em dedo} & Dedo de la persona encontrada \\
+\hline
+{\em hand} & Mano de la persona encontrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de identificación.
+\end{DoxyReturn}
+Método iteracion\+Identify\+: Realiza la iteración de identificación de una huella, una por una; esto quiere decir un verify a cada huella. Utiliza el método de verificación de Bio\+Suprema.
+
+Método On\+Identify\+Verify\+: Identifica las huellas una por una. Utiliza el método de verificación de Bio\+Suprema.
+
+Método On\+Identify\+: Identifica una huella contra muchas. Utiliza el método de identificación de Bio\+Suprema. Verifica que el captahuellas esté conectado. Verifica que el usuario de Odoo sea el correcto. 
+
+Definición en la línea 945 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Imagen\+::id\+\_\+dedo, Imagen\+::id\+\_\+persona, Imagen\+::mano, N\+A\+ME, Fingerprint\+::read\+Fingerprint(), Fingerprint\+::read\+Vat\+Persona(), Fingerprint\+::search\+Persona(), U\+F\+M\+\_\+\+Get\+Error\+String(), U\+F\+M\+\_\+\+Identify(), U\+F\+M\+\_\+\+OK, U\+F\+M\+\_\+\+S\+T\+A\+T\+US, Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_ab66286f0a3f0702977a46332d3bce05d_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a2c62949a4ec904bfc4571d95d577ddb4}{}\label{classTemplateAFIS__webservice_a2c62949a4ec904bfc4571d95d577ddb4} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Identify\+On\+Verify@{On\+Identify\+On\+Verify}}
+\index{On\+Identify\+On\+Verify@{On\+Identify\+On\+Verify}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Identify\+On\+Verify()}{OnIdentifyOnVerify()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{unsigned char $\ast$\&}]{Template,  }\item[{int}]{Template\+Size,  }\item[{string}]{cedula\+\_\+in,  }\item[{string \&}]{cedula,  }\item[{string \&}]{dedo,  }\item[{string \&}]{hand,  }\item[{string \&}]{situr }\end{DoxyParamCaption})}
+
+
+
+On\+Identify\+On\+Verify\+: Identifica usando el método de identificación de Bio\+Suprema. Se utiliza con On\+Verify. Si la verificación falla, llama a este método. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em Template} & Huella a identificar \\
+\hline
+{\em Template\+Size} & Tamaño de huella a identificar \\
+\hline
+{\em cedula\+\_\+in} & Cédula de la persona, cuando se va a buscar por estado. \\
+\hline
+{\em cedula} & Cédula de la persona encontrada. \\
+\hline
+{\em dedo} & Dedo de la persona encontrada \\
+\hline
+{\em hand} & Mano de la persona encontrada \\
+\hline
+{\em situr} & Código S\+I\+T\+UR de la persona encontrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de identificación.
+\end{DoxyReturn}
+O\+P\+T\+I\+M\+I\+Z\+AR\+: Revisar Método On\+Identify\+On\+Verify Revisar Narrativa de S\+I\+N\+CO 
+
+Definición en la línea 1193 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Imagen\+::id\+\_\+dedo, Imagen\+::id\+\_\+persona, Imagen\+::mano, N\+A\+ME, Fingerprint\+::read\+Fingerprint(), Fingerprint\+::read\+Vat\+Persona(), Fingerprint\+::search\+Persona(), U\+F\+M\+\_\+\+Get\+Error\+String(), U\+F\+M\+\_\+\+Identify(), U\+F\+M\+\_\+\+OK, U\+F\+M\+\_\+\+S\+T\+A\+T\+US, Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a2c62949a4ec904bfc4571d95d577ddb4_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_aa89af892ebe892d1a92f1e2dad5e998d}{}\label{classTemplateAFIS__webservice_aa89af892ebe892d1a92f1e2dad5e998d} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Set\+Template\+Type@{On\+Set\+Template\+Type}}
+\index{On\+Set\+Template\+Type@{On\+Set\+Template\+Type}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Set\+Template\+Type()}{OnSetTemplateType()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Set\+Template\+Type (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+On Set Template Type. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & Número de tipo de Template. 1 para S\+U\+P\+R\+E\+MA, 2 para I\+S\+O19794\+\_\+2, 3 para A\+N\+S\+I378 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado luego de establecer el tipo de Template.
+\end{DoxyReturn}
+Método On\+Set\+Template\+Type\+: Establecer los tipos de template. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 300 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a U\+F\+M\+\_\+\+Set\+Template\+Type(), U\+F\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+N\+S\+I378, U\+F\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+S\+O19794\+\_\+2 y U\+F\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+P\+R\+E\+MA.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_aa89af892ebe892d1a92f1e2dad5e998d_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_ad2d94adf36b56bf3306e52e5e20ecaab}{}\label{classTemplateAFIS__webservice_ad2d94adf36b56bf3306e52e5e20ecaab} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!On\+Verify@{On\+Verify}}
+\index{On\+Verify@{On\+Verify}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{On\+Verify()}{OnVerify()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{id\+\_\+proyecto,  }\item[{string}]{id\+\_\+persona,  }\item[{string}]{id\+\_\+dedo,  }\item[{string}]{mano,  }\item[{unsigned char $\ast$\&}]{Template,  }\item[{int}]{Template\+Size,  }\item[{string \&}]{cedula,  }\item[{string \&}]{dedo,  }\item[{string \&}]{hand,  }\item[{string \&}]{situr }\end{DoxyParamCaption})}
+
+
+
+On Verify\+: Verifica una huella. Si la huella no es la verificada, utiliza el Médoto On\+Identify\+On\+Verify, para obtener donde está, obteniendo cedula, dedo, mano y código Situr. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em id\+\_\+persona} & Cédula persona \\
+\hline
+{\em id\+\_\+dedo} & Dedo \\
+\hline
+{\em mano} & Mano \\
+\hline
+{\em Template} & Huella a verificar \\
+\hline
+{\em Template\+Size} & Tamaño de huella a verificar \\
+\hline
+{\em cedula} & Si no es la huella, Cédula de la persona donde está la huella. \\
+\hline
+{\em dedo} & Si no es la huella, Dedo de la persona donde está la huella. \\
+\hline
+{\em hand} & Si no es la huella, Mano de la persona donde está la huella. \\
+\hline
+{\em situr} & Si no es la huella, Situr de la persona donde está la huella. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado de verificacion.
+\end{DoxyReturn}
+Método On\+Verify\+: Realiza la verificación de una huella. Permite relacionar el Captahuellas con Odoo. Verifica el usuario y aplica las llamadas a S\+U\+P\+R\+E\+MA 
+
+Definición en la línea 495 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a N\+A\+ME, Fingerprint\+::read\+Fingerprint(), Fingerprint\+::search\+Persona(), U\+F\+M\+\_\+\+Get\+Error\+String(), U\+F\+M\+\_\+\+OK, U\+F\+M\+\_\+\+S\+T\+A\+T\+US, U\+F\+M\+\_\+\+Verify(), Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_ad2d94adf36b56bf3306e52e5e20ecaab_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_a85f73ddfc479ea1f9ba3a6467d1c028b}{}\label{classTemplateAFIS__webservice_a85f73ddfc479ea1f9ba3a6467d1c028b} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!p\+El\+Mismo@{p\+El\+Mismo}}
+\index{p\+El\+Mismo@{p\+El\+Mismo}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{p\+El\+Mismo()}{pElMismo()}}
+{\footnotesize\ttfamily void $\ast$ Template\+A\+F\+I\+S\+\_\+webservice\+::p\+El\+Mismo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+p\+El\+Mismo 
+
+\begin{DoxyReturn}{Devuelve}
+Obtiene a si mismo.
+\end{DoxyReturn}
+Obtener el mismo objeto, a sí mismo. 
+
+Definición en la línea 173 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ae94ac0d97d82afb530698db6f22c0a71}{}\label{classTemplateAFIS__webservice_ae94ac0d97d82afb530698db6f22c0a71} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!private\+\_\+decrypt@{private\+\_\+decrypt}}
+\index{private\+\_\+decrypt@{private\+\_\+decrypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{private\+\_\+decrypt()}{private\_decrypt()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::private\+\_\+decrypt (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{enc\+\_\+data,  }\item[{int}]{data\+\_\+len,  }\item[{unsigned char $\ast$}]{key,  }\item[{unsigned char $\ast$}]{decrypted }\end{DoxyParamCaption})}
+
+
+
+private\+\_\+decrypt 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em enc\+\_\+data} & Data encriptada \\
+\hline
+{\em data\+\_\+len} & Tamaño de data encriptada \\
+\hline
+{\em key} & Llave privada \\
+\hline
+{\em decrypted} & Resultado de la desencriptación \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2496 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ad332d60ad475ff5ec824d4a004defb45}{}\label{classTemplateAFIS__webservice_ad332d60ad475ff5ec824d4a004defb45} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!private\+\_\+encrypt@{private\+\_\+encrypt}}
+\index{private\+\_\+encrypt@{private\+\_\+encrypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{private\+\_\+encrypt()}{private\_encrypt()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::private\+\_\+encrypt (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data,  }\item[{int}]{data\+\_\+len,  }\item[{unsigned char $\ast$}]{key,  }\item[{unsigned char $\ast$}]{encrypted }\end{DoxyParamCaption})}
+
+
+
+private\+\_\+encrypt 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & Data a encriptar \\
+\hline
+{\em data\+\_\+len} & Tamaño de data a encriptar \\
+\hline
+{\em key} & Llave privada \\
+\hline
+{\em encrypted} & Resultado de la encriptación \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2504 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a881bbae5e1b28f4bb6e821f7cae1fdde}{}\label{classTemplateAFIS__webservice_a881bbae5e1b28f4bb6e821f7cae1fdde} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!public\+\_\+decrypt@{public\+\_\+decrypt}}
+\index{public\+\_\+decrypt@{public\+\_\+decrypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{public\+\_\+decrypt()}{public\_decrypt()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::public\+\_\+decrypt (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{enc\+\_\+data,  }\item[{int}]{data\+\_\+len,  }\item[{unsigned char $\ast$}]{key,  }\item[{unsigned char $\ast$}]{decrypted }\end{DoxyParamCaption})}
+
+
+
+public\+\_\+decrypt 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em enc\+\_\+data} & Data encriptada \\
+\hline
+{\em data\+\_\+len} & Tamaño de data encriptada \\
+\hline
+{\em key} & Llave pública \\
+\hline
+{\em decrypted} & Resultado de la desencriptación \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2511 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_ac758d0e51ad6676b2bd2659d4438ae35}{}\label{classTemplateAFIS__webservice_ac758d0e51ad6676b2bd2659d4438ae35} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!public\+\_\+encrypt@{public\+\_\+encrypt}}
+\index{public\+\_\+encrypt@{public\+\_\+encrypt}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{public\+\_\+encrypt()}{public\_encrypt()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::public\+\_\+encrypt (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data,  }\item[{int}]{data\+\_\+len,  }\item[{unsigned char $\ast$}]{key,  }\item[{unsigned char $\ast$}]{encrypted }\end{DoxyParamCaption})}
+
+
+
+public\+\_\+encrypt 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & Data a encriptar \\
+\hline
+{\em data\+\_\+len} & Tamaño de data a encriptar \\
+\hline
+{\em key} & Llave pública \\
+\hline
+{\em encrypted} & Resultado de la encriptación \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 2489 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a8e3f9279cbfd23a0a89d62c19ddd007c}{}\label{classTemplateAFIS__webservice_a8e3f9279cbfd23a0a89d62c19ddd007c} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!salvar\+J\+P\+EG@{salvar\+J\+P\+EG}}
+\index{salvar\+J\+P\+EG@{salvar\+J\+P\+EG}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{salvar\+J\+P\+E\+G()}{salvarJPEG()}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+EG (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{password,  }\item[{string}]{id\+\_\+persona,  }\item[{string}]{id\+\_\+dedo,  }\item[{string}]{mano,  }\item[{unsigned char $\ast$\&}]{imagen\+\_\+buffer,  }\item[{int \&}]{width,  }\item[{int \&}]{height,  }\item[{int \&}]{size,  }\item[{string \&}]{id\+\_\+imagen }\end{DoxyParamCaption})}
+
+
+
+Salvar J\+P\+EG\+: Salva una imágen a J\+P\+EG. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em usuario} & Usuario U\+RE \\
+\hline
+{\em password} & Password U\+RE \\
+\hline
+{\em id\+\_\+persona} & Cédula de la persona \\
+\hline
+{\em id\+\_\+dedo} & Dedo de la persona \\
+\hline
+{\em mano} & Mano de la persona \\
+\hline
+{\em imagen\+\_\+buffer} & Buffer donde se guardará la imágen \\
+\hline
+{\em width} & Ancho de Imágen \\
+\hline
+{\em height} & Alto de Imágen \\
+\hline
+{\em size} & Tamaño de Imágen \\
+\hline
+{\em id\+\_\+imagen} & Id de la Imágen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Estado.
+\end{DoxyReturn}
+Método salvar\+J\+P\+EG\+: Extrae una imágen de la Base de Datos. Almacena las imagenes jpg de las huellas en la Base de datos de Odoo. Verifica el usuario que realiza la petición y sus permisos, luego busca la huella en la base de datos del usuario. Si la encuentra, la convierte y la almacena en imagen\+\_\+buffer. 
+
+Definición en la línea 1417 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a Imagen\+::id, N\+A\+ME, Imagen\+::n\+Height, Imagen\+::n\+Size, Imagen\+::n\+Width, Fingerprint\+::read\+Fingerprint\+Image(), Fingerprint\+::search\+Persona(), Fingerprint\+::\+U\+RL y V\+E\+R\+S\+I\+ON.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTemplateAFIS__webservice_a8e3f9279cbfd23a0a89d62c19ddd007c_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classTemplateAFIS__webservice_ae233b5bd61f6754d877e54788332fe92}{}\label{classTemplateAFIS__webservice_ae233b5bd61f6754d877e54788332fe92} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Save\+Imagen\+W\+SQ@{Save\+Imagen\+W\+SQ}}
+\index{Save\+Imagen\+W\+SQ@{Save\+Imagen\+W\+SQ}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Save\+Imagen\+W\+S\+Q()}{SaveImagenWSQ()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::\+Save\+Imagen\+W\+SQ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save Imagen\+W\+SQ\+: Salva el Template a W\+SQ. (En pruebas) 
+
+
+
+Definición en la línea 183 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_afc08ffa4abcde0b3c0f1c13d973755e1}{}\label{classTemplateAFIS__webservice_afc08ffa4abcde0b3c0f1c13d973755e1} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Save\+Template2\+I\+SO@{Save\+Template2\+I\+SO}}
+\index{Save\+Template2\+I\+SO@{Save\+Template2\+I\+SO}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Save\+Template2\+I\+S\+O()}{SaveTemplate2ISO()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::\+Save\+Template2\+I\+SO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save Template2\+I\+SO\+: Salva el Template a I\+SO. (En pruebas) 
+
+
+
+Definición en la línea 182 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a6357de3d3323010cb5890d2f583e0f94}{}\label{classTemplateAFIS__webservice_a6357de3d3323010cb5890d2f583e0f94} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!Set\+Tipo\+Template@{Set\+Tipo\+Template}}
+\index{Set\+Tipo\+Template@{Set\+Tipo\+Template}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{Set\+Tipo\+Template()}{SetTipoTemplate()}}
+{\footnotesize\ttfamily void Template\+A\+F\+I\+S\+\_\+webservice\+::\+Set\+Tipo\+Template (\begin{DoxyParamCaption}\item[{int}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Set Tipo Template. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tipo} & Tipo de template\\
+\hline
+\end{DoxyParams}
+Método Set\+Tipo\+Template\+: Establece el tipo de Template. 
+
+Definición en la línea 181 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+\hypertarget{classTemplateAFIS__webservice_a90522f2c2f10ae8fa3ab6abd0273b714}{}\label{classTemplateAFIS__webservice_a90522f2c2f10ae8fa3ab6abd0273b714} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!un\+Init\+Matcher@{un\+Init\+Matcher}}
+\index{un\+Init\+Matcher@{un\+Init\+Matcher}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{un\+Init\+Matcher()}{unInitMatcher()}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::un\+Init\+Matcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+un\+Init Matcher 
+
+\begin{DoxyReturn}{Devuelve}
+Obtiene el estado de desinicialización del Matcher. True o False
+\end{DoxyReturn}
+Método un\+Init\+Matcher\+: Desinicializa el Matcher. Protocolo de S\+U\+P\+R\+E\+MA indicado en el S\+DK 
+
+Definición en la línea 258 del archivo Template\+A\+F\+I\+S.\+cpp.
+
+
+
+Hace referencia a U\+F\+M\+\_\+\+Delete(), U\+F\+M\+\_\+\+OK y U\+F\+M\+\_\+\+S\+T\+A\+T\+US.
+
+Gráfico de llamadas para esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classTemplateAFIS__webservice_a90522f2c2f10ae8fa3ab6abd0273b714_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classTemplateAFIS__webservice_a09c632296df4dd488ab09fee6e26f4eb}{}\label{classTemplateAFIS__webservice_a09c632296df4dd488ab09fee6e26f4eb} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!base64\+\_\+chars@{base64\+\_\+chars}}
+\index{base64\+\_\+chars@{base64\+\_\+chars}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{base64\+\_\+chars}{base64\_chars}}
+{\footnotesize\ttfamily std\+::string Template\+A\+F\+I\+S\+\_\+webservice\+::base64\+\_\+chars\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+base64\+\_\+chars 
+
+
+
+Definición en la línea 238 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a829e57a86d8c1c0b17631eebf8a8e0cf}{}\label{classTemplateAFIS__webservice_a829e57a86d8c1c0b17631eebf8a8e0cf} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!firma\+\_\+digital@{firma\+\_\+digital}}
+\index{firma\+\_\+digital@{firma\+\_\+digital}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{firma\+\_\+digital}{firma\_digital}}
+{\footnotesize\ttfamily \hyperlink{classFirmaDigital}{Firma\+Digital}$\ast$ Template\+A\+F\+I\+S\+\_\+webservice\+::firma\+\_\+digital}
+
+
+
+firma\+\_\+figital 
+
+
+
+Definición en la línea 260 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a2c8421c26cc3dd7d6a3295ace4fd82ce}{}\label{classTemplateAFIS__webservice_a2c8421c26cc3dd7d6a3295ace4fd82ce} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+b\+Fast\+Mode@{m\+\_\+b\+Fast\+Mode}}
+\index{m\+\_\+b\+Fast\+Mode@{m\+\_\+b\+Fast\+Mode}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+b\+Fast\+Mode}{m\_bFastMode}}
+{\footnotesize\ttfamily bool Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+b\+Fast\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+b\+Fast\+Mode 
+
+
+
+Definición en la línea 221 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a9e97e8c2a5aa5de8ee51fbdfe4644c39}{}\label{classTemplateAFIS__webservice_a9e97e8c2a5aa5de8ee51fbdfe4644c39} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+h\+Matcher@{m\+\_\+h\+Matcher}}
+\index{m\+\_\+h\+Matcher@{m\+\_\+h\+Matcher}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+h\+Matcher}{m\_hMatcher}}
+{\footnotesize\ttfamily \hyperlink{UFMatcher_8h_a2a955bd8ef5ebcf92278a2b037f6e739}{H\+U\+F\+Matcher} Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+h\+Matcher\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+h\+Matcher 
+
+
+
+Definición en la línea 209 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a0d609b06768f2c253f43654966bd41e1}{}\label{classTemplateAFIS__webservice_a0d609b06768f2c253f43654966bd41e1} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+n\+Cur\+Scanner\+Index@{m\+\_\+n\+Cur\+Scanner\+Index}}
+\index{m\+\_\+n\+Cur\+Scanner\+Index@{m\+\_\+n\+Cur\+Scanner\+Index}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Cur\+Scanner\+Index}{m\_nCurScannerIndex}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+n\+Cur\+Scanner\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+n\+Cur\+Scanner\+Index 
+
+
+
+Definición en la línea 233 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_ad979fde0c45dd460249d041a669a9914}{}\label{classTemplateAFIS__webservice_ad979fde0c45dd460249d041a669a9914} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+n\+Enroll\+Quality@{m\+\_\+n\+Enroll\+Quality}}
+\index{m\+\_\+n\+Enroll\+Quality@{m\+\_\+n\+Enroll\+Quality}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Enroll\+Quality}{m\_nEnrollQuality}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+n\+Enroll\+Quality\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+n\+Enroll\+Quality 
+
+
+
+Definición en la línea 229 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a8809dc8920da337f97252597ef492671}{}\label{classTemplateAFIS__webservice_a8809dc8920da337f97252597ef492671} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+n\+Security\+Level@{m\+\_\+n\+Security\+Level}}
+\index{m\+\_\+n\+Security\+Level@{m\+\_\+n\+Security\+Level}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Security\+Level}{m\_nSecurityLevel}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+n\+Security\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+n\+Security\+Level 
+
+
+
+Definición en la línea 217 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a83ff03441c588729601736d18eb65afd}{}\label{classTemplateAFIS__webservice_a83ff03441c588729601736d18eb65afd} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!m\+\_\+str\+Error@{m\+\_\+str\+Error}}
+\index{m\+\_\+str\+Error@{m\+\_\+str\+Error}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{m\+\_\+str\+Error}{m\_strError}}
+{\footnotesize\ttfamily char Template\+A\+F\+I\+S\+\_\+webservice\+::m\+\_\+str\+Error\mbox{[}128\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+\_\+str\+Error\mbox{[}128\mbox{]} 
+
+
+
+Definición en la línea 225 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a5be66b367a1276c21ffc3450c1f69643}{}\label{classTemplateAFIS__webservice_a5be66b367a1276c21ffc3450c1f69643} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!padding@{padding}}
+\index{padding@{padding}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{padding}{padding}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::padding\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+padding 
+
+
+
+Definición en la línea 243 del archivo Template\+A\+F\+I\+S.\+h.
+
+\hypertarget{classTemplateAFIS__webservice_a955d31aac4c820b4399ccbafe1b59b63}{}\label{classTemplateAFIS__webservice_a955d31aac4c820b4399ccbafe1b59b63} 
+\index{Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}!tipo\+\_\+template@{tipo\+\_\+template}}
+\index{tipo\+\_\+template@{tipo\+\_\+template}!Template\+A\+F\+I\+S\+\_\+webservice@{Template\+A\+F\+I\+S\+\_\+webservice}}
+\subsubsection{\texorpdfstring{tipo\+\_\+template}{tipo\_template}}
+{\footnotesize\ttfamily int Template\+A\+F\+I\+S\+\_\+webservice\+::tipo\+\_\+template\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tipo\+\_\+template 
+
+
+
+Definición en la línea 213 del archivo Template\+A\+F\+I\+S.\+h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/include/\hyperlink{TemplateAFIS_8h}{Template\+A\+F\+I\+S.\+h}\item 
+Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/include/\hyperlink{TemplateAFIS_8cpp}{Template\+A\+F\+I\+S.\+cpp}\end{DoxyCompactItemize}

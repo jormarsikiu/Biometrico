@@ -1,0 +1,95 @@
+\hypertarget{Fingerprint_8cpp}{}\section{Referencia del Archivo Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Fingerprint.cpp}
+\label{Fingerprint_8cpp}\index{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Fingerprint.\+cpp@{Template\+A\+F\+I\+S\+\_\+webservice\+\_\+lib/\+Conexion\+\_\+webservice/\+Fingerprint.\+cpp}}
+
+
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$Xml\+Rpc\+Cpp.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$openssl/sha.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/hmac.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/evp.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/bio.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/buffer.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/md5.\+h$>$}\newline
+Dependencia gráfica adjunta para Fingerprint.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Fingerprint_8cpp__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{Fingerprint_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFingerprint}{Fingerprint}
+\begin{DoxyCompactList}\small\item\em Clase que permite realizar la interacción con el Webservice con Open\+E\+RP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Fingerprint_8cpp_a47f2e62c0dbebc787052c165afcada0e}{N\+A\+ME}~\char`\"{}X\+ML-\/R\+PC C\+FG C++ Client\char`\"{}
+\item 
+\#define \hyperlink{Fingerprint_8cpp_a1c6d5de492ac61ad29aec7aa9a436bbf}{V\+E\+R\+S\+I\+ON}~\char`\"{}0.\+1\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que permite realizar la interacción con el Webservice con Open\+E\+RP. 
+
+\begin{DoxyAuthor}{Autor}
+Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre. \href{mailto:contacto@simonrodriguez.org.ve}{\tt contacto@simonrodriguez.\+org.\+ve} 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Autores}
+Lcdo. César Cordero, Ing. Servio Zambrano y Ángel Ramírez Isea. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+2014 This file is part of Sistema de Identificación Biométrica para las O\+B\+PP. 
+\end{DoxyDate}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{Fingerprint_8cpp_a47f2e62c0dbebc787052c165afcada0e}{}\label{Fingerprint_8cpp_a47f2e62c0dbebc787052c165afcada0e} 
+\index{Fingerprint.\+cpp@{Fingerprint.\+cpp}!N\+A\+ME@{N\+A\+ME}}
+\index{N\+A\+ME@{N\+A\+ME}!Fingerprint.\+cpp@{Fingerprint.\+cpp}}
+\subsubsection{\texorpdfstring{N\+A\+ME}{NAME}}
+{\footnotesize\ttfamily \#define N\+A\+ME~\char`\"{}X\+ML-\/R\+PC C\+FG C++ Client\char`\"{}}
+
+
+
+Definición en la línea 13 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+O\+B\+P\+P(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+Verificacion(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Usuario(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify() y Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+E\+G().
+
+\hypertarget{Fingerprint_8cpp_a1c6d5de492ac61ad29aec7aa9a436bbf}{}\label{Fingerprint_8cpp_a1c6d5de492ac61ad29aec7aa9a436bbf} 
+\index{Fingerprint.\+cpp@{Fingerprint.\+cpp}!V\+E\+R\+S\+I\+ON@{V\+E\+R\+S\+I\+ON}}
+\index{V\+E\+R\+S\+I\+ON@{V\+E\+R\+S\+I\+ON}!Fingerprint.\+cpp@{Fingerprint.\+cpp}}
+\subsubsection{\texorpdfstring{V\+E\+R\+S\+I\+ON}{VERSION}}
+{\footnotesize\ttfamily \#define V\+E\+R\+S\+I\+ON~\char`\"{}0.\+1\char`\"{}}
+
+
+
+Definición en la línea 17 del archivo Fingerprint.\+cpp.
+
+
+
+Referenciado por Template\+A\+F\+I\+S\+\_\+webservice\+::borrar\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Huella(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Id\+Imagen(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+O\+B\+P\+P(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Datos\+Persona\+Verificacion(), Template\+A\+F\+I\+S\+\_\+webservice\+::get\+Usuario(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Enroll(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Identify\+On\+Verify(), Template\+A\+F\+I\+S\+\_\+webservice\+::\+On\+Verify() y Template\+A\+F\+I\+S\+\_\+webservice\+::salvar\+J\+P\+E\+G().
+
